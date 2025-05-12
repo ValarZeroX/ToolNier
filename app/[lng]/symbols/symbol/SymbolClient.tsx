@@ -265,7 +265,7 @@ const SymbolClient: React.FC<SymbolClientProps> = ({ lng }) => {
     };
 
     return (
-        <Container size="xs" mt="lg">
+        <Container size="md" mt="lg">
             <Title order={3} ta="center">{t('symbol_page_title')}</Title>
             {symbolCategories.map((category) => (
                 <div key={category.category}>
