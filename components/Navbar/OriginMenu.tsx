@@ -1,0 +1,63 @@
+'use client';
+
+import { FC } from 'react';
+import { NavLink, Divider, Stack } from '@mantine/core';
+import { IconHome, IconPlus, IconMoodHappy } from '@tabler/icons-react';
+import { useRouter } from 'next/navigation';
+// import { useSession } from 'next-auth/react';
+import { useTranslation } from "../../app/i18n/client";
+// import  UserButton  from '../UserButton/UserButton';
+import classes from './NavbarNested.module.css';
+// import { useAuth } from '@/lib/auth/AuthContext';
+
+interface OriginMenuProps {
+  lng: string;
+}
+
+const OriginMenu: FC<OriginMenuProps> = ({ lng }) => {
+  // function OriginMenu({ lng }:OriginMenuProps) {
+  const router = useRouter();
+  const { t } = useTranslation(lng, ['common']);
+//   const { isAuthenticated, user, setAuth, checkAuthStatus } = useAuth();
+  // const { data: session, status } = useSession();
+
+  // const { t } = useTranslation(lng, ['common']);
+
+  // console.log('OriginMenu', lng);
+  const handleNavigation = (path: string) => {
+    router.push(path);
+  };
+
+  return (
+    <Stack justify="space-between" h="100%">
+      <nav>
+        <NavLink
+          component="button"
+          label={t('common:home')}
+          leftSection={<IconHome size="1rem" stroke={1.5} />}
+          onClick={() => handleNavigation('/')}
+        />
+        <NavLink
+          component="button"
+          label={t('common:symbol_emoji')}
+          leftSection={<IconMoodHappy size="1rem" stroke={1.5} />}
+        //   onClick={() => handleNavigation('/records')}
+        >
+        <NavLink label={t('common:symbol')} onClick={() => handleNavigation('/symbols/symbol')} />
+        </NavLink>
+      </nav>
+      {/* {isAuthenticated && (
+        <div className={classes.footer} >
+          <UserButton />
+        </div>
+      )} */}
+      {/* {session && (
+        <div className={classes.footer} onClick={() => handleNavigation('/user')}>
+          <UserButton />
+        </div>
+      )} */}
+    </Stack>
+  );
+}
+
+export default OriginMenu;

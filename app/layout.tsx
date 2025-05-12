@@ -1,27 +1,37 @@
 import '@mantine/core/styles.css';
-
 import React from 'react';
-import { ColorSchemeScript, mantineHtmlProps, MantineProvider } from '@mantine/core';
-import { theme } from '../theme';
+import { ColorSchemeScript } from '@mantine/core';
+import ClientProviders from './providers/ClientProviders';
+import { languages } from "./i18n/settings";
+
+export async function generateStaticParams() {
+  return languages.map((lng) => ({ lng }));
+}
 
 export const metadata = {
-  title: 'Mantine Next.js template',
-  description: 'I am using Mantine with Next.js!',
+  title: 'ToolNier',
+  description: 'ToolNier',
 };
 
-export default function RootLayout({ children }: { children: any }) {
+type RootLayoutProps = {
+  children: React.ReactNode;
+  params?: { lng?: string };
+};
+
+export default function RootLayout({ children, params }: RootLayoutProps) {
+  const lng = params?.lng || 'en'; // 預設語言為英文
+
   return (
-    <html lang="en" {...mantineHtmlProps}>
+    <html lang={lng} suppressHydrationWarning>
       <head>
         <ColorSchemeScript />
         <link rel="shortcut icon" href="/favicon.svg" />
-        <meta
-          name="viewport"
-          content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
-        />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
       </head>
       <body>
-        <MantineProvider theme={theme}>{children}</MantineProvider>
+        <ClientProviders>
+          {children}
+        </ClientProviders>
       </body>
     </html>
   );

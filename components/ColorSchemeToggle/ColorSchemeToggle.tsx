@@ -1,15 +1,26 @@
 'use client';
 
-import { Button, Group, useMantineColorScheme } from '@mantine/core';
+import { useState, useEffect } from 'react';
+import { Button, Group, useMantineColorScheme, ActionIcon } from '@mantine/core';
+import { IconBrightnessDown, IconMoon } from '@tabler/icons-react';
 
 export function ColorSchemeToggle() {
-  const { setColorScheme } = useMantineColorScheme();
+  const { colorScheme, toggleColorScheme } = useMantineColorScheme();
+  const [Icon, setIcon] = useState(() => IconMoon); // 初始為 IconMoon
+
+  // 僅在客戶端進行圖標選擇
+  useEffect(() => {
+    setIcon(colorScheme === 'dark' ? IconBrightnessDown : IconMoon);
+  }, [colorScheme]);
 
   return (
-    <Group justify="center" mt="xl">
-      <Button onClick={() => setColorScheme('light')}>Light</Button>
-      <Button onClick={() => setColorScheme('dark')}>Dark</Button>
-      <Button onClick={() => setColorScheme('auto')}>Auto</Button>
-    </Group>
+    <ActionIcon
+      variant="default"
+      aria-label="Toggle theme"
+      size="lg"
+      onClick={() => toggleColorScheme()}
+    >
+      <Icon style={{ width: '80%', height: '80%' }} stroke={1.5} />
+    </ActionIcon>
   );
 }
