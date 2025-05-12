@@ -1,7 +1,7 @@
 import React from 'react';
 import { Metadata } from 'next';
 
-import SymbolClient from './SymbolClient'; // 客戶端組件
+import EmojiClient from './EmojiClient'; // 客戶端組件
 import Layout from '@/components/Layout/Layout';
 import { useTranslation } from '../../../i18n/index';
 
@@ -15,21 +15,21 @@ export async function generateMetadata({ params }: { params: Promise<{ lng: stri
     const { t: translate } = translation;
 
     return {
-        title: translate('metadata.symbol_page_title'),
-        description: translate('metadata.symbol_page_description'),
-        keywords: translate('metadata.symbol_page_keywords'),
+        title: translate('metadata.emoji_page_title'),
+        description: translate('metadata.emoji_page_description'),
+        keywords: translate('metadata.emoji_page_keywords'),
     };
 }
 
-type SymbolPageProps = { params: Promise<{ lng: string }> };
+type EmojiPageProps = { params: Promise<{ lng: string }> };
 
-const SymbolPage = async ({ params }: SymbolPageProps) => {
+const EmojiPage = async ({ params }: EmojiPageProps) => {
     const { lng } = await params;
     return (
         <Layout lng={lng}>
-            <SymbolClient lng={lng} />
+            <EmojiClient lng={lng} />
         </Layout>
     );
 };
 
-export default SymbolPage;
+export default EmojiPage;

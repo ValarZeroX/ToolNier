@@ -44,6 +44,7 @@ const OriginMenu: FC<OriginMenuProps> = ({ lng }) => {
         //   onClick={() => handleNavigation('/records')}
         >
         <NavLink label={t('common:symbol')} onClick={() => handleNavigation('/symbols/symbol')} />
+        <NavLink label={t('common:emoji')} onClick={() => handleNavigation('/symbols/emoji')} />
         </NavLink>
       </nav>
       {/* {isAuthenticated && (
