@@ -1,27 +1,30 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import { Container, Title, Textarea, Button, Stack, Paper, Text, Center, Modal, Group, Tabs, Grid } from '@mantine/core';
-import { Wheel } from 'react-custom-roulette';
+import { Container, Title, Textarea, Button, Stack, Paper, Text, Center, Group, Tabs, Grid } from '@mantine/core';
 import { IconList, IconHistory, IconX } from '@tabler/icons-react';
 import classes from './WheelDrawClient.module.css';
+import SpinWheel from '@/components/Random/SpinWheelComponent'; // ✅ 新子組件
 
 interface WheelDrawClientProps {
     lng: string;
 }
 
 const wheelColors = [
-    '#FF5733', '#FFBD33', '#DBFF33', '#75FF33', '#33FF57',
-    '#33FFBD', '#33DBFF', '#3375FF', '#8E33FF', '#FF33A8'
+    "#F22B35",
+    "#F99533",
+    "#24CA69",
+    "#514E50",
+    "#46AEFF",
+    "#9145B7"
 ];
 
 const WheelDrawClient: React.FC<WheelDrawClientProps> = ({ lng }) => {
-    const [inputValue, setInputValue] = useState('選項A\n選項B\n選項C');
+    const [inputValue, setInputValue] = useState('選項A\n選項B\n選項C\n選項D\n選項E\n選項F\n選項G\n選項H');
     const [data, setData] = useState<{ option: string }[]>([]);
-    const [mustSpin, setMustSpin] = useState(false);
-    const [prizeNumber, setPrizeNumber] = useState(0);
+    const [startSpinSignal, setStartSpinSignal] = useState(false);
     const [result, setResult] = useState<string | null>(null);
     const [history, setHistory] = useState<string[]>([]);
-    const [isDialogOpen, setIsDialogOpen] = useState(false);
+    const [hasRemoved, setHasRemoved] = useState(false);
 
     useEffect(() => {
         const entries = inputValue
@@ -32,36 +35,34 @@ const WheelDrawClient: React.FC<WheelDrawClientProps> = ({ lng }) => {
     }, [inputValue]);
 
     const handleStartDraw = () => {
+        if (startSpinSignal) return;
         if (data.length < 2) {
             alert('請至少輸入兩個選項！');
             return;
         }
-        // const randomIndex = Math.floor(Math.random() * data.length);
-        const randomIndex = Math.floor(Math.random() * data.length);
-    const offset = Math.round(data.length * 0.25); // ➡️ 加入右側偏移
-    setPrizeNumber((randomIndex + offset) % data.length);
-        setPrizeNumber(randomIndex);
-        setMustSpin(true);
+        setStartSpinSignal(true);
         setResult(null);
+        setHasRemoved(false);
+    };
+
+    const handleRemove = () => {
+        if (!result) return;
+        setData(prevData => prevData.filter(item => item.option !== result));
+        setInputValue(prevValue =>
+            prevValue
+                .split('\n')
+                .filter((line) => line.trim() !== result)
+                .join('\n')
+        );
+        setHasRemoved(true);
     };
 
     const handleReset = () => {
         setInputValue('');
         setData([]);
-        setMustSpin(false);
+        setStartSpinSignal(false);
         setResult(null);
         setHistory([]);
-    };
-
-    const handleRemove = () => {
-        setData(prevData => prevData.filter((_, index) => index !== prizeNumber));
-        setInputValue(prevValue =>
-            prevValue
-                .split('\n')
-                .filter((_, index) => index !== prizeNumber)
-                .join('\n')
-        );
-        setIsDialogOpen(false);
     };
 
     return (
@@ -71,78 +72,61 @@ const WheelDrawClient: React.FC<WheelDrawClientProps> = ({ lng }) => {
                 <Grid.Col span={{ base: 12, sm: 12, md: 8 }}>
                     <Stack gap="md" mt="md">
                         {data.length > 0 && (
-                            <Center onClick={handleStartDraw}
-                            className={classes.hmocIu}
-                            >
-                                <Wheel
-                                    mustStartSpinning={mustSpin}
-                                    prizeNumber={prizeNumber}
+                            <Center onClick={handleStartDraw} className={classes.hmocIu}>
+                                <SpinWheel
                                     data={data}
-                                    backgroundColors={Array.from({ length: data.length }, (_, i) => wheelColors[i % wheelColors.length])}
-                                    textColors={['#333']}
-                                    outerBorderWidth={2}
-                                    radiusLineWidth={2}
-                                    innerRadius={20}
-                                    innerBorderWidth={2}
-                                    pointerProps={{
-                                        style: {
-                                            width: '5%',
-                                            marginTop: '10%',
-                                            marginRight: '10%',
-                                        },
-                                    }}
-                                    onStopSpinning={() => {
-                                        const picked = data[prizeNumber].option;
+                                    startSpinSignal={startSpinSignal}
+                                    setStartSpinSignal={setStartSpinSignal}
+                                    onResult={(picked) => {
                                         setResult(picked);
                                         setHistory(prev => [...prev, picked]);
-                                        setMustSpin(false);
-                                        setIsDialogOpen(true); // ✅ 彈窗開啟
                                     }}
+                                    wheelColors={wheelColors}
                                 />
                             </Center>
                         )}
-                        {/* <Button fullWidth color="blue" onClick={handleStartDraw} disabled={!inputValue.trim()}>
-                            開始轉動
-                        </Button> */}
+                        <Group justify="center">
+                            <Button variant="outline" onClick={handleStartDraw}>開始</Button>
+                            <Button variant="outline" color="red" onClick={handleRemove} disabled={!result || hasRemoved}>移除</Button>
+                        </Group>
                         {result && (
-                            <Paper shadow="md" p="md" radius="md" withBorder>
-                                <Text ta="center" size="xl">抽中：{result}</Text>
+                            <Paper shadow="xs" p="md" radius="md" withBorder>
+                                <Text ta="center" size="xl">{result}</Text>
                             </Paper>
                         )}
                     </Stack>
                 </Grid.Col>
+
                 <Grid.Col span={{ base: 12, sm: 12, md: 4 }}>
                     <Tabs defaultValue="item">
                         <Tabs.List>
-                            <Tabs.Tab value="item" leftSection={<IconList size={12} />}>
-                                選項
-                            </Tabs.Tab>
-                            <Tabs.Tab value="history" leftSection={<IconHistory size={12} />}>
-                                歷史紀錄
-                            </Tabs.Tab>
+                            <Tabs.Tab value="item" leftSection={<IconList size={12} />}>選項</Tabs.Tab>
+                            <Tabs.Tab value="history" leftSection={<IconHistory size={12} />}>歷史紀錄</Tabs.Tab>
                         </Tabs.List>
+
                         <Tabs.Panel value="item">
                             <Stack gap="md" mt="md">
+                                {data.length > 0 && (
+                                    <Button color="red" variant="outline" onClick={handleReset} leftSection={<IconX size={14} />} disabled={startSpinSignal}>
+                                        清空選項
+                                    </Button>
+                                )}
                                 <Textarea
                                     label="請輸入選項（每行一個）"
-                                    // placeholder="例如：\n選項A\n選項B\n選項C"
                                     value={inputValue}
                                     onChange={(event) => setInputValue(event.currentTarget.value)}
                                     autosize
                                     minRows={5}
+                                    disabled={startSpinSignal}
                                 />
-                                {data.length > 0 && (
-                                    <Button color="red" variant="outline" onClick={handleReset} leftSection={<IconX size={14} />}>
-                                        清空
-                                    </Button>
-                                )}
                             </Stack>
                         </Tabs.Panel>
+
                         <Tabs.Panel value="history">
                             <Stack gap="md" mt="md">
                                 {history.length > 0 && (
                                     <>
-                                        <Button color="red" variant="outline" leftSection={<IconX size={14} />} onClick={() => setHistory([])}>
+                                        <Button color="red" variant="outline" leftSection={<IconX size={14} />} onClick={() => setHistory([])} disabled={startSpinSignal}>
                                             清空紀錄
                                         </Button>
                                         <Paper shadow="md" p="md" radius="md" withBorder>
@@ -157,19 +141,6 @@ const WheelDrawClient: React.FC<WheelDrawClientProps> = ({ lng }) => {
                     </Tabs>
                 </Grid.Col>
             </Grid>
-
-            <Modal
-                opened={isDialogOpen}
-                onClose={() => setIsDialogOpen(false)}
-                title="是否移除該選項？"
-                centered
-            >
-                <Text ta="center" mb="md">抽中：{result}</Text>
-                <Group ta="center" mt="md">
-                    <Button color="red" onClick={handleRemove}>移除</Button>
-                    <Button variant="outline" onClick={() => setIsDialogOpen(false)}>關閉</Button>
-                </Group>
-            </Modal>
         </Container>
     );
 };

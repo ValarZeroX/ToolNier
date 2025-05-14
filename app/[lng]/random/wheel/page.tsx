@@ -15,9 +15,9 @@ export async function generateMetadata({ params }: { params: Promise<{ lng: stri
     const { t: translate } = translation;
 
     return {
-        title: translate('metadata.random_draw_page_title'),
-        description: translate('metadata.random_draw_page_description'),
-        keywords: translate('metadata.random_draw_page_keywords'),
+        title: translate('metadata.random_draw_wheel_page_title'),
+        description: translate('metadata.random_draw_wheel_page_description'),
+        keywords: translate('metadata.random_draw_wheel_page_keywords'),
     };
 }
 
