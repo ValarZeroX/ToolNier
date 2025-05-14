@@ -2,7 +2,7 @@
 
 import { FC } from 'react';
 import { Group, Burger, rem, ActionIcon, Loader, Menu, Text } from '@mantine/core';
-import { IconMoneybag, IconLogin, IconLogout, IconLanguage } from '@tabler/icons-react';
+import { IconMoneybag, IconLogin, IconTools, IconLanguage } from '@tabler/icons-react';
 import { ColorSchemeToggle } from '../../components/ColorSchemeToggle/ColorSchemeToggle';
 import classes from './Header.module.css';
 import { useRouter, usePathname } from 'next/navigation';
@@ -52,10 +52,10 @@ const Header: FC<HeaderProps> = ({ opened, toggle, desktopOpened, toggleDesktop,
         {/* <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" /> */}
         <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />
         <Burger opened={desktopOpened} onClick={toggleDesktop} visibleFrom="sm" size="sm" />
-        <IconMoneybag
+        <IconTools
           style={{ width: rem(36), height: rem(36) }}
           stroke={1.5}
-          color="var(--mantine-color-red-filled)"
+          color="var(--mantine-color-blue-filled)"
         />
         <div>ToolNier</div>
       </Group>
