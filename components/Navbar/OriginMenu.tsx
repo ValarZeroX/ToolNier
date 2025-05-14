@@ -2,7 +2,7 @@
 
 import { FC } from 'react';
 import { NavLink, Divider, Stack } from '@mantine/core';
-import { IconHome, IconPlus, IconMoodHappy } from '@tabler/icons-react';
+import { IconHome, IconPlus, IconMoodHappy, IconDice5 } from '@tabler/icons-react';
 import { useRouter } from 'next/navigation';
 // import { useSession } from 'next-auth/react';
 import { useTranslation } from "../../app/i18n/client";
@@ -45,6 +45,15 @@ const OriginMenu: FC<OriginMenuProps> = ({ lng }) => {
         >
         <NavLink label={t('common:symbol')} onClick={() => handleNavigation('/symbols/symbol')} />
         <NavLink label={t('common:emoji')} onClick={() => handleNavigation('/symbols/emoji')} />
+        </NavLink>
+        <NavLink
+          component="button"
+          label={t('common:random')}
+          leftSection={<IconDice5 size="1rem" stroke={1.5} />}
+        //   onClick={() => handleNavigation('/records')}
+        >
+          <NavLink label={t('common:random_draw')} onClick={() => handleNavigation('/random/draw')} />
+          <NavLink label={t('common:random_draw_wheel')} onClick={() => handleNavigation('/random/wheel')} />
         </NavLink>
       </nav>
       {/* {isAuthenticated && (
