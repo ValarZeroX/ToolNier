@@ -8,6 +8,7 @@
   "random_draw_wheel": "随机抽取轮盘",
   "random_sort": "随机排序",
   "random_group": "随机分组",
+  "random_number": "随机数字",
   "home": "首页",
   "copy": "复制",
   "copied": "已复制 ✅",
@@ -31,7 +32,10 @@
     "random_sort_page_keywords": "随机排序, 随机排列, 随机工具, 复制粘贴, toolnier",
     "random_group_page_title": "随机分组工具 | Random Group Tool - ToolNier",
     "random_group_page_description": "免费随机分组工具，提供各种随机分组、随机排列等，点击即可快速复制使用，支持社交媒体、设计、编程代码装饰等场景。",
-    "random_group_page_keywords": "随机分组, 随机排列, 随机工具, 复制粘贴, toolnier"
+    "random_group_page_keywords": "随机分组, 随机排列, 随机工具, 复制粘贴, toolnier",
+    "random_number_page_title": "随机数字工具 | Random Number Tool - ToolNier",
+    "random_number_page_description": "免费随机数字工具，提供各种随机数字、随机排列等，点击即可快速复制使用，支持社交媒体、设计、编程代码装饰等场景。",
+    "random_number_page_keywords": "随机数字, 随机排列, 随机工具, 复制粘贴, toolnier"
   },
   "symbols": {
     "categories": {
@@ -118,5 +122,17 @@
     "error_title": "错误",
     "error_message": "请输入合理的分组数量",
     "description": "随机分组工具可以协助您快速将输入的项目自动分配成指定数量的随机组别，适用于教学、活动分组、游戏等多种情境。请在下方输入名单并设定组数，点选「开始分组」即可。"
+  },
+  "random_number_page": {
+    "title": "随机数字生成器",
+    "intro": "随机数字生成器适用于乐透选号、抽奖等场合，您可以设定起始数字、结束数字、产生数量，并选择是否排除重复数字。",
+    "min": "起始数字",
+    "max": "结束数字",
+    "count": "产生数量",
+    "no_repeat": "排除重复数字",
+    "generate": "开始产生",
+    "result": "产生结果",
+    "error_title": "错误",
+    "error_message": "请确认设置正确：最小值应小于等于最大值，数量不可为0，且排除重复时数量不得超过范围内的数字总数。"
   }
 }

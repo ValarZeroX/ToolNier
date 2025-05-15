@@ -8,6 +8,7 @@
   "random_draw_wheel": "Random Draw Wheel",
   "random_sort": "Random Sort",
   "random_group": "Random Group",
+  "random_number": "Random Number",
   "home": "Home",
   "copy": "Copy",
   "copied": "Copied ✅",
@@ -31,7 +32,10 @@
     "random_sort_page_keywords": "random sort, random sort tool, random sort wheel, random sort wheel tool, ToolNier",
     "random_group_page_title": "Random Group Tool | Random Group Tool - ToolNier",
     "random_group_page_description": "Free random group tool. Instantly copy and paste various random group including hearts, stars, arrows, math symbols, emojis, decorative characters, and more. Perfect for social media, design, code styling, and text art.",
-    "random_group_page_keywords": "random group, random group tool, random group wheel, random group wheel tool, ToolNier"
+    "random_group_page_keywords": "random group, random group tool, random group wheel, random group wheel tool, ToolNier",
+    "random_number_page_title": "Random Number Tool | Random Number Tool - ToolNier",
+    "random_number_page_description": "Free random number tool. Instantly copy and paste various random number including hearts, stars, arrows, math symbols, emojis, decorative characters, and more. Perfect for social media, design, code styling, and text art.",
+    "random_number_page_keywords": "random number, random number tool, random number wheel, random number wheel tool, ToolNier"
   },
   "symbols": {
     "categories": {
@@ -118,5 +122,17 @@
     "error_title": "Error",
     "error_message": "Please enter a valid group count",
     "description": "Random group tool can help you quickly and automatically distribute the input items into a specified number of random groups, suitable for teaching, activity grouping, games, and other scenarios. Please enter the list and set the number of groups in the box below, and click \"Start\" to group randomly."
+  },
+  "random_number_page": {
+    "title": "Random Number Generator",
+    "intro": "Random number generator is suitable for lottery number selection, lottery, and other cases. You can set the starting number, ending number, number of generations, and select whether to exclude duplicate numbers.",
+    "min": "Starting number",
+    "max": "Ending number",
+    "count": "Number of generations",
+    "no_repeat": "Exclude duplicate numbers",
+    "generate": "Start generating",
+    "result": "Generation result",
+    "error_title": "Error",
+    "error_message": "Please check the settings correctly: the minimum value should be less than or equal to the maximum value, the number cannot be 0, and when excluding duplicates, the number cannot exceed the total number of numbers in the range."
   }
 }

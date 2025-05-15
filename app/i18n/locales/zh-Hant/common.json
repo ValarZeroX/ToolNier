@@ -8,6 +8,7 @@
   "random_draw_wheel": "隨機抽籤輪盤",
   "random_sort": "隨機排序",
   "random_group": "隨機分組",
+  "random_number": "隨機數字",
   "home": "首頁",
   "copy": "複製",
   "copied": "已複製 ✅",
@@ -31,7 +32,10 @@
     "random_sort_page_keywords": "隨機排序, 隨機排列, 隨機工具, 複製貼上, toolnier",
     "random_group_page_title": "隨機分組工具 | Random Group Tool - ToolNier",
     "random_group_page_description": "免費隨機分組工具，提供各種隨機分組、隨機排列等，點擊即可快速複製使用，支援社群媒體、設計、程式碼裝飾等場景。",
-    "random_group_page_keywords": "隨機分組, 隨機排列, 隨機工具, 複製貼上, toolnier"
+    "random_group_page_keywords": "隨機分組, 隨機排列, 隨機工具, 複製貼上, toolnier",
+    "random_number_page_title": "隨機數字產生器 | Random Number Generator Tool - ToolNier",
+    "random_number_page_description": "免費隨機數字產生器工具，提供各種隨機數字、隨機排列等，點擊即可快速複製使用，支援社群媒體、設計、程式碼裝飾等場景。",
+    "random_number_page_keywords": "隨機數字, 隨機排列, 隨機工具, 複製貼上, toolnier"
   },
   "symbols": {
     "categories": {
@@ -118,5 +122,17 @@
     "error_title": "錯誤",
     "error_message": "請輸入合理的分組數量",
     "description": "隨機分組工具可以協助您快速將輸入的項目自動分配成指定數量的隨機組別，適用於教學、活動分組、遊戲等多種情境。請在下方輸入名單並設定組數，點選「開始分組」即可。"
+  },
+  "random_number_page": {
+    "title": "隨機數字產生器",
+    "intro": "隨機數字產生器適用於樂透選號、抽獎等場合，您可以設定起始數字、結束數字、產生數量，並選擇是否排除重複數字。",
+    "min": "起始數字",
+    "max": "結束數字",
+    "count": "產生數量",
+    "no_repeat": "排除重複數字",
+    "generate": "開始產生",
+    "result": "產生結果",
+    "error_title": "錯誤",
+    "error_message": "請確認設定正確：最小值應小於等於最大值，數量不可為0，且排除重複時數量不得超過範圍內的數字總數。"
   }
 }

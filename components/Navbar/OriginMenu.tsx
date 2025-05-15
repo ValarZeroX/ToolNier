@@ -56,6 +56,7 @@ const OriginMenu: FC<OriginMenuProps> = ({ lng }) => {
           <NavLink label={t('common:random_draw_wheel')} onClick={() => handleNavigation('/random/wheel')} />
           <NavLink label={t('common:random_sort')} onClick={() => handleNavigation('/random/sort')} />
           <NavLink label={t('common:random_group')} onClick={() => handleNavigation('/random/group')} />
+          <NavLink label={t('common:random_number')} onClick={() => handleNavigation('/random/number')} />
         </NavLink>
       </nav>
       {/* {isAuthenticated && (

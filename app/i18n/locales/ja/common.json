@@ -8,6 +8,7 @@
   "random_draw_wheel": "ランダム選択輪盤",
   "random_sort": "ランダム並べ替え",
   "random_group": "ランダム分組",
+  "random_number": "ランダム数字",
   "home": "ホーム",
   "copy": "コピー",
   "copied": "コピー済み ✅",
@@ -31,7 +32,10 @@
     "random_sort_page_keywords": "ランダム並べ替え, ランダム並べ替えツール, ランダムツール, コピー＆ペースト, ToolNier",
     "random_group_page_title": "ランダム分組ツール | ランダム分組ツール - ToolNier",
     "random_group_page_description": "無料のランダム分組ツールです。ランダム分組、ランダム選択、ランダム並べ替えなど、さまざまな記号をすぐにコピー＆ペーストできます。SNS、デザイン、プログラミング、テキスト装飾に最適です。",
-    "random_group_page_keywords": "ランダム分組, ランダム分組ツール, ランダムツール, コピー＆ペースト, ToolNier"
+    "random_group_page_keywords": "ランダム分組, ランダム分組ツール, ランダムツール, コピー＆ペースト, ToolNier",
+    "random_number_page_title": "ランダム数字ツール | ランダム数字ツール - ToolNier",
+    "random_number_page_description": "無料のランダム数字ツールです。ランダム数字、ランダム選択、ランダム並べ替えなど、さまざまな記号をすぐにコピー＆ペーストできます。SNS、デザイン、プログラミング、テキスト装飾に最適です。",
+    "random_number_page_keywords": "ランダム数字, ランダム数字ツール, ランダムツール, コピー＆ペースト, ToolNier"
   },
   "symbols": {
     "categories": {
@@ -118,5 +122,17 @@
     "error_title": "エラー",
     "error_message": "合理的なグループ数を入力してください",
     "description": "ランダム分組ツールは、入力された項目を指定された数のランダムグループに自動的に分配するツールです。教育、活動分組、ゲームなどのシナリオに適用できます。下に名前を入力し、グループ数を設定し、「開始」をクリックすると、ランダムに分組されます。"
+  },
+  "random_number_page": {
+    "title": "ランダム数字生成器",
+    "intro": "ランダム数字生成器は、宝くじ選号、抽選などの場合に適用できます。起始数字、終了数字、生成数を設定し、重複を排除するかどうかを選択できます。",
+    "min": "起始数字",
+    "max": "終了数字",
+    "count": "生成数",
+    "no_repeat": "重複を排除",
+    "generate": "開始生成",
+    "result": "生成結果",
+    "error_title": "錯誤",
+    "error_message": "設定を確認してください：最小値は最大値以下である必要があり、数は0でない必要があり、重複を排除する場合は数が範囲内の数字の総数を超えてはなりません。"
   }
 }
