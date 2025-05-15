@@ -6,6 +6,8 @@
   "random": "隨機",
   "random_draw": "隨機抽籤",
   "random_draw_wheel": "隨機抽籤輪盤",
+  "random_sort": "隨機排序",
+  "random_group": "隨機分組",
   "home": "首頁",
   "copy": "複製",
   "copied": "已複製 ✅",
@@ -23,7 +25,13 @@
     "random_draw_page_keywords": "隨機抽籤, 隨機選取, 隨機排列, 隨機工具, 複製貼上, toolnier",
     "random_draw_wheel_page_title": "隨機抽籤輪盤 | Random Draw Wheel Tool - ToolNier",
     "random_draw_wheel_page_description": "免費隨機抽籤輪盤工具，提供各種隨機抽籤、隨機選取、隨機排列等，點擊即可快速複製使用，支援社群媒體、設計、程式碼裝飾等場景。",
-    "random_draw_wheel_page_keywords": "隨機抽籤, 隨機選取, 隨機排列, 隨機工具, 複製貼上, toolnier"
+    "random_draw_wheel_page_keywords": "隨機抽籤, 隨機選取, 隨機排列, 隨機工具, 複製貼上, toolnier",
+    "random_sort_page_title": "隨機排序工具 | Random Sort Tool - ToolNier",
+    "random_sort_page_description": "免費隨機排序工具，提供各種隨機排序、隨機排列等，點擊即可快速複製使用，支援社群媒體、設計、程式碼裝飾等場景。",
+    "random_sort_page_keywords": "隨機排序, 隨機排列, 隨機工具, 複製貼上, toolnier",
+    "random_group_page_title": "隨機分組工具 | Random Group Tool - ToolNier",
+    "random_group_page_description": "免費隨機分組工具，提供各種隨機分組、隨機排列等，點擊即可快速複製使用，支援社群媒體、設計、程式碼裝飾等場景。",
+    "random_group_page_keywords": "隨機分組, 隨機排列, 隨機工具, 複製貼上, toolnier"
   },
   "symbols": {
     "categories": {
@@ -93,6 +101,18 @@
     "history_item": "第 {{number}} 次：{{result}}",
     "wheel_title": "轉盤抽籤",
     "wheel_options": "選項",
-    "wheel_history": "歷史紀錄"
+    "wheel_history": "歷史紀錄",
+    "sort": "排序"
+  },
+  "random_group_page": {
+    "title": "隨機分組",
+    "input_label": "請輸入項目（每行一個）",
+    "group_count": "分成幾組",
+    "start": "開始分組",
+    "clear": "清空",
+    "result_title": "分組結果：",
+    "group": "第 {{number}} 組",
+    "error_title": "錯誤",
+    "error_message": "請輸入合理的分組數量"
   }
 }

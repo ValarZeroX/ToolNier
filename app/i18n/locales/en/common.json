@@ -6,6 +6,8 @@
   "random": "Random",
   "random_draw": "Random Draw",
   "random_draw_wheel": "Random Draw Wheel",
+  "random_sort": "Random Sort",
+  "random_group": "Random Group",
   "home": "Home",
   "copy": "Copy",
   "copied": "Copied ✅",
@@ -20,7 +22,16 @@
     "emoji_page_keywords": "emojis, emojis copy tool, symbol copy tool, unicode symbols, copy paste symbols, emoji, text symbols, stars, hearts, arrows, decoration symbols, character picker, ToolNier",
     "random_draw_page_title": "Random Draw Tool | Random Draw Tool - ToolNier",
     "random_draw_page_description": "Free random draw tool. Instantly copy and paste various random draw including hearts, stars, arrows, math symbols, emojis, decorative characters, and more. Perfect for social media, design, code styling, and text art.",
-    "random_draw_page_keywords": "random draw, random draw tool, random draw wheel, random draw wheel tool, ToolNier"
+    "random_draw_page_keywords": "random draw, random draw tool, random draw wheel, random draw wheel tool, ToolNier",
+    "random_draw_wheel_page_title": "Random Draw Wheel Tool | Random Draw Wheel Tool - ToolNier",
+    "random_draw_wheel_page_description": "Free random draw wheel tool. Instantly copy and paste various random draw wheel including hearts, stars, arrows, math symbols, emojis, decorative characters, and more. Perfect for social media, design, code styling, and text art.",
+    "random_draw_wheel_page_keywords": "random draw wheel, random draw wheel tool, random draw wheel wheel, random draw wheel wheel tool, ToolNier",
+    "random_sort_page_title": "Random Sort Tool | Random Sort Tool - ToolNier",
+    "random_sort_page_description": "Free random sort tool. Instantly copy and paste various random sort including hearts, stars, arrows, math symbols, emojis, decorative characters, and more. Perfect for social media, design, code styling, and text art.",
+    "random_sort_page_keywords": "random sort, random sort tool, random sort wheel, random sort wheel tool, ToolNier",
+    "random_group_page_title": "Random Group Tool | Random Group Tool - ToolNier",
+    "random_group_page_description": "Free random group tool. Instantly copy and paste various random group including hearts, stars, arrows, math symbols, emojis, decorative characters, and more. Perfect for social media, design, code styling, and text art.",
+    "random_group_page_keywords": "random group, random group tool, random group wheel, random group wheel tool, ToolNier"
   },
   "symbols": {
     "categories": {
@@ -90,6 +101,18 @@
     "history_item": "{{number}}th: {{result}}",
     "wheel_title": "Random Draw Wheel",
     "wheel_options": "Options",
-    "wheel_history": "History"
+    "wheel_history": "History",
+    "sort": "Sort"
+  },
+  "random_group_page": {
+    "title": "Random Group",
+    "input_label": "Enter options (one per line)",
+    "group_count": "Group count",
+    "start": "Start",
+    "clear": "Clear",
+    "result_title": "Group result:",
+    "group": "Group {{number}}",
+    "error_title": "Error",
+    "error_message": "Please enter a valid group count"
   }
 }

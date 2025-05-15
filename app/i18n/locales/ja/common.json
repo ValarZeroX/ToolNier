@@ -6,6 +6,8 @@
   "random": "ランダム",
   "random_draw": "ランダム選択",
   "random_draw_wheel": "ランダム選択輪盤",
+  "random_sort": "ランダム並べ替え",
+  "random_group": "ランダム分組",
   "home": "ホーム",
   "copy": "コピー",
   "copied": "コピー済み ✅",
@@ -23,7 +25,13 @@
     "random_draw_page_keywords": "ランダム選択, ランダム選取, ランダム並べ替え, ランダムツール, コピー＆ペースト, ToolNier",
     "random_draw_wheel_page_title": "ランダム選択輪盤 | ランダム選択輪盤 - ToolNier",
     "random_draw_wheel_page_description": "無料のランダム選択輪盤ツールです。ランダム選択、ランダム選取、ランダム並べ替えなど、さまざまな記号をすぐにコピー＆ペーストできます。SNS、デザイン、プログラミング、テキスト装飾に最適です。",
-    "random_draw_wheel_page_keywords": "ランダム選択, ランダム選取, ランダム並べ替え, ランダムツール, コピー＆ペースト, ToolNier"
+    "random_draw_wheel_page_keywords": "ランダム選択, ランダム選取, ランダム並べ替え, ランダムツール, コピー＆ペースト, ToolNier",
+    "random_sort_page_title": "ランダム並べ替えツール | ランダム並べ替えツール - ToolNier",
+    "random_sort_page_description": "無料のランダム並べ替えツールです。ランダム選択、ランダム選取、ランダム並べ替えなど、さまざまな記号をすぐにコピー＆ペーストできます。SNS、デザイン、プログラミング、テキスト装飾に最適です。",
+    "random_sort_page_keywords": "ランダム並べ替え, ランダム並べ替えツール, ランダムツール, コピー＆ペースト, ToolNier",
+    "random_group_page_title": "ランダム分組ツール | ランダム分組ツール - ToolNier",
+    "random_group_page_description": "無料のランダム分組ツールです。ランダム分組、ランダム選択、ランダム並べ替えなど、さまざまな記号をすぐにコピー＆ペーストできます。SNS、デザイン、プログラミング、テキスト装飾に最適です。",
+    "random_group_page_keywords": "ランダム分組, ランダム分組ツール, ランダムツール, コピー＆ペースト, ToolNier"
   },
   "symbols": {
     "categories": {
@@ -93,6 +101,18 @@
     "history_item": "第 {{number}} 回：{{result}}",
     "wheel_title": "ランダム選択輪盤",
     "wheel_options": "オプション",
-    "wheel_history": "履歴"
+    "wheel_history": "履歴",
+    "sort": "並べ替え"
+  },
+  "random_group_page": {
+    "title": "ランダム分組",
+    "input_label": "オプションを入力してください（各行に1つずつ）",
+    "group_count": "グループ数",
+    "start": "開始",
+    "clear": "クリア",
+    "result_title": "分組結果：",
+    "group": "第 {{number}} 組",
+    "error_title": "エラー",
+    "error_message": "合理的なグループ数を入力してください"
   }
 }
