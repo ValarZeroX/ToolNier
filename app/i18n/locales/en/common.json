@@ -199,6 +199,7 @@
     "count_label": "Number to Generate",
     "generate": "Generate",
     "clear": "Clear",
-    "output_label": "UUID Results"
+    "output_label": "UUID Results",
+    "download_txt": "Download TXT"
   }
 }

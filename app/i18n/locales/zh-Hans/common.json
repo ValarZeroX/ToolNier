@@ -199,6 +199,7 @@
     "count_label": "产生数量",
     "generate": "产生",
     "clear": "清空",
-    "output_label": "UUID 结果"
+    "output_label": "UUID 结果",
+    "download_txt": "下载 TXT"
   }
 }

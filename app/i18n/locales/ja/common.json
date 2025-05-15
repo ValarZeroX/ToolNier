@@ -199,6 +199,7 @@
     "count_label": "生成数",
     "generate": "生成",
     "clear": "クリア",
-    "output_label": "UUID結果"
+    "output_label": "UUID結果",
+    "download_txt": "TXTをダウンロード"
   }
 }

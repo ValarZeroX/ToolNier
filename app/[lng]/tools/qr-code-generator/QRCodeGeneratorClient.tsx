@@ -1,4 +1,4 @@
-// app/[lng]/tools/qr-code-generator/page.tsx
+// app/[lng]/tools/qr-code-generator/QRCodeGeneratorClient.tsx
 
 'use client';
 import React, { useState, useRef } from 'react';
