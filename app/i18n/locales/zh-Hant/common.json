@@ -80,5 +80,19 @@
       "person": "人物符號",
       "animal": "動物符號"
     }
+  },
+  "random_draw_page": {
+    "title": "隨機抽籤",
+    "clear_options": "清空選項",
+    "input_label": "請輸入選項（每行一個）",
+    "start": "開始",
+    "remove": "移除",
+    "result_prefix": "🎉 抽中：",
+    "result_suffix": " 🎉",
+    "clear_history": "清空紀錄",
+    "history_item": "第 {{number}} 次：{{result}}",
+    "wheel_title": "轉盤抽籤",
+    "wheel_options": "選項",
+    "wheel_history": "歷史紀錄"
   }
 }

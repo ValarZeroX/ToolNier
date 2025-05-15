@@ -77,5 +77,19 @@
       "person": "Person symbols",
       "animal": "Animal symbols"
     }
+  },
+  "random_draw_page": {
+    "title": "Random Draw",
+    "clear_options": "Clear options",
+    "input_label": "Enter options (one per line)",
+    "start": "Start",
+    "remove": "Remove",
+    "result_prefix": "🎉 The result is:",
+    "result_suffix": " 🎉",
+    "clear_history": "Clear history",
+    "history_item": "{{number}}th: {{result}}",
+    "wheel_title": "Random Draw Wheel",
+    "wheel_options": "Options",
+    "wheel_history": "History"
   }
 }

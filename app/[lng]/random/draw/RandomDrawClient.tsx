@@ -1,16 +1,21 @@
 'use client';
 import React, { useState } from 'react';
-import { Container, Title, Textarea, Button, Text, Paper, Stack } from '@mantine/core';
+import { Container, Title, Textarea, Button, Text, Paper, Stack, Grid, Group } from '@mantine/core';
+import { IconX } from '@tabler/icons-react';
+import { useTranslation } from "../../../i18n/client";
 
 interface RandomDrawClientProps {
   lng: string;
 }
 
 const RandomDrawClient: React.FC<RandomDrawClientProps> = ({ lng }) => {
-  const [inputValue, setInputValue] = useState('選項A\n選項B\n選項C');
+  const [inputValue, setInputValue] = useState('A\nB\nC\nD\nE\nF\nG\nH');
   const [options, setOptions] = useState<string[]>([]);
   const [result, setResult] = useState<string | null>(null);
+  const [history, setHistory] = useState<string[]>([]);
+  const { t } = useTranslation(lng, 'common');
 
+  
   const handleStartDraw = () => {
     const entries = inputValue
       .split('\n')
@@ -21,7 +26,26 @@ const RandomDrawClient: React.FC<RandomDrawClientProps> = ({ lng }) => {
       setOptions(entries);
       const randomIndex = Math.floor(Math.random() * entries.length);
       setResult(entries[randomIndex]);
+      setHistory(prev => [...prev, entries[randomIndex]]);
     }
+  };
+
+  const handleRemove = () => {
+    if (!result) return;
+
+    // 從 options 移除
+    setOptions(prev => prev.filter(item => item !== result));
+
+    // 從 inputValue 移除
+    setInputValue(prev =>
+      prev
+        .split('\n')
+        .filter(item => item.trim() !== result)
+        .join('\n')
+    );
+
+    // 清空當前 result
+    setResult(null);
   };
 
   const handleReset = () => {
@@ -32,33 +56,53 @@ const RandomDrawClient: React.FC<RandomDrawClientProps> = ({ lng }) => {
 
   return (
     <Container size="xs" mt="lg">
-      <Title order={3} ta="center">隨機抽籤</Title>
+      <Title order={3} ta="center">{t('random_draw_page.title')}</Title>
+      <Grid>
+        <Grid.Col span={{ base: 12, sm: 12, md: 8 }}>
+          <Stack gap="md" mt="md">
+              <Button fullWidth color="red" variant="outline" leftSection={<IconX size={14} />} onClick={handleReset}>
+                {t('random_draw_page.clear_options')}
+              </Button>
+            <Textarea
+              label={t('random_draw_page.input_label')}
+              value={inputValue}
+              onChange={(event) => setInputValue(event.currentTarget.value)}
+              autosize
+              minRows={5}
+            />
+            <Group justify="center">
+              <Button color="blue" onClick={handleStartDraw} disabled={!inputValue.trim()}>
+                {t('random_draw_page.start')}
+              </Button>
+              <Button variant="outline" color="red" onClick={handleRemove} disabled={!result}>{t('random_draw_page.remove')}</Button>
+            </Group>
 
-      <Stack gap="md" mt="md">
-        <Textarea
-          label="請輸入選項（每行一個）"
-          value={inputValue}
-          onChange={(event) => setInputValue(event.currentTarget.value)}
-          autosize
-          minRows={5}
-        />
+            {result && (
+              <Paper shadow="md" p="md" radius="md" withBorder>
+                <Text ta="center" size="xl">{t('random_draw_page.result_prefix')}{result}{t('random_draw_page.result_suffix')}</Text>
+              </Paper>
+            )}
 
-        <Button fullWidth color="blue" onClick={handleStartDraw} disabled={!inputValue.trim()}>
-          開始抽籤
-        </Button>
 
-        {result && (
-          <Paper shadow="md" p="md" radius="md" withBorder>
-            <Text ta="center" size="xl">🎉 抽中：{result} 🎉</Text>
-          </Paper>
-        )}
-
-        {options.length > 0 && (
-          <Button fullWidth color="red" variant="outline" onClick={handleReset}>
-            清空
-          </Button>
-        )}
-      </Stack>
+          </Stack>
+        </Grid.Col>
+        <Grid.Col span={{ base: 12, sm: 12, md: 4 }}>
+          <Stack gap="md" mt="md">
+              <>
+                <Button color="red" variant="outline" leftSection={<IconX size={14} />} onClick={() => setHistory([])} >
+                  {t('random_draw_page.clear_history')}
+                </Button>
+                {history.length > 0 && (
+                <Paper shadow="md" p="md" radius="md" withBorder>
+                  {history.map((item, index) => (
+                    <Text key={index}>{t('random_draw_page.history_item', { number: index + 1, result: item })}</Text>
+                  ))}
+                </Paper>
+                )} 
+              </>
+          </Stack>
+        </Grid.Col>
+      </Grid>
     </Container>
   );
 };

@@ -80,5 +80,19 @@
       "person": "人物符号",
       "animal": "动物符号"
     }
+  },
+  "random_draw_page": {
+    "title": "随机抽取",
+    "clear_options": "清空选项",
+    "input_label": "请输入选项（每行一个）",
+    "start": "开始",
+    "remove": "移除",
+    "result_prefix": "🎉 抽中：",
+    "result_suffix": " 🎉",
+    "clear_history": "清空记录",
+    "history_item": "第 {{number}} 次：{{result}}",
+    "wheel_title": "转盘抽取",
+    "wheel_options": "选项",
+    "wheel_history": "历史记录"
   }
 }

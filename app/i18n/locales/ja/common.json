@@ -80,5 +80,19 @@
       "person": "人物記号",
       "animal": "動物記号"
     }
+  },
+  "random_draw_page": {
+    "title": "ランダム選択",
+    "clear_options": "オプションをクリア",
+    "input_label": "オプションを入力してください（各行に1つずつ）",
+    "start": "開始",
+    "remove": "削除",
+    "result_prefix": "🎉 選択されたのは：",
+    "result_suffix": " 🎉",
+    "clear_history": "履歴をクリア",
+    "history_item": "第 {{number}} 回：{{result}}",
+    "wheel_title": "ランダム選択輪盤",
+    "wheel_options": "オプション",
+    "wheel_history": "履歴"
   }
 }
