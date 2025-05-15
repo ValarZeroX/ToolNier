@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Container, Title, Textarea, Button, Stack, Text } from '@mantine/core';
 import { useTranslation } from "../../../i18n/client";
+import { IconX } from '@tabler/icons-react';
 
 interface RandomSortClientProps {
     lng: string;
@@ -50,7 +51,7 @@ const RandomSortClient: React.FC<RandomSortClientProps> = ({ lng }) => {
                     {t('random_draw_page.start')}
                 </Button>
 
-                <Button color="red" variant="outline" onClick={handleReset} disabled={!inputValue.trim()}>
+                <Button color="red" variant="outline" onClick={handleReset} leftSection={<IconX size={14} />} disabled={!inputValue.trim()}>
                     {t('random_draw_page.clear_options')}
                 </Button>
             </Stack>

@@ -4,6 +4,7 @@ import { Container, Title, Textarea, Button, Stack, NumberInput, Paper, Text } f
 import { Notifications } from '@mantine/notifications';
 import '@mantine/notifications/styles.css';
 import { useTranslation } from "../../../i18n/client";
+import { IconX } from '@tabler/icons-react';
 
 interface RandomGroupClientProps {
     lng: string;
@@ -79,8 +80,8 @@ const RandomGroupClient: React.FC<RandomGroupClientProps> = ({ lng }) => {
                     {t('common:random_group_page.start')}
                 </Button>
 
-                <Button color="red" variant="outline" onClick={handleReset} disabled={!inputValue.trim()}>
-                    {t('common:random_group_page.clear')}
+                <Button color="red" variant="outline" onClick={handleReset} leftSection={<IconX size={14} />} disabled={!inputValue.trim()}>
+                {t('random_draw_page.clear_options')}
                 </Button>
 
                 {groups.length > 0 && (
