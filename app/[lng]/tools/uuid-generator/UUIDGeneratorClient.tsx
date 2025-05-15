@@ -45,20 +45,20 @@ const UUIDGeneratorClient: React.FC<UUIDGeneratorClientProps> = ({ lng }) => {
 
                 <Group justify="center">
                     <Button onClick={handleGenerate}>{t('uuid.generate')}</Button>
-                    <Button color="red" variant="outline" onClick={handleClear} leftSection={<IconX size={14} />}>
+                    <Button color="red" variant="outline" onClick={handleClear} leftSection={<IconX size={14} />} disabled={uuids.length === 0}>
                         {t('uuid.clear')}
                     </Button>
-                    {uuids.length > 0 && (
-                        <Tooltip label={clipboard.copied ? t('copied') : t('copy')} withArrow>
-                            <Button
-                                variant="outline"
-                                onClick={() => clipboard.copy(uuids.join('\n'))}
-                                leftSection={<IconCopy size={16} />}
-                            >
-                                {t('copy')}
-                            </Button>
-                        </Tooltip>
-                    )}
+                    
+                    <Tooltip label={clipboard.copied ? t('copied') : t('copy')} withArrow>
+                        <Button
+                            variant="outline"
+                            onClick={() => clipboard.copy(uuids.join('\n'))}
+                            leftSection={<IconCopy size={16} />}
+                            disabled={uuids.length === 0}
+                        >
+                            {t('copy')}
+                        </Button>
+                    </Tooltip>
                 </Group>
 
                 {uuids.length > 0 && (
