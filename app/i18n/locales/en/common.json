@@ -13,6 +13,7 @@
   "developer_tools": "Developer Tools",
   "base64_tool": "Base64 Encoder Decoder Tool",
   "image_base64_tool": "Image Base64 Encoder & Decoder Tool",
+  "uuid_generator": "UUID Generator",
   "home": "Home",
   "copy": "Copy",
   "copied": "Copied ✅",
@@ -48,7 +49,10 @@
     "base64_tool_page_keywords": "Base64, Base64 encoder, Base64 decoder, Base64 encoder decoder, Base64 encoder decoder tool, Base64 encoder decoder online, Base64 encoder decoder free, Base64 encoder decoder app, Base64 encoder decoder toolnier",
     "image_base64_tool_page_title": "Image Base64 Encoder Decoder Tool | Image Base64 Encoder Decoder Tool - ToolNier",
     "image_base64_tool_page_description": "Free online image Base64 Encoder Decoder tool. Supports image conversion to Base64 encoding and download. Supports decoding Base64 encoded image.",
-    "image_base64_tool_page_keywords": "image base64, image encoder, image decoder, image encoder decoder, image encoder decoder tool, image encoder decoder online, image encoder decoder free, image encoder decoder app, image encoder decoder toolnier"
+    "image_base64_tool_page_keywords": "image base64, image encoder, image decoder, image encoder decoder, image encoder decoder tool, image encoder decoder online, image encoder decoder free, image encoder decoder app, image encoder decoder toolnier",
+    "uuid_generator_page_title": "UUID Generator | UUID Generator Tool - ToolNier",
+    "uuid_generator_page_description": "High-performance online UUID (Universally Unique Identifier) generator. Whether you need a single UUID or to generate multiple UUIDs in bulk, this tool can instantly meet your needs. The generated UUIDs conform to standard formats and are suitable for database primary keys, distributed systems, unique identifiers, and various other development scenarios, ensuring global uniqueness.",
+    "uuid_generator_page_keywords": "UUID, UUID generator, UUID generator tool, UUID generator online, UUID generator free, UUID generator app, UUID generator toolnier"
   },
   "symbols": {
     "categories": {
@@ -188,5 +192,13 @@
     "copy_output": "Copy Output",
     "clear_all": "Clear All",
     "description_2": "Paste the complete Base64 Data URL (e.g., `data:image/png;base64,...`), and the system will instantly decode it and preview the original image. You can conveniently view the image content corresponding to the Base64 string and download the restored image file."
+  },
+  "uuid": {
+    "title": "UUID Generator",
+    "description": "High-performance online UUID (Universally Unique Identifier) generator. Whether you need a single UUID or to generate multiple UUIDs in bulk, this tool can instantly meet your needs. The generated UUIDs conform to standard formats and are suitable for database primary keys, distributed systems, unique identifiers, and various other development scenarios, ensuring global uniqueness.",
+    "count_label": "Number to Generate",
+    "generate": "Generate",
+    "clear": "Clear",
+    "output_label": "UUID Results"
   }
 }

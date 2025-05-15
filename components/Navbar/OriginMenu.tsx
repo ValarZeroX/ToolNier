@@ -67,6 +67,7 @@ const OriginMenu: FC<OriginMenuProps> = ({ lng }) => {
           <NavLink label={t('common:qr_code_generator')} onClick={() => handleNavigation('/tools/qr-code-generator')} />
           <NavLink label={t('common:base64_tool')} onClick={() => handleNavigation('/tools/base64-encoder-decoder')} />
           <NavLink label={t('common:image_base64_tool')} onClick={() => handleNavigation('/tools/image-base64-converter')} />
+          <NavLink label={t('common:uuid_generator')} onClick={() => handleNavigation('/tools/uuid-generator')} />
         </NavLink>
       </nav>
       {/* {isAuthenticated && (

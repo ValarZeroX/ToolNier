@@ -13,6 +13,7 @@
   "developer_tools": "開發者工具",
   "base64_tool": "Base64 編碼解碼工具",
   "image_base64_tool": "圖片 Base64 編碼解碼工具",
+  "uuid_generator": "UUID 產生器",
   "home": "首頁",
   "copy": "複製",
   "copied": "已複製 ✅",
@@ -48,7 +49,10 @@
     "base64_tool_page_keywords": "Base64, Base64 encoder, Base64 decoder, Base64 encoder decoder, Base64 encoder decoder tool, Base64 encoder decoder online, Base64 encoder decoder free, Base64 encoder decoder app, Base64 encoder decoder toolnier",
     "image_base64_tool_page_title": "圖片 Base64 編碼工具 | Image Base64 Encoder Decoder Tool - ToolNier",
     "image_base64_tool_page_description": "免費線上圖片 Base64 編碼解碼工具，支援圖片轉換成 Base64 編碼，或將 Base64 編碼轉換回原始圖片。",
-    "image_base64_tool_page_keywords": "圖片 Base64, image base64, image encoder, image decoder, image encoder decoder, image encoder decoder tool, image encoder decoder online, image encoder decoder free, image encoder decoder app, image encoder decoder toolnier"
+    "image_base64_tool_page_keywords": "圖片 Base64, image base64, image encoder, image decoder, image encoder decoder, image encoder decoder tool, image encoder decoder online, image encoder decoder free, image encoder decoder app, image encoder decoder toolnier",
+    "uuid_generator_page_title": "UUID 產生器 | UUID Generator Tool - ToolNier",
+    "uuid_generator_page_description": "高效能的線上 UUID (通用唯一識別碼) 產生工具。無論您需要單個 UUID 還是批量產生多個，此工具都能立即滿足您的需求。產生的 UUID 符合標準格式，適用於資料庫主鍵、分散式系統、唯一識別符等多種開發場景，確保全域唯一性。",
+    "uuid_generator_page_keywords": "UUID, UUID generator, UUID generator tool, UUID generator online, UUID generator free, UUID generator app, UUID generator toolnier"
   },
   "symbols": {
     "categories": {
@@ -188,5 +192,13 @@
     "copy_output": "複製輸出",
     "clear_all": "清除所有",
     "description_2": "貼上完整的 Base64 Data URL（例如 `data:image/png;base64,...`），系統將立即將其解碼並預覽原始圖片。您可以方便地檢視 Base64 字串對應的圖像內容，並支援下載還原後的圖片檔案。"
+  },
+  "uuid": {
+    "title": "UUID 產生器",
+    "description": "高效能的線上 UUID (通用唯一識別碼) 產生工具。無論您需要單個 UUID 還是批量產生多個，此工具都能立即滿足您的需求。產生的 UUID 符合標準格式，適用於資料庫主鍵、分散式系統、唯一識別符等多種開發場景，確保全域唯一性。",
+    "count_label": "產生數量",
+    "generate": "產生",
+    "clear": "清空",
+    "output_label": "UUID 結果"
   }
 }
