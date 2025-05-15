@@ -3,12 +3,14 @@
   "symbol": "特殊符號",
   "symbol_emoji": "符號表情",
   "emoji": "表情符號",
-  "random": "隨機",
+  "random": "隨機工具",
   "random_draw": "隨機抽籤",
   "random_draw_wheel": "隨機抽籤輪盤",
   "random_sort": "隨機排序",
   "random_group": "隨機分組",
   "random_number": "隨機數字",
+  "qr_code_generator": "QR Code 產生器",
+  "developer_tools": "開發者工具",
   "home": "首頁",
   "copy": "複製",
   "copied": "已複製 ✅",
@@ -35,7 +37,10 @@
     "random_group_page_keywords": "隨機分組, group randomizer, random group generator, team divider, random teams, 隨機分隊, 分組工具, 隨機工具, toolnier",
     "random_number_page_title": "隨機數字產生器 | Random Number Generator Tool - ToolNier",
     "random_number_page_description": "免費隨機數字產生器，設定起始與結束數字及數量，可選擇是否排除重複，適用於樂透選號、抽獎等。",
-    "random_number_page_keywords": "隨機數字, random number, number generator, number picker, lottery number generator, 隨機選號, 樂透選號, 隨機工具, toolnier"
+    "random_number_page_keywords": "隨機數字, random number, number generator, number picker, lottery number generator, 隨機選號, 樂透選號, 隨機工具, toolnier",
+    "qr_generator_page_title": "QR Code 產生器 | QR Code Generator Tool - ToolNier",
+    "qr_generator_page_description": "免費線上 QR Code 產生工具，支援網址、文字、Email 轉換成 QR Code，可自訂顏色與大小，並下載 PNG 格式，適用於社群媒體、網站、名片等場合。",
+    "qr_generator_page_keywords": "QR Code, QR Code generator, QR Code generator tool, QR Code generator online, QR Code generator free, QR Code generator app, QR Code generator toolnier"
   },
   "symbols": {
     "categories": {
@@ -134,5 +139,14 @@
     "result": "產生結果",
     "error_title": "錯誤",
     "error_message": "請確認設定正確：最小值應小於等於最大值，數量不可為0，且排除重複時數量不得超過範圍內的數字總數。"
+  },
+  "qr_generator": {
+    "title": "QR Code 產生器",
+    "input_label": "請輸入網址或文字",
+    "generate": "產生 QR Code",
+    "preview": "QR Code 預覽",
+    "clear": "清空",
+    "format_label": "選擇下載格式",
+    "description": "免費線上 QR Code 產生工具，支援網址、文字、Email 轉換成 QR Code，可自訂顏色與大小，並下載 PNG 格式，適用於社群媒體、網站、名片等場合。"
   }
 }

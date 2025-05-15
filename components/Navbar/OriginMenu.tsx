@@ -2,7 +2,7 @@
 
 import { FC } from 'react';
 import { NavLink, Divider, Stack } from '@mantine/core';
-import { IconHome, IconPlus, IconMoodHappy, IconDice5 } from '@tabler/icons-react';
+import { IconHome, IconTools, IconMoodHappy, IconDice5 } from '@tabler/icons-react';
 import { useRouter } from 'next/navigation';
 // import { useSession } from 'next-auth/react';
 import { useTranslation } from "../../app/i18n/client";
@@ -57,6 +57,14 @@ const OriginMenu: FC<OriginMenuProps> = ({ lng }) => {
           <NavLink label={t('common:random_sort')} onClick={() => handleNavigation('/random/sort')} />
           <NavLink label={t('common:random_group')} onClick={() => handleNavigation('/random/group')} />
           <NavLink label={t('common:random_number')} onClick={() => handleNavigation('/random/number')} />
+        </NavLink>
+        <NavLink
+          component="button"
+          label={t('common:developer_tools')}
+          leftSection={<IconTools size="1rem" stroke={1.5} />}
+        //   onClick={() => handleNavigation('/records')}
+        >
+          <NavLink label={t('common:qr_code_generator')} onClick={() => handleNavigation('/tools/qr-code-generator')} />
         </NavLink>
       </nav>
       {/* {isAuthenticated && (

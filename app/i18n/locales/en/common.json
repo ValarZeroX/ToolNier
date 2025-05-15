@@ -3,12 +3,14 @@
   "symbol": "Special Symbol",
   "symbol_emoji": "Symbol Emoji",
   "emoji": "Emojis",
-  "random": "Random",
+  "random": "Random Tool",
   "random_draw": "Random Draw",
   "random_draw_wheel": "Random Draw Wheel",
   "random_sort": "Random Sort",
   "random_group": "Random Group",
   "random_number": "Random Number",
+  "qr_code_generator": "QR Code Generator",
+  "developer_tools": "Developer Tools",
   "home": "Home",
   "copy": "Copy",
   "copied": "Copied ✅",
@@ -35,7 +37,10 @@
     "random_group_page_keywords": "random groups, group randomizer, team generator, team divider, random team selector, random grouping, group tool, randomizer, toolnier",
     "random_number_page_title": "Random Number Generator | Number Picker & Tool - ToolNier",
     "random_number_page_description": "Free random number generator. Choose start and end range, set quantity, and optionally exclude duplicates. Great for lottery numbers, raffles, and more.",
-    "random_number_page_keywords": "random number, number generator, number picker, lottery number generator, random selector, randomizer, lottery picker, number tool, toolnier"
+    "random_number_page_keywords": "random number, number generator, number picker, lottery number generator, random selector, randomizer, lottery picker, number tool, toolnier",
+    "qr_generator_page_title": "QR Code Generator | QR Code Generator Tool - ToolNier",
+    "qr_generator_page_description": "Free online QR Code generator tool. Supports URL, text, Email conversion to QR Code, customizable colors and size, and download in PNG format, suitable for social media, websites, business cards, and other cases.",
+    "qr_generator_page_keywords": "QR Code, QR Code generator, QR Code generator tool, QR Code generator online, QR Code generator free, QR Code generator app, QR Code generator toolnier"
   },
   "symbols": {
     "categories": {
@@ -134,5 +139,14 @@
     "result": "Generation result",
     "error_title": "Error",
     "error_message": "Please check the settings correctly: the minimum value should be less than or equal to the maximum value, the number cannot be 0, and when excluding duplicates, the number cannot exceed the total number of numbers in the range."
+  },
+  "qr_generator": {
+    "title": "QR Code Generator",
+    "input_label": "Enter URL or text",
+    "generate": "Generate QR Code",
+    "preview": "QR Code Preview",
+    "clear": "Clear",
+    "format_label": "Select download format",
+    "description": "Free online QR Code generator tool. Supports URL, text, Email conversion to QR Code, customizable colors and size, and download in PNG format, suitable for social media, websites, business cards, and other cases."
   }
 }

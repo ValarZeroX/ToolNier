@@ -3,12 +3,14 @@
   "symbol": "特殊符号",
   "symbol_emoji": "符号表情",
   "emoji": "絵文字",
-  "random": "ランダム",
+  "random": "ランダム工具",
   "random_draw": "ランダム選択",
   "random_draw_wheel": "ランダム選択輪盤",
   "random_sort": "ランダム並べ替え",
   "random_group": "ランダム分組",
   "random_number": "ランダム数字",
+  "qr_code_generator": "QRコード生成器",
+  "developer_tools": "開発者ツール",
   "home": "ホーム",
   "copy": "コピー",
   "copied": "コピー済み ✅",
@@ -36,7 +38,10 @@
     "random_group_page_keywords": "ランダムグループ, グループ分け, チームジェネレーター, チーム分割, ランダムチーム, グループツール, ランダマイザー, toolnier",
     "random_number_page_title": "ランダム数字ジェネレーター | Random Number Picker - ToolNier",
     "random_number_page_description": "無料のランダム数字ジェネレーター。範囲と数量を設定して数字をランダム生成。重複排除オプションも可。ロトやくじ引きに最適。",
-    "random_number_page_keywords": "ランダム数字, 数字ジェネレーター, number picker, ロト番号, ランダム選択, ランダマイザー, 数字ツール, toolnier"
+    "random_number_page_keywords": "ランダム数字, 数字ジェネレーター, number picker, ロト番号, ランダム選択, ランダマイザー, 数字ツール, toolnier",
+    "qr_generator_page_title": "QRコード生成器 | QR Code Generator Tool - ToolNier",
+    "qr_generator_page_description": "無料のオンラインQRコード生成ツール。URL、テキスト、EmailをQRコードに変換。カスタマイズ可能な色とサイズ。PNG形式でダウンロード。ソーシャルメディア、ウェブサイト、名刺などに適用。",
+    "qr_generator_page_keywords": "QRコード, QRコード生成器, QRコード生成ツール, QRコードジェネレーター, QRコードオンライン, QRコードフリー, QRコードアプリ, QRコードツール, toolnier"
   }
   },
   "symbols": {
@@ -136,5 +141,14 @@
     "result": "生成結果",
     "error_title": "錯誤",
     "error_message": "設定を確認してください：最小値は最大値以下である必要があり、数は0でない必要があり、重複を排除する場合は数が範囲内の数字の総数を超えてはなりません。"
+  },
+  "qr_generator": {
+    "title": "QRコード生成器",
+    "input_label": "URLまたはテキストを入力してください",
+    "generate": "QRコードを生成",
+    "preview": "QRコードのプレビュー",
+    "clear": "クリア",
+    "format_label": "ダウンロード形式を選択",
+    "description": "無料のオンラインQRコード生成ツール。URL、テキスト、EmailをQRコードに変換。カスタマイズ可能な色とサイズ。PNG形式でダウンロード。ソーシャルメディア、ウェブサイト、名刺などに適用。"
   }
 }
