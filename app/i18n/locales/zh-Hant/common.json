@@ -11,6 +11,8 @@
   "random_number": "隨機數字",
   "qr_code_generator": "QR Code 產生器",
   "developer_tools": "開發者工具",
+  "base64_tool": "Base64 編碼解碼工具",
+  "image_base64_tool": "圖片 Base64 編碼解碼工具",
   "home": "首頁",
   "copy": "複製",
   "copied": "已複製 ✅",
@@ -40,7 +42,13 @@
     "random_number_page_keywords": "隨機數字, random number, number generator, number picker, lottery number generator, 隨機選號, 樂透選號, 隨機工具, toolnier",
     "qr_generator_page_title": "QR Code 產生器 | QR Code Generator Tool - ToolNier",
     "qr_generator_page_description": "免費線上 QR Code 產生工具，支援網址、文字、Email 轉換成 QR Code，可自訂顏色與大小，並下載 PNG 格式，適用於社群媒體、網站、名片等場合。",
-    "qr_generator_page_keywords": "QR Code, QR Code generator, QR Code generator tool, QR Code generator online, QR Code generator free, QR Code generator app, QR Code generator toolnier"
+    "qr_generator_page_keywords": "QR Code, QR Code generator, QR Code generator tool, QR Code generator online, QR Code generator free, QR Code generator app, QR Code generator toolnier",
+    "base64_tool_page_title": "Base64 編碼解碼工具 | Base64 Encoder Decoder Tool - ToolNier",
+    "base64_tool_page_description": "免費線上 Base64 編碼解碼工具，支援文字、JSON 等格式，可快速將文字轉換成 Base64 編碼，或將 Base64 編碼轉換回原始文字。",
+    "base64_tool_page_keywords": "Base64, Base64 encoder, Base64 decoder, Base64 encoder decoder, Base64 encoder decoder tool, Base64 encoder decoder online, Base64 encoder decoder free, Base64 encoder decoder app, Base64 encoder decoder toolnier",
+    "image_base64_tool_page_title": "圖片 Base64 編碼工具 | Image Base64 Encoder Decoder Tool - ToolNier",
+    "image_base64_tool_page_description": "免費線上圖片 Base64 編碼解碼工具，支援圖片轉換成 Base64 編碼，或將 Base64 編碼轉換回原始圖片。",
+    "image_base64_tool_page_keywords": "圖片 Base64, image base64, image encoder, image decoder, image encoder decoder, image encoder decoder tool, image encoder decoder online, image encoder decoder free, image encoder decoder app, image encoder decoder toolnier"
   },
   "symbols": {
     "categories": {
@@ -148,5 +156,37 @@
     "clear": "清空",
     "format_label": "選擇下載格式",
     "description": "免費線上 QR Code 產生工具，支援網址、文字、Email 轉換成 QR Code，可自訂顏色與大小，並下載 PNG 格式，適用於社群媒體、網站、名片等場合。"
+  },
+  "base64": {
+    "title": "Base64 編碼解碼工具",
+    "input_label": "輸入內容",
+    "input_placeholder": "請輸入要編碼或解碼的文字",
+    "encode": "編碼",
+    "decode": "解碼",
+    "clear": "清空",
+    "output_label": "輸出結果",
+    "error": "發生錯誤，請檢查輸入內容",
+    "description": "免費線上 Base64 編碼解碼工具，支援文字、JSON 等格式，可快速將文字轉換成 Base64 編碼，或將 Base64 編碼轉換回原始文字。",
+    "swap": "交換"
+  },
+  "image_base64": {
+    "title": "圖片 Base64 編碼解碼工具",
+    "description": "輕鬆將您的圖片檔案（支援 JPG, PNG, GIF, WebP 等常見格式）轉換為 Base64 編碼字串。此工具能快速生成可用於 HTML、CSS 或 JavaScript 中的 Data URL，方便您將圖片直接嵌入網頁、電子郵件或應用程式中，無需外部圖片連結，提升載入速度並簡化部署。",
+    "upload_label": "上傳圖片",
+    "upload_placeholder": "選擇圖片檔案...",
+    "preview": "圖片預覽",
+    "output_label": "Base64 編碼結果",
+    "clear": "清除",
+    "encode_tab": "編碼",
+    "decode_tab": "解碼",
+    "input_base64_label": "輸入 Base64 編碼",
+    "input_base64_placeholder": "請輸入要解碼的 Base64 編碼",
+    "invalid_base64": "無效的 Base64 編碼",
+    "decode_error": "解碼錯誤",
+    "download_image": "下載圖片",
+    "copy_input": "複製輸入",
+    "copy_output": "複製輸出",
+    "clear_all": "清除所有",
+    "description_2": "貼上完整的 Base64 Data URL（例如 `data:image/png;base64,...`），系統將立即將其解碼並預覽原始圖片。您可以方便地檢視 Base64 字串對應的圖像內容，並支援下載還原後的圖片檔案。"
   }
 }

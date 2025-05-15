@@ -11,6 +11,8 @@
   "random_number": "Random Number",
   "qr_code_generator": "QR Code Generator",
   "developer_tools": "Developer Tools",
+  "base64_tool": "Base64 Encoder Decoder Tool",
+  "image_base64_tool": "Image Base64 Encoder & Decoder Tool",
   "home": "Home",
   "copy": "Copy",
   "copied": "Copied ✅",
@@ -40,7 +42,13 @@
     "random_number_page_keywords": "random number, number generator, number picker, lottery number generator, random selector, randomizer, lottery picker, number tool, toolnier",
     "qr_generator_page_title": "QR Code Generator | QR Code Generator Tool - ToolNier",
     "qr_generator_page_description": "Free online QR Code generator tool. Supports URL, text, Email conversion to QR Code, customizable colors and size, and download in PNG format, suitable for social media, websites, business cards, and other cases.",
-    "qr_generator_page_keywords": "QR Code, QR Code generator, QR Code generator tool, QR Code generator online, QR Code generator free, QR Code generator app, QR Code generator toolnier"
+    "qr_generator_page_keywords": "QR Code, QR Code generator, QR Code generator tool, QR Code generator online, QR Code generator free, QR Code generator app, QR Code generator toolnier",
+    "base64_tool_page_title": "Base64 Encoder Decoder Tool | Base64 Encoder Decoder Tool - ToolNier",
+    "base64_tool_page_description": "Free online Base64 Encoder Decoder tool. Supports text, JSON, and other formats. Convert text to Base64 encoding and download. Supports decoding Base64 encoded text.",
+    "base64_tool_page_keywords": "Base64, Base64 encoder, Base64 decoder, Base64 encoder decoder, Base64 encoder decoder tool, Base64 encoder decoder online, Base64 encoder decoder free, Base64 encoder decoder app, Base64 encoder decoder toolnier",
+    "image_base64_tool_page_title": "Image Base64 Encoder Decoder Tool | Image Base64 Encoder Decoder Tool - ToolNier",
+    "image_base64_tool_page_description": "Free online image Base64 Encoder Decoder tool. Supports image conversion to Base64 encoding and download. Supports decoding Base64 encoded image.",
+    "image_base64_tool_page_keywords": "image base64, image encoder, image decoder, image encoder decoder, image encoder decoder tool, image encoder decoder online, image encoder decoder free, image encoder decoder app, image encoder decoder toolnier"
   },
   "symbols": {
     "categories": {
@@ -148,5 +156,37 @@
     "clear": "Clear",
     "format_label": "Select download format",
     "description": "Free online QR Code generator tool. Supports URL, text, Email conversion to QR Code, customizable colors and size, and download in PNG format, suitable for social media, websites, business cards, and other cases."
+  },
+  "base64": {
+    "title": "Base64 Encoder Decoder Tool",
+    "input_label": "Input content",
+    "input_placeholder": "Please enter the text to encode or decode",
+    "encode": "Encode",
+    "decode": "Decode",
+    "clear": "Clear",
+    "output_label": "Output result",
+    "error": "Error",
+    "description": "Free online Base64 Encoder Decoder tool. Supports text, JSON, and other formats. Convert text to Base64 encoding and download. Supports decoding Base64 encoded text.",
+    "swap": "Swap"
+  },
+  "image_base64": {
+    "title": "Image Base64 Encoder & Decoder Tool",
+    "description": "Easily convert your image files (supports common formats like JPG, PNG, GIF, WebP, etc.) into Base64 encoded strings. This tool quickly generates Data URLs usable in HTML, CSS, or JavaScript, allowing you to embed images directly into web pages, emails, or applications without external image links, improving loading speed and simplifying deployment.",
+    "upload_label": "Upload Image",
+    "upload_placeholder": "Select an image file...",
+    "preview": "Image Preview",
+    "output_label": "Base64 Encoded Result",
+    "clear": "Clear",
+    "encode_tab": "Encode",
+    "decode_tab": "Decode",
+    "input_base64_label": "Input Base64 String",
+    "input_base64_placeholder": "Enter the Base64 string to decode",
+    "invalid_base64": "Invalid Base64 string",
+    "decode_error": "Error decoding Base64 string",
+    "download_image": "Download Image",
+    "copy_input": "Copy Input",
+    "copy_output": "Copy Output",
+    "clear_all": "Clear All",
+    "description_2": "Paste the complete Base64 Data URL (e.g., `data:image/png;base64,...`), and the system will instantly decode it and preview the original image. You can conveniently view the image content corresponding to the Base64 string and download the restored image file."
   }
 }

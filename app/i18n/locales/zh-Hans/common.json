@@ -11,6 +11,8 @@
   "random_number": "随机数字",
   "qr_code_generator": "二维码生成器",
   "developer_tools": "开发者工具",
+  "base64_tool": "Base64 编码解码工具",
+  "image_base64_tool": "图片 Base64 编码解码工具",
   "home": "首页",
   "copy": "复制",
   "copied": "已复制 ✅",
@@ -41,7 +43,13 @@
       "random_number_page_keywords": "随机数字, random number, number generator, number picker, lottery number generator, 随机选号, 彩票选号, 随机工具, toolnier",
       "qr_generator_page_title": "二维码生成器 | QR Code Generator Tool - ToolNier",
       "qr_generator_page_description": "免费在线二维码生成工具，支持网址、文字、Email 转换成二维码，可自定义颜色与大小，并下载 PNG 格式，适用于社交媒体、网站、名片等场合。",
-      "qr_generator_page_keywords": "二维码, QR Code, QR Code generator, QR Code generator tool, QR Code generator online, QR Code generator free, QR Code generator app, QR Code generator toolnier"
+      "qr_generator_page_keywords": "二维码, QR Code, QR Code generator, QR Code generator tool, QR Code generator online, QR Code generator free, QR Code generator app, QR Code generator toolnier",
+      "base64_tool_page_title": "Base64 编码解码工具 | Base64 Encoder Decoder Tool - ToolNier",
+      "base64_tool_page_description": "免费在线 Base64 编码解码工具，支持文字、JSON 等格式，可快速将文字转转换成 Base64 编码，或将 Base64 编码转换回原始文字。",
+      "base64_tool_page_keywords": "Base64, Base64 encoder, Base64 decoder, Base64 encoder decoder, Base64 encoder decoder tool, Base64 encoder decoder online, Base64 encoder decoder free, Base64 encoder decoder app, Base64 encoder decoder toolnier",
+      "image_base64_tool_page_title": "图片 Base64 编码工具 | Image Base64 Encoder Decoder Tool - ToolNier",
+      "image_base64_tool_page_description": "免费在线图片 Base64 编码解码工具，支持图片转换成 Base64 编码，或将 Base64 编码转换回原始图片。",
+      "image_base64_tool_page_keywords": "图片 Base64, image base64, image encoder, image decoder, image encoder decoder, image encoder decoder tool, image encoder decoder online, image encoder decoder free, image encoder decoder app, image encoder decoder toolnier"
     }
   },
   "symbols": {
@@ -150,5 +158,37 @@
     "clear": "清空",
     "format_label": "选择下载格式",
     "description": "免费在线二维码生成工具，支持网址、文字、Email 转换成二维码，可自定义颜色与大小，并下载 PNG 格式，适用于社交媒体、网站、名片等场合。"
+  },
+  "base64": {
+    "title": "Base64 编码解码工具",
+    "input_label": "输入内容",
+    "input_placeholder": "请输入要编码或解码的文字",
+    "encode": "编码",
+    "decode": "解码",
+    "clear": "清空",
+    "output_label": "输出结果",
+    "error": "发生错误，请检查输入内容",
+    "description": "免费在线 Base64 编码解码工具，支持文字、JSON 等格式，可快速将文字转转换成 Base64 编码，或将 Base64 编码转换回原始文字。",
+    "swap": "交换"
+  },
+  "image_base64": {
+    "title": "图片 Base64 编码解码工具",
+    "description": "轻松将您的图片文件（支持 JPG, PNG, GIF, WebP 等常见格式）转换为 Base64 编码字符串。此工具能快速生成可用于 HTML、CSS 或 JavaScript 中的 Data URL，方便您将图片直接嵌入网页、电子邮件或应用程序中，无需外部图片链接，提升加载速度并简化部署。",
+    "upload_label": "上传图片",
+    "upload_placeholder": "选择图片文件...",
+    "preview": "图片预览",
+    "output_label": "Base64 编码结果",
+    "clear": "清除",
+    "encode_tab": "编码",
+    "decode_tab": "解码",
+    "input_base64_label": "输入 Base64 编码",
+    "input_base64_placeholder": "请输入要解码的 Base64 编码",
+    "invalid_base64": "无效的 Base64 编码",
+    "decode_error": "解码错误",
+    "download_image": "下载图片",
+    "copy_input": "复制输入",
+    "copy_output": "复制输出",
+    "clear_all": "清除所有",
+    "description_2": "粘贴完整的 Base64 Data URL（例如 `data:image/png;base64,...`），系统将立即将其解码并预览原始图片。您可以方便地查看 Base64 字符串对应的图像内容，并支持下载还原后的图片文件。"
   }
 }

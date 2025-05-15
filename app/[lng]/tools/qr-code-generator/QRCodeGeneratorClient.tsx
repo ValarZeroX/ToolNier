@@ -5,7 +5,6 @@ import React, { useState, useRef } from 'react';
 import { Container, Title, Textarea, Group, Stack, Paper, Text, Center, Grid, useMantineColorScheme, ActionIcon, Select } from '@mantine/core';
 import { QRCodeSVG } from 'qrcode.react';
 import { useTranslation } from '../../../i18n/client';
-import html2canvas from 'html2canvas';
 import { IconDownload } from '@tabler/icons-react';
 
 
