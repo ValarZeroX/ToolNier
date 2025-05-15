@@ -69,6 +69,9 @@ const WheelDrawClient: React.FC<WheelDrawClientProps> = ({ lng }) => {
     return (
         <Container size="sm" mt="lg">
             <Title order={3} ta="center">{t('random_draw_page.wheel_title')}</Title>
+            <Text size="sm" c="dimmed" mt="md">
+                {t('random_draw_page.wheel_intro')}
+            </Text>
             <Grid>
                 <Grid.Col span={{ base: 12, sm: 12, md: 8 }}>
                     <Stack gap="md" mt="md">

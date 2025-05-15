@@ -55,7 +55,9 @@ const RandomGroupClient: React.FC<RandomGroupClientProps> = ({ lng }) => {
     return (
         <Container size="xs" mt="lg">
             <Title order={3} ta="center">{t('common:random_group')}</Title>
-
+            <Text size="sm" c="dimmed">
+                {t('common:random_group_page.description')}
+            </Text>
             <Stack gap="md" mt="md">
                 <Textarea
                     label={t('common:random_group_page.input_label')}

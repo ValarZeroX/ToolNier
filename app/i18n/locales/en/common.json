@@ -102,7 +102,10 @@
     "wheel_title": "Random Draw Wheel",
     "wheel_options": "Options",
     "wheel_history": "History",
-    "sort": "Sort"
+    "sort": "Sort",
+    "intro": "Random draw tool can help you quickly and automatically select a random item from the input list, suitable for teaching, activity grouping, games, and other scenarios. Please enter the list in the box below, and click \"Start drawing\" to draw randomly.",
+    "wheel_intro": "Random draw wheel tool can help you quickly and automatically select a random item from the input options, suitable for teaching, activity grouping, games, and other scenarios. Please enter the options in the box below, and click \"Start drawing\" to draw randomly.",
+    "intro_2": "Random draw tool can help you quickly and automatically select a random item from the input list, suitable for teaching, activity grouping, games, and other scenarios. Please enter the list in the box below, and click \"Start drawing\" to draw randomly."
   },
   "random_group_page": {
     "title": "Random Group",
@@ -113,6 +116,7 @@
     "result_title": "Group result:",
     "group": "Group {{number}}",
     "error_title": "Error",
-    "error_message": "Please enter a valid group count"
+    "error_message": "Please enter a valid group count",
+    "description": "Random group tool can help you quickly and automatically distribute the input items into a specified number of random groups, suitable for teaching, activity grouping, games, and other scenarios. Please enter the list and set the number of groups in the box below, and click \"Start\" to group randomly."
   }
 }

@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import { Container, Title, Textarea, Button, Stack } from '@mantine/core';
+import { Container, Title, Textarea, Button, Stack, Text } from '@mantine/core';
 import { useTranslation } from "../../../i18n/client";
 
 interface RandomSortClientProps {
@@ -34,7 +34,9 @@ const RandomSortClient: React.FC<RandomSortClientProps> = ({ lng }) => {
     return (
         <Container size="xs" mt="lg">
             <Title order={3} ta="center">{t('random_sort')}</Title>
-
+            <Text size="sm" c="dimmed" mt="md">
+                {t('random_draw_page.intro')}
+            </Text>
             <Stack gap="md" mt="md">
                 <Textarea
                     label={t('random_draw_page.input_label')}
@@ -45,7 +47,7 @@ const RandomSortClient: React.FC<RandomSortClientProps> = ({ lng }) => {
                 />
 
                 <Button color="blue" onClick={handleRandomSort} disabled={!inputValue.trim()}>
-                    {t('random_draw_page.sort')}
+                    {t('random_draw_page.start')}
                 </Button>
 
                 <Button color="red" variant="outline" onClick={handleReset} disabled={!inputValue.trim()}>
