@@ -15,9 +15,9 @@ export async function generateMetadata({ params }: { params: Promise<{ lng: stri
     const { t: translate } = translation;
 
     return {
-        title: translate('metadata.qr_code_generator_page_title'),
-        description: translate('metadata.qr_code_generator_page_description'),
-        keywords: translate('metadata.qr_code_generator_page_keywords'),
+        title: translate('metadata.qr_generator_page_title'),
+        description: translate('metadata.qr_generator_page_description'),
+        keywords: translate('metadata.qr_generator_page_keywords'),
     };
 }
 
