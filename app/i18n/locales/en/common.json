@@ -15,6 +15,8 @@
   "image_base64_tool": "Image Base64 Encoder & Decoder Tool",
   "uuid_generator": "UUID Generator",
   "json_formatter": "JSON Formatter",
+  "unit_converter": "Unit Converter",
+  "length_converter_title": "Length Converter",
   "home": "Home",
   "copy": "Copy",
   "copied": "Copied ✅",
@@ -56,7 +58,10 @@
     "uuid_generator_page_keywords": "UUID, UUID generator, UUID generator tool, UUID generator online, UUID generator free, UUID generator app, UUID generator toolnier",
     "json_formatter_tool_page_title": "JSON Formatter | JSON Formatter Tool - ToolNier",
     "json_formatter_tool_page_description": "Professional JSON formatting and compression tool that supports automatic formatting, compression, validation, and beautification of JSON structures. Transform messy JSON data into readable indented formats or compress it into a single line to save space. Features real-time syntax checking, error highlighting, copy functionality, and file download capabilities. Helps developers, designers, and data analysts process JSON data more efficiently. Ideal for API development, data exchange, web application development, and more.",
-    "json_formatter_tool_page_keywords": "JSON, JSON formatter, JSON formatter tool, JSON formatter online, JSON formatter free, JSON formatter app, JSON formatter toolnier"
+    "json_formatter_tool_page_keywords": "JSON, JSON formatter, JSON formatter tool, JSON formatter online, JSON formatter free, JSON formatter app, JSON formatter toolnier",
+    "length_converter_title": "Length Converter Tool | Length Unit Conversion - ToolNier",
+    "length_converter_description": "A professional online length conversion tool supporting both metric (millimeters, centimeters, meters, kilometers) and imperial (inches, feet, yards, miles) units. Provides accurate calculation results with support for multiple decimal places. Ideal for use in engineering measurement, architectural design, interior renovation, scientific research, and other professional fields. This tool performs all calculations locally in your browser, ensuring data privacy. With a clean and intuitive interface, it offers instant conversions and a seamless experience for all your length unit conversion needs.",
+    "length_converter_keywords": "length units, length converter, length converter tool, length converter online, free length converter, length converter app, length converter toolnier"
   },
   "symbols": {
     "categories": {
@@ -219,5 +224,23 @@
     "compress": "Compress",
     "error": "JSON format error, please verify the content",
     "download": "Download"
+  },
+  "length_converter": {
+    "title": "Length Unit Converter",
+    "description": "Professional online length unit converter supporting rapid conversions between metric (millimeters, centimeters, meters, kilometers) and imperial (inches, feet, yards, miles) units. Provides precise calculation results with support for multiple decimal places, ideal for engineering measurements, architectural design, interior decoration, scientific research, and other professional fields. This tool operates entirely in your browser locally, ensuring data security with no data uploads required. Features an intuitive interface with real-time conversion capabilities, making it effortless to handle various length unit conversion needs.",
+    "input_label": "Enter Value",
+    "from_label": "From",
+    "to_label": "To",
+    "result": "Result:",
+    "units": {
+      "mm": "Millimeters (mm)",
+      "cm": "Centimeters (cm)",
+      "m": "Meters (m)",
+      "km": "Kilometers (km)",
+      "in": "Inches (in)",
+      "ft": "Feet (ft)",
+      "yd": "Yards (yd)",
+      "mi": "Miles (mi)"
+    }
   }
 }

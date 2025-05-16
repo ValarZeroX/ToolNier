@@ -15,6 +15,8 @@
   "image_base64_tool": "画像Base64エンコード・デコードツール",
   "uuid_generator": "UUID 生成器",
   "json_formatter": "JSON フォーマッター",
+  "unit_converter": "単位変換ツール",
+  "length_converter_title": "長さ単位変換ツール",
   "home": "ホーム",
   "copy": "コピー",
   "copied": "コピー済み ✅",
@@ -56,7 +58,10 @@
     "uuid_generator_page_keywords": "UUID, UUID ジェネレーター, UUID ジェネレーターツール, UUID オンライン, UUID フリー, UUID アプリ, UUID ツール, toolnier",
     "json_formatter_tool_page_title": "JSON フォーマッター | JSON Formatter Tool - ToolNier",
     "json_formatter_tool_page_description": "プロフェッショナルな JSON フォーマットと圧縮ツール。JSON 構造の自動フォーマット、圧縮、検証、美化をサポート。乱雑な JSON データを読みやすいインデント形式に変換したり、スペースを節約するために1行に圧縮したりできます。リアルタイムの構文チェック、エラー表示、コピー機能、ファイルダウンロード機能を提供し、開発者、デザイナー、データアナリストが JSON データを効率的に処理するのを支援します。API開発、データ交換、Webアプリケーション開発などに最適です。",
-    "json_formatter_tool_page_keywords": "JSON, JSON フォーマッター, JSON フォーマッターツール, JSON オンライン, JSON フリー, JSON アプリ, JSON ツール, toolnier"
+    "json_formatter_tool_page_keywords": "JSON, JSON フォーマッター, JSON フォーマッターツール, JSON オンライン, JSON フリー, JSON アプリ, JSON ツール, toolnier",
+    "length_converter_page_title": "長さ単位変換ツール | Length Converter Tool - ToolNier",
+    "length_converter_page_description": "無料のオンライン長さ単位変換ツール。公制（ミリメートル、センチメートル、メートル、キロメートル）と英制（インチ、フィート、ヤード、マイル）の間で迅速に変換できます。",
+    "length_converter_page_keywords": "長さ, 長さ単位, 長さ単位変換, 長さ変換, 長さ変換ツール, 長さ変換オンライン, 長さ変換フリー, 長さ変換アプリ, 長さ変換ツール, toolnier"
   },
   "symbols": {
     "categories": {
@@ -219,5 +224,23 @@
     "compress": "圧縮",
     "error": "JSON フォーマットエラー。内容が正しいか確認してください",
     "download": "ダウンロード"
+  },
+  "length_converter": {
+    "title": "長さ単位変換ツール",
+    "description": "メートル法（ミリメートル、センチメートル、メートル、キロメートル）とヤード・ポンド法（インチ、フィート、ヤード、マイル）の単位間の迅速な変換をサポートする専門的なオンライン長さ単位変換ツール。小数点以下複数桁の変換に対応した精密な計算結果を提供し、工事測量、建築設計、インテリアデザイン、科学研究などの専門分野に最適です。このツールは完全にブラウザ上でローカルに動作し、データのアップロードは不要で、データセキュリティを確保します。直感的なインターフェースとリアルタイム変換機能を備え、様々な長さ単位の変換ニーズを簡単に処理できます。",
+    "input_label": "数値を入力",
+    "from_label": "変換元",
+    "to_label": "変換先",
+    "result": "変換結果：",
+    "units": {
+        "mm": "ミリメートル (mm)",
+        "cm": "センチメートル (cm)",
+        "m": "メートル (m)",
+        "km": "キロメートル (km)",
+        "in": "インチ (in)",
+        "ft": "フィート (ft)",
+        "yd": "ヤード (yd)",
+        "mi": "マイル (mi)"
+    }
   }
 }

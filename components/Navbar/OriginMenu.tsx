@@ -2,7 +2,7 @@
 
 import { FC } from 'react';
 import { NavLink, Divider, Stack } from '@mantine/core';
-import { IconHome, IconTool, IconMoodHappy, IconDice5 } from '@tabler/icons-react';
+import { IconHome, IconTool, IconMoodHappy, IconDice5, IconRepeat } from '@tabler/icons-react';
 import { useRouter } from 'next/navigation';
 // import { useSession } from 'next-auth/react';
 import { useTranslation } from "../../app/i18n/client";
@@ -69,6 +69,14 @@ const OriginMenu: FC<OriginMenuProps> = ({ lng }) => {
           <NavLink label={t('common:image_base64_tool')} onClick={() => handleNavigation('/tools/image-base64-converter')} />
           <NavLink label={t('common:uuid_generator')} onClick={() => handleNavigation('/tools/uuid-generator')} />
           <NavLink label={t('common:json_formatter')} onClick={() => handleNavigation('/tools/json-formatter')} />
+        </NavLink>
+        <NavLink
+          component="button"
+          label={t('common:unit_converter')}
+          leftSection={<IconRepeat size="1rem" stroke={1.5} />}
+        //   onClick={() => handleNavigation('/records')}
+        >
+          <NavLink label={t('common:length_converter_title')} onClick={() => handleNavigation('/converters/length')} />
         </NavLink>
       </nav>
       {/* {isAuthenticated && (

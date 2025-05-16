@@ -15,6 +15,8 @@
   "image_base64_tool": "图片 Base64 编码解码工具",
   "uuid_generator": "UUID 生成器",
   "json_formatter": "JSON 格式化工具",
+  "unit_converter": "單位轉換工具",
+  "length_converter_title": "長度單位轉換工具",
   "home": "首页",
   "copy": "复制",
   "copied": "已复制 ✅",
@@ -56,7 +58,10 @@
     "uuid_generator_page_keywords": "UUID, UUID 生成器, UUID 生成器工具, UUID 在线, UUID 免费, UUID 应用, UUID 工具, toolnier",
     "json_formatter_tool_page_title": "JSON 格式化工具 | JSON Formatter Tool - ToolNier",
     "json_formatter_tool_page_description": "免费 JSON 格式化工具，支持 JSON 结构的自动排版、压缩、验证与美化。可将杂乱的 JSON 数据转换为易读的缩进格式，或压缩为单行以节省空间。提供即时语法检查、错误提示、复制功能与文件下载，协助开发者、设计师与数据分析师更有效率地处理 JSON 数据。适用于 API 开发、数据交换、网页应用程序开发等场景。",
-    "json_formatter_tool_page_keywords": "JSON, JSON 格式化, JSON 格式化工具, JSON 在线, JSON 免费, JSON 应用, JSON 工具, toolnier"
+    "json_formatter_tool_page_keywords": "JSON, JSON 格式化, JSON 格式化工具, JSON 在线, JSON 免费, JSON 应用, JSON 工具, toolnier",
+    "length_converter_title": "长度单位转换工具 | Length Converter Tool - ToolNier",
+    "length_converter_description": "专业的在线长度单位转换工具，支持公制（毫米、厘米、米、公里）和英制（英寸、英尺、码、英里）单位之间的快速转换。提供精确的计算结果，支持小数点后多位数的转换，适合工程测量、建筑设计、室内装修、科学研究等专业领域使用。本工具完全在浏览器本地运算，无需上传数据，确保数据安全。界面简洁直观，操作便捷，支持即时转换，让您轻松完成各种长度单位的换算需求。",
+    "length_converter_keywords": "长度单位, length converter, length converter tool, length converter online, length converter free, length converter app, length converter toolnier"
   },
   "symbols": {
     "categories": {
@@ -219,5 +224,23 @@
     "compress": "压缩",
     "error": "JSON 格式错误，请确认内容是否正确",
     "download": "下载"
+  },
+  "length_converter": {
+    "title": "长度单位转换工具",
+    "description": "专业的在线长度单位转换工具，支持公制（毫米、厘米、米、公里）和英制（英寸、英尺、码、英里）单位之间的快速转换。提供精确的计算结果，支持小数点后多位数的转换，适合工程测量、建筑设计、室内装修、科学研究等专业领域使用。本工具完全在浏览器本地运算，无需上传数据，确保数据安全。界面简洁直观，操作便捷，支持即时转换，让您轻松完成各种长度单位的换算需求。",
+    "input_label": "输入数值",
+    "from_label": "从",
+    "to_label": "转换为",
+    "result": "转换结果：",
+    "units": {
+        "mm": "毫米 (mm)",
+        "cm": "厘米 (cm)",
+        "m": "米 (m)",
+        "km": "公里 (km)",
+        "in": "英寸 (in)",
+        "ft": "英尺 (ft)",
+        "yd": "码 (yd)",
+        "mi": "英里 (mi)"
+    }
   }
 }
