@@ -2,7 +2,7 @@
 
 import { FC } from 'react';
 import { NavLink, Divider, Stack } from '@mantine/core';
-import { IconHome, IconTools, IconMoodHappy, IconDice5 } from '@tabler/icons-react';
+import { IconHome, IconTool, IconMoodHappy, IconDice5 } from '@tabler/icons-react';
 import { useRouter } from 'next/navigation';
 // import { useSession } from 'next-auth/react';
 import { useTranslation } from "../../app/i18n/client";
@@ -61,7 +61,7 @@ const OriginMenu: FC<OriginMenuProps> = ({ lng }) => {
         <NavLink
           component="button"
           label={t('common:developer_tools')}
-          leftSection={<IconTools size="1rem" stroke={1.5} />}
+          leftSection={<IconTool size="1rem" stroke={1.5} />}
         //   onClick={() => handleNavigation('/records')}
         >
           <NavLink label={t('common:qr_code_generator')} onClick={() => handleNavigation('/tools/qr-code-generator')} />

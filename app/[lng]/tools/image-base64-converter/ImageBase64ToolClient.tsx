@@ -1,8 +1,8 @@
 'use client';
 import React, { useState } from 'react';
-import { Container, Title, Stack, Text, FileInput, Paper, Image, Textarea, Button, Group, Tabs, Tooltip } from '@mantine/core';
+import { Container, Title, Stack, Text, FileInput, Paper, Image, Textarea, Button, Group, Tabs, Tooltip, Alert } from '@mantine/core';
 import { useTranslation } from '../../../i18n/client';
-import { IconUpload, IconTrash, IconCopy, IconDownload } from '@tabler/icons-react';
+import { IconUpload, IconTrash, IconCopy, IconDownload, IconInfoCircle } from '@tabler/icons-react';
 import { useClipboard } from '@mantine/hooks';
 
 
@@ -79,6 +79,9 @@ const ImageBase64ToolClient: React.FC<ImageBase64ToolClientProps> = ({ lng }) =>
                 </Tabs.List>
                 <Tabs.Panel value="encode" pt="md">
                     <Stack gap="md" mt="md">
+                        <Alert icon={<IconInfoCircle size={16} />} color="blue" variant="light" mt="md">
+                            {t('image_base64.privacy_notice')}
+                        </Alert>
                         <Text ta="center" size="sm" c="dimmed" mt="xs">
                             {t('image_base64.description')}
                         </Text>

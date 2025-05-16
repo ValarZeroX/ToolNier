@@ -180,6 +180,7 @@
   "image_base64": {
     "title": "Image Base64 Encoder & Decoder Tool",
     "description": "Easily convert your image files (supports common formats like JPG, PNG, GIF, WebP, etc.) into Base64 encoded strings. This tool quickly generates Data URLs usable in HTML, CSS, or JavaScript, allowing you to embed images directly into web pages, emails, or applications without external image links, improving loading speed and simplifying deployment.",
+    "privacy_notice": "Privacy Notice: All image processing is done locally in your browser. Your images are never uploaded to any server. Your image data remains completely on your device, ensuring data security and privacy.",
     "upload_label": "Upload Image",
     "upload_placeholder": "Select an image file...",
     "preview": "Image Preview",

@@ -180,6 +180,7 @@
   "image_base64": {
     "title": "图片 Base64 编码解码工具",
     "description": "轻松将您的图片文件（支持 JPG, PNG, GIF, WebP 等常见格式）转换为 Base64 编码字符串。此工具能快速生成可用于 HTML、CSS 或 JavaScript 中的 Data URL，方便您将图片直接嵌入网页、电子邮件或应用程序中，无需外部图片链接，提升加载速度并简化部署。",
+    "privacy_notice": "隐私保护提示：所有图片处理均在您的浏览器本地完成，不会上传到任何服务器。您的图片数据完全保留在您的设备上，确保数据安全和隐私。",
     "upload_label": "上传图片",
     "upload_placeholder": "选择图片文件...",
     "preview": "图片预览",
