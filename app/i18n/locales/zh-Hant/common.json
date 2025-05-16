@@ -14,6 +14,7 @@
   "base64_tool": "Base64 編碼解碼工具",
   "image_base64_tool": "圖片 Base64 編碼解碼工具",
   "uuid_generator": "UUID 產生器",
+  "json_formatter": "JSON 格式化工具",
   "home": "首頁",
   "copy": "複製",
   "copied": "已複製 ✅",
@@ -52,7 +53,10 @@
     "image_base64_tool_page_keywords": "圖片 Base64, image base64, image encoder, image decoder, image encoder decoder, image encoder decoder tool, image encoder decoder online, image encoder decoder free, image encoder decoder app, image encoder decoder toolnier",
     "uuid_generator_page_title": "UUID 產生器 | UUID Generator Tool - ToolNier",
     "uuid_generator_page_description": "高效能的線上 UUID (通用唯一識別碼) 產生工具。無論您需要單個 UUID 還是批量產生多個，此工具都能立即滿足您的需求。產生的 UUID 符合標準格式，適用於資料庫主鍵、分散式系統、唯一識別符等多種開發場景，確保全域唯一性。",
-    "uuid_generator_page_keywords": "UUID, UUID generator, UUID generator tool, UUID generator online, UUID generator free, UUID generator app, UUID generator toolnier"
+    "uuid_generator_page_keywords": "UUID, UUID generator, UUID generator tool, UUID generator online, UUID generator free, UUID generator app, UUID generator toolnier",
+    "json_formatter_tool_page_title": "JSON 格式化工具 | JSON Formatter Tool - ToolNier",
+    "json_formatter_tool_page_description": "免費 JSON 格式化工具，支援一鍵美化、壓縮與下載 JSON 資料。無論是開發除錯、API 測試或資料傳輸前的優化，都能迅速完成格式調整。適用於前端後端開發、伺服器回應解析、設定檔排版，幫助你快速閱讀與檢查 JSON 結構。支援大型 JSON 載入，自動排版縮進與無縫複製。",
+    "json_formatter_tool_page_keywords": "JSON, JSON formatter, JSON formatter tool, JSON formatter online, JSON formatter free, JSON formatter app, JSON formatter toolnier"
   },
   "symbols": {
     "categories": {
@@ -201,5 +205,18 @@
     "clear": "清空",
     "output_label": "UUID 結果",
     "download_txt": "下載 TXT"
+  },
+  "json": {
+    "title": "JSON 格式化 / 壓縮工具",
+    "description": "免費 JSON 格式化與壓縮工具，支援一鍵美化、壓縮與下載 JSON 資料。無論是開發除錯、API 測試或資料傳輸前的優化，都能迅速完成格式調整。適用於前端後端開發、伺服器回應解析、設定檔排版，幫助你快速閱讀與檢查 JSON 結構。支援大型 JSON 載入，自動排版縮進與無縫複製。",
+    "input_label": "請輸入 JSON 內容",
+    "output_label": "輸出結果",
+    "format": "格式化",
+    "minify": "壓縮",
+    "clear": "清空",
+    "swap": "交換",
+    "compress": "壓縮",
+    "error": "JSON 格式錯誤，請確認內容是否正確",
+    "download": "下載"
   }
 }

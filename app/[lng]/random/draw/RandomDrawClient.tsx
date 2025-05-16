@@ -72,6 +72,7 @@ const RandomDrawClient: React.FC<RandomDrawClientProps> = ({ lng }) => {
               onChange={(event) => setInputValue(event.currentTarget.value)}
               autosize
               minRows={5}
+              maxRows={10}
             />
             <Group justify="center">
               <Button color="blue" onClick={handleStartDraw} disabled={!inputValue.trim()}>

@@ -66,6 +66,7 @@ const RandomGroupClient: React.FC<RandomGroupClientProps> = ({ lng }) => {
                     onChange={(event) => setInputValue(event.currentTarget.value)}
                     autosize
                     minRows={5}
+                    maxRows={10}
                 />
 
                 <NumberInput

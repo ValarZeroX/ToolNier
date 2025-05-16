@@ -121,6 +121,7 @@ const WheelDrawClient: React.FC<WheelDrawClientProps> = ({ lng }) => {
                                     onChange={(event) => setInputValue(event.currentTarget.value)}
                                     autosize
                                     minRows={5}
+                                    maxRows={10}
                                     disabled={startSpinSignal}
                                 />
                             </Stack>

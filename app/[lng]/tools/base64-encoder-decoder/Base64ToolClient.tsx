@@ -73,6 +73,7 @@ const Base64ToolClient: React.FC<Base64ToolClientProps> = ({ lng }) => {
                     onChange={(e) => setInput(e.currentTarget.value)}
                     autosize
                     minRows={5}
+                    maxRows={10}
                 />
 
                 <Group justify="center">
@@ -90,6 +91,7 @@ const Base64ToolClient: React.FC<Base64ToolClientProps> = ({ lng }) => {
                     readOnly
                     autosize
                     minRows={5}
+                    maxRows={10}
                 />
             </Stack>
         </Container>

@@ -126,6 +126,7 @@ const ImageBase64ToolClient: React.FC<ImageBase64ToolClientProps> = ({ lng }) =>
                                 readOnly
                                 autosize
                                 minRows={5}
+                                maxRows={10}
                             />
                         )}
                     </Stack>

@@ -14,6 +14,7 @@
   "base64_tool": "Base64 エンコードデコードツール",
   "image_base64_tool": "画像Base64エンコード・デコードツール",
   "uuid_generator": "UUID 生成器",
+  "json_formatter": "JSON フォーマッター",
   "home": "ホーム",
   "copy": "コピー",
   "copied": "コピー済み ✅",
@@ -52,7 +53,10 @@
     "image_base64_tool_page_keywords": "画像 Base64, image base64, 画像エンコーダー, 画像デコーダー, 画像エンコードデコード, 画像エンコードデコードツール, オンライン画像エンコードデコード, 無料画像エンコードデコード, 画像エンコードデコードアプリ, 画像エンコードデコードツールnier",
     "uuid_generator_page_title": "UUID ジェネレーター | UUID Generator Tool - ToolNier",
     "uuid_generator_page_description": "高機能なオンラインUUID（Universally Unique Identifier）ジェネレーターです。単一のUUIDが必要な場合でも、複数のUUIDを一括で生成する必要がある場合でも、このツールは即座にニーズを満たします。産生されるUUIDは標準形式に準拠しており、データベースの主キー、分散システム、一意の識別子など、さまざまな開発シナリオに適しており、グローバルな一意性を保証します。",
-    "uuid_generator_page_keywords": "UUID, UUID ジェネレーター, UUID ジェネレーターツール, UUID オンライン, UUID フリー, UUID アプリ, UUID ツール, toolnier"
+    "uuid_generator_page_keywords": "UUID, UUID ジェネレーター, UUID ジェネレーターツール, UUID オンライン, UUID フリー, UUID アプリ, UUID ツール, toolnier",
+    "json_formatter_tool_page_title": "JSON フォーマッター | JSON Formatter Tool - ToolNier",
+    "json_formatter_tool_page_description": "プロフェッショナルな JSON フォーマットと圧縮ツール。JSON 構造の自動フォーマット、圧縮、検証、美化をサポート。乱雑な JSON データを読みやすいインデント形式に変換したり、スペースを節約するために1行に圧縮したりできます。リアルタイムの構文チェック、エラー表示、コピー機能、ファイルダウンロード機能を提供し、開発者、デザイナー、データアナリストが JSON データを効率的に処理するのを支援します。API開発、データ交換、Webアプリケーション開発などに最適です。",
+    "json_formatter_tool_page_keywords": "JSON, JSON フォーマッター, JSON フォーマッターツール, JSON オンライン, JSON フリー, JSON アプリ, JSON ツール, toolnier"
   },
   "symbols": {
     "categories": {
@@ -201,5 +205,18 @@
     "clear": "クリア",
     "output_label": "UUID結果",
     "download_txt": "TXTをダウンロード"
+  },
+  "json": {
+    "title": "JSON フォーマッター / 圧縮ツール",
+    "description": "プロフェッショナルな JSON フォーマットと圧縮ツール。JSON 構造の自動フォーマット、圧縮、検証、美化をサポート。乱雑な JSON データを読みやすいインデント形式に変換したり、スペースを節約するために1行に圧縮したりできます。リアルタイムの構文チェック、エラー表示、コピー機能、ファイルダウンロード機能を提供し、開発者、デザイナー、データアナリストが JSON データを効率的に処理するのを支援します。API開発、データ交換、Webアプリケーション開発などに最適です。",
+    "input_label": "JSON コンテンツを入力してください",
+    "output_label": "出力結果",
+    "format": "フォーマット",
+    "minify": "圧縮",
+    "clear": "クリア",
+    "swap": "入れ替え",
+    "compress": "圧縮",
+    "error": "JSON フォーマットエラー。内容が正しいか確認してください",
+    "download": "ダウンロード"
   }
 }

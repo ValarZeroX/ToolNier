@@ -14,6 +14,7 @@
   "base64_tool": "Base64 编码解码工具",
   "image_base64_tool": "图片 Base64 编码解码工具",
   "uuid_generator": "UUID 生成器",
+  "json_formatter": "JSON 格式化工具",
   "home": "首页",
   "copy": "复制",
   "copied": "已复制 ✅",
@@ -52,7 +53,10 @@
     "image_base64_tool_page_keywords": "图片 Base64, image base64, image encoder, image decoder, image encoder decoder, image encoder decoder tool, image encoder decoder online, image encoder decoder free, image encoder decoder app, image encoder decoder toolnier",
     "uuid_generator_page_title": "UUID 生成器 | UUID Generator Tool - ToolNier",
     "uuid_generator_page_description": "高效能的线上 UUID (通用唯一识别码) 生成工具。无论您需要单个 UUID 还是批量产生多个，此工具都能立即满足您的需求。产生的 UUID 符合标准格式，适用于数据库主键、分布式系统、唯一识别符等多种开发场景，确保全域唯一性。",
-    "uuid_generator_page_keywords": "UUID, UUID 生成器, UUID 生成器工具, UUID 在线, UUID 免费, UUID 应用, UUID 工具, toolnier"
+    "uuid_generator_page_keywords": "UUID, UUID 生成器, UUID 生成器工具, UUID 在线, UUID 免费, UUID 应用, UUID 工具, toolnier",
+    "json_formatter_tool_page_title": "JSON 格式化工具 | JSON Formatter Tool - ToolNier",
+    "json_formatter_tool_page_description": "免费 JSON 格式化工具，支持 JSON 结构的自动排版、压缩、验证与美化。可将杂乱的 JSON 数据转换为易读的缩进格式，或压缩为单行以节省空间。提供即时语法检查、错误提示、复制功能与文件下载，协助开发者、设计师与数据分析师更有效率地处理 JSON 数据。适用于 API 开发、数据交换、网页应用程序开发等场景。",
+    "json_formatter_tool_page_keywords": "JSON, JSON 格式化, JSON 格式化工具, JSON 在线, JSON 免费, JSON 应用, JSON 工具, toolnier"
   },
   "symbols": {
     "categories": {
@@ -201,5 +205,18 @@
     "clear": "清空",
     "output_label": "UUID 结果",
     "download_txt": "下载 TXT"
+  },
+  "json": {
+    "title": "JSON 格式化 / 压缩工具",
+    "description": "专业的 JSON 格式化与压缩工具，支持 JSON 结构的自动排版、压缩、验证与美化。可将杂乱的 JSON 数据转换为易读的缩进格式，或压缩为单行以节省空间。提供即时语法检查、错误提示、复制功能与文件下载，协助开发者、设计师与数据分析师更有效率地处理 JSON 数据。适用于 API 开发、数据交换、网页应用程序开发等场景。",
+    "input_label": "请输入 JSON 内容",
+    "output_label": "输出结果",
+    "format": "格式化",
+    "minify": "压缩",
+    "clear": "清空",
+    "swap": "交换",
+    "compress": "压缩",
+    "error": "JSON 格式错误，请确认内容是否正确",
+    "download": "下载"
   }
 }

@@ -14,6 +14,7 @@
   "base64_tool": "Base64 Encoder Decoder Tool",
   "image_base64_tool": "Image Base64 Encoder & Decoder Tool",
   "uuid_generator": "UUID Generator",
+  "json_formatter": "JSON Formatter",
   "home": "Home",
   "copy": "Copy",
   "copied": "Copied ✅",
@@ -52,7 +53,10 @@
     "image_base64_tool_page_keywords": "image base64, image encoder, image decoder, image encoder decoder, image encoder decoder tool, image encoder decoder online, image encoder decoder free, image encoder decoder app, image encoder decoder toolnier",
     "uuid_generator_page_title": "UUID Generator | UUID Generator Tool - ToolNier",
     "uuid_generator_page_description": "High-performance online UUID (Universally Unique Identifier) generator. Whether you need a single UUID or to generate multiple UUIDs in bulk, this tool can instantly meet your needs. The generated UUIDs conform to standard formats and are suitable for database primary keys, distributed systems, unique identifiers, and various other development scenarios, ensuring global uniqueness.",
-    "uuid_generator_page_keywords": "UUID, UUID generator, UUID generator tool, UUID generator online, UUID generator free, UUID generator app, UUID generator toolnier"
+    "uuid_generator_page_keywords": "UUID, UUID generator, UUID generator tool, UUID generator online, UUID generator free, UUID generator app, UUID generator toolnier",
+    "json_formatter_tool_page_title": "JSON Formatter | JSON Formatter Tool - ToolNier",
+    "json_formatter_tool_page_description": "Professional JSON formatting and compression tool that supports automatic formatting, compression, validation, and beautification of JSON structures. Transform messy JSON data into readable indented formats or compress it into a single line to save space. Features real-time syntax checking, error highlighting, copy functionality, and file download capabilities. Helps developers, designers, and data analysts process JSON data more efficiently. Ideal for API development, data exchange, web application development, and more.",
+    "json_formatter_tool_page_keywords": "JSON, JSON formatter, JSON formatter tool, JSON formatter online, JSON formatter free, JSON formatter app, JSON formatter toolnier"
   },
   "symbols": {
     "categories": {
@@ -201,5 +205,18 @@
     "clear": "Clear",
     "output_label": "UUID Results",
     "download_txt": "Download TXT"
+  },
+  "json": {
+    "title": "JSON Formatter / Compressor Tool",
+    "description": "Professional JSON formatting and compression tool that supports automatic formatting, compression, validation, and beautification of JSON structures. Transform messy JSON data into readable indented formats or compress it into a single line to save space. Features real-time syntax checking, error highlighting, copy functionality, and file download capabilities. Helps developers, designers, and data analysts process JSON data more efficiently. Ideal for API development, data exchange, web application development, and more.",
+    "input_label": "Enter JSON Content",
+    "output_label": "Output Result",
+    "format": "Format",
+    "minify": "Minify",
+    "clear": "Clear",
+    "swap": "Swap",
+    "compress": "Compress",
+    "error": "JSON format error, please verify the content",
+    "download": "Download"
   }
 }

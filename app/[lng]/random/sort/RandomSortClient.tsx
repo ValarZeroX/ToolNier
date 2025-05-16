@@ -45,6 +45,7 @@ const RandomSortClient: React.FC<RandomSortClientProps> = ({ lng }) => {
                     onChange={(event) => setInputValue(event.currentTarget.value)}
                     autosize
                     minRows={5}
+                    maxRows={10}
                 />
 
                 <Button color="blue" onClick={handleRandomSort} disabled={!inputValue.trim()}>

@@ -1,0 +1,93 @@
+'use client';
+import React, { useState } from 'react';
+import { Container, Title, Textarea, Button, Stack, Group, Text } from '@mantine/core';
+import { IconArrowsDownUp, IconX, IconDownload } from '@tabler/icons-react';
+import { useTranslation } from '../../../i18n/client';
+
+interface JsonFormatterClientProps {
+  lng: string;
+}
+
+const JsonFormatterClient: React.FC<JsonFormatterClientProps> = ({ lng }) => {
+  const { t } = useTranslation(lng, 'common');
+  const [input, setInput] = useState('');
+  const [output, setOutput] = useState('');
+
+  const handleFormat = () => {
+    try {
+      const obj = JSON.parse(input);
+      setOutput(JSON.stringify(obj, null, 2));
+    } catch (e) {
+      setOutput(t('json.error'));
+    }
+  };
+
+  const handleCompress = () => {
+    try {
+      const obj = JSON.parse(input);
+      setOutput(JSON.stringify(obj));
+    } catch (e) {
+      setOutput(t('json.error'));
+    }
+  };
+
+  const handleSwap = () => {
+    setInput(output);
+    setOutput(input);
+  };
+
+  const handleClear = () => {
+    setInput('');
+    setOutput('');
+  };
+
+  const handleDownload = () => {
+    const blob = new Blob([output], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'formatted.json';
+    link.click();
+    URL.revokeObjectURL(url);
+  };
+
+  return (
+    <Container size="md" mt="lg">
+      <Title order={3} ta="center">{t('json.title')}</Title>
+      <Text ta="center" size="sm" c="dimmed" mt="xs">
+        {t('json.description')}
+      </Text>
+      <Stack gap="md" mt="md">
+        <Textarea
+          label={t('json.input_label')}
+          value={input}
+          onChange={(e) => setInput(e.currentTarget.value)}
+          autosize
+          minRows={8}
+          maxRows={8}
+        />
+
+        <Group justify="center">
+          <Button onClick={handleFormat}>{t('json.format')}</Button>
+          <Button variant="outline" onClick={handleCompress}>{t('json.compress')}</Button>
+          <Button variant="outline" onClick={handleSwap} leftSection={<IconArrowsDownUp size={16} />}>{t('json.swap')}</Button>
+          <Button variant="outline" color="red" onClick={handleClear} leftSection={<IconX size={16} />}>{t('json.clear')}</Button>
+          <Button variant="outline" onClick={handleDownload} leftSection={<IconDownload size={16} />} disabled={!output}>
+            {t('json.download')}
+          </Button>
+        </Group>
+
+        <Textarea
+          label={t('json.output_label')}
+          value={output}
+          readOnly
+          autosize
+          minRows={8}
+          maxRows={8}
+        />
+      </Stack>
+    </Container>
+  );
+};
+
+export default JsonFormatterClient;
