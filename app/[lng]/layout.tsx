@@ -6,7 +6,7 @@ type LocaleLayoutProps = {
 };
 
 export async function generateStaticParams() {
-  return ['en', 'zh-Hans', 'zh-Hant'].map((lng) => ({ lng }));
+  return ['en', 'ja', 'zh-Hans', 'zh-Hant'].map((lng) => ({ lng }));
 }
 
 export const metadata = {

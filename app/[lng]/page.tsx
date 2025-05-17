@@ -11,7 +11,7 @@ export default async function HomePage({ params }: PageProps) {
   return (
     <>
       <Layout lng={lng}>
-        <Welcome />
+        <Welcome lng={lng} />
         {/* <ActionsGrid lng={lng} /> */}
       </Layout>
     </>

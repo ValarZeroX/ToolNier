@@ -73,6 +73,9 @@ const Header: FC<HeaderProps> = ({ opened, toggle, desktopOpened, toggleDesktop,
               <Menu.Item onClick={() => changeLanguage('en')}>
                 <Text>English</Text>
               </Menu.Item>
+              <Menu.Item onClick={() => changeLanguage('ja')}>
+                <Text>日文</Text>
+              </Menu.Item>
               <Menu.Item onClick={() => changeLanguage('zh-Hans')}>
                 <Text>简体中文</Text>
               </Menu.Item>
