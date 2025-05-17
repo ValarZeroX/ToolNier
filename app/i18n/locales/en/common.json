@@ -17,6 +17,7 @@
   "json_formatter": "JSON Formatter",
   "unit_converter": "Unit Converter",
   "length_converter_title": "Length Converter",
+  "weight_converter_title": "Weight Converter",
   "home": "Home",
   "copy": "Copy",
   "copied": "Copied ✅",
@@ -61,7 +62,10 @@
     "json_formatter_tool_page_keywords": "JSON, JSON formatter, JSON formatter tool, JSON formatter online, JSON formatter free, JSON formatter app, JSON formatter toolnier",
     "length_converter_title": "Length Converter Tool | Length Unit Conversion - ToolNier",
     "length_converter_description": "A professional online length conversion tool supporting both metric (millimeters, centimeters, meters, kilometers) and imperial (inches, feet, yards, miles) units. Provides accurate calculation results with support for multiple decimal places. Ideal for use in engineering measurement, architectural design, interior renovation, scientific research, and other professional fields. This tool performs all calculations locally in your browser, ensuring data privacy. With a clean and intuitive interface, it offers instant conversions and a seamless experience for all your length unit conversion needs.",
-    "length_converter_keywords": "length units, length converter, length converter tool, length converter online, free length converter, length converter app, length converter toolnier"
+    "length_converter_keywords": "length units, length converter, length converter tool, length converter online, free length converter, length converter app, length converter toolnier",
+    "weight_converter_title": "Weight Converter Tool | Weight Unit Conversion - ToolNier",
+    "weight_converter_description": "A professional online weight conversion tool supporting rapid conversions between metric (milligrams, grams, kilograms, metric tons) and imperial (ounces, pounds) units. Provides precise calculation results with support for multiple decimal places, ideal for food processing, chemical experiments, medical measurements, and other professional fields. This tool operates entirely in your browser locally, ensuring data security with no data uploads required. Features an intuitive interface with real-time conversion capabilities, making it effortless to handle various weight unit conversion needs.",
+    "weight_converter_keywords": "weight units, weight converter, weight converter tool, weight converter online, free weight converter, weight converter app, weight converter toolnier"
   },
   "symbols": {
     "categories": {
@@ -241,6 +245,22 @@
       "ft": "Feet (ft)",
       "yd": "Yards (yd)",
       "mi": "Miles (mi)"
+    }
+  },
+  "weight_converter": {
+    "title": "Weight Converter",
+    "description": "A professional online weight conversion tool supporting rapid conversions between metric (milligrams, grams, kilograms, metric tons) and imperial (ounces, pounds) units. Provides precise calculation results with support for multiple decimal places, ideal for food processing, chemical experiments, medical measurements, and other professional fields. This tool operates entirely in your browser locally, ensuring data security with no data uploads required. Features an intuitive interface with real-time conversion capabilities, making it effortless to handle various weight unit conversion needs.",
+    "input_label": "Enter weight",
+    "from_label": "From",
+    "to_label": "To",
+    "result": "Result:",
+    "units": {
+      "mg": "Milligram (mg)",
+      "g": "Gram (g)",
+      "kg": "Kilogram (kg)",
+      "t": "Metric Ton (t)",
+      "oz": "Ounce (oz)",
+      "lb": "Pound (lb)"
     }
   }
 }

@@ -17,6 +17,7 @@
   "json_formatter": "JSON 格式化工具",
   "unit_converter": "單位轉換工具",
   "length_converter_title": "長度單位轉換工具",
+  "weight_converter_title": "重量單位轉換工具",
   "home": "首页",
   "copy": "复制",
   "copied": "已复制 ✅",
@@ -61,7 +62,10 @@
     "json_formatter_tool_page_keywords": "JSON, JSON 格式化, JSON 格式化工具, JSON 在线, JSON 免费, JSON 应用, JSON 工具, toolnier",
     "length_converter_title": "长度单位转换工具 | Length Converter Tool - ToolNier",
     "length_converter_description": "专业的在线长度单位转换工具，支持公制（毫米、厘米、米、公里）和英制（英寸、英尺、码、英里）单位之间的快速转换。提供精确的计算结果，支持小数点后多位数的转换，适合工程测量、建筑设计、室内装修、科学研究等专业领域使用。本工具完全在浏览器本地运算，无需上传数据，确保数据安全。界面简洁直观，操作便捷，支持即时转换，让您轻松完成各种长度单位的换算需求。",
-    "length_converter_keywords": "长度单位, length converter, length converter tool, length converter online, length converter free, length converter app, length converter toolnier"
+    "length_converter_keywords": "长度单位, length converter, length converter tool, length converter online, length converter free, length converter app, length converter toolnier",
+    "weight_converter_title": "重量单位转换工具 | Weight Converter Tool - ToolNier",
+    "weight_converter_description": "专业的在线重量单位转换工具，支持公制（毫克、公克、公斤、公吨）和英制（盎司、磅）单位之间的快速转换。提供精确的计算结果，支持小数点后多位数的转换，适合食品加工、化学实验、医疗计量等专业领域使用。本工具完全在浏览器本地运算，无需上传数据，确保数据安全。界面简洁直观，操作便捷，支持即时转换，让您轻松完成各种重量单位的换算需求。",
+    "weight_converter_keywords": "重量单位, weight converter, weight converter tool, weight converter online, weight converter free, weight converter app, weight converter toolnier"
   },
   "symbols": {
     "categories": {
@@ -241,6 +245,22 @@
         "ft": "英尺 (ft)",
         "yd": "码 (yd)",
         "mi": "英里 (mi)"
+    }
+  },
+  "weight_converter": {
+    "title": "重量换算",
+    "description": "专业的线上重量单位转换工具，支持公制（毫克、公克、公斤、公吨）和英制（盎司、磅）单位之间的快速转换。提供精确的计算结果，支持小数点后多位数的转换，适合食品加工、化学实验、医疗计量等专业领域使用。本工具完全在浏览器本地运算，无需上传数据，确保数据安全。界面简洁直观，操作便捷，支持即时转换，让您轻松完成各种重量单位的换算需求。",
+    "input_label": "输入重量",
+    "from_label": "原单位",
+    "to_label": "目标单位",
+    "result": "换算结果：",
+    "units": {
+      "mg": "毫克 (mg)",
+      "g": "克 (g)",
+      "kg": "千克 (kg)",
+      "t": "吨 (t)",
+      "oz": "盎司 (oz)",
+      "lb": "磅 (lb)"
     }
   }
 }

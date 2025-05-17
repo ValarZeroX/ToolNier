@@ -17,6 +17,7 @@
   "json_formatter": "JSON 格式化工具",
   "unit_converter": "單位轉換工具",
   "length_converter_title": "長度單位轉換工具",
+  "weight_converter_title": "重量單位轉換工具",
   "home": "首頁",
   "copy": "複製",
   "copied": "已複製 ✅",
@@ -61,7 +62,10 @@
     "json_formatter_tool_page_keywords": "JSON, JSON formatter, JSON formatter tool, JSON formatter online, JSON formatter free, JSON formatter app, JSON formatter toolnier",
     "length_converter_title": "長度單位轉換工具 | Length Converter Tool - ToolNier",
     "length_converter_description": "專業的線上長度單位轉換工具，支援公制（毫米、公分、公尺、公里）和英制（英吋、英尺、碼、英里）單位之間的快速轉換。提供精確的計算結果，支援小數點後多位數的轉換，適合工程測量、建築設計、室內裝修、科學研究等專業領域使用。本工具完全在瀏覽器本地運算，無需上傳數據，確保資料安全。介面簡潔直觀，操作便捷，支援即時轉換，讓您輕鬆完成各種長度單位的換算需求。",
-    "length_converter_keywords": "長度單位, length converter, length converter tool, length converter online, length converter free, length converter app, length converter toolnier"
+    "length_converter_keywords": "長度單位, length converter, length converter tool, length converter online, length converter free, length converter app, length converter toolnier",
+    "weight_converter_title": "重量單位轉換工具 | Weight Converter Tool - ToolNier",
+    "weight_converter_description": "專業的線上重量單位轉換工具，支援公制（毫克、公克、公斤、公噸）和英制（盎司、磅）單位之間的快速轉換。提供精確的計算結果，支援小數點後多位數的轉換，適合食品加工、化學實驗、醫療計量等專業領域使用。本工具完全在瀏覽器本地運算，無需上傳數據，確保資料安全。介面簡潔直觀，操作便捷，支援即時轉換，讓您輕鬆完成各種重量單位的換算需求。",
+    "weight_converter_keywords": "重量單位, weight converter, weight converter tool, weight converter online, weight converter free, weight converter app, weight converter toolnier"
   },
   "symbols": {
     "categories": {
@@ -233,14 +237,30 @@
     "to_label": "轉換為",
     "result": "轉換結果：",
     "units": {
-        "mm": "毫米 (mm)",
-        "cm": "公分 (cm)",
-        "m": "公尺 (m)",
-        "km": "公里 (km)",
-        "in": "英吋 (in)",
-        "ft": "英尺 (ft)",
-        "yd": "碼 (yd)",
-        "mi": "英里 (mi)"
+      "mm": "毫米 (mm)",
+      "cm": "公分 (cm)",
+      "m": "公尺 (m)",
+      "km": "公里 (km)",
+      "in": "英吋 (in)",
+      "ft": "英尺 (ft)",
+      "yd": "碼 (yd)",
+      "mi": "英里 (mi)"
+    }
+  },
+  "weight_converter": {
+    "title": "重量換算",
+    "description": "專業的線上重量單位轉換工具，支援公制（毫克、公克、公斤、公噸）和英制（盎司、磅）單位之間的快速轉換。提供精確的計算結果，支援小數點後多位數的轉換，適合食品加工、化學實驗、醫療計量等專業領域使用。本工具完全在瀏覽器本地運算，無需上傳數據，確保資料安全。介面簡潔直觀，操作便捷，支援即時轉換，讓您輕鬆完成各種重量單位的換算需求。",
+    "input_label": "輸入重量",
+    "from_label": "原單位",
+    "to_label": "目標單位",
+    "result": "換算結果：",
+    "units": {
+      "mg": "毫克 (mg)",
+      "g": "公克 (g)",
+      "kg": "公斤 (kg)",
+      "t": "公噸 (t)",
+      "oz": "盎司 (oz)",
+      "lb": "磅 (lb)"
     }
   }
 }

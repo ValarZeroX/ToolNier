@@ -77,6 +77,7 @@ const OriginMenu: FC<OriginMenuProps> = ({ lng }) => {
         //   onClick={() => handleNavigation('/records')}
         >
           <NavLink label={t('common:length_converter_title')} onClick={() => handleNavigation('/converters/length')} />
+          <NavLink label={t('common:weight_converter_title')} onClick={() => handleNavigation('/converters/weight')} />
         </NavLink>
       </nav>
       {/* {isAuthenticated && (

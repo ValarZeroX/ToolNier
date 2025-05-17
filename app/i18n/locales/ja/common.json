@@ -17,6 +17,7 @@
   "json_formatter": "JSON フォーマッター",
   "unit_converter": "単位変換ツール",
   "length_converter_title": "長さ単位変換ツール",
+  "weight_converter_title": "重量単位変換ツール",
   "home": "ホーム",
   "copy": "コピー",
   "copied": "コピー済み ✅",
@@ -61,7 +62,10 @@
     "json_formatter_tool_page_keywords": "JSON, JSON フォーマッター, JSON フォーマッターツール, JSON オンライン, JSON フリー, JSON アプリ, JSON ツール, toolnier",
     "length_converter_page_title": "長さ単位変換ツール | Length Converter Tool - ToolNier",
     "length_converter_page_description": "無料のオンライン長さ単位変換ツール。公制（ミリメートル、センチメートル、メートル、キロメートル）と英制（インチ、フィート、ヤード、マイル）の間で迅速に変換できます。",
-    "length_converter_page_keywords": "長さ, 長さ単位, 長さ単位変換, 長さ変換, 長さ変換ツール, 長さ変換オンライン, 長さ変換フリー, 長さ変換アプリ, 長さ変換ツール, toolnier"
+    "length_converter_page_keywords": "長さ, 長さ単位, 長さ単位変換, 長さ変換, 長さ変換ツール, 長さ変換オンライン, 長さ変換フリー, 長さ変換アプリ, 長さ変換ツール, toolnier",
+    "weight_converter_page_title": "重量単位変換ツール | Weight Converter Tool - ToolNier",
+    "weight_converter_page_description": "無料のオンライン重量単位変換ツール。公制（ミリグラム、グラム、キログラム、トン）と英制（オンス、ポンド）の間で迅速に変換できます。",
+    "weight_converter_page_keywords": "重量, 重量単位, 重量単位変換, 重量変換, 重量変換ツール, 重量変換オンライン, 重量変換フリー, 重量変換アプリ, 重量変換ツール, toolnier"
   },
   "symbols": {
     "categories": {
@@ -241,6 +245,22 @@
         "ft": "フィート (ft)",
         "yd": "ヤード (yd)",
         "mi": "マイル (mi)"
+    }
+  },
+  "weight_converter": {
+    "title": "重量換算",
+    "description": "メートル法（ミリグラム、グラム、キログラム、トン）とヤード・ポンド法（オンス、ポンド）の単位間の迅速な変換をサポートする専門的なオンライン重量単位変換ツール。小数点以下複数桁の変換に対応した精密な計算結果を提供し、食品加工、化学実験、医療計量などの専門分野に最適です。このツールは完全にブラウザ上でローカルに動作し、データのアップロードは不要で、データセキュリティを確保します。直感的なインターフェースとリアルタイム変換機能を備え、様々な重量単位の変換ニーズを簡単に処理できます。",
+    "input_label": "重量を入力",
+    "from_label": "変換元",
+    "to_label": "変換先",
+    "result": "変換結果：",
+    "units": {
+      "mg": "ミリグラム (mg)",
+      "g": "グラム (g)",
+      "kg": "キログラム (kg)",
+      "t": "トン (t)",
+      "oz": "オンス (oz)",
+      "lb": "ポンド (lb)"
     }
   }
 }

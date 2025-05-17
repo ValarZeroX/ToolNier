@@ -1,9 +1,10 @@
 'use client';
 
-import { Anchor, Text, Title, Container, SimpleGrid, Card, Group, rem } from '@mantine/core';
+import { Text, Title, Container, SimpleGrid, Card, Group, rem, UnstyledButton } from '@mantine/core';
 import { IconWand, IconTools, IconDeviceLaptop, IconRocket } from '@tabler/icons-react';
 import classes from './Welcome.module.css';
 import { useTranslation } from '@/app/i18n/client';
+import { useRouter } from 'next/navigation';
 
 interface FeatureCardProps {
     icon: React.ReactNode;
@@ -37,6 +38,11 @@ interface WelcomeProps {
 
 export function Welcome({ lng }: WelcomeProps) {
     const { t } = useTranslation(lng, 'welcome');
+    const router = useRouter();
+
+    const handleNavigation = (href: string) => {
+        router.push(href);
+    };
 
     const features = [
         {
@@ -82,9 +88,11 @@ export function Welcome({ lng }: WelcomeProps) {
 
             <Text ta="center" mt={50} size="sm" c="dimmed">
                 {t('footer')}{' '}
-                <Anchor href={`/${lng}/tools`} size="sm">
-                    {t('explore_tools')}
-                </Anchor>
+                <UnstyledButton onClick={() => handleNavigation(`/${lng}/all`)}>
+                    <Text size="sm" c="blue" component="span">
+                        {t('explore_tools')}
+                    </Text>
+                </UnstyledButton>
             </Text>
         </Container>
     );

@@ -1,0 +1,83 @@
+{
+    "fast_functions": "快速功能菜单",
+    "random": "随机工具",
+    "view_all": "查看全部",
+    "home": {
+        "tools_title": "免费在线工具与转换服务",
+        "tools_description": "提供多种实用工具，包括单位转换、表情符号选择、随机抽选、开发者小工具等，方便日常使用与开发整合。",
+        "services_section_title": "快速功能菜单"
+    },
+    "tools": {
+        "title": "开发者工具",
+        "description": "提供编码、格式化和数据处理等开发必备工具。",
+        "section_title": "开发工具集",
+        "qr_code": {
+            "title": "QR Code 生成器",
+            "description": "生成网址、文字等数据的 QR Code。"
+        },
+        "base64": {
+            "title": "Base64 工具",
+            "description": "编码和解码 Base64 字符串。"
+        },
+        "image_base64": {
+            "title": "图片 Base64 转换器",
+            "description": "将图片转换为 Base64 格式或从 Base64 转换为图片。"
+        },
+        "uuid": {
+            "title": "UUID 生成器",
+            "description": "生成唯一标识符（UUID）。"
+        },
+        "json": {
+            "title": "JSON 格式化工具",
+            "description": "格式化、验证和美化 JSON 数据。"
+        },
+        "emoji": {
+            "title": "Emoji 工具",
+            "description": "生成和选择表情符号。"
+        },
+        "random": {
+            "title": "随机工具",
+            "description": "提供随机抽选、随机排序、随机分组和随机数字等多种随机功能。"
+        },
+        "developer": {
+            "title": "开发者工具",
+            "description": "提供代码格式化、JSON 验证、UUID生成等多种开发工具。"
+        },
+        "converter": {
+            "title": "单位转换工具",
+            "description": "提供长度、重量、温度等多种单位转换功能。"
+        }
+    },
+    "random_draw_page": {
+        "title": "随机抽选",
+        "description": "随机抽选工具可以帮助您快速将输入的项目自动排列成随机顺序，适用于教学、活动分组、游戏等多种情境。"
+    },
+    "random_draw": {
+        "title": "随机抽选",
+        "description": "从列表中随机抽取一个或多个项目。"
+    },
+    "random_draw_wheel": {
+        "title": "随机轮盘",
+        "description": "使用转盘进行随机抽选。"
+    },
+    "random_sort": {
+        "title": "随机排序",
+        "description": "将列表项目随机打乱顺序。"
+    },
+    "random_group": {
+        "title": "随机分组",
+        "description": "将人员或项目随机分成多个小组。"
+    },
+    "random_number": {
+        "title": "随机数字",
+        "description": "生成指定范围内的随机数字。"
+    },
+    "metadata": {
+        "random_tools_page_title": "随机工具",
+        "random_tools_page_description": "提供随机抽选、随机排序、随机分组和随机数字等多种随机功能。",
+        "random_tools_page_keywords": "随机工具, 随机抽选, 随机排序, 随机分组, 随机数字",
+        "tools_page_title": "开发者工具",
+        "tools_page_description": "提供编码、格式化和数据处理等开发必备工具。",
+        "tools_page_keywords": "开发者工具, QR Code 生成器, Base64 编码器, 图片转换器, UUID 生成器, JSON 格式化工具"
+    }
+}
