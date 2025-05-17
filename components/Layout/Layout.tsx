@@ -1,10 +1,12 @@
 'use client';
 
 import React, { useState, use } from 'react';
-import { AppShell} from '@mantine/core';
+import { AppShell } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import Header from '@/components/Header/Header'; 
 import OriginMenu from '@/components/Navbar/OriginMenu';
+import FooterLinks from '@/components/Footer/FooterLinks';
+import classes from './Layout.module.css';
 
 // import { useTranslation } from "../../i18n/client";
 
@@ -36,6 +38,9 @@ export default function Layout({ children, lng }: LayoutProps) {
           collapsed: { mobile: !mobileOpened, desktop: !desktopOpened },
         }}
         padding="md"
+        classNames={{
+          main: classes.main,
+        }}
       >
         <AppShell.Header>
             <Header opened={mobileOpened} toggle={toggleMobile} desktopOpened={desktopOpened} toggleDesktop={toggleDesktop} lng={lng} />
@@ -45,8 +50,12 @@ export default function Layout({ children, lng }: LayoutProps) {
         </AppShell.Navbar>
   
         <AppShell.Main>
-        {children}
+          <div className={classes.content}>
+            {children}
+          </div>
+          <FooterLinks lng={lng}/>
         </AppShell.Main>
+            
       </AppShell>
     </>
   );

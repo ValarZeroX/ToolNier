@@ -87,6 +87,7 @@ const UUIDGeneratorClient: React.FC<UUIDGeneratorClientProps> = ({ lng }) => {
                         readOnly
                         autosize
                         minRows={5}
+                        maxRows={10}
                     />
                 )}
             </Stack>
