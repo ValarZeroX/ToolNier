@@ -1,0 +1,38 @@
+{
+    "privacy": {
+        "title": "Privacy Policy",
+        "introduction": "This website respects and protects your privacy. To provide a better browsing experience and advertising services, this website uses the following third-party services:",
+        "sections": {
+            "google_analytics": {
+                "title": "1. Google Analytics (GA)",
+                "content": "We use Google Analytics to analyze website traffic and user behavior. This service may collect anonymous statistical data including your IP address, device information, and user behavior.",
+                "privacy_policy": "For information about how Google Analytics processes data, please refer to their",
+                "privacy_policy_link": "Privacy Policy"
+            },
+            "google_adsense": {
+                "title": "2. Google AdSense Advertising",
+                "content": "We use Google AdSense to provide content-related advertisements. Google and its partners may serve ads based on your Cookie information.",
+                "settings": "You can adjust personalized ad settings in",
+                "settings_link": "Google Ad Settings",
+                "settings_middle": ", or refer to",
+                "privacy_terms": "Google's Privacy & Terms",
+                "settings_end": "for more details."
+            },
+            "cookies": {
+                "title": "3. Cookie Usage",
+                "content": "This website may use cookies to store user preferences and statistical information. You can restrict or delete cookies through your browser settings."
+            },
+            "third_party_links": {
+                "title": "4. Third-Party Website Links",
+                "content": "This website may contain links to third-party websites. These websites are not bound by this policy, please refer to their respective privacy policies."
+            }
+        },
+        "agreement": "By using this website, you agree to the terms of this policy.",
+        "contact": "If you have any questions, please contact us through the contact information provided on the website."
+    },
+    "metadata": {
+        "privacy_page_title": "Privacy Policy - ToolNier",
+        "privacy_page_description": "Learn about our privacy policy and data processing methods.",
+        "privacy_page_keywords": "privacy policy, data protection, Google Analytics, Google AdSense, Cookie, third-party services"
+    }
+} 

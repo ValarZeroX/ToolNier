@@ -1,0 +1,11 @@
+{
+    "about": {
+        "title": "About",
+        "links": {
+            "disclaimer": "Disclaimer",
+            "privacy": "Privacy Policy"
+        }
+    },
+    "description": "Build fully functional accessible web applications faster than ever",
+    "copyright": "© 2024 ToolNier. All rights reserved."
+} 
