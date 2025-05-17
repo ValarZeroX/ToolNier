@@ -60,6 +60,18 @@
             "description": "提供重量單位轉換功能。"
         }
     },
+    "symbols": {
+        "title": "符號工具",
+        "description": "提供符號選擇功能。",
+        "emoji": {
+            "title": "Emoji 符號",
+            "description": "生成和選擇表情符號。"
+        },
+        "symbol": {
+            "title": "符號符號",
+            "description": "生成和選擇符號符號。"
+        }
+    },
     "random_draw_page": {
         "title": "隨機抽選",
         "description": "隨機抽選工具可以協助您快速將輸入的項目自動排列成隨機順序，適用於教學、活動分組、遊戲等多種情境。"
@@ -93,6 +105,9 @@
         "tools_page_keywords": "開發者工具, QR Code 生成器, Base64 編碼器, 圖片轉換器, UUID 生成器, JSON 格式化工具",
         "converters_page_title": "單位轉換工具",
         "converters_page_description": "提供長度、重量、溫度等多種單位轉換功能。",
-        "converters_page_keywords": "單位轉換工具, 長度轉換, 重量轉換, 溫度轉換"
+        "converters_page_keywords": "單位轉換工具, 長度轉換, 重量轉換, 溫度轉換",
+        "symbols_page_title": "符號工具",
+        "symbols_page_description": "提供符號選擇功能。",
+        "symbols_page_keywords": "符號工具, Emoji 符號, 符號符號"
     }
 }

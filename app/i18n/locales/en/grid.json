@@ -60,6 +60,18 @@
             "description": "Convert between different weight units."
         }
     },
+    "symbols": {
+        "title": "Symbols Tools",
+        "description": "Provides various symbols selection functions.",
+        "emoji": {
+            "title": "Emoji Symbols",
+            "description": "Generate and select emoji symbols."
+        },
+        "symbol": {
+            "title": "Symbol Symbols",
+            "description": "Generate and select symbol symbols."
+        }
+    },  
     "random_draw_page": {
         "title": "Random Draw",
         "description": "The random draw tool helps you quickly arrange input items in random order, suitable for teaching, activity grouping, games, and various other scenarios."
@@ -93,6 +105,9 @@
         "tools_page_keywords": "developer tools, QR code generator, base64 encoder, image converter, UUID generator, JSON formatter",
         "converters_page_title": "Unit Converter",
         "converters_page_description": "Provides various unit conversion functions for length, weight, and more.",
-        "converters_page_keywords": "unit converter, length converter, weight converter"
+        "converters_page_keywords": "unit converter, length converter, weight converter",
+        "symbols_page_title": "Symbols Tools",
+        "symbols_page_description": "Provides various symbols selection functions.",
+        "symbols_page_keywords": "symbols tools, emoji symbols, symbol symbols"
     }
 }

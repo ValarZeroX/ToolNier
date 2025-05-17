@@ -60,6 +60,18 @@
             "description": "様々な重さの単位を変換できます。"
         }
     },
+    "symbols": {
+        "title": "記号ツール",
+        "description": "様々な記号の選択機能を提供します。",
+        "emoji": {
+            "title": "絵文字",
+            "description": "絵文字の生成と選択ができます。"
+        },
+        "symbol": {
+            "title": "特殊記号",
+            "description": "様々な特殊記号の生成と選択ができます。"
+        }
+    },
     "random_draw_page": {
         "title": "ランダム抽選",
         "description": "ランダム抽選ツールは、入力された項目を自動的にランダムな順序に並べ替え、教育、グループ分け、ゲームなど様々な場面で活用できます。"
@@ -93,6 +105,12 @@
         "tools_page_keywords": "開発者ツール, QRコード生成器, Base64エンコーダー, 画像変換器, UUID生成器, JSONフォーマッター",
         "converters_page_title": "単位変換ツール",
         "converters_page_description": "長さ、重さなど、様々な単位の変換機能を提供します。",
-        "converters_page_keywords": "単位変換ツール, 長さ変換, 重さ変換"
+        "converters_page_keywords": "単位変換ツール, 長さ変換, 重さ変換",
+        "symbols_page_title": "記号ツール",
+        "symbols_page_description": "様々な記号の選択機能を提供します。",
+        "symbols_page_keywords": "記号ツール, 絵文字, 特殊記号",
+        "random_draw_page_title": "ランダム抽選",
+        "random_draw_page_description": "ランダム抽選ツールは、入力された項目を自動的にランダムな順序に並べ替え、教育、グループ分け、ゲームなど様々な場面で活用できます。",
+        "random_draw_page_keywords": "ランダム抽選, ランダムソート, ランダムグループ分け, ランダム数字"
     }
 }
