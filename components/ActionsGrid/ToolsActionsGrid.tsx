@@ -83,7 +83,7 @@ const ToolsActionsGrid: FC<ToolsActionsGridProps> = ({ lng }) => {
             <Card withBorder radius="md" className={classes.card}>
                 <Group justify="space-between">
                     <Text className={classes.title}>
-                        {t('tools.section_title')}
+                        {t('fast_functions')}
                     </Text>
                 </Group>
 

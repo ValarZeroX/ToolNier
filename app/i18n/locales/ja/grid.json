@@ -45,7 +45,19 @@
         },
         "converter": {
             "title": "単位変換ツール",
-            "description": "長さ、重さ、温度など、様々な単位の変換機能を提供します。"
+            "description": "長さ、重さなど、様々な単位の変換機能を提供します。"
+        }
+    },
+    "converters": {
+        "title": "単位変換ツール",
+        "description": "長さ、重さなど、様々な単位の変換機能を提供します。",
+        "length": {
+            "title": "長さ変換",
+            "description": "様々な長さの単位を変換できます。"
+        },
+        "weight": {
+            "title": "重さ変換",
+            "description": "様々な重さの単位を変換できます。"
         }
     },
     "random_draw_page": {
@@ -78,6 +90,9 @@
         "random_tools_page_keywords": "ランダムツール, ランダム抽選, ランダムソート, ランダムグループ分け, ランダム数字",
         "tools_page_title": "開発者ツール",
         "tools_page_description": "エンコード、フォーマット、データ処理などの開発に必要なツールを提供します。",
-        "tools_page_keywords": "開発者ツール, QRコード生成器, Base64エンコーダー, 画像変換器, UUID生成器, JSONフォーマッター"
+        "tools_page_keywords": "開発者ツール, QRコード生成器, Base64エンコーダー, 画像変換器, UUID生成器, JSONフォーマッター",
+        "converters_page_title": "単位変換ツール",
+        "converters_page_description": "長さ、重さなど、様々な単位の変換機能を提供します。",
+        "converters_page_keywords": "単位変換ツール, 長さ変換, 重さ変換"
     }
 }

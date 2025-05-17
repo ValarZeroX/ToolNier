@@ -48,6 +48,18 @@
             "description": "提供長度、重量、溫度等多種單位轉換功能。"
         }
     },
+    "converters": {
+        "title": "單位轉換工具",
+        "description": "提供長度、重量、溫度等多種單位轉換功能。",
+        "length": {
+            "title": "長度轉換",
+            "description": "提供長度單位轉換功能。"
+        },
+        "weight": {
+            "title": "重量轉換",
+            "description": "提供重量單位轉換功能。"
+        }
+    },
     "random_draw_page": {
         "title": "隨機抽選",
         "description": "隨機抽選工具可以協助您快速將輸入的項目自動排列成隨機順序，適用於教學、活動分組、遊戲等多種情境。"
@@ -78,6 +90,9 @@
         "random_tools_page_keywords": "隨機工具, 隨機抽選, 隨機排序, 隨機分組, 隨機數字",
         "tools_page_title": "開發者工具",
         "tools_page_description": "提供編碼、格式化和資料處理等開發必備工具。",
-        "tools_page_keywords": "開發者工具, QR Code 生成器, Base64 編碼器, 圖片轉換器, UUID 生成器, JSON 格式化工具"
+        "tools_page_keywords": "開發者工具, QR Code 生成器, Base64 編碼器, 圖片轉換器, UUID 生成器, JSON 格式化工具",
+        "converters_page_title": "單位轉換工具",
+        "converters_page_description": "提供長度、重量、溫度等多種單位轉換功能。",
+        "converters_page_keywords": "單位轉換工具, 長度轉換, 重量轉換, 溫度轉換"
     }
 }

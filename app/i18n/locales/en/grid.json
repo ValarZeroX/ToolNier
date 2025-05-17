@@ -48,6 +48,18 @@
             "description": "Provides various unit conversion functions for length, weight, temperature, and more."
         }
     },
+    "converters": {
+        "title": "Unit Converter",
+        "description": "Provides various unit conversion functions for length, weight, and more.",
+        "length": {
+            "title": "Length Converter",
+            "description": "Convert between different length units."
+        },
+        "weight": {
+            "title": "Weight Converter",
+            "description": "Convert between different weight units."
+        }
+    },
     "random_draw_page": {
         "title": "Random Draw",
         "description": "The random draw tool helps you quickly arrange input items in random order, suitable for teaching, activity grouping, games, and various other scenarios."
@@ -78,6 +90,9 @@
         "random_tools_page_keywords": "random tools, random draw, random sort, random group, random number",
         "tools_page_title": "Developer Tools",
         "tools_page_description": "A collection of essential development tools for encoding, formatting, and data manipulation.",
-        "tools_page_keywords": "developer tools, QR code generator, base64 encoder, image converter, UUID generator, JSON formatter"
+        "tools_page_keywords": "developer tools, QR code generator, base64 encoder, image converter, UUID generator, JSON formatter",
+        "converters_page_title": "Unit Converter",
+        "converters_page_description": "Provides various unit conversion functions for length, weight, and more.",
+        "converters_page_keywords": "unit converter, length converter, weight converter"
     }
 }
