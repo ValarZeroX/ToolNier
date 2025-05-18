@@ -87,7 +87,7 @@ const ActionsGrid: FC<ActionsGridProps> = ({ lng }) => {
               </Text>
             </Group>
       
-            <SimpleGrid cols={3} mt="md">
+            <SimpleGrid cols={{ base: 1, sm: 2, md: 3 }} mt="md">
               {tools.map((item) => (
                 <UnstyledButton key={item.title} className={classes.item} onClick={() => handleNavigation(item.href)}>
                   <item.icon size={32} color={item.color} />
