@@ -58,6 +58,10 @@
         "weight": {
             "title": "Weight Converter",
             "description": "Convert between different weight units."
+        },
+        "temperature": {
+            "title": "Temperature Converter",
+            "description": "Convert temperature values between different units."
         }
     },
     "symbols": {

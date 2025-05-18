@@ -1,0 +1,20 @@
+{
+    "metadata": {
+        "temperature_converter_title": "温度单位转换工具",
+        "temperature_converter_description": "将温度值从一种单位转换为另一种单位。支持摄氏度 (°C)、华氏度 (°F) 和开尔文 (K) 之间的相互转换。",
+        "temperature_converter_keywords": "温度转换, 温度单位转换, 摄氏度, 华氏度, 开尔文, 温度转换工具, 温度转换器, 温度转换器工具, 温度转换器在线, 温度转换器免费, 温度转换器应用程序, 温度转换器工具nier"
+    },
+    "temperature_converter": {
+        "title": "温度转换",
+        "description": "将温度值从一种单位转换为另一种单位。支持摄氏度 (°C)、华氏度 (°F) 和开尔文 (K) 之间的相互转换。",
+        "input_label": "请输入温度值",
+        "from_label": "从哪个单位",
+        "to_label": "转换为",
+        "result": "结果：",
+        "units": {
+            "C": "摄氏度 (°C)",
+            "F": "华氏度 (°F)",
+            "K": "开尔文 (K)"
+        }
+    }
+}

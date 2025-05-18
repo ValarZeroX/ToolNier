@@ -58,6 +58,10 @@
         "weight": {
             "title": "重量轉換",
             "description": "提供重量單位轉換功能。"
+        },
+        "temperature": {
+            "title": "溫度單位轉換",
+            "description": "將溫度值從一種單位轉換為另一種單位。"
         }
     },
     "symbols": {

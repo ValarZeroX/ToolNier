@@ -58,6 +58,10 @@
         "weight": {
             "title": "重さ変換",
             "description": "様々な重さの単位を変換できます。"
+        },
+        "temperature": {
+            "title": "温度単位変換",
+            "description": "様々な温度の単位を変換できます。"
         }
     },
     "symbols": {

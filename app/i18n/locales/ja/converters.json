@@ -1,0 +1,20 @@
+{
+    "metadata": {
+        "temperature_converter_title": "温度単位変換ツール",
+        "temperature_converter_description": "温度値をある単位から別の単位に変換します。摂氏 (°C)、華氏 (°F)、ケルビン (K) の相互変換をサポートしています。",
+        "temperature_converter_keywords": "温度変換, 温度単位変換, 摂氏, 華氏, ケルビン, 温度変換ツール, 温度変換器, 温度変換アプリ, オンライン温度変換, 無料温度変換, 温度変換アプリケーション, 温度変換ツールnier"
+    },
+    "temperature_converter": {
+        "title": "温度変換",
+        "description": "温度値をある単位から別の単位に変換します。摂氏 (°C)、華氏 (°F)、ケルビン (K) の相互変換をサポートしています。",
+        "input_label": "温度値を入力してください",
+        "from_label": "変換元の単位",
+        "to_label": "変換先の単位",
+        "result": "結果：",
+        "units": {
+            "C": "摂氏 (°C)",
+            "F": "華氏 (°F)",
+            "K": "ケルビン (K)"
+        }
+    }
+}
