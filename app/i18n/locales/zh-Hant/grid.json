@@ -62,6 +62,10 @@
         "temperature": {
             "title": "溫度單位轉換",
             "description": "將溫度值從一種單位轉換為另一種單位。"
+        },
+        "time": {
+            "title": "時間單位轉換",
+            "description": "將時間值從一種單位轉換為另一種單位。"
         }
     },
     "symbols": {

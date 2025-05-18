@@ -62,6 +62,10 @@
         "temperature": {
             "title": "Temperature Converter",
             "description": "Convert temperature values between different units."
+        },
+        "time": {
+            "title": "Time Converter",
+            "description": "Convert time values between different units."
         }
     },
     "symbols": {

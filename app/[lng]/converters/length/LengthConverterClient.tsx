@@ -19,7 +19,7 @@ interface LengthConverterClientProps {
 
 const LengthConverterClient: React.FC<LengthConverterClientProps> = ({ lng }) => {
   const { t } = useTranslation(lng, 'common');
-  const [inputValue, setInputValue] = useState('');
+  const [inputValue, setInputValue] = useState('100');
   const [fromUnit, setFromUnit] = useState('m');
   const [toUnit, setToUnit] = useState('ft');
 
@@ -79,15 +79,15 @@ const LengthConverterClient: React.FC<LengthConverterClientProps> = ({ lng }) =>
           onChange={(value) => setToUnit(value || 'ft')}
         />
 
-<Paper withBorder shadow="sm" radius="md" p="md" ta="center" mt="md">
-  <Text size="sm" c="dimmed">{t('length_converter.result')}</Text>
-  <Group justify="center" mt="xs" gap="xs">
-    <IconEqual size={18} />
-    <Text size="xl" fw={700}>
-      {convert()} {toUnit}
-    </Text>
-  </Group>
-</Paper>
+        <Paper withBorder shadow="sm" radius="md" p="md" ta="center" mt="md">
+          <Text size="sm" c="dimmed">{t('length_converter.result')}</Text>
+          <Group justify="center" mt="xs" gap="xs">
+            <IconEqual size={18} />
+            <Text size="xl" fw={700}>
+              {convert()} {toUnit}
+            </Text>
+          </Group>
+        </Paper>
       </Stack>
     </Container>
   );

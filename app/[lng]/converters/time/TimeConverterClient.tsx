@@ -20,7 +20,7 @@ interface TimeConverterClientProps {
 
 const TimeConverterClient: React.FC<TimeConverterClientProps> = ({ lng }) => {
     const { t } = useTranslation(lng, 'converters');
-    const [inputValue, setInputValue] = useState('');
+    const [inputValue, setInputValue] = useState('100');
     const [fromUnit, setFromUnit] = useState('second');
     const [toUnit, setToUnit] = useState('minute');
 

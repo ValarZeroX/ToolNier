@@ -62,6 +62,10 @@
         "temperature": {
             "title": "温度単位変換",
             "description": "様々な温度の単位を変換できます。"
+        },
+        "time": {
+            "title": "時間単位変換",
+            "description": "様々な時間の単位を変換できます。"
         }
     },
     "symbols": {

@@ -19,7 +19,7 @@ interface TemperatureConverterClientProps {
 
 const TemperatureConverterClient: React.FC<TemperatureConverterClientProps> = ({ lng }) => {
     const { t } = useTranslation(lng, 'converters');
-    const [inputValue, setInputValue] = useState('');
+    const [inputValue, setInputValue] = useState('100');
     const [fromUnit, setFromUnit] = useState('C');
     const [toUnit, setToUnit] = useState('F');
 

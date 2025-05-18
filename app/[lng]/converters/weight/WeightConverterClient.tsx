@@ -19,7 +19,7 @@ interface WeightConverterClientProps {
 
 const WeightConverterClient: React.FC<WeightConverterClientProps> = ({ lng }) => {
     const { t } = useTranslation(lng, 'common');
-    const [inputValue, setInputValue] = useState('');
+    const [inputValue, setInputValue] = useState('100');
     const [fromUnit, setFromUnit] = useState('kg');
     const [toUnit, setToUnit] = useState('lb');
 

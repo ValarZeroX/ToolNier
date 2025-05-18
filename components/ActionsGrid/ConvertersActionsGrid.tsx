@@ -48,14 +48,14 @@ const ConvertersActionsGrid: FC<ConvertersActionsGridProps> = ({ lng }) => {
             href: `/${lng}/converters/temperature`,
             description: t('converters.temperature.description')
         },
-        // {
-        //     id: 'time',
-        //     title: t('converters.time.title'),
-        //     icon: IconClock,
-        //     color: 'violet',
-        //     href: `/${lng}/converters/time`,
-        //     description: t('converters.time.description')
-        // },
+        {
+            id: 'time',
+            title: t('converters.time.title'),
+            icon: IconClock,
+            color: 'violet',
+            href: `/${lng}/converters/time`,
+            description: t('converters.time.description')
+        },
         // {
         //     id: 'currency',
         //     title: t('converters.currency.title'),
