@@ -2,7 +2,10 @@
     "metadata": {
         "temperature_converter_title": "Temperature Unit Converter",
         "temperature_converter_description": "Convert temperature values between different units. Supports conversion between Celsius (°C), Fahrenheit (°F), and Kelvin (K).",
-        "temperature_converter_keywords": "temperature conversion, temperature unit converter, celsius, fahrenheit, kelvin, temperature converter tool, temperature converter app, online temperature converter, free temperature converter, temperature converter application, temperature converter toolnier"
+        "temperature_converter_keywords": "temperature conversion, temperature unit converter, celsius, fahrenheit, kelvin, temperature converter tool, temperature converter app, online temperature converter, free temperature converter, temperature converter application, temperature converter toolnier",
+        "time_converter_title": "Time Unit Converter",
+        "time_converter_description": "Convert time between different units. Supports conversion between milliseconds (ms), seconds (s), minutes (min), hours (h), days (d), and weeks (w).",
+        "time_converter_keywords": "time conversion, time unit converter, milliseconds, seconds, minutes, hours, days, weeks, time converter tool, time converter app, online time converter, free time converter, time converter application, time converter toolnier"
     },
     "temperature_converter": {
         "title": "Temperature Converter",
@@ -15,6 +18,22 @@
             "C": "Celsius (°C)",
             "F": "Fahrenheit (°F)",
             "K": "Kelvin (K)"
+        }
+    },
+    "time_converter": {
+        "title": "Time Converter",
+        "description": "Convert time between different units. Supports conversion between milliseconds (ms), seconds (s), minutes (min), hours (h), days (d), and weeks (w).",
+        "input_label": "Enter time value",
+        "from_label": "From unit",
+        "to_label": "To unit",
+        "result": "Result:",
+        "units": {
+            "millisecond": "Milliseconds",
+            "second": "Seconds",
+            "minute": "Minutes",
+            "hour": "Hours",
+            "day": "Days",
+            "week": "Weeks"
         }
     }
 }

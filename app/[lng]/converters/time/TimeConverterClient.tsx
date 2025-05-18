@@ -1,0 +1,93 @@
+'use client';
+import React, { useState } from 'react';
+import {
+    Container,
+    Title,
+    Stack,
+    TextInput,
+    Select,
+    Text,
+} from '@mantine/core';
+import { useTranslation } from '../../../i18n/client';
+import { formatNumber } from '@/lib/utils/formatNumber';
+import { Paper, Group } from '@mantine/core';
+import { IconEqual } from '@tabler/icons-react';
+
+
+interface TimeConverterClientProps {
+    lng: string;
+}
+
+const TimeConverterClient: React.FC<TimeConverterClientProps> = ({ lng }) => {
+    const { t } = useTranslation(lng, 'converters');
+    const [inputValue, setInputValue] = useState('');
+    const [fromUnit, setFromUnit] = useState('second');
+    const [toUnit, setToUnit] = useState('minute');
+
+    const timeUnits = [
+        { label: t('time_converter.units.millisecond'), value: 'millisecond' },
+        { label: t('time_converter.units.second'), value: 'second' },
+        { label: t('time_converter.units.minute'), value: 'minute' },
+        { label: t('time_converter.units.hour'), value: 'hour' },
+        { label: t('time_converter.units.day'), value: 'day' },
+        { label: t('time_converter.units.week'), value: 'week' },
+    ];
+
+    const conversionRates: Record<string, number> = {
+        millisecond: 1 / 1000,
+        second: 1,
+        minute: 60,
+        hour: 3600,
+        day: 86400,
+        week: 604800,
+    };
+
+    const convert = () => {
+        const value = parseFloat(inputValue);
+        if (isNaN(value)) return '';
+        const valueInSeconds = value * conversionRates[fromUnit];
+        const converted = valueInSeconds / conversionRates[toUnit];
+        return formatNumber(converted);
+    };
+
+    return (
+        <Container size="xs" mt="lg">
+            <Title order={3} ta="center">{t('time_converter.title')}</Title>
+            <Text ta="center" size="sm" c="dimmed" mt="xs">{t('time_converter.description')}</Text>
+            <Stack gap="md" mt="md">
+                <TextInput
+                    label={t('time_converter.input_label')}
+                    value={inputValue}
+                    onChange={(e) => setInputValue(e.currentTarget.value)}
+                    placeholder="100"
+                />
+
+                <Select
+                    label={t('time_converter.from_label')}
+                    data={timeUnits}
+                    value={fromUnit}
+                    onChange={(value) => setFromUnit(value || 'second')}
+                />
+
+                <Select
+                    label={t('time_converter.to_label')}
+                    data={timeUnits}
+                    value={toUnit}
+                    onChange={(value) => setToUnit(value || 'minute')}
+                />
+
+                <Paper withBorder shadow="sm" radius="md" p="md" ta="center" mt="md">
+                    <Text size="sm" c="dimmed">{t('time_converter.result')}</Text>
+                    <Group justify="center" mt="xs" gap="xs">
+                        <IconEqual size={18} />
+                        <Text size="xl" fw={700}>
+                            {convert()} {t(`time_converter.units.${toUnit}`)}
+                        </Text>
+                    </Group>
+                </Paper>
+            </Stack>
+        </Container>
+    );
+};
+
+export default TimeConverterClient;

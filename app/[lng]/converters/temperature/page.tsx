@@ -5,9 +5,6 @@ import TemperatureConverterClient from './TemperatureConverterClient'; // 客戶
 import Layout from '@/components/Layout/Layout';
 import { useTranslation } from '../../../i18n/index';
 
-// interface MetadataParams {
-//     params: Promise<{ lng: string }>;
-// }
 
 export async function generateMetadata({ params }: { params: Promise<{ lng: string; }> }): Promise<Metadata> {
     const { lng } = await params;

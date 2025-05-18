@@ -9,6 +9,9 @@ import {
   Text,
 } from '@mantine/core';
 import { useTranslation } from '../../../i18n/client';
+import { formatNumber } from '@/lib/utils/formatNumber';
+import { Paper, Group } from '@mantine/core';
+import { IconEqual } from '@tabler/icons-react';
 
 interface LengthConverterClientProps {
   lng: string;
@@ -47,7 +50,7 @@ const LengthConverterClient: React.FC<LengthConverterClientProps> = ({ lng }) =>
     if (isNaN(value)) return '';
     const valueInMeters = value * conversionRates[fromUnit];
     const converted = valueInMeters / conversionRates[toUnit];
-    return converted.toString();
+    return formatNumber(converted);
   };
 
   return (
@@ -76,9 +79,15 @@ const LengthConverterClient: React.FC<LengthConverterClientProps> = ({ lng }) =>
           onChange={(value) => setToUnit(value || 'ft')}
         />
 
-        <Text fw={700} ta="center">
-          {t('length_converter.result')} {convert()} {toUnit}
-        </Text>
+<Paper withBorder shadow="sm" radius="md" p="md" ta="center" mt="md">
+  <Text size="sm" c="dimmed">{t('length_converter.result')}</Text>
+  <Group justify="center" mt="xs" gap="xs">
+    <IconEqual size={18} />
+    <Text size="xl" fw={700}>
+      {convert()} {toUnit}
+    </Text>
+  </Group>
+</Paper>
       </Stack>
     </Container>
   );

@@ -18,6 +18,8 @@
   "unit_converter": "Unit Converter",
   "length_converter_title": "Length Converter",
   "weight_converter_title": "Weight Converter",
+  "temperature_converter_title": "Temperature Converter",
+  "time_converter_title": "Time Converter",
   "home": "Home",
   "copy": "Copy",
   "copied": "Copied ✅",

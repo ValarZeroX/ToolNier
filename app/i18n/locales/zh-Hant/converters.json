@@ -2,7 +2,10 @@
     "metadata": {
         "temperature_converter_title": "溫度單位轉換工具",
         "temperature_converter_description": "將溫度值從一種單位轉換為另一種單位。支援攝氏度 (°C)、華氏度 (°F) 和開爾文 (K) 之間的相互轉換。",
-        "temperature_converter_keywords": "溫度轉換, 溫度單位轉換, 攝氏度, 華氏度, 開爾文, 溫度轉換工具, 溫度轉換器, 溫度轉換器工具, 溫度轉換器線上, 溫度轉換器免費, 溫度轉換器應用程式, 溫度轉換器工具nier"
+        "temperature_converter_keywords": "溫度轉換, 溫度單位轉換, 攝氏度, 華氏度, 開爾文, 溫度轉換工具, 溫度轉換器, 溫度轉換器工具, 溫度轉換器線上, 溫度轉換器免費, 溫度轉換器應用程式, 溫度轉換器工具nier",
+        "time_converter_title": "時間單位轉換工具",
+        "time_converter_description": "將時間從一種單位轉換為另一種單位。支援毫秒 (ms)、秒 (s)、分鐘 (min)、小時 (h)、天 (d) 和週 (w) 之間的相互轉換。",
+        "time_converter_keywords": "時間轉換, 時間單位轉換, 毫秒, 秒, 分鐘, 小時, 天, 週, 時間轉換工具, 時間轉換器, 時間轉換器工具, 時間轉換器線上, 時間轉換器免費, 時間轉換器應用程式, 時間轉換器工具nier"
     },
     "temperature_converter": {
         "title": "溫度轉換",
@@ -15,6 +18,22 @@
             "C": "攝氏度 (°C)",
             "F": "華氏度 (°F)",
             "K": "開爾文 (K)"
+        }
+    },
+    "time_converter": {
+        "title": "時間單位轉換",
+        "description": "將時間從一種單位轉換為另一種單位。支援毫秒 (ms)、秒 (s)、分鐘 (min)、小時 (h)、天 (d) 和週 (w) 之間的相互轉換。",
+        "input_label": "請輸入時間值",
+        "from_label": "從哪個單位",
+        "to_label": "轉換為",
+        "result": "結果：",
+        "units": {
+            "millisecond": "毫秒",
+            "second": "秒",
+            "minute": "分鐘",
+            "hour": "小時",
+            "day": "天",
+            "week": "週"
         }
     }
 }
