@@ -7,7 +7,7 @@ acceptLanguage.languages(languages);
 
 export const config = {
   // matcher: '/:lng*'
-  matcher: ['/((?!common|api|auth|_next/static|_next/image|favicon.ico|favicon.svg|sitemap\.xml|ads\.txt).*)'],
+  matcher: ['/((?!common|api|auth|_next/static|_next/image|favicon.ico|favicon.svg|sitemap\.xml|ads\.txt|robots\.txt).*)'],
   // matcher: ["/(en|zh-hant)/:path*"],
 };
 

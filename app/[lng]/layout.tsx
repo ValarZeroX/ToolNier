@@ -26,6 +26,8 @@ import { ColorSchemeScript } from '@mantine/core';
 import ClientProviders from '@/app/providers/ClientProviders';
 import { languages } from '@/app/i18n/settings';
 import type { Metadata } from 'next';
+import Script from 'next/script';
+import GA_TRACKING_ID from '@/lib/gtag'; 
 
 export async function generateStaticParams() {
   return languages.map((lng) => ({ lng }));
@@ -52,6 +54,24 @@ export default async function RootLayout({ children, params }: RootLayoutProps) 
         <ColorSchemeScript />
         <link rel="shortcut icon" href="/favicon.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <Script
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+        />
+        <Script
+          id="gtag-init"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${GA_TRACKING_ID}', {
+                page_path: window.location.pathname,
+              });
+            `,
+          }}
+        />
       </head>
       <body>
         <ClientProviders>
