@@ -22,6 +22,11 @@ export async function GET() {
     '/tools/json-formatter',
     '/converters/length',
     '/converters/weight',
+    '/converters/temperature',
+    '/converters/time',
+    '/calculator/bmi',
+    '/calculator/bmr',
+
   ];
 
   const urls = languages.flatMap((lng) =>
