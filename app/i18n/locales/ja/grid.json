@@ -58,6 +58,10 @@
         "bmi": {
             "title": "BMI計算機",
             "description": "体格指数（BMI）を計算します。"
+        },
+        "bmr": {
+            "title": "BMR計算機",
+            "description": "基礎代謝率（BMR）を計算します。"
         }
     },
     "converters": {

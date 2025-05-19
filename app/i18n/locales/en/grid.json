@@ -58,6 +58,10 @@
         "bmi": {
             "title": "BMI Calculator",
             "description": "Calculate Body Mass Index (BMI)."
+        },
+        "bmr": {
+            "title": "BMR Calculator",
+            "description": "Calculate Basal Metabolic Rate (BMR)."
         }
     },
     "converters": {

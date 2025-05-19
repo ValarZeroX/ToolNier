@@ -57,7 +57,7 @@ export default function BmiCalculator({ lng }: BmiCalculatorProps) {
     return (
         <Container size="sm">
             <Title ta="center" order={2}>{t('bmi.bmi_calculator')}</Title>
-            <Text ta="center" c="dimmed" size="sm" my="sm">{t('bmi.description')}</Text>
+            <Text  size="sm" my="sm">{t('bmi.description')}</Text>
             <SegmentedControl
                 fullWidth
                 value={unit}
@@ -117,25 +117,25 @@ export default function BmiCalculator({ lng }: BmiCalculatorProps) {
 
                 <Paper withBorder shadow="sm" radius="md" p="md" ta="center" mt="md">
                     <Group justify="center" mt="xs" gap="xs">
-                        <Text size="md" c="dimmed">BMI</Text>
+                        <Text size="lg" fw={700}>BMI</Text>
                         <IconEqual size={18} />
-                        <Text size="xl" fw={700}>
+                        <Text size="lg" fw={700}>
                             {bmi}
                         </Text>
                     </Group>
                     <Group justify="center" mt="xs" gap="xs">
-                        <Text size="md" c="dimmed">{t('bmi.bmi_prime')}</Text>
+                        <Text size="lg" fw={700}>{t('bmi.bmi_prime')}</Text>
                         <IconEqual size={18} />
-                        <Text size="xl" fw={700}>
+                        <Text size="lg" fw={700}>
                             {prime}
                         </Text>
                     </Group>
                 </Paper>
                 <Title order={3}>{t('bmi.adult_bmi')}</Title>
-                <Text ta="center" c="dimmed" size="sm" my="sm">{t('bmi.bmi_2')}</Text>
+                <Text  size="sm" my="sm">{t('bmi.bmi_2')}</Text>
 
                 <Table striped withColumnBorders highlightOnHover mt="md">
-                <Table.Thead>
+                    <Table.Thead>
                         <Table.Tr>
                             <Table.Th>{t('bmi.status')}</Table.Th>
                             <Table.Th>BMI (kg/m²)</Table.Th>
@@ -187,8 +187,8 @@ export default function BmiCalculator({ lng }: BmiCalculatorProps) {
                 </Table>
 
                 <Title order={3} mt="lg">{t('bmi.limitations_of_bmi')}</Title>
-                <Text ta="center" c="dimmed" size="sm" my="sm">{t('bmi.bmi_3')}</Text>
-                <Text ta="center" c="dimmed" size="sm" my="sm">{t('bmi.bmi_4')}</Text>
+                <Text size="sm" my="sm">{t('bmi.bmi_3')}</Text>
+                <Text size="sm" my="sm">{t('bmi.bmi_4')}</Text>
             </Stack>
         </Container>
     );

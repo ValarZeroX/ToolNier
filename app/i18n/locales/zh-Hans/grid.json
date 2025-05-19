@@ -58,6 +58,10 @@
         "bmi": {
             "title": "BMI 计算器",
             "description": "计算身体质量指数（BMI）。"
+        },
+        "bmr": {
+            "title": "BMR 计算器",
+            "description": "计算基础代谢率（BMR）。"
         }
     },
     "converters": {

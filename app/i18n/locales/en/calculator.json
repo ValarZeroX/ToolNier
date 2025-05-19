@@ -18,9 +18,44 @@
         "bmi_prime": "BMI Prime",
         "status": "Status"
     },
+    "bmr": {
+        "bmr_calculator": "BMR Calculator",
+        "bmr_1": "Basal Metabolic Rate (BMR) refers to the rate at which the body consumes energy in a resting state, which is the minimum energy required to maintain basic life functions. BMR is typically expressed in calories, representing the minimum amount of calories the body burns each day.",
+        "bmr_2": "BMR calculation is based on many factors, including age, gender, height, weight, and body fat percentage. Generally, men have a higher BMR than women, younger people typically have a higher BMR than older people, and height and weight also affect BMR calculation results.",
+        "bmr_3": "BMR is crucial for maintaining body functions and health as it represents the minimum calories needed when the body is completely at rest and not performing any activities. Understanding your BMR can help people better set health goals and diet plans, ensuring their daily calorie intake meets the body's needs and avoiding over or under-eating.",
+        "bmr_4": "Additionally, many people combine BMR with Total Daily Energy Expenditure (TDEE) to determine their daily calorie intake. TDEE takes into account an individual's activity level, combining BMR with energy consumed in daily activities to provide a more comprehensive energy requirement estimate.",
+        "bmr_5": "Basal Metabolic Rate Standards",
+        "calories_kg_day": "Calories/kg/day",
+        "bmr_6": "Increase Muscle Mass (Weight Training): Increasing muscle mass through weight training is an effective method to boost BMR. Muscle tissue is more metabolically active than fat tissue, so the body needs to consume more calories to control muscle activity or repair. By increasing muscle mass and weight, BMR can be effectively enhanced.",
+        "bmr_7": "Aerobic Exercise: Aerobic exercises including interval sprints, swimming, cycling, etc., can effectively increase BMR. Aerobic exercise helps improve cardiovascular function and raises the body's metabolic level, thereby promoting calorie consumption.",
+        "bmr_8": "Balanced Diet, Increase Protein Intake: Maintaining a balanced diet and consuming adequate protein and calories is crucial for maintaining BMR. Protein is an essential nutrient for tissue repair and growth, and can also promote BMR increase.",
+        "bmr_9": "Adequate Sleep: Maintaining sufficient and regular sleep is crucial for BMR. Irregular sleep patterns may lead to decreased BMR, so ensuring adequate sleep each night is very important for body health and metabolic function.",
+        "bmr_10": "Control Sugar Intake: Limiting excessive sugar intake can help control weight and maintain BMR. Excessive sugar intake may lead to weight gain and fat accumulation, affecting normal BMR function. Therefore, reducing sugar intake in food and drinks is an important step in maintaining body health and promoting metabolism.",
+        "increase_bmr": "How to Increase BMR",
+        "decreased_bmr": "Causes of Decreased BMR",
+        "bmr_11": "Age Factor: As we age, our body tissues gradually slow down metabolic activities and functions. This naturally leads to a decrease in BMR.",
+        "bmr_12": "Changes in Muscle Mass: Muscle tissue requires energy to maintain normal function. When muscle mass decreases, the body's energy needs also decrease accordingly, affecting BMR.",
+        "bmr_13": "Exercise Habits: Reduced exercise frequency may affect BMR. For example, long-term lack of exercise, such as in sedentary work environments, reduces the body's energy needs, thereby lowering BMR.",
+        "bmr_14": "Dietary Habits: Incorrect dietary habits may affect metabolism. Consuming too many high-calorie foods or long-term dieting may affect BMR.",
+        "bmr_15": "Thyroid Function Abnormalities: The thyroid is a key organ in regulating metabolism. Thyroid abnormalities, such as hyperthyroidism or hypothyroidism, may cause changes in BMR.",
+        "bmr_16": "Hormonal Changes: Changes in hormone levels may also affect BMR. For example, hormonal changes in women during menopause may affect BMR."
+    },
     "metric_units": "Metric",
     "imperial_units": "Imperial",
     "height": "Height",
     "weight": "Weight",
-    "calculate": "Calculate"
+    "calculate": "Calculate",
+    "age": "Age",
+    "gender": "Gender",
+    "male": "Male",
+    "female": "Female",
+    "equation": "Equation",
+    "metadata": {
+        "bmi_calculator_title": "BMI Calculator",
+        "bmi_calculator_description": "Since BMI does not account for body fat percentage, a person with a high BMI may not necessarily be obese. For example, bodybuilders may have a BMI over 30 due to their higher proportion of muscle mass. If their body fat percentage is low, they may not need to lose weight. This indicates that BMI is only a rough indicator and cannot fully reflect body composition and health status.",
+        "bmi_calculator_keywords": "BMI,Body Mass Index,Weight Index,Body Composition Index,Health Index,Obesity Index,Weight Calculation,Health Assessment,Body Fat Percentage,Weight Management,Health Management,Body Assessment,Weight Standards,Health Standards,Obesity Standards,Underweight,Normal Weight,Overweight,Obesity Classification,Health Indicators,Body Composition",
+        "bmr_calculator_title": "BMR Calculator",
+        "bmr_calculator_description": "Basal Metabolic Rate (BMR) refers to the rate at which the body consumes energy in a resting state, which is the minimum energy required to maintain basic life functions. BMR is typically expressed in calories, representing the minimum amount of calories the body burns each day.",
+        "bmr_calculator_keywords": "BMR,Basal Metabolic Rate,Basal Metabolism,Metabolic Rate,Metabolism,Energy Consumption,Energy Requirements,Energy Requirement Estimation,Energy Requirement Calculation,Energy Requirement Estimate,Energy Requirement Calculation Value,Energy Requirement Estimation Formula,Energy Requirement Calculation Formula,Energy Requirement Estimation Formula Value,Energy Requirement Calculation Formula Value"
+    }
 }

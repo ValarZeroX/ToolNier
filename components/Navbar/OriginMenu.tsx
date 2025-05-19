@@ -2,7 +2,7 @@
 
 import { FC } from 'react';
 import { NavLink, Divider, Stack } from '@mantine/core';
-import { IconHome, IconTool, IconMoodHappy, IconDice5, IconRepeat } from '@tabler/icons-react';
+import { IconHome, IconTool, IconMoodHappy, IconDice5, IconRepeat, IconCalculator } from '@tabler/icons-react';
 import { useRouter } from 'next/navigation';
 // import { useSession } from 'next-auth/react';
 import { useTranslation } from "../../app/i18n/client";
@@ -80,6 +80,15 @@ const OriginMenu: FC<OriginMenuProps> = ({ lng }) => {
           <NavLink label={t('common:weight_converter_title')} onClick={() => handleNavigation('/converters/weight')} />
           <NavLink label={t('common:temperature_converter_title')} onClick={() => handleNavigation('/converters/temperature')} />
           <NavLink label={t('common:time_converter_title')} onClick={() => handleNavigation('/converters/time')} />
+        </NavLink>
+        <NavLink
+          component="button"
+          label={t('common:calculator')}
+          leftSection={<IconCalculator size="1rem" stroke={1.5} />}
+        //   onClick={() => handleNavigation('/records')}
+        >
+          <NavLink label={t('common:bmr_calculator_title')} onClick={() => handleNavigation('/calculator/bmr')} />
+          <NavLink label={t('common:bmi_calculator_title')} onClick={() => handleNavigation('/calculator/bmi')} />
         </NavLink>
       </nav>
       {/* {isAuthenticated && (

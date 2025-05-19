@@ -20,6 +20,9 @@
   "weight_converter_title": "重量単位変換ツール",
   "temperature_converter_title": "温度単位変換ツール",
   "time_converter_title": "時間単位変換ツール",
+  "bmr_calculator_title": "BMR 計算機",
+  "bmi_calculator_title": "BMI 計算機",
+  "calculator": "計算機",
   "home": "ホーム",
   "copy": "コピー",
   "copied": "コピー済み ✅",
@@ -67,7 +70,8 @@
     "length_converter_page_keywords": "長さ, 長さ単位, 長さ単位変換, 長さ変換, 長さ変換ツール, 長さ変換オンライン, 長さ変換フリー, 長さ変換アプリ, 長さ変換ツール, toolnier",
     "weight_converter_page_title": "重量単位変換ツール | Weight Converter Tool - ToolNier",
     "weight_converter_page_description": "無料のオンライン重量単位変換ツール。公制（ミリグラム、グラム、キログラム、トン）と英制（オンス、ポンド）の間で迅速に変換できます。",
-    "weight_converter_page_keywords": "重量, 重量単位, 重量単位変換, 重量変換, 重量変換ツール, 重量変換オンライン, 重量変換フリー, 重量変換アプリ, 重量変換ツール, toolnier"
+    "weight_converter_page_keywords": "重量, 重量単位, 重量単位変換, 重量変換, 重量変換ツール, 重量変換オンライン, 重量変換フリー, 重量変換アプリ, 重量変換ツール, toolnier",
+    "bmi_calculator_keywords": "BMI,体格指数,肥満指数,健康指数,体重指数,体組成指数,体重計算,健康評価,体脂肪率,体重管理,健康管理,体組成評価,体重基準,健康基準,肥満基準,低体重,普通体重,過体重,肥満度分類,健康指標,体組成"
   },
   "symbols": {
     "categories": {
