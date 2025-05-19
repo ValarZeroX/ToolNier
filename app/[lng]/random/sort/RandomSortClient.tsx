@@ -9,7 +9,7 @@ interface RandomSortClientProps {
 }
 
 const RandomSortClient: React.FC<RandomSortClientProps> = ({ lng }) => {
-    const { t } = useTranslation(lng, 'common');
+    const { t } = useTranslation(lng, 'random');
     const [inputValue, setInputValue] = useState('A\nB\nC\nD\nE\nF\nG\nH');
 
     const handleRandomSort = () => {
@@ -34,7 +34,7 @@ const RandomSortClient: React.FC<RandomSortClientProps> = ({ lng }) => {
 
     return (
         <Container size="xs" mt="lg">
-            <Title order={3} ta="center">{t('random_sort')}</Title>
+            <Title order={3} ta="center">{t('random_sort.title')}</Title>
             <Text size="sm" c="dimmed" mt="md">
                 {t('random_draw_page.intro')}
             </Text>

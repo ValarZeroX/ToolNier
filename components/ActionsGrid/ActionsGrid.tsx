@@ -22,31 +22,31 @@ interface ActionsGridProps {
 
 const ActionsGrid: FC<ActionsGridProps> = ({ lng }) => {
 
-    const { t } = useTranslation(lng, ['grid', 'calculator', 'converters']);
+    const { t } = useTranslation(lng, ['grid', 'calculator', 'converters', 'tools', 'symbols', 'random']);
     const router = useRouter();
     // const theme = useMantineTheme();
 
     const tools = [
         { 
-            title: t('tools.emoji.title'),
+            title: t('symbols:title'),
             icon: IconMoodHappy,
             color: 'violet',
             href: `/${lng}/symbols`,
-            description: t('tools.emoji.description')
+            description: t('symbols:description')
         },
         { 
-            title: t('tools.random.title'),
+            title: t('random:title'),
             icon: IconDice5,
             color: 'indigo',
             href: `/${lng}/random`,
-            description: t('tools.random.description')
+            description: t('random:description')
         },
         { 
-            title: t('tools.developer.title'),
+            title: t('tools:title'),
             icon: IconTool,
             color: 'blue',
             href: `/${lng}/tools`,
-            description: t('tools.developer.description')
+            description: t('tools:description')
         },
         { 
             title: t('converters:title'),

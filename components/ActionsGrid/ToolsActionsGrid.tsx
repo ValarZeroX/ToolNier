@@ -20,49 +20,49 @@ interface ToolsActionsGridProps {
 }
 
 const ToolsActionsGrid: FC<ToolsActionsGridProps> = ({ lng }) => {
-    const { t } = useTranslation(lng, ['grid']);
+    const { t } = useTranslation(lng, ['grid', 'tools']);
     const router = useRouter();
 
     const tools = [
         {
             id: 'qr-code',
-            title: t('tools.qr_code.title'),
+            title: t('tools:qr_code.title'),
             icon: IconQrcode,
             color: 'violet',
             href: `/${lng}/tools/qr-code-generator`,
-            description: t('tools.qr_code.description')
+            description: t('tools:qr_code.description')
         },
         {
             id: 'base64',
-            title: t('tools.base64.title'),
+            title: t('tools:base64.title'),
             icon: IconCode,
             color: 'indigo',
             href: `/${lng}/tools/base64-encoder-decoder`,
-            description: t('tools.base64.description')
+            description: t('tools:base64.description')
         },
         {
             id: 'image-base64',
-            title: t('tools.image_base64.title'),
+            title: t('tools:image_base64.title'),
             icon: IconPhoto,
             color: 'blue',
             href: `/${lng}/tools/image-base64-converter`,
-            description: t('tools.image_base64.description')
+            description: t('tools:image_base64.description')
         },
         {
             id: 'uuid',
-            title: t('tools.uuid.title'),
+            title: t('tools:uuid.title'),
             icon: IconId,
             color: 'green',
             href: `/${lng}/tools/uuid-generator`,
-            description: t('tools.uuid.description')
+            description: t('tools:uuid.description')
         },
         {
             id: 'json',
-            title: t('tools.json.title'),
+            title: t('tools:json.title'),
             icon: IconFileCode,
             color: 'teal',
             href: `/${lng}/tools/json-formatter`,
-            description: t('tools.json.description')
+            description: t('tools:json.description')
         },
     ];
 
@@ -73,11 +73,11 @@ const ToolsActionsGrid: FC<ToolsActionsGridProps> = ({ lng }) => {
     return (
         <Container size="lg">
             <Title order={1} size="h2" mt="xl" ta="center">
-                {t('tools.title')}
+                {t('tools:title')}
             </Title>
 
             <Text ta="center" c="dimmed" mt="sm" mb="lg" size="sm">
-                {t('tools.description')}
+                {t('tools:description')}
             </Text>
 
             <Card withBorder radius="md" className={classes.card}>

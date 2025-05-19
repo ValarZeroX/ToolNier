@@ -13,7 +13,7 @@ const RandomDrawClient: React.FC<RandomDrawClientProps> = ({ lng }) => {
   const [options, setOptions] = useState<string[]>([]);
   const [result, setResult] = useState<string | null>(null);
   const [history, setHistory] = useState<string[]>([]);
-  const { t } = useTranslation(lng, 'common');
+  const { t } = useTranslation(lng, 'random');
 
   
   const handleStartDraw = () => {

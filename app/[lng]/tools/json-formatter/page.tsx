@@ -11,7 +11,7 @@ import { useTranslation } from '../../../i18n/index';
 
 export async function generateMetadata({ params }: { params: Promise<{ lng: string; }> }): Promise<Metadata> {
     const { lng } = await params;
-    const translation = await useTranslation(lng, 'common');
+    const translation = await useTranslation(lng, 'tools');
     const { t: translate } = translation;
 
     return {

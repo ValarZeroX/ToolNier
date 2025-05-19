@@ -10,7 +10,7 @@ interface RandomNumberClientProps {
 }
 
 const RandomNumberClient: React.FC<RandomNumberClientProps> = ({ lng }) => {
-    const { t } = useTranslation(lng, 'common');
+    const { t } = useTranslation(lng, 'random');
     const [min, setMin] = useState<number>(1);
     const [max, setMax] = useState<number>(49);
     const [count, setCount] = useState<number>(6);
@@ -20,8 +20,8 @@ const RandomNumberClient: React.FC<RandomNumberClientProps> = ({ lng }) => {
     const handleGenerate = () => {
         if (min > max || count <= 0 || (noRepeat && count > (max - min + 1))) {
             Notifications.show({
-                title: t('random_number_page.error_title'),
-                message: t('random_number_page.error_message'),
+                title: t('random_number.error_title'),
+                message: t('random_number.error_message'),
                 color: 'red',
             });
             return;
@@ -46,39 +46,39 @@ const RandomNumberClient: React.FC<RandomNumberClientProps> = ({ lng }) => {
 
     return (
         <Container size="xs" mt="lg">
-            <Title order={3} ta="center">{t('random_number_page.title')}</Title>
+            <Title order={3} ta="center">{t('random_number.title')}</Title>
             <Text size="sm" c="dimmed" mt="md">
-                {t('random_number_page.intro')}
+                {t('random_number.intro')}
             </Text>
 
             <Stack gap="md" mt="md">
                 <NumberInput
-                    label={t('random_number_page.min')}
+                    label={t('random_number.min')}
                     value={min}
                     onChange={(value) => setMin(Number(value))}
                 />
                 <NumberInput
-                    label={t('random_number_page.max')}
+                    label={t('random_number.max')}
                     value={max}
                     onChange={(value) => setMax(Number(value))}
                 />
                 <NumberInput
-                    label={t('random_number_page.count')}
+                    label={t('random_number.count')}
                     value={count}
                     onChange={(value) => setCount(Number(value))}
                 />
                 <Checkbox
-                    label={t('random_number_page.no_repeat')}
+                    label={t('random_number.no_repeat')}
                     checked={noRepeat}
                     onChange={(event) => setNoRepeat(event.currentTarget.checked)}
                 />
                 <Button color="blue" onClick={handleGenerate}>
-                    {t('random_number_page.generate')}
+                    {t('random_number.generate')}
                 </Button>
 
                 {result.length > 0 && (
                     <Paper shadow="xs" p="md" radius="md" withBorder>
-                        <Text ta="center" fw={700}>{t('random_number_page.result')}：</Text>
+                        <Text ta="center" fw={700}>{t('random_number.result')}：</Text>
                         <Text ta="center" size="xl">{result.join(', ')}</Text>
                     </Paper>
                 )}

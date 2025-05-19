@@ -25,7 +25,7 @@ const WheelDrawClient: React.FC<WheelDrawClientProps> = ({ lng }) => {
     const [result, setResult] = useState<string | null>(null);
     const [history, setHistory] = useState<string[]>([]);
     const [hasRemoved, setHasRemoved] = useState(false);
-    const { t } = useTranslation(lng, 'common');
+    const { t } = useTranslation(lng, 'random');
 
     useEffect(() => {
         const entries = inputValue

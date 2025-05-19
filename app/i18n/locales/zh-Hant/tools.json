@@ -1,0 +1,49 @@
+{
+    "title": "開發者工具",
+    "description": "提供程式碼格式化、JSON 驗證、UUID生成等多種開發工具。",
+    "qr_code": {
+        "title": "QR Code 生成器",
+        "description": "生成網址、文字等資料的 QR Code。"
+    },
+    "base64": {
+        "title": "Base64 工具",
+        "description": "編碼和解碼 Base64 字串。"
+    },
+    "image_base64": {
+        "title": "圖片 Base64 轉換器",
+        "description": "將圖片轉換為 Base64 格式或從 Base64 轉換為圖片。"
+    },
+    "uuid": {
+        "title": "UUID 生成器",
+        "description": "生成唯一識別碼（UUID）。"
+    },
+    "json": {
+        "title": "JSON 格式化工具",
+        "description": "格式化、驗證和美化 JSON 資料。"
+    },
+    "emoji": {
+        "title": "Emoji 工具",
+        "description": "生成和選擇表情符號。"
+    },
+    "random": {
+        "title": "隨機工具",
+        "description": "提供隨機抽選、隨機排序、隨機分組和隨機數字等多種隨機功能。"
+    },
+    "metadata": {
+        "qr_generator_page_title": "QR Code 產生器 | QR Code Generator Tool - ToolNier",
+        "qr_generator_page_description": "免費線上 QR Code 產生工具，支援網址、文字、Email 轉換成 QR Code，可自訂顏色與大小，並下載 PNG 格式，適用於社群媒體、網站、名片等場合。",
+        "qr_generator_page_keywords": "QR Code, QR Code generator, QR Code generator tool, QR Code generator online, QR Code generator free, QR Code generator app, QR Code generator toolnier",
+        "base64_tool_page_title": "Base64 編碼解碼工具 | Base64 Encoder Decoder Tool - ToolNier",
+        "base64_tool_page_description": "免費線上 Base64 編碼解碼工具，支援文字、JSON 等格式，可快速將文字轉換成 Base64 編碼，或將 Base64 編碼轉換回原始文字。",
+        "base64_tool_page_keywords": "Base64, Base64 encoder, Base64 decoder, Base64 encoder decoder, Base64 encoder decoder tool, Base64 encoder decoder online, Base64 encoder decoder free, Base64 encoder decoder app, Base64 encoder decoder toolnier",
+        "image_base64_tool_page_title": "圖片 Base64 編碼工具 | Image Base64 Encoder Decoder Tool - ToolNier",
+        "image_base64_tool_page_description": "免費線上圖片 Base64 編碼解碼工具，支援圖片轉換成 Base64 編碼，或將 Base64 編碼轉換回原始圖片。",
+        "image_base64_tool_page_keywords": "圖片 Base64, image base64, image encoder, image decoder, image encoder decoder, image encoder decoder tool, image encoder decoder online, image encoder decoder free, image encoder decoder app, image encoder decoder toolnier",
+        "uuid_generator_page_title": "UUID 產生器 | UUID Generator Tool - ToolNier",
+        "uuid_generator_page_description": "高效能的線上 UUID (通用唯一識別碼) 產生工具。無論您需要單個 UUID 還是批量產生多個，此工具都能立即滿足您的需求。產生的 UUID 符合標準格式，適用於資料庫主鍵、分散式系統、唯一識別符等多種開發場景，確保全域唯一性。",
+        "uuid_generator_page_keywords": "UUID, UUID generator, UUID generator tool, UUID generator online, UUID generator free, UUID generator app, UUID generator toolnier",
+        "json_formatter_tool_page_title": "JSON 格式化工具 | JSON Formatter Tool - ToolNier",
+        "json_formatter_tool_page_description": "免費 JSON 格式化工具，支援一鍵美化、壓縮與下載 JSON 資料。無論是開發除錯、API 測試或資料傳輸前的優化，都能迅速完成格式調整。適用於前端後端開發、伺服器回應解析、設定檔排版，幫助你快速閱讀與檢查 JSON 結構。支援大型 JSON 載入，自動排版縮進與無縫複製。",
+        "json_formatter_tool_page_keywords": "JSON, JSON formatter, JSON formatter tool, JSON formatter online, JSON formatter free, JSON formatter app, JSON formatter toolnier"
+    }
+}

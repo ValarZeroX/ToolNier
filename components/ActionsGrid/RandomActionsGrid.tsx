@@ -20,44 +20,44 @@ interface RandomActionsGridProps {
 }
 
 const RandomActionsGrid: FC<RandomActionsGridProps> = ({ lng }) => {
-    const { t } = useTranslation(lng, ['grid']);
+    const { t } = useTranslation(lng, ['grid', 'random']);
     const router = useRouter();
 
     const tools = [
         {
-            title: t('random_draw.title'),
+            title: t('random:random_draw_page.title'),
             icon: IconDice5,
             color: 'violet',
             href: `/${lng}/random/draw`,
-            description: t('random_draw.description')
+            description: t('random:random_draw_page.grid_description')
         },
         {
-            title: t('random_draw_wheel.title'),
+            title: t('random:random_draw_wheel.title'),
             icon: IconWheel,
             color: 'indigo',
             href: `/${lng}/random/wheel`,
-            description: t('random_draw_wheel.description')
+            description: t('random:random_draw_wheel.description')
         },
         {
-            title: t('random_sort.title'),
+            title: t('random:random_sort.title'),
             icon: IconSortAscending,
             color: 'blue',
             href: `/${lng}/random/sort`,
-            description: t('random_sort.description')
+            description: t('random:random_sort.description')
         },
         {
-            title: t('random_group.title'),
+            title: t('random:random_group.title'),
             icon: IconUsers,
             color: 'green',
             href: `/${lng}/random/group`,
-            description: t('random_group.description')
+            description: t('random:random_group.grid_description')
         },
         {
-            title: t('random_number.title'),
+            title: t('random:random_number.title'),
             icon: IconNumber,
             color: 'teal',
             href: `/${lng}/random/number`,
-            description: t('random_number.description')
+            description: t('random:random_number.description')
         },
     ];
 
@@ -68,11 +68,11 @@ const RandomActionsGrid: FC<RandomActionsGridProps> = ({ lng }) => {
     return (
         <Container size="lg">
             <Title order={1} size="h2" mt="xl" ta="center">
-                {t('random')}
+                {t('random:title')}
             </Title>
 
             <Text ta="center" c="dimmed" mt="sm" mb="lg" size="sm">
-                {t('random_draw_page.description')}
+                {t('random:description')}
             </Text>
 
             <Card withBorder radius="md" className={classes.card}>

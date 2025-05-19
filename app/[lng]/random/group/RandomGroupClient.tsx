@@ -11,7 +11,7 @@ interface RandomGroupClientProps {
 }
 
 const RandomGroupClient: React.FC<RandomGroupClientProps> = ({ lng }) => {
-    const { t } = useTranslation(lng, 'common');
+    const { t } = useTranslation(lng, 'random');
     const [inputValue, setInputValue] = useState('A\nB\nC\nD\nE\nF\nG\nH');
     const [groupCount, setGroupCount] = useState<number | ''>(2);
     const [groups, setGroups] = useState<string[][]>([]);
