@@ -57,7 +57,7 @@ export default function BmiCalculator({ lng }: BmiCalculatorProps) {
     return (
         <Container size="sm">
             <Title ta="center" order={2}>{t('bmi.bmi_calculator')}</Title>
-            <Text  size="sm" my="sm">{t('bmi.description')}</Text>
+            <Text  size="sm" my="sm">{t('bmi.bmi_1')}</Text>
             <SegmentedControl
                 fullWidth
                 value={unit}

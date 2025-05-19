@@ -18,7 +18,7 @@ interface LengthConverterClientProps {
 }
 
 const LengthConverterClient: React.FC<LengthConverterClientProps> = ({ lng }) => {
-  const { t } = useTranslation(lng, 'common');
+  const { t } = useTranslation(lng, 'converters');
   const [inputValue, setInputValue] = useState('100');
   const [fromUnit, setFromUnit] = useState('m');
   const [toUnit, setToUnit] = useState('ft');

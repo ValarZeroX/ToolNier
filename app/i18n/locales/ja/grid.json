@@ -42,46 +42,6 @@
         "developer": {
             "title": "開発者ツール",
             "description": "コードフォーマット、JSON検証、UUID生成など、様々な開発ツールを提供します。"
-        },
-        "converter": {
-            "title": "単位変換ツール",
-            "description": "長さ、重さなど、様々な単位の変換機能を提供します。"
-        },
-        "calculator": {
-            "title": "計算機",
-            "description": "BMI、TDEE、体脂肪率などの計算機能を提供します。"
-        }
-    },
-    "calculator": {
-        "title": "計算機",
-        "description": "BMI、TDEE、体脂肪率などの計算機能を提供します。",
-        "bmi": {
-            "title": "BMI計算機",
-            "description": "体格指数（BMI）を計算します。"
-        },
-        "bmr": {
-            "title": "BMR計算機",
-            "description": "基礎代謝率（BMR）を計算します。"
-        }
-    },
-    "converters": {
-        "title": "単位変換ツール",
-        "description": "長さ、重さなど、様々な単位の変換機能を提供します。",
-        "length": {
-            "title": "長さ変換",
-            "description": "様々な長さの単位を変換できます。"
-        },
-        "weight": {
-            "title": "重さ変換",
-            "description": "様々な重さの単位を変換できます。"
-        },
-        "temperature": {
-            "title": "温度単位変換",
-            "description": "様々な温度の単位を変換できます。"
-        },
-        "time": {
-            "title": "時間単位変換",
-            "description": "様々な時間の単位を変換できます。"
         }
     },
     "symbols": {

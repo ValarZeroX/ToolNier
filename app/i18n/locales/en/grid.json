@@ -42,46 +42,6 @@
         "developer": {
             "title": "Developer Tools",
             "description": "Provides various development tools including code formatting, JSON validation, and UUID generation."
-        },
-        "converter": {
-            "title": "Unit Converter",
-            "description": "Provides various unit conversion functions for length, weight, temperature, and more."
-        },
-        "calculator": {
-            "title": "Calculator",
-            "description": "Provides BMI, TDEE, body fat percentage and other calculation functions."
-        }
-    },
-    "calculator": {
-        "title": "Calculator",
-        "description": "Provides BMI, TDEE, body fat percentage and other calculation functions.",
-        "bmi": {
-            "title": "BMI Calculator",
-            "description": "Calculate Body Mass Index (BMI)."
-        },
-        "bmr": {
-            "title": "BMR Calculator",
-            "description": "Calculate Basal Metabolic Rate (BMR)."
-        }
-    },
-    "converters": {
-        "title": "Unit Converter",
-        "description": "Provides various unit conversion functions for length, weight, and more.",
-        "length": {
-            "title": "Length Converter",
-            "description": "Convert between different length units."
-        },
-        "weight": {
-            "title": "Weight Converter",
-            "description": "Convert between different weight units."
-        },
-        "temperature": {
-            "title": "Temperature Converter",
-            "description": "Convert temperature values between different units."
-        },
-        "time": {
-            "title": "Time Converter",
-            "description": "Convert time values between different units."
         }
     },
     "symbols": {

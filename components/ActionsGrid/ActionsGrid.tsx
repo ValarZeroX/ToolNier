@@ -22,7 +22,7 @@ interface ActionsGridProps {
 
 const ActionsGrid: FC<ActionsGridProps> = ({ lng }) => {
 
-    const { t } = useTranslation(lng, ['grid']);
+    const { t } = useTranslation(lng, ['grid', 'calculator', 'converters']);
     const router = useRouter();
     // const theme = useMantineTheme();
 
@@ -49,18 +49,18 @@ const ActionsGrid: FC<ActionsGridProps> = ({ lng }) => {
             description: t('tools.developer.description')
         },
         { 
-            title: t('tools.converter.title'),
+            title: t('converters:title'),
             icon: IconRepeat,
             color: 'green',
             href: `/${lng}/converters`,
-            description: t('tools.converter.description')
+            description: t('converters:description')
         },
         { 
-            title: t('tools.calculator.title'),
+            title: t('calculator:title'),
             icon: IconCalculator,
             color: 'blue',
             href: `/${lng}/calculator`,
-            description: t('tools.calculator.description')
+            description: t('calculator:description')
         },
     ];
 

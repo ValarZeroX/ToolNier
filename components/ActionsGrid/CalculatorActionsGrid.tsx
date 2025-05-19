@@ -20,25 +20,25 @@ interface ToolsActionsGridProps {
 }
 
 const ToolsActionsGrid: FC<ToolsActionsGridProps> = ({ lng }) => {
-    const { t } = useTranslation(lng, ['grid']);
+    const { t } = useTranslation(lng, ['grid', 'calculator']);
     const router = useRouter();
 
     const tools = [
         {
             id: 'bmi',
-            title: t('calculator.bmi.title'),
+            title: t('calculator:bmi.bmi_calculator'),
             icon: IconHealthRecognition,
             color: 'violet',
             href: `/${lng}/calculator/bmi`,
-            description: t('calculator.bmi.description')
+            description: t('calculator:bmi.description')
         },
         {
             id: 'bmr',
-            title: t('calculator.bmr.title'),
+            title: t('calculator:bmr.bmr_calculator'),
             icon: IconHealthRecognition,
             color: 'violet',
             href: `/${lng}/calculator/bmr`,
-            description: t('calculator.bmr.description')
+            description: t('calculator:bmr.description')
         }
     ];
 
@@ -49,11 +49,11 @@ const ToolsActionsGrid: FC<ToolsActionsGridProps> = ({ lng }) => {
     return (
         <Container size="lg">
             <Title order={1} size="h2" mt="xl" ta="center">
-                {t('calculator.title')}
+                {t('calculator:title')}
             </Title>
 
             <Text ta="center" c="dimmed" mt="sm" mb="lg" size="sm">
-                {t('calculator.description')}
+                {t('calculator:description')}
             </Text>
 
             <Card withBorder radius="md" className={classes.card}>

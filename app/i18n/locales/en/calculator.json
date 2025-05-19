@@ -1,7 +1,10 @@
 {
+    "title": "Calculator",
+    "description": "Provides BMI, TDEE, body fat percentage and other calculation functions.",
     "bmi": {
         "bmi_calculator": "BMI Calculator",
-        "description": "Since BMI does not account for body fat percentage, a person with a high BMI may not necessarily be obese. For example, bodybuilders may have a BMI over 30 due to their higher proportion of muscle mass. If their body fat percentage is low, they may not need to lose weight. This indicates that BMI is only a rough indicator and cannot fully reflect body composition and health status.",
+        "description": "Calculate Body Mass Index (BMI).",
+        "bmi_1": "Since BMI does not account for body fat percentage, a person with a high BMI may not necessarily be obese. For example, bodybuilders may have a BMI over 30 due to their higher proportion of muscle mass. If their body fat percentage is low, they may not need to lose weight. This indicates that BMI is only a rough indicator and cannot fully reflect body composition and health status.",
         "severe_thinness": "Underweight (Severe thinness)",
         "moderate_thinness": "Underweight (Moderate thinness)",
         "mild_thinness": "Underweight (Mild thinness)",
@@ -20,6 +23,7 @@
     },
     "bmr": {
         "bmr_calculator": "BMR Calculator",
+        "description": "Calculate Basal Metabolic Rate (BMR).",
         "bmr_1": "Basal Metabolic Rate (BMR) refers to the rate at which the body consumes energy in a resting state, which is the minimum energy required to maintain basic life functions. BMR is typically expressed in calories, representing the minimum amount of calories the body burns each day.",
         "bmr_2": "BMR calculation is based on many factors, including age, gender, height, weight, and body fat percentage. Generally, men have a higher BMR than women, younger people typically have a higher BMR than older people, and height and weight also affect BMR calculation results.",
         "bmr_3": "BMR is crucial for maintaining body functions and health as it represents the minimum calories needed when the body is completely at rest and not performing any activities. Understanding your BMR can help people better set health goals and diet plans, ensuring their daily calorie intake meets the body's needs and avoiding over or under-eating.",

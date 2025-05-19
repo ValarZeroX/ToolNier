@@ -42,46 +42,6 @@
         "developer": {
             "title": "開發者工具",
             "description": "提供程式碼格式化、JSON 驗證、UUID生成等多種開發工具。"
-        },
-        "converter": {
-            "title": "單位轉換工具",
-            "description": "提供長度、重量、溫度等多種單位轉換功能。"
-        },
-        "calculator": {
-            "title": "計算器",
-            "description": "提供加BMI、TDEE、體脂率等計算功能。"
-        }
-    },
-    "calculator": {
-        "title": "計算器",
-        "description": "提供加BMI、TDEE、體脂率等計算功能。",
-        "bmi": {
-            "title": "BMI 計算器",
-            "description": "計算身體質量指數（BMI）。"
-        },
-        "bmr": {
-            "title": "BMR 計算器",
-            "description": "計算基礎代謝率（BMR）。"
-        }
-    },
-    "converters": {
-        "title": "單位轉換工具",
-        "description": "提供長度、重量、溫度等多種單位轉換功能。",
-        "length": {
-            "title": "長度轉換",
-            "description": "提供長度單位轉換功能。"
-        },
-        "weight": {
-            "title": "重量轉換",
-            "description": "提供重量單位轉換功能。"
-        },
-        "temperature": {
-            "title": "溫度單位轉換",
-            "description": "將溫度值從一種單位轉換為另一種單位。"
-        },
-        "time": {
-            "title": "時間單位轉換",
-            "description": "將時間值從一種單位轉換為另一種單位。"
         }
     },
     "symbols": {

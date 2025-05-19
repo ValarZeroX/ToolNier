@@ -20,41 +20,41 @@ interface ConvertersActionsGridProps {
 }
 
 const ConvertersActionsGrid: FC<ConvertersActionsGridProps> = ({ lng }) => {
-    const { t } = useTranslation(lng, ['grid']);
+    const { t } = useTranslation(lng, ['grid', 'converters']);
     const router = useRouter();
 
     const converters = [
         {
             id: 'length',
-            title: t('converters.length.title'),
+            title: t('converters:length_converter.title'),
             icon: IconRuler,
             color: 'blue',
             href: `/${lng}/converters/length`,
-            description: t('converters.length.description')
+            description: t('converters:length_converter.grid_description')
         },
         {
             id: 'weight',
-            title: t('converters.weight.title'),
+            title: t('converters:weight_converter.title'),
             icon: IconScale,
             color: 'green',
             href: `/${lng}/converters/weight`,
-            description: t('converters.weight.description')
+            description: t('converters:weight_converter.grid_description')
         },
         {
             id: 'temperature',
-            title: t('converters.temperature.title'),
+            title: t('converters:temperature_converter.title'),
             icon: IconTemperature,
             color: 'red',
             href: `/${lng}/converters/temperature`,
-            description: t('converters.temperature.description')
+            description: t('converters:temperature_converter.grid_description')
         },
         {
             id: 'time',
-            title: t('converters.time.title'),
+            title: t('converters:time_converter.title'),
             icon: IconClock,
             color: 'violet',
             href: `/${lng}/converters/time`,
-            description: t('converters.time.description')
+            description: t('converters:time_converter.grid_description')
         },
         // {
         //     id: 'currency',
@@ -73,11 +73,11 @@ const ConvertersActionsGrid: FC<ConvertersActionsGridProps> = ({ lng }) => {
     return (
         <Container size="lg">
             <Title order={1} size="h2" mt="xl" ta="center">
-                {t('converters.title')}
+                {t('converters:title')}
             </Title>
 
             <Text ta="center" c="dimmed" mt="sm" mb="lg" size="sm">
-                {t('converters.description')}
+                {t('converters:description')}
             </Text>
 
             <Card withBorder radius="md" className={classes.card}>
