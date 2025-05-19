@@ -46,6 +46,18 @@
         "converter": {
             "title": "單位轉換工具",
             "description": "提供長度、重量、溫度等多種單位轉換功能。"
+        },
+        "calculator": {
+            "title": "計算器",
+            "description": "提供加BMI、TDEE、體脂率等計算功能。"
+        }
+    },
+    "calculator": {
+        "title": "計算器",
+        "description": "提供加BMI、TDEE、體脂率等計算功能。",
+        "bmi": {
+            "title": "BMI 計算器",
+            "description": "計算身體質量指數（BMI）。"
         }
     },
     "converters": {
@@ -116,6 +128,9 @@
         "converters_page_keywords": "單位轉換工具, 長度轉換, 重量轉換, 溫度轉換",
         "symbols_page_title": "符號工具",
         "symbols_page_description": "提供符號選擇功能。",
-        "symbols_page_keywords": "符號工具, Emoji 符號, 符號符號"
+        "symbols_page_keywords": "符號工具, Emoji 符號, 符號符號",
+        "calculator_page_title": "計算器",
+        "calculator_page_description": "提供加BMI、TDEE、體脂率等計算功能。",
+        "calculator_page_keywords": "計算器, BMI 計算器"
     }
 }

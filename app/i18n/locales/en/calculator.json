@@ -1,0 +1,26 @@
+{
+    "bmi": {
+        "bmi_calculator": "BMI Calculator",
+        "description": "Since BMI does not account for body fat percentage, a person with a high BMI may not necessarily be obese. For example, bodybuilders may have a BMI over 30 due to their higher proportion of muscle mass. If their body fat percentage is low, they may not need to lose weight. This indicates that BMI is only a rough indicator and cannot fully reflect body composition and health status.",
+        "severe_thinness": "Underweight (Severe thinness)",
+        "moderate_thinness": "Underweight (Moderate thinness)",
+        "mild_thinness": "Underweight (Mild thinness)",
+        "adult_bmi": "Adult BMI",
+        "normal": "Normal weight",
+        "overweight": "Overweight (Pre-obese)",
+        "obese_class_i": "Obese Class I (Mild obesity)",
+        "obese_class_ii": "Obese Class II (Moderate obesity)",
+        "obese_class_iii": "Obese Class III (Severe obesity)",
+        "bmi_2": "BMI Prime allows us to quickly assess the difference between a person's BMI and the upper limit of normal BMI. It can also compare populations with different BMI upper limits. People with a BMI Prime below 0.74 are classified as underweight; from 0.74 to 1 is classified as normal, above 1 is classified as overweight, and above 1.2 is classified as obese.",
+        "limitations_of_bmi": "Limitations of BMI",
+        "bmi_3": "While BMI is a commonly used indicator to assess an individual's overall weight status, it has some limitations to consider. BMI primarily reflects overall weight and cannot distinguish between different tissues (such as fat, muscle, organs), so individuals with the same BMI may have different amounts of body fat. Additionally, BMI cannot provide information about fat distribution, such as whether fat tissue is concentrated in the abdomen or limbs. These are important factors closely related to health status and disease risk.",
+        "bmi_4": "While BMI has been widely used as an indicator of obesity in the past, we now have a clearer understanding of its limitations. Therefore, healthcare professionals typically consider BMI along with other indicators such as waist circumference, body fat percentage, lifestyle, and family medical history when assessing an individual's health status. This helps provide a more comprehensive evaluation of an individual's health and develop more appropriate health management plans.",
+        "bmi_prime": "BMI Prime",
+        "status": "Status"
+    },
+    "metric_units": "Metric",
+    "imperial_units": "Imperial",
+    "height": "Height",
+    "weight": "Weight",
+    "calculate": "Calculate"
+}

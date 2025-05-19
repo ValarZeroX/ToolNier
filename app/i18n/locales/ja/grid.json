@@ -46,6 +46,18 @@
         "converter": {
             "title": "単位変換ツール",
             "description": "長さ、重さなど、様々な単位の変換機能を提供します。"
+        },
+        "calculator": {
+            "title": "計算機",
+            "description": "BMI、TDEE、体脂肪率などの計算機能を提供します。"
+        }
+    },
+    "calculator": {
+        "title": "計算機",
+        "description": "BMI、TDEE、体脂肪率などの計算機能を提供します。",
+        "bmi": {
+            "title": "BMI計算機",
+            "description": "体格指数（BMI）を計算します。"
         }
     },
     "converters": {
@@ -112,13 +124,13 @@
         "tools_page_description": "エンコード、フォーマット、データ処理などの開発に必要なツールを提供します。",
         "tools_page_keywords": "開発者ツール, QRコード生成器, Base64エンコーダー, 画像変換器, UUID生成器, JSONフォーマッター",
         "converters_page_title": "単位変換ツール",
-        "converters_page_description": "長さ、重さなど、様々な単位の変換機能を提供します。",
-        "converters_page_keywords": "単位変換ツール, 長さ変換, 重さ変換",
+        "converters_page_description": "長さ、重さ、温度など、様々な単位の変換機能を提供します。",
+        "converters_page_keywords": "単位変換ツール, 長さ変換, 重さ変換, 温度変換",
         "symbols_page_title": "記号ツール",
         "symbols_page_description": "様々な記号の選択機能を提供します。",
         "symbols_page_keywords": "記号ツール, 絵文字, 特殊記号",
-        "random_draw_page_title": "ランダム抽選",
-        "random_draw_page_description": "ランダム抽選ツールは、入力された項目を自動的にランダムな順序に並べ替え、教育、グループ分け、ゲームなど様々な場面で活用できます。",
-        "random_draw_page_keywords": "ランダム抽選, ランダムソート, ランダムグループ分け, ランダム数字"
+        "calculator_page_title": "計算機",
+        "calculator_page_description": "BMI、TDEE、体脂肪率などの計算機能を提供します。",
+        "calculator_page_keywords": "計算機, BMI計算機"
     }
 }

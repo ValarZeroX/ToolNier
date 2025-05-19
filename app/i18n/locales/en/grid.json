@@ -46,6 +46,18 @@
         "converter": {
             "title": "Unit Converter",
             "description": "Provides various unit conversion functions for length, weight, temperature, and more."
+        },
+        "calculator": {
+            "title": "Calculator",
+            "description": "Provides BMI, TDEE, body fat percentage and other calculation functions."
+        }
+    },
+    "calculator": {
+        "title": "Calculator",
+        "description": "Provides BMI, TDEE, body fat percentage and other calculation functions.",
+        "bmi": {
+            "title": "BMI Calculator",
+            "description": "Calculate Body Mass Index (BMI)."
         }
     },
     "converters": {
@@ -116,6 +128,9 @@
         "converters_page_keywords": "unit converter, length converter, weight converter",
         "symbols_page_title": "Symbols Tools",
         "symbols_page_description": "Provides various symbols selection functions.",
-        "symbols_page_keywords": "symbols tools, emoji symbols, symbol symbols"
+        "symbols_page_keywords": "symbols tools, emoji symbols, symbol symbols",
+        "calculator_page_title": "Calculator",
+        "calculator_page_description": "Provides BMI, TDEE, body fat percentage and other calculation functions.",
+        "calculator_page_keywords": "calculator, BMI calculator"
     }
 }

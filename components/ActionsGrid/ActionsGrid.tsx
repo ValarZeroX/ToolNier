@@ -1,6 +1,6 @@
 'use client';
 
-import { IconHome, IconTool, IconMoodHappy, IconDice5, IconRepeat } from '@tabler/icons-react';
+import { IconCalculator, IconTool, IconMoodHappy, IconDice5, IconRepeat } from '@tabler/icons-react';
 import {
     Title,
     Card,
@@ -55,20 +55,18 @@ const ActionsGrid: FC<ActionsGridProps> = ({ lng }) => {
             href: `/${lng}/converters`,
             description: t('tools.converter.description')
         },
+        { 
+            title: t('tools.calculator.title'),
+            icon: IconCalculator,
+            color: 'blue',
+            href: `/${lng}/calculator`,
+            description: t('tools.calculator.description')
+        },
     ];
 
     const handleNavigation = (href: string) => {
         router.push(href);
     };
-
-    // const items = mockdata.map((item) => (
-    //     <UnstyledButton key={item.title} className={classes.item} onClick={() => handleNavigation(item.href)}>
-    //         <item.icon size={32} color={item.color} />
-    //         <Text size="xs" mt={7}>
-    //             {item.title}
-    //         </Text>
-    //     </UnstyledButton>
-    // ));
 
     return (
         <Container size="lg">

@@ -46,6 +46,18 @@
         "converter": {
             "title": "单位转换工具",
             "description": "提供长度、重量、温度等多种单位转换功能。"
+        },
+        "calculator": {
+            "title": "计算器",
+            "description": "提供 BMI、TDEE、体脂率等计算功能。"
+        }
+    },
+    "calculator": {
+        "title": "计算器",
+        "description": "提供 BMI、TDEE、体脂率等计算功能。",
+        "bmi": {
+            "title": "BMI 计算器",
+            "description": "计算身体质量指数（BMI）。"
         }
     },
     "converters": {
@@ -76,8 +88,8 @@
             "description": "生成和选择表情符号。"
         },
         "symbol": {
-            "title": "符号符号",
-            "description": "生成和选择符号符号。"
+            "title": "特殊符号",
+            "description": "生成和选择特殊符号。"
         }
     },
     "random_draw_page": {
@@ -116,6 +128,9 @@
         "converters_page_keywords": "单位转换工具, 长度转换, 重量转换",
         "symbols_page_title": "符号工具",
         "symbols_page_description": "提供符号选择功能。",
-        "symbols_page_keywords": "符号工具, Emoji 符号, 符号符号"
+        "symbols_page_keywords": "符号工具, Emoji 符号, 特殊符号",
+        "calculator_page_title": "计算器",
+        "calculator_page_description": "提供 BMI、TDEE、体脂率等计算功能。",
+        "calculator_page_keywords": "计算器, BMI 计算器"
     }
 }
