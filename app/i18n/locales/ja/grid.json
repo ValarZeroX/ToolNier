@@ -1,48 +1,10 @@
 {
     "fast_functions": "クイック機能メニュー",
-    "random": "ランダムツール",
     "view_all": "すべて表示",
     "home": {
         "tools_title": "無料オンラインツールと変換サービス",
         "tools_description": "単位変換、絵文字選択、ランダム抽選、開発者ツールなど、日常使用と開発に便利な様々なツールを提供します。",
         "services_section_title": "クイック機能メニュー"
-    },
-    "tools": {
-        "title": "開発者ツール",
-        "description": "エンコード、フォーマット、データ処理などの開発に必要なツールを提供します。",
-        "section_title": "開発ツールセット",
-        "qr_code": {
-            "title": "QRコード生成器",
-            "description": "URLやテキストなどのデータからQRコードを生成します。"
-        },
-        "base64": {
-            "title": "Base64ツール",
-            "description": "Base64文字列のエンコードとデコードを行います。"
-        },
-        "image_base64": {
-            "title": "画像Base64変換器",
-            "description": "画像をBase64形式に変換、またはBase64から画像に変換します。"
-        },
-        "uuid": {
-            "title": "UUID生成器",
-            "description": "一意の識別子（UUID）を生成します。"
-        },
-        "json": {
-            "title": "JSONフォーマッター",
-            "description": "JSONデータのフォーマット、検証、整形を行います。"
-        },
-        "emoji": {
-            "title": "絵文字ツール",
-            "description": "絵文字の生成と選択ができます。"
-        },
-        "random": {
-            "title": "ランダムツール",
-            "description": "ランダム抽選、ランダムソート、ランダムグループ分け、ランダム数字など、様々なランダム機能を提供します。"
-        },
-        "developer": {
-            "title": "開発者ツール",
-            "description": "コードフォーマット、JSON検証、UUID生成など、様々な開発ツールを提供します。"
-        }
     },
     "symbols": {
         "title": "記号ツール",
@@ -55,30 +17,6 @@
             "title": "特殊記号",
             "description": "様々な特殊記号の生成と選択ができます。"
         }
-    },
-    "random_draw_page": {
-        "title": "ランダム抽選",
-        "description": "ランダム抽選ツールは、入力された項目を自動的にランダムな順序に並べ替え、教育、グループ分け、ゲームなど様々な場面で活用できます。"
-    },
-    "random_draw": {
-        "title": "ランダム抽選",
-        "description": "リストから1つまたは複数の項目をランダムに選択。"
-    },
-    "random_draw_wheel": {
-        "title": "ルーレット抽選",
-        "description": "回転するルーレットでランダムに選択。"
-    },
-    "random_sort": {
-        "title": "ランダムソート",
-        "description": "リストの項目をランダムに並べ替え。"
-    },
-    "random_group": {
-        "title": "ランダムグループ分け",
-        "description": "人や項目をランダムに複数のグループに分ける。"
-    },
-    "random_number": {
-        "title": "ランダム数字",
-        "description": "指定された範囲内でランダムな数字を生成。"
     },
     "metadata": {
         "random_tools_page_title": "ランダムツール",

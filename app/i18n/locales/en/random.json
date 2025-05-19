@@ -1,0 +1,74 @@
+{
+    "title": "Random Tools",
+    "description": "Provides various random functions including random draw, random sort, random grouping, and random number generation.",
+    "random_draw_page": {
+        "title": "Random Draw",
+        "grid_description": "Randomly select one or more items from a list.",
+        "clear_options": "Clear Options",
+        "input_label": "Please enter options (one per line)",
+        "start": "Start",
+        "remove": "Remove",
+        "result_prefix": "🎉 Selected: ",
+        "result_suffix": " 🎉",
+        "clear_history": "Clear History",
+        "history_item": "Round {{number}}: {{result}}",
+        "wheel_title": "Random Wheel Draw",
+        "wheel_options": "Options",
+        "wheel_history": "History",
+        "sort": "Sort",
+        "intro": "The random sort tool helps you quickly arrange input items in random order, suitable for teaching, activity grouping, games, and more. Please enter your list below and click 'Start'.",
+        "wheel_intro": "The random wheel draw tool helps you quickly select one random option from your inputs, suitable for teaching, lucky draws, activity grouping, and more. Please enter your options below (one per line) and click the wheel to start the draw.",
+        "intro_2": "The random draw tool helps you quickly select one random option from your inputs, suitable for teaching, lucky draws, activity grouping, and more. Please enter your options below (one per line) and click 'Start' to begin the draw."
+    },
+    "random_draw_wheel": {
+        "title": "Random Wheel",
+        "description": "Use the wheel for random selection."
+    },
+    "random_sort": {
+        "title": "Random Sort",
+        "description": "Randomly shuffle the order of list items."
+    },
+    "random_group": {
+        "title": "Random Group",
+        "grid_description": "Randomly divide people or items into multiple groups.",
+        "input_label": "Please enter items (one per line)",
+        "group_count": "Number of Groups",
+        "start": "Start Grouping",
+        "clear": "Clear",
+        "result_title": "Grouping Results:",
+        "group": "Group {{number}}",
+        "error_title": "Error",
+        "error_message": "Please enter a valid number of groups",
+        "description": "The random group tool helps you quickly distribute input items into a specified number of random groups, suitable for teaching, activity grouping, games, and more. Please enter your list below, set the number of groups, and click 'Start Grouping'."
+    },
+    "random_number": {
+        "title": "Random Number",
+        "description": "Generate random numbers within a specified range.",
+        "intro": "The random number generator is suitable for lottery number selection, lucky draws, and more. You can set the starting number, ending number, generation count, and choose whether to exclude duplicates.",
+        "min": "Starting Number",
+        "max": "Ending Number",
+        "count": "Generation Count",
+        "no_repeat": "Exclude Duplicates",
+        "generate": "Start Generation",
+        "result": "Generation Results",
+        "error_title": "Error",
+        "error_message": "Please confirm your settings: minimum value should be less than or equal to maximum value, count cannot be 0, and when excluding duplicates, count cannot exceed the total number of possible values in the range."
+    },
+    "metadata": {
+        "random_draw_page_title": "Random Draw Tool | Random Draw Picker & Generator - ToolNier",
+        "random_draw_page_description": "Free random draw tool supporting random selection and arrangement from lists. Suitable for lucky draws, roll calls, game activities, and more. Supports mobile and desktop.",
+        "random_draw_page_keywords": "random draw, random picker, random tool, random picker, random draw generator, draw lots, lottery picker, copy paste, toolnier",
+        "random_draw_wheel_page_title": "Random Wheel | Random Wheel Spinner & Picker - ToolNier",
+        "random_draw_wheel_page_description": "Free random wheel draw tool. Enter options and click the wheel to randomly select, automatically removes after selection. Suitable for lucky draws, roll calls, activity games.",
+        "random_draw_wheel_page_keywords": "random wheel, spin wheel, wheel picker, wheel of names, random draw, lucky draw wheel, random draw, toolnier",
+        "random_sort_page_title": "Random Sort Tool | Random Sort & Shuffle Tool - ToolNier",
+        "random_sort_page_description": "Free random sort and list shuffle tool. One-click random rearrangement of input items. Suitable for activity ordering, roll calls, game grouping.",
+        "random_sort_page_keywords": "random sort, shuffle list, randomizer, random shuffle, list randomizer, list shuffle, random tool, toolnier",
+        "random_group_page_title": "Random Group Tool | Random Group Generator & Divider - ToolNier",
+        "random_group_page_description": "Free random group tool that automatically distributes input items into specified number of groups. Suitable for teaching groups, game activity teams, and more.",
+        "random_group_page_keywords": "random group, group randomizer, random group generator, team divider, random teams, random team, group tool, random tool, toolnier",
+        "random_number_page_title": "Random Number Generator | Random Number Generator Tool - ToolNier",
+        "random_number_page_description": "Free random number generator. Set starting and ending numbers and count, choose whether to exclude duplicates. Suitable for lottery number selection, lucky draws, and more.",
+        "random_number_page_keywords": "random number, number generator, number picker, lottery number generator, random number selection, lottery number selection, random tool, toolnier"
+    }
+}

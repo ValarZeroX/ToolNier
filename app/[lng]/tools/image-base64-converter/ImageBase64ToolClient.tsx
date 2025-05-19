@@ -11,7 +11,7 @@ interface ImageBase64ToolClientProps {
 }
 
 const ImageBase64ToolClient: React.FC<ImageBase64ToolClientProps> = ({ lng }) => {
-    const { t } = useTranslation(lng, 'common');
+    const { t } = useTranslation(lng, 'tools');
     const [file, setFile] = useState<File | null>(null);
     const [base64, setBase64] = useState<string>('');
     const clipboard = useClipboard({ timeout: 1000 });

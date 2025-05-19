@@ -9,7 +9,7 @@ interface Base64ToolClientProps {
 }
 
 const Base64ToolClient: React.FC<Base64ToolClientProps> = ({ lng }) => {
-    const { t } = useTranslation(lng, 'common');
+    const { t } = useTranslation(lng, 'tools');
     const [input, setInput] = useState('');
     const [output, setOutput] = useState('');
 

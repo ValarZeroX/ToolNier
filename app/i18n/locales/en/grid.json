@@ -1,48 +1,10 @@
 {
     "fast_functions": "Quick Functions Menu",
-    "random": "Random Tools",
     "view_all": "View All",
     "home": {
         "tools_title": "Free Online Tools and Conversion Services",
         "tools_description": "Provides various practical tools including unit conversion, emoji selection, random draw, developer utilities, and more for daily use and development integration.",
         "services_section_title": "Quick Functions Menu"
-    },
-    "tools": {
-        "title": "Developer Tools",
-        "description": "A collection of essential development tools for encoding, formatting, and data manipulation.",
-        "section_title": "Development Toolset",
-        "qr_code": {
-            "title": "QR Code Generator",
-            "description": "Generate QR codes for URLs, text, and other data."
-        },
-        "base64": {
-            "title": "Base64 Tool",
-            "description": "Encode and decode Base64 strings."
-        },
-        "image_base64": {
-            "title": "Image Base64 Converter",
-            "description": "Convert images to and from Base64 format."
-        },
-        "uuid": {
-            "title": "UUID Generator",
-            "description": "Generate unique identifiers (UUIDs)."
-        },
-        "json": {
-            "title": "JSON Formatter",
-            "description": "Format, validate, and beautify JSON data."
-        },
-        "emoji": {
-            "title": "Emoji Tools",
-            "description": "Generate and select emojis."
-        },
-        "random": {
-            "title": "Random Tools",
-            "description": "Provides various random functions including random draw, random sort, random grouping, and random number generation."
-        },
-        "developer": {
-            "title": "Developer Tools",
-            "description": "Provides various development tools including code formatting, JSON validation, and UUID generation."
-        }
     },
     "symbols": {
         "title": "Symbols Tools",
@@ -55,30 +17,6 @@
             "title": "Symbol Symbols",
             "description": "Generate and select symbol symbols."
         }
-    },  
-    "random_draw_page": {
-        "title": "Random Draw",
-        "description": "The random draw tool helps you quickly arrange input items in random order, suitable for teaching, activity grouping, games, and various other scenarios."
-    },
-    "random_draw": {
-        "title": "Random Draw",
-        "description": "Randomly select one or more items from a list."
-    },
-    "random_draw_wheel": {
-        "title": "Random Wheel",
-        "description": "Use a spinning wheel for random selection."
-    },
-    "random_sort": {
-        "title": "Random Sort",
-        "description": "Randomly shuffle the order of list items."
-    },
-    "random_group": {
-        "title": "Random Group",
-        "description": "Randomly divide people or items into multiple groups."
-    },
-    "random_number": {
-        "title": "Random Number",
-        "description": "Generate random numbers within a specified range."
     },
     "metadata": {
         "random_tools_page_title": "Random Tools",

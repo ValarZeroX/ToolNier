@@ -1,0 +1,98 @@
+{
+    "title": "开发者工具",
+    "description": "提供代码格式化、JSON 验证、UUID生成等多种开发工具。",
+    "qr_code": {
+        "title": "QR Code 生成器",
+        "grid_description": "生成网址、文字等数据的 QR Code。",
+        "input_label": "请输入网址或文字",
+        "generate": "生成 QR Code",
+        "preview": "QR Code 预览",
+        "clear": "清空",
+        "format_label": "选择下载格式",
+        "description": "免费在线 QR Code 生成工具，支持网址、文字、Email 转换成 QR Code，可自定义颜色与大小，并下载 PNG 格式，适用于社交媒体、网站、名片等场合。"
+    },
+    "base64": {
+        "title": "Base64 工具",
+        "grid_description": "编码和解码 Base64 字符串。",
+        "input_label": "输入内容",
+        "input_placeholder": "请输入要编码或解码的文字",
+        "encode": "编码",
+        "decode": "解码",
+        "clear": "清空",
+        "output_label": "输出结果",
+        "error": "发生错误，请检查输入内容",
+        "description": "免费在线 Base64 编码解码工具，支持文字、JSON 等格式，可快速将文字转换成 Base64 编码，或将 Base64 编码转换回原始文字。",
+        "swap": "交换"
+    },
+    "image_base64": {
+        "grid_description": "将图片转换为 Base64 格式或从 Base64 转换为图片。",
+        "title": "图片 Base64 编码解码工具",
+        "description": "轻松将您的图片文件（支持 JPG, PNG, GIF, WebP 等常见格式）转换为 Base64 编码字符串。此工具能快速生成可用于 HTML、CSS 或 JavaScript 中的 Data URL，方便您将图片直接嵌入网页、电子邮件或应用程序中，无需外部图片链接，提升加载速度并简化部署。",
+        "privacy_notice": "隐私保护提示：所有图片处理均在您的浏览器本地完成，不会上传到任何服务器。您的图片数据完全保留在您的设备上，确保数据安全和隐私。",
+        "upload_label": "上传图片",
+        "upload_placeholder": "选择图片文件...",
+        "preview": "图片预览",
+        "output_label": "Base64 编码结果",
+        "clear": "清除",
+        "encode_tab": "编码",
+        "decode_tab": "解码",
+        "input_base64_label": "输入 Base64 编码",
+        "input_base64_placeholder": "请输入要解码的 Base64 编码",
+        "invalid_base64": "无效的 Base64 编码",
+        "decode_error": "解码错误",
+        "download_image": "下载图片",
+        "copy_input": "复制输入",
+        "copy_output": "复制输出",
+        "clear_all": "清除所有",
+        "description_2": "粘贴完整的 Base64 Data URL（例如 `data:image/png;base64,...`），系统将立即将其解码并预览原始图片。您可以方便地查看 Base64 字符串对应的图像内容，并支持下载还原后的图片文件。"
+    },
+    "uuid": {
+        "title": "UUID 生成器",
+        "grid_description": "生成唯一识别码（UUID）。",
+        "description": "高性能的在线 UUID (通用唯一识别码) 生成工具。无论您需要单个 UUID 还是批量生成多个，此工具都能立即满足您的需求。生成的 UUID 符合标准格式，适用于数据库主键、分布式系统、唯一标识符等多种开发场景，确保全局唯一性。",
+        "count_label": "生成数量",
+        "generate": "生成",
+        "clear": "清空",
+        "output_label": "UUID 结果",
+        "download_txt": "下载 TXT"
+    },
+    "json": {
+        "title": "JSON 格式化工具",
+        "grid_description": "格式化、验证和美化 JSON 数据。",
+        "description": "免费 JSON 格式化与压缩工具，支持一键美化、压缩与下载 JSON 数据。无论是开发调试、API 测试或数据传输前的优化，都能迅速完成格式调整。适用于前端后端开发、服务器响应解析、配置文件排版，帮助您快速阅读与检查 JSON 结构。支持大型 JSON 加载，自动排版缩进与无缝复制。",
+        "input_label": "请输入 JSON 内容",
+        "output_label": "输出结果",
+        "format": "格式化",
+        "minify": "压缩",
+        "clear": "清空",
+        "swap": "交换",
+        "compress": "压缩",
+        "error": "JSON 格式错误，请确认内容是否正确",
+        "download": "下载"
+    },
+    "emoji": {
+        "title": "Emoji 工具",
+        "description": "生成和选择表情符号。"
+    },
+    "random": {
+        "title": "随机工具",
+        "description": "提供随机抽选、随机排序、随机分组和随机数字等多种随机功能。"
+    },
+    "metadata": {
+        "qr_generator_page_title": "QR Code 生成器 | QR Code Generator Tool - ToolNier",
+        "qr_generator_page_description": "免费在线 QR Code 生成工具，支持网址、文字、Email 转换成 QR Code，可自定义颜色与大小，并下载 PNG 格式，适用于社交媒体、网站、名片等场合。",
+        "qr_generator_page_keywords": "QR Code, QR Code generator, QR Code generator tool, QR Code generator online, QR Code generator free, QR Code generator app, QR Code generator toolnier",
+        "base64_tool_page_title": "Base64 编码解码工具 | Base64 Encoder Decoder Tool - ToolNier",
+        "base64_tool_page_description": "免费在线 Base64 编码解码工具，支持文字、JSON 等格式，可快速将文字转换成 Base64 编码，或将 Base64 编码转换回原始文字。",
+        "base64_tool_page_keywords": "Base64, Base64 encoder, Base64 decoder, Base64 encoder decoder, Base64 encoder decoder tool, Base64 encoder decoder online, Base64 encoder decoder free, Base64 encoder decoder app, Base64 encoder decoder toolnier",
+        "image_base64_tool_page_title": "图片 Base64 编码工具 | Image Base64 Encoder Decoder Tool - ToolNier",
+        "image_base64_tool_page_description": "免费在线图片 Base64 编码解码工具，支持图片转换成 Base64 编码，或将 Base64 编码转换回原始图片。",
+        "image_base64_tool_page_keywords": "图片 Base64, image base64, image encoder, image decoder, image encoder decoder, image encoder decoder tool, image encoder decoder online, image encoder decoder free, image encoder decoder app, image encoder decoder toolnier",
+        "uuid_generator_page_title": "UUID 生成器 | UUID Generator Tool - ToolNier",
+        "uuid_generator_page_description": "高性能的在线 UUID (通用唯一识别码) 生成工具。无论您需要单个 UUID 还是批量生成多个，此工具都能立即满足您的需求。生成的 UUID 符合标准格式，适用于数据库主键、分布式系统、唯一标识符等多种开发场景，确保全局唯一性。",
+        "uuid_generator_page_keywords": "UUID, UUID generator, UUID generator tool, UUID generator online, UUID generator free, UUID generator app, UUID generator toolnier",
+        "json_formatter_tool_page_title": "JSON 格式化工具 | JSON Formatter Tool - ToolNier",
+        "json_formatter_tool_page_description": "免费 JSON 格式化工具，支持一键美化、压缩与下载 JSON 数据。无论是开发调试、API 测试或数据传输前的优化，都能迅速完成格式调整。适用于前端后端开发、服务器响应解析、配置文件排版，帮助您快速阅读与检查 JSON 结构。支持大型 JSON 加载，自动排版缩进与无缝复制。",
+        "json_formatter_tool_page_keywords": "JSON, JSON formatter, JSON formatter tool, JSON formatter online, JSON formatter free, JSON formatter app, JSON formatter toolnier"
+    }
+}

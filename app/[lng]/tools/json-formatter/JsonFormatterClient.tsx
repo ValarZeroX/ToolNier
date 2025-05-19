@@ -9,7 +9,7 @@ interface JsonFormatterClientProps {
 }
 
 const JsonFormatterClient: React.FC<JsonFormatterClientProps> = ({ lng }) => {
-  const { t } = useTranslation(lng, 'common');
+  const { t } = useTranslation(lng, 'tools');
   const [input, setInput] = useState('');
   const [output, setOutput] = useState('');
 

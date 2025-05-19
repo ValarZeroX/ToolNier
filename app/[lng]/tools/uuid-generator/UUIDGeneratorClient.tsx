@@ -13,7 +13,7 @@ interface UUIDGeneratorClientProps {
 }
 
 const UUIDGeneratorClient: React.FC<UUIDGeneratorClientProps> = ({ lng }) => {
-    const { t } = useTranslation(lng, 'common');
+    const { t } = useTranslation(lng, 'tools');
     const [uuids, setUuids] = useState<string[]>([]);
     const [count, setCount] = useState<number>(1);
     const clipboard = useClipboard({ timeout: 1000 });

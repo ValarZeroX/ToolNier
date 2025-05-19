@@ -1,0 +1,98 @@
+{
+    "title": "Developer Tools",
+    "description": "Provides various development tools including code formatting, JSON validation, UUID generation, and more.",
+    "qr_code": {
+        "title": "QR Code Generator",
+        "grid_description": "Generate QR codes from URLs, text, and other data.",
+        "input_label": "Enter URL or text",
+        "generate": "Generate QR Code",
+        "preview": "QR Code Preview",
+        "clear": "Clear",
+        "format_label": "Select download format",
+        "description": "Free online QR code generator tool that supports converting URLs, text, and email addresses into QR codes. Customize colors and sizes, and download in PNG format. Perfect for social media, websites, business cards, and more."
+    },
+    "base64": {
+        "title": "Base64 Tool",
+        "grid_description": "Encode and decode Base64 strings.",
+        "input_label": "Input content",
+        "input_placeholder": "Enter text to encode or decode",
+        "encode": "Encode",
+        "decode": "Decode",
+        "clear": "Clear",
+        "output_label": "Output result",
+        "error": "An error occurred. Please check your input.",
+        "description": "Free online Base64 encoder/decoder tool that supports text, JSON, and other formats. Quickly convert text to Base64 encoding or decode Base64 back to original text.",
+        "swap": "Swap"
+    },
+    "image_base64": {
+        "grid_description": "Convert images to Base64 format or Base64 to images.",
+        "title": "Image Base64 Encoder/Decoder Tool",
+        "description": "Easily convert your image files (supports common formats like JPG, PNG, GIF, WebP) to Base64 encoded strings. This tool quickly generates Data URLs for use in HTML, CSS, or JavaScript, allowing you to embed images directly in web pages, emails, or applications without external image links, improving load times and simplifying deployment.",
+        "privacy_notice": "Privacy Notice: All image processing is done locally in your browser and is not uploaded to any server. Your image data remains entirely on your device, ensuring data security and privacy.",
+        "upload_label": "Upload Image",
+        "upload_placeholder": "Select image file...",
+        "preview": "Image Preview",
+        "output_label": "Base64 Encoding Result",
+        "clear": "Clear",
+        "encode_tab": "Encode",
+        "decode_tab": "Decode",
+        "input_base64_label": "Input Base64 Encoding",
+        "input_base64_placeholder": "Enter Base64 encoding to decode",
+        "invalid_base64": "Invalid Base64 encoding",
+        "decode_error": "Decode error",
+        "download_image": "Download Image",
+        "copy_input": "Copy Input",
+        "copy_output": "Copy Output",
+        "clear_all": "Clear All",
+        "description_2": "Paste a complete Base64 Data URL (e.g., `data:image/png;base64,...`), and the system will immediately decode and preview the original image. You can easily view the image content corresponding to the Base64 string and download the restored image file."
+    },
+    "uuid": {
+        "title": "UUID Generator",
+        "grid_description": "Generate unique identifiers (UUIDs).",
+        "description": "High-performance online UUID (Universally Unique Identifier) generator tool. Whether you need a single UUID or want to generate multiple in batch, this tool can immediately meet your requirements. Generated UUIDs conform to standard format and are suitable for database primary keys, distributed systems, unique identifiers, and other development scenarios, ensuring global uniqueness.",
+        "count_label": "Generate count",
+        "generate": "Generate",
+        "clear": "Clear",
+        "output_label": "UUID Results",
+        "download_txt": "Download TXT"
+    },
+    "json": {
+        "title": "JSON Formatter",
+        "grid_description": "Format, validate, and beautify JSON data.",
+        "description": "Free JSON formatting and compression tool that supports one-click beautification, compression, and downloading of JSON data. Whether for development debugging, API testing, or data transfer optimization, it quickly completes format adjustments. Suitable for frontend/backend development, server response parsing, and configuration file formatting, helping you quickly read and check JSON structure. Supports large JSON loading, automatic indentation, and seamless copying.",
+        "input_label": "Enter JSON content",
+        "output_label": "Output result",
+        "format": "Format",
+        "minify": "Minify",
+        "clear": "Clear",
+        "swap": "Swap",
+        "compress": "Compress",
+        "error": "JSON format error. Please verify the content is correct.",
+        "download": "Download"
+    },
+    "emoji": {
+        "title": "Emoji Tool",
+        "description": "Generate and select emojis."
+    },
+    "random": {
+        "title": "Random Tool",
+        "description": "Provides various random functions including random selection, random sorting, random grouping, and random numbers."
+    },
+    "metadata": {
+        "qr_generator_page_title": "QR Code Generator | QR Code Generator Tool - ToolNier",
+        "qr_generator_page_description": "Free online QR code generator tool that supports converting URLs, text, and email addresses into QR codes. Customize colors and sizes, and download in PNG format. Perfect for social media, websites, business cards, and more.",
+        "qr_generator_page_keywords": "QR Code, QR Code generator, QR Code generator tool, QR Code generator online, QR Code generator free, QR Code generator app, QR Code generator toolnier",
+        "base64_tool_page_title": "Base64 Encoder/Decoder Tool | Base64 Encoder Decoder Tool - ToolNier",
+        "base64_tool_page_description": "Free online Base64 encoder/decoder tool that supports text, JSON, and other formats. Quickly convert text to Base64 encoding or decode Base64 back to original text.",
+        "base64_tool_page_keywords": "Base64, Base64 encoder, Base64 decoder, Base64 encoder decoder, Base64 encoder decoder tool, Base64 encoder decoder online, Base64 encoder decoder free, Base64 encoder decoder app, Base64 encoder decoder toolnier",
+        "image_base64_tool_page_title": "Image Base64 Encoder Tool | Image Base64 Encoder Decoder Tool - ToolNier",
+        "image_base64_tool_page_description": "Free online image Base64 encoder/decoder tool that supports converting images to Base64 encoding or Base64 back to original images.",
+        "image_base64_tool_page_keywords": "Image Base64, image base64, image encoder, image decoder, image encoder decoder, image encoder decoder tool, image encoder decoder online, image encoder decoder free, image encoder decoder app, image encoder decoder toolnier",
+        "uuid_generator_page_title": "UUID Generator | UUID Generator Tool - ToolNier",
+        "uuid_generator_page_description": "High-performance online UUID (Universally Unique Identifier) generator tool. Whether you need a single UUID or want to generate multiple in batch, this tool can immediately meet your requirements. Generated UUIDs conform to standard format and are suitable for database primary keys, distributed systems, unique identifiers, and other development scenarios, ensuring global uniqueness.",
+        "uuid_generator_page_keywords": "UUID, UUID generator, UUID generator tool, UUID generator online, UUID generator free, UUID generator app, UUID generator toolnier",
+        "json_formatter_tool_page_title": "JSON Formatter | JSON Formatter Tool - ToolNier",
+        "json_formatter_tool_page_description": "Free JSON formatting tool that supports one-click beautification, compression, and downloading of JSON data. Whether for development debugging, API testing, or data transfer optimization, it quickly completes format adjustments. Suitable for frontend/backend development, server response parsing, and configuration file formatting, helping you quickly read and check JSON structure. Supports large JSON loading, automatic indentation, and seamless copying.",
+        "json_formatter_tool_page_keywords": "JSON, JSON formatter, JSON formatter tool, JSON formatter online, JSON formatter free, JSON formatter app, JSON formatter toolnier"
+    }
+}

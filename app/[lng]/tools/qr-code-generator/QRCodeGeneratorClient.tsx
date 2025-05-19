@@ -13,7 +13,7 @@ interface QRCodeGeneratorClientProps {
 }
 
 const QRCodeGeneratorClient: React.FC<QRCodeGeneratorClientProps> = ({ lng }) => {
-    const { t } = useTranslation(lng, 'common');
+    const { t } = useTranslation(lng, 'tools');
     const [inputValue, setInputValue] = useState<string>('https://toolnier.com');
     const qrcodeRef = useRef<HTMLDivElement>(null);
     const { colorScheme } = useMantineColorScheme();
@@ -79,15 +79,15 @@ const QRCodeGeneratorClient: React.FC<QRCodeGeneratorClientProps> = ({ lng }) =>
 
     return (
         <Container size="md" mt="lg">
-            <Title order={3} ta="center">{t('qr_generator.title')}</Title>
+            <Title order={3} ta="center">{t('qr_code.title')}</Title>
             <Text ta="center" size="sm" c="dimmed" mt="xs">
-                {t('qr_generator.description')}
+                {t('qr_code.description')}
             </Text>
             <Grid>
                 <Grid.Col span={{ base: 12, sm: 12, md: 8 }}>
                     <Stack gap="md" mt="md">
                         <Textarea
-                            label={t('qr_generator.input_label')}
+                            label={t('qr_code.input_label')}
                             placeholder="https://example.com"
                             value={inputValue}
                             onChange={(event) => setInputValue(event.currentTarget.value)}
@@ -100,12 +100,12 @@ const QRCodeGeneratorClient: React.FC<QRCodeGeneratorClientProps> = ({ lng }) =>
                     <Center>
                         <Stack>
                             <Paper shadow="md" p="md" radius="md" withBorder ref={qrcodeRef}>
-                                <Text ta="center" fw={700} mb="sm">{t('qr_generator.preview')}</Text>
+                                <Text ta="center" fw={700} mb="sm">{t('qr_code.preview')}</Text>
                                 <QRCodeSVG value={inputValue} size={200} />
                             </Paper>
                             <Group>
                                 <Select
-                                    // label={t('qr_generator.format_label')}
+                                    // label={t('qr_code.format_label')}
                                     value={downloadFormat}
                                     onChange={(value) => setDownloadFormat(value || 'png')}
                                     data={[

@@ -1,0 +1,98 @@
+{
+    "title": "開発者ツール",
+    "description": "コードフォーマット、JSON検証、UUID生成など、様々な開発ツールを提供します。",
+    "qr_code": {
+        "title": "QRコード生成ツール",
+        "grid_description": "URLやテキストなどのデータをQRコードに変換します。",
+        "input_label": "URLまたはテキストを入力してください",
+        "generate": "QRコードを生成",
+        "preview": "QRコードプレビュー",
+        "clear": "クリア",
+        "format_label": "ダウンロード形式を選択",
+        "description": "無料のオンラインQRコード生成ツール。URL、テキスト、メールアドレスをQRコードに変換し、色やサイズをカスタマイズできます。PNG形式でダウンロード可能で、ソーシャルメディア、ウェブサイト、名刺などに最適です。"
+    },
+    "base64": {
+        "title": "Base64ツール",
+        "grid_description": "Base64文字列のエンコードとデコードを行います。",
+        "input_label": "入力内容",
+        "input_placeholder": "エンコードまたはデコードするテキストを入力してください",
+        "encode": "エンコード",
+        "decode": "デコード",
+        "clear": "クリア",
+        "output_label": "出力結果",
+        "error": "エラーが発生しました。入力内容を確認してください",
+        "description": "無料のオンラインBase64エンコード・デコードツール。テキストやJSONなどの形式をサポートし、テキストをBase64エンコードに変換したり、Base64エンコードを元のテキストに戻したりすることができます。",
+        "swap": "入れ替え"
+    },
+    "image_base64": {
+        "grid_description": "画像をBase64形式に変換、またはBase64から画像に変換します。",
+        "title": "画像Base64エンコード・デコードツール",
+        "description": "画像ファイル（JPG、PNG、GIF、WebPなどの一般的な形式をサポート）を簡単にBase64エンコード文字列に変換できます。このツールは、HTML、CSS、JavaScriptで使用できるData URLを迅速に生成し、外部画像リンクなしでウェブページ、メール、アプリケーションに画像を直接埋め込むことができます。これにより、読み込み速度が向上し、デプロイが簡素化されます。",
+        "privacy_notice": "プライバシー保護の注意：すべての画像処理はブラウザでローカルに実行され、サーバーにはアップロードされません。画像データは完全にデバイス上に保持され、データの安全性とプライバシーが確保されます。",
+        "upload_label": "画像をアップロード",
+        "upload_placeholder": "画像ファイルを選択...",
+        "preview": "画像プレビュー",
+        "output_label": "Base64エンコード結果",
+        "clear": "クリア",
+        "encode_tab": "エンコード",
+        "decode_tab": "デコード",
+        "input_base64_label": "Base64エンコードを入力",
+        "input_base64_placeholder": "デコードするBase64エンコードを入力してください",
+        "invalid_base64": "無効なBase64エンコードです",
+        "decode_error": "デコードエラー",
+        "download_image": "画像をダウンロード",
+        "copy_input": "入力をコピー",
+        "copy_output": "出力をコピー",
+        "clear_all": "すべてクリア",
+        "description_2": "完全なBase64 Data URL（例：`data:image/png;base64,...`）を貼り付けると、システムはすぐにデコードして元の画像をプレビューします。Base64文字列に対応する画像内容を簡単に確認でき、変換後の画像ファイルをダウンロードすることもできます。"
+    },
+    "uuid": {
+        "title": "UUID生成ツール",
+        "grid_description": "一意の識別子（UUID）を生成します。",
+        "description": "高性能なオンラインUUID（汎用一意識別子）生成ツール。単一のUUIDが必要な場合でも、複数のUUIDを一括生成する場合でも、このツールで即座に要件を満たすことができます。生成されるUUIDは標準形式に準拠し、データベースの主キー、分散システム、一意識別子など、様々な開発シナリオで使用でき、グローバルな一意性を保証します。",
+        "count_label": "生成数",
+        "generate": "生成",
+        "clear": "クリア",
+        "output_label": "UUID結果",
+        "download_txt": "TXTをダウンロード"
+    },
+    "json": {
+        "title": "JSONフォーマットツール",
+        "grid_description": "JSONデータのフォーマット、検証、整形を行います。",
+        "description": "無料のJSONフォーマット・圧縮ツール。ワンクリックでJSONデータの整形、圧縮、ダウンロードが可能です。開発デバッグ、APIテスト、データ転送前の最適化など、様々な場面で素早くフォーマット調整ができます。フロントエンド・バックエンド開発、サーバーレスポンス解析、設定ファイルの整形に最適で、JSON構造の迅速な読み取りと確認を支援します。大規模なJSONの読み込み、自動インデント、シームレスなコピーをサポートしています。",
+        "input_label": "JSONコンテンツを入力してください",
+        "output_label": "出力結果",
+        "format": "フォーマット",
+        "minify": "圧縮",
+        "clear": "クリア",
+        "swap": "入れ替え",
+        "compress": "圧縮",
+        "error": "JSON形式エラー。内容が正しいか確認してください",
+        "download": "ダウンロード"
+    },
+    "emoji": {
+        "title": "絵文字ツール",
+        "description": "絵文字の生成と選択を行います。"
+    },
+    "random": {
+        "title": "ランダムツール",
+        "description": "ランダム抽選、ランダムソート、ランダムグループ分け、ランダム数字など、様々なランダム機能を提供します。"
+    },
+    "metadata": {
+        "qr_generator_page_title": "QRコード生成ツール | QR Code Generator Tool - ToolNier",
+        "qr_generator_page_description": "無料のオンラインQRコード生成ツール。URL、テキスト、メールアドレスをQRコードに変換し、色やサイズをカスタマイズできます。PNG形式でダウンロード可能で、ソーシャルメディア、ウェブサイト、名刺などに最適です。",
+        "qr_generator_page_keywords": "QRコード, QRコード生成, QRコード生成ツール, オンラインQRコード生成, 無料QRコード生成, QRコード生成アプリ, QRコード生成ツールnier",
+        "base64_tool_page_title": "Base64エンコード・デコードツール | Base64 Encoder Decoder Tool - ToolNier",
+        "base64_tool_page_description": "無料のオンラインBase64エンコード・デコードツール。テキストやJSONなどの形式をサポートし、テキストをBase64エンコードに変換したり、Base64エンコードを元のテキストに戻したりすることができます。",
+        "base64_tool_page_keywords": "Base64, Base64エンコーダー, Base64デコーダー, Base64エンコード・デコード, Base64エンコード・デコードツール, オンラインBase64エンコード・デコード, 無料Base64エンコード・デコード, Base64エンコード・デコードアプリ, Base64エンコード・デコードツールnier",
+        "image_base64_tool_page_title": "画像Base64エンコードツール | Image Base64 Encoder Decoder Tool - ToolNier",
+        "image_base64_tool_page_description": "無料のオンライン画像Base64エンコード・デコードツール。画像をBase64エンコードに変換したり、Base64エンコードを元の画像に戻したりすることができます。",
+        "image_base64_tool_page_keywords": "画像Base64, 画像エンコーダー, 画像デコーダー, 画像エンコード・デコード, 画像エンコード・デコードツール, オンライン画像エンコード・デコード, 無料画像エンコード・デコード, 画像エンコード・デコードアプリ, 画像エンコード・デコードツールnier",
+        "uuid_generator_page_title": "UUID生成ツール | UUID Generator Tool - ToolNier",
+        "uuid_generator_page_description": "高性能なオンラインUUID（汎用一意識別子）生成ツール。単一のUUIDが必要な場合でも、複数のUUIDを一括生成する場合でも、このツールで即座に要件を満たすことができます。生成されるUUIDは標準形式に準拠し、データベースの主キー、分散システム、一意識別子など、様々な開発シナリオで使用でき、グローバルな一意性を保証します。",
+        "uuid_generator_page_keywords": "UUID, UUID生成, UUID生成ツール, オンラインUUID生成, 無料UUID生成, UUID生成アプリ, UUID生成ツールnier",
+        "json_formatter_tool_page_title": "JSONフォーマットツール | JSON Formatter Tool - ToolNier",
+        "json_formatter_tool_page_description": "無料のJSONフォーマットツール。ワンクリックでJSONデータの整形、圧縮、ダウンロードが可能です。開発デバッグ、APIテスト、データ転送前の最適化など、様々な場面で素早くフォーマット調整ができます。フロントエンド・バックエンド開発、サーバーレスポンス解析、設定ファイルの整形に最適で、JSON構造の迅速な読み取りと確認を支援します。大規模なJSONの読み込み、自動インデント、シームレスなコピーをサポートしています。",
+        "json_formatter_tool_page_keywords": "JSON, JSONフォーマット, JSONフォーマットツール, オンラインJSONフォーマット, 無料JSONフォーマット, JSONフォーマットアプリ, JSONフォーマットツールnier"
+    }
+}

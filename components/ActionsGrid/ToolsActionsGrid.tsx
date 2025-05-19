@@ -30,7 +30,7 @@ const ToolsActionsGrid: FC<ToolsActionsGridProps> = ({ lng }) => {
             icon: IconQrcode,
             color: 'violet',
             href: `/${lng}/tools/qr-code-generator`,
-            description: t('tools:qr_code.description')
+            description: t('tools:qr_code.grid_description')
         },
         {
             id: 'base64',
@@ -38,7 +38,7 @@ const ToolsActionsGrid: FC<ToolsActionsGridProps> = ({ lng }) => {
             icon: IconCode,
             color: 'indigo',
             href: `/${lng}/tools/base64-encoder-decoder`,
-            description: t('tools:base64.description')
+            description: t('tools:base64.grid_description')
         },
         {
             id: 'image-base64',
@@ -46,7 +46,7 @@ const ToolsActionsGrid: FC<ToolsActionsGridProps> = ({ lng }) => {
             icon: IconPhoto,
             color: 'blue',
             href: `/${lng}/tools/image-base64-converter`,
-            description: t('tools:image_base64.description')
+            description: t('tools:image_base64.grid_description')
         },
         {
             id: 'uuid',
@@ -54,7 +54,7 @@ const ToolsActionsGrid: FC<ToolsActionsGridProps> = ({ lng }) => {
             icon: IconId,
             color: 'green',
             href: `/${lng}/tools/uuid-generator`,
-            description: t('tools:uuid.description')
+            description: t('tools:uuid.grid_description')
         },
         {
             id: 'json',
@@ -62,7 +62,7 @@ const ToolsActionsGrid: FC<ToolsActionsGridProps> = ({ lng }) => {
             icon: IconFileCode,
             color: 'teal',
             href: `/${lng}/tools/json-formatter`,
-            description: t('tools:json.description')
+            description: t('tools:json.grid_description')
         },
     ];
 
