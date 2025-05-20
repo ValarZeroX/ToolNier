@@ -5,6 +5,9 @@ type Props = {
 };
 
 const GoogleAdsense: React.FC<Props> = ({ pId }) => {
+  if (process.env.NODE_ENV !== "production") {
+    return null;
+  }
   return (
     <Script
       async
