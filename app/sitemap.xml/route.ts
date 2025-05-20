@@ -4,10 +4,12 @@ export async function GET() {
   const baseUrl = 'https://toolnier.com';
   const staticPaths = [
     '',
+    '/all',
     '/random',
     '/tools',
     '/symbols',
     '/converters',
+    '/calculator',
     '/symbols/symbol',
     '/symbols/emoji',
     '/random/draw',
@@ -26,7 +28,10 @@ export async function GET() {
     '/converters/time',
     '/calculator/bmi',
     '/calculator/bmr',
-
+    '/calculator/body-fat',
+    '/calculator/tdee',
+    '/calculator/age',
+    '/calculator/days-between-dates',
   ];
 
   const urls = languages.flatMap((lng) =>
