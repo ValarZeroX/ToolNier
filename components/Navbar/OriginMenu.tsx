@@ -91,6 +91,7 @@ const OriginMenu: FC<OriginMenuProps> = ({ lng }) => {
           <NavLink label={t('common:bmi_calculator_title')} onClick={() => handleNavigation('/calculator/bmi')} />
           <NavLink label={t('common:body_fat_calculator_title')} onClick={() => handleNavigation('/calculator/body-fat')} />
           <NavLink label={t('common:tdee_calculator_title')} onClick={() => handleNavigation('/calculator/tdee')} />
+          <NavLink label={t('common:age_calculator_title')} onClick={() => handleNavigation('/calculator/age')} />
         </NavLink>
       </nav>
       {/* {isAuthenticated && (

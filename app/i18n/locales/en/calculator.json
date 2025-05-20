@@ -109,6 +109,27 @@
         "tdee_formula": "TDEE Formula",
         "activity": "Activity"
     },
+    "age_page": {
+        "age_calculator": "Age Calculator",
+        "grid_description": "Calculate age.",
+        "birth_date": "Birth Date",
+        "current_date": "Current Date",
+        "age": "Age",
+        "years": "years",
+        "months": "months",
+        "days": "days",
+        "weeks": "weeks",
+        "hours": "hours",
+        "minutes": "minutes",
+        "seconds": "seconds",
+        "total_months": "Total Months",
+        "total_weeks": "Total Weeks",
+        "total_days": "Total Days",
+        "total_hours": "Total Hours",
+        "total_minutes": "Total Minutes",
+        "total_seconds": "Total Seconds",
+        "age_description": "Welcome to the Age Calculator! This is a precise and easy-to-use online tool that quickly calculates your age based on your birth date. Whether you need to display your age in years, months, days, weeks, hours, minutes, or seconds, the Age Calculator meets your needs. Additionally, it calculates the total months, weeks, days, hours, minutes, and seconds from your birth to the present."
+    },
     "neck": "Neck",
     "waist": "Waist",
     "hip": "Hip",
@@ -134,6 +155,9 @@
         "body_fat_calculator_keywords": "Body Fat Calculator,Body Fat Percentage,Body Fat Rate,Body Fat Calculation,Body Fat Estimation,Body Fat Estimation Formula,Body Fat Estimation Value,Body Fat Calculation Formula,Body Fat Calculation Value,Body Fat Estimation Formula Value,Body Fat Calculation Formula Value",
         "tdee_calculator_title": "TDEE Calculator",
         "tdee_calculator_description": "The TDEE Calculator is a tool used to estimate the total daily energy expenditure of the human body. It calculates the total daily energy expenditure based on various factors such as age, gender, weight, height, body fat percentage, and exercise level using specific formulas.",
-        "tdee_calculator_keywords": "TDEE,Total Daily Energy Expenditure,Energy Expenditure,Energy Requirements,Energy Requirement Estimation,Energy Requirement Calculation,Energy Requirement Estimate,Energy Requirement Calculation Value,Energy Requirement Estimation Formula,Energy Requirement Calculation Formula,Energy Requirement Estimation Formula Value,Energy Requirement Calculation Formula Value"
+        "tdee_calculator_keywords": "TDEE,Total Daily Energy Expenditure,Energy Expenditure,Energy Requirements,Energy Requirement Estimation,Energy Requirement Calculation,Energy Requirement Estimate,Energy Requirement Calculation Value,Energy Requirement Estimation Formula,Energy Requirement Calculation Formula,Energy Requirement Estimation Formula Value,Energy Requirement Calculation Formula Value",
+        "age_calculator_title": "Age Calculator",
+        "age_calculator_description": "The Age Calculator is an online tool specifically designed to calculate your precise age based on your birth date. Whether you're looking for your exact age in years, months, days, weeks, hours, minutes, or seconds, this tool provides detailed data. It not only displays your current age but also calculates the total months, weeks, days, hours, minutes, and seconds from your birth to the present. This age calculator is an ideal choice for obtaining comprehensive age analysis, perfect for personal use or professional settings such as birthday planning or preparation for specific events.",
+        "age_calculator_keywords": "Age Calculator,Age Calculation,Age Estimation,Age Estimation Formula,Age Estimation Value,Age Calculation Formula,Age Calculation Value,Age Estimation Formula Value,Age Calculation Formula Value"
     }
 }

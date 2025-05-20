@@ -1,6 +1,6 @@
 'use client';
 
-import { IconHealthRecognition } from '@tabler/icons-react';
+import { IconHealthRecognition, IconCalendar } from '@tabler/icons-react';
 import {
     Title,
     Card,
@@ -55,7 +55,16 @@ const ToolsActionsGrid: FC<ToolsActionsGridProps> = ({ lng }) => {
             color: 'violet',
             href: `/${lng}/calculator/tdee`,
             description: t('calculator:tdee.grid_description')
+        },
+        {
+            id: 'age',
+            title: t('calculator:age_page.age_calculator'),
+            icon: IconCalendar,
+            color: 'blue',
+            href: `/${lng}/calculator/age`,
+            description: t('calculator:age_page.grid_description')
         }
+
     ];
 
     const handleNavigation = (href: string) => {
