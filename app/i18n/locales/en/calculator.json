@@ -86,6 +86,29 @@
         "body_fat_23": "Tania has established the following standards based on DEXA gold standard and related research (these standards apply to Asians and Caucasians)",
         "description_text": "Description"
     },
+    "tdee": {
+        "tdee_calculator": "TDEE Calculator",
+        "grid_description": "Calculate Total Daily Energy Expenditure.",
+        "tdee": "TDEE",
+        "tdee_level_1": "Little/no exercise (sedentary lifestyle)",
+        "tdee_level_2": "Light exercise 1-2 times/week",
+        "tdee_level_3": "Moderate exercise 2-3 times/week",
+        "tdee_level_4": "Hard exercise 4-5 times/week",
+        "tdee_level_5": "Physical labor or hard exercise 6-7 times/week",
+        "tdee_level_6": "Very hard exercise daily, or physical labor",
+        "tdee_1": "Total Daily Energy Expenditure (TDEE) refers to the total amount of energy a person expends in one day. This metric is particularly important for those who want to manage their weight, as it helps you understand how many calories you need to maintain your weight, or how many calories you need to adjust for weight gain or loss.",
+        "tdee_2": "Components of TDEE",
+        "tdee_3": "Basal Metabolic Rate (BMR)",
+        "tdee_4": "Thermic Effect of Food (TEF)",
+        "tdee_5": "Exercise Activity Thermogenesis (EAT)",
+        "tdee_6": "Non-Exercise Activity Thermogenesis (NEAT)",
+        "tdee_7": "BMR refers to the energy required by the body to maintain basic life functions in a completely resting state, such as breathing, heartbeat, and temperature regulation. BMR is influenced by factors such as age, gender, weight, and muscle mass.",
+        "tdee_8": "When we eat, the body needs energy to digest, absorb, and metabolize food. TEF accounts for about 10% of total energy expenditure. Different types of food have different effects on TEF, with protein having the highest TEF, followed by carbohydrates and fats.",
+        "tdee_9": "EAT refers to the energy consumed through planned exercise, such as running, weightlifting, swimming, etc. The amount and intensity of exercise directly affect the EAT value.",
+        "tdee_10": "NEAT includes all energy consumed through non-exercise physical activities, such as walking, standing, cleaning, etc. NEAT varies greatly depending on individual lifestyle and occupation.",
+        "tdee_formula": "TDEE Formula",
+        "activity": "Activity"
+    },
     "neck": "Neck",
     "waist": "Waist",
     "hip": "Hip",
@@ -108,6 +131,9 @@
         "bmr_calculator_keywords": "BMR,Basal Metabolic Rate,Basal Metabolism,Metabolic Rate,Metabolism,Energy Consumption,Energy Requirements,Energy Requirement Estimation,Energy Requirement Calculation,Energy Requirement Estimate,Energy Requirement Calculation Value,Energy Requirement Estimation Formula,Energy Requirement Calculation Formula,Energy Requirement Estimation Formula Value,Energy Requirement Calculation Formula Value",
         "body_fat_calculator_title": "Body Fat Calculator",
         "body_fat_calculator_description": "The Body Fat Calculator is a tool used to estimate body fat percentage. It calculates body fat percentage based on various body measurements such as height, weight, waist, and hip circumference using specific formulas.",
-        "body_fat_calculator_keywords": "Body Fat Calculator,Body Fat Percentage,Body Fat Rate,Body Fat Calculation,Body Fat Estimation,Body Fat Estimation Formula,Body Fat Estimation Value,Body Fat Calculation Formula,Body Fat Calculation Value,Body Fat Estimation Formula Value,Body Fat Calculation Formula Value"
+        "body_fat_calculator_keywords": "Body Fat Calculator,Body Fat Percentage,Body Fat Rate,Body Fat Calculation,Body Fat Estimation,Body Fat Estimation Formula,Body Fat Estimation Value,Body Fat Calculation Formula,Body Fat Calculation Value,Body Fat Estimation Formula Value,Body Fat Calculation Formula Value",
+        "tdee_calculator_title": "TDEE Calculator",
+        "tdee_calculator_description": "The TDEE Calculator is a tool used to estimate the total daily energy expenditure of the human body. It calculates the total daily energy expenditure based on various factors such as age, gender, weight, height, body fat percentage, and exercise level using specific formulas.",
+        "tdee_calculator_keywords": "TDEE,Total Daily Energy Expenditure,Energy Expenditure,Energy Requirements,Energy Requirement Estimation,Energy Requirement Calculation,Energy Requirement Estimate,Energy Requirement Calculation Value,Energy Requirement Estimation Formula,Energy Requirement Calculation Formula,Energy Requirement Estimation Formula Value,Energy Requirement Calculation Formula Value"
     }
 }

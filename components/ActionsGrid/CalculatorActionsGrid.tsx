@@ -47,6 +47,14 @@ const ToolsActionsGrid: FC<ToolsActionsGridProps> = ({ lng }) => {
             color: 'violet',
             href: `/${lng}/calculator/body-fat`,
             description: t('calculator:body_fat.description')
+        },
+        {
+            id: 'tdee',
+            title: t('calculator:tdee.tdee_calculator'),
+            icon: IconHealthRecognition,
+            color: 'violet',
+            href: `/${lng}/calculator/tdee`,
+            description: t('calculator:tdee.grid_description')
         }
     ];
 
