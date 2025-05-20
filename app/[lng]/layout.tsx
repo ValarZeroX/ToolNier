@@ -55,6 +55,7 @@ export default async function RootLayout({ children, params }: RootLayoutProps) 
         <ColorSchemeScript />
         <link rel="shortcut icon" href="/favicon.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta name="google-adsense-account" content="ca-pub-9868429025931364"/>
         <Script
           strategy="afterInteractive"
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
@@ -73,7 +74,7 @@ export default async function RootLayout({ children, params }: RootLayoutProps) 
             `,
           }}
         />
-        <AdSense pId="ca-pub-9868429025931364"/>
+        
       </head>
       <body>
         <ClientProviders>
