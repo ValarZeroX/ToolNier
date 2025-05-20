@@ -28,6 +28,7 @@ import { languages } from '@/app/i18n/settings';
 import type { Metadata } from 'next';
 import Script from 'next/script';
 import GA_TRACKING_ID from '@/lib/gtag'; 
+import AdSense from '@/components/GoogleAd/AdSense';
 
 export async function generateStaticParams() {
   return languages.map((lng) => ({ lng }));
@@ -72,6 +73,7 @@ export default async function RootLayout({ children, params }: RootLayoutProps) 
             `,
           }}
         />
+        <AdSense pId="ca-pub-9868429025931364"/>
       </head>
       <body>
         <ClientProviders>
