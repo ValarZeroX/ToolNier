@@ -44,6 +44,7 @@
         "copy_input": "複製輸入",
         "copy_output": "複製輸出",
         "clear_all": "清除所有",
+        "error_title": "錯誤",
         "description_2": "貼上完整的 Base64 Data URL（例如 `data:image/png;base64,...`），系統將立即將其解碼並預覽原始圖片。您可以方便地檢視 Base64 字串對應的圖像內容，並支援下載還原後的圖片檔案。"
     },
     "uuid": {

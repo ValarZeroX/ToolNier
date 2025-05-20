@@ -39,6 +39,7 @@
         "group": "第 {{number}} 组",
         "error_title": "错误",
         "error_message": "请输入合理的分组数量",
+        "clear_options": "清空选项",
         "description": "随机分组工具可以帮助您快速将输入的项目自动分配成指定数量的随机组别，适用于教学、活动分组、游戏等多种场景。请在下方输入名单并设置组数，点击「开始分组」即可。"
     },
     "random_number": {

@@ -44,6 +44,7 @@
         "copy_input": "Copy Input",
         "copy_output": "Copy Output",
         "clear_all": "Clear All",
+        "error_title": "Error",
         "description_2": "Paste a complete Base64 Data URL (e.g., `data:image/png;base64,...`), and the system will immediately decode and preview the original image. You can easily view the image content corresponding to the Base64 string and download the restored image file."
     },
     "uuid": {

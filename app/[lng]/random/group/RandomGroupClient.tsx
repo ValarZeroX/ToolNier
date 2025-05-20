@@ -24,8 +24,8 @@ const RandomGroupClient: React.FC<RandomGroupClientProps> = ({ lng }) => {
 
         if (!groupCount || groupCount < 1 || groupCount > entries.length) {
             Notifications.show({
-                title: t('common:error_title'),
-                message: t('common:error_message'),
+                title: t('random_group.error_title'),
+                message: t('random_group.error_message'),
                 color: 'red',
             });
             return;
@@ -55,13 +55,13 @@ const RandomGroupClient: React.FC<RandomGroupClientProps> = ({ lng }) => {
 
     return (
         <Container size="xs" mt="lg">
-            <Title order={3} ta="center">{t('common:random_group')}</Title>
+            <Title order={3} ta="center">{t('random_group.title')}</Title>
             <Text size="sm" c="dimmed">
-                {t('common:random_group_page.description')}
+                {t('random_group.description')}
             </Text>
             <Stack gap="md" mt="md">
                 <Textarea
-                    label={t('common:random_group_page.input_label')}
+                    label={t('random_group.input_label')}
                     value={inputValue}
                     onChange={(event) => setInputValue(event.currentTarget.value)}
                     autosize
@@ -70,7 +70,7 @@ const RandomGroupClient: React.FC<RandomGroupClientProps> = ({ lng }) => {
                 />
 
                 <NumberInput
-                    label={t('common:random_group_page.group_count')}
+                    label={t('random_group.group_count')}
                     value={groupCount}
                     onChange={(value) => setGroupCount(Number(value) || '')}
                     min={1}
@@ -78,20 +78,20 @@ const RandomGroupClient: React.FC<RandomGroupClientProps> = ({ lng }) => {
                 />
 
                 <Button color="blue" onClick={handleRandomGroup} disabled={!inputValue.trim()}>
-                    {t('common:random_group_page.start')}
+                    {t('random_group.start')}
                 </Button>
 
                 <Button color="red" variant="outline" onClick={handleReset} leftSection={<IconX size={14} />} disabled={!inputValue.trim()}>
-                {t('random_draw_page.clear_options')}
+                {t('random_group.clear_options')}
                 </Button>
 
                 {groups.length > 0 && (
                     <Paper shadow="xs" p="md" radius="md" withBorder>
-                        <Text ta="center" fw={700}>{t('common:random_group_page.result_title')}</Text>
+                        <Text ta="center" fw={700}>{t('random_group.result_title')}</Text>
                         <Stack mt="sm">
                             {groups.map((group, index) => (
                                 <Paper key={index} p="sm" withBorder>
-                                    <Text fw={700}>{t('common:random_group_page.group', { number: index + 1 })}</Text>
+                                    <Text fw={700}>{t('random_group.group', { number: index + 1 })}</Text>
                                     {group.map((item, idx) => (
                                         <Text key={idx}>{item}</Text>
                                     ))}

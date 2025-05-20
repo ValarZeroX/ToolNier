@@ -44,6 +44,7 @@
         "copy_input": "入力をコピー",
         "copy_output": "出力をコピー",
         "clear_all": "すべてクリア",
+        "error_title": "エラー",
         "description_2": "完全なBase64 Data URL（例：`data:image/png;base64,...`）を貼り付けると、システムはすぐにデコードして元の画像をプレビューします。Base64文字列に対応する画像内容を簡単に確認でき、変換後の画像ファイルをダウンロードすることもできます。"
     },
     "uuid": {

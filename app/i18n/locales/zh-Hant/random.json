@@ -39,6 +39,7 @@
         "group": "第 {{number}} 組",
         "error_title": "錯誤",
         "error_message": "請輸入合理的分組數量",
+        "clear_options": "清空選項",
         "description": "隨機分組工具可以協助您快速將輸入的項目自動分配成指定數量的隨機組別，適用於教學、活動分組、遊戲等多種情境。請在下方輸入名單並設定組數，點選「開始分組」即可。"
     },
     "random_number": {

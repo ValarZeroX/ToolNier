@@ -39,6 +39,7 @@
         "group": "Group {{number}}",
         "error_title": "Error",
         "error_message": "Please enter a valid number of groups",
+        "clear_options": "Clear Options",
         "description": "The random group tool helps you quickly distribute input items into a specified number of random groups, suitable for teaching, activity grouping, games, and more. Please enter your list below, set the number of groups, and click 'Start Grouping'."
     },
     "random_number": {

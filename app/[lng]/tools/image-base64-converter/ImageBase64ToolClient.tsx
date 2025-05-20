@@ -4,7 +4,7 @@ import { Container, Title, Stack, Text, FileInput, Paper, Image, Textarea, Butto
 import { useTranslation } from '../../../i18n/client';
 import { IconUpload, IconTrash, IconCopy, IconDownload, IconInfoCircle } from '@tabler/icons-react';
 import { useClipboard } from '@mantine/hooks';
-
+import { Notifications } from '@mantine/notifications';
 
 interface ImageBase64ToolClientProps {
     lng: string;
@@ -42,7 +42,11 @@ const ImageBase64ToolClient: React.FC<ImageBase64ToolClientProps> = ({ lng }) =>
 
         const match = decodeInputBase64.match(/^data:(image\/\w+);base64,(.+)$/);
         if (!match) {
-            alert(t('image_base64.invalid_base64'));
+            Notifications.show({
+                title: t('image_base64.error_title'),
+                message: t('image_base64.invalid_base64'),
+                color: 'red',
+            });
             return;
         }
         const contentType = match[1];
@@ -64,8 +68,11 @@ const ImageBase64ToolClient: React.FC<ImageBase64ToolClientProps> = ({ lng }) =>
             link.click();
             URL.revokeObjectURL(link.href);
         } catch (e) {
-            // console.error("Error decoding or downloading image:", e);
-            alert(t('image_base64.decode_error'));
+            Notifications.show({
+                title: t('image_base64.error_title'),
+                message: t('image_base64.decode_error'),
+                color: 'red',
+            });
         }
     };
 
