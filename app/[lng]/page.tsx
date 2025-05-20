@@ -14,7 +14,6 @@ export default async function HomePage({ params }: PageProps) {
       <Layout lng={lng}>
         <Welcome lng={lng} />
         <ActionsGrid lng={lng} />
-        {/* <ActionsGrid lng={lng} /> */}
       </Layout>
     </>
   );
