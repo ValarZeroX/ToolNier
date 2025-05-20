@@ -2,6 +2,7 @@ import { ColorSchemeToggle } from '../../components/ColorSchemeToggle/ColorSchem
 import { Welcome } from '@/components/Welcome/Welcome';
 import Layout from '@/components/Layout/Layout';
 import { useTranslation } from "../i18n";
+import ActionsGrid from '@/components/ActionsGrid/ActionsGrid';
 
 type PageProps = { params: Promise<{ lng: string; }> };
 
@@ -12,6 +13,7 @@ export default async function HomePage({ params }: PageProps) {
     <>
       <Layout lng={lng}>
         <Welcome lng={lng} />
+        <ActionsGrid lng={lng} />
         {/* <ActionsGrid lng={lng} /> */}
       </Layout>
     </>
