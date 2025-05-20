@@ -63,8 +63,15 @@ const ToolsActionsGrid: FC<ToolsActionsGridProps> = ({ lng }) => {
             color: 'blue',
             href: `/${lng}/calculator/age`,
             description: t('calculator:age_page.grid_description')
+        },
+        {
+            id: 'days-between-dates',
+            title: t('calculator:days_between_dates.days_between_dates_calculator'),
+            icon: IconCalendar,
+            color: 'blue',
+            href: `/${lng}/calculator/days-between-dates`,
+            description: t('calculator:days_between_dates.grid_description')
         }
-
     ];
 
     const handleNavigation = (href: string) => {

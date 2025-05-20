@@ -130,6 +130,25 @@
         "total_seconds": "Total Seconds",
         "age_description": "Welcome to the Age Calculator! This is a precise and easy-to-use online tool that quickly calculates your age based on your birth date. Whether you need to display your age in years, months, days, weeks, hours, minutes, or seconds, the Age Calculator meets your needs. Additionally, it calculates the total months, weeks, days, hours, minutes, and seconds from your birth to the present."
     },
+    "days_between_dates": {
+        "days_between_dates_description": "Welcome to the Date Calculator. Whether you need to add or subtract days, hours, minutes, or seconds to a specific date, this feature provides quick and accurate results.",
+        "days_between_dates_calculator": "Date Difference Calculator",
+        "start_date": "Start Date",
+        "end_date": "End Date",
+        "pick_date": "Pick a date",
+        "total_days": "Total Days",
+        "weeks_and_days": "Total Weeks and Days",
+        "months_and_days": "Total Months and Days",
+        "years_months_days": "Total Years, Months and Days",
+        "grid_description": "Calculate the number of days, months, and years between two dates"
+    },
+    "years": "Years",
+    "months": "Months",
+    "days": "Days",
+    "weeks": "Weeks",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds",
     "neck": "Neck",
     "waist": "Waist",
     "hip": "Hip",
@@ -158,6 +177,9 @@
         "tdee_calculator_keywords": "TDEE,Total Daily Energy Expenditure,Energy Expenditure,Energy Requirements,Energy Requirement Estimation,Energy Requirement Calculation,Energy Requirement Estimate,Energy Requirement Calculation Value,Energy Requirement Estimation Formula,Energy Requirement Calculation Formula,Energy Requirement Estimation Formula Value,Energy Requirement Calculation Formula Value",
         "age_calculator_title": "Age Calculator",
         "age_calculator_description": "The Age Calculator is an online tool specifically designed to calculate your precise age based on your birth date. Whether you're looking for your exact age in years, months, days, weeks, hours, minutes, or seconds, this tool provides detailed data. It not only displays your current age but also calculates the total months, weeks, days, hours, minutes, and seconds from your birth to the present. This age calculator is an ideal choice for obtaining comprehensive age analysis, perfect for personal use or professional settings such as birthday planning or preparation for specific events.",
-        "age_calculator_keywords": "Age Calculator,Age Calculation,Age Estimation,Age Estimation Formula,Age Estimation Value,Age Calculation Formula,Age Calculation Value,Age Estimation Formula Value,Age Calculation Formula Value"
+        "age_calculator_keywords": "Age Calculator,Age Calculation,Age Estimation,Age Estimation Formula,Age Estimation Value,Age Calculation Formula,Age Calculation Value,Age Estimation Formula Value,Age Calculation Formula Value",
+        "days_between_dates_calculator_title": "Date Difference Calculator",
+        "days_between_dates_calculator_description": "The Date Difference Calculator is an online tool specifically designed to calculate the difference between two dates. Whether you're looking for the difference in days, months, or years, this tool provides detailed data. It not only shows the difference between two dates but also calculates the total months, weeks, days, hours, minutes, and seconds from your birth to the present. This date difference calculator is an ideal choice for obtaining comprehensive date difference analysis, perfect for personal use or professional settings such as birthday planning or preparation for specific events.",
+        "days_between_dates_calculator_keywords": "Date Difference Calculator,Date Difference,Date Calculation,Date Estimation,Date Estimation Formula,Date Estimation Value,Date Calculation Formula,Date Calculation Value,Date Estimation Formula Value,Date Calculation Formula Value"
     }
 }
