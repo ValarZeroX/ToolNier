@@ -86,9 +86,9 @@
         "body_fat_23": "TaniaはDEXAのゴールドスタンダードと関連研究に基づき、以下の基準を設定しました（この基準はアジア人と白人に適用されます）",
         "description_text": "説明"
     },
-    "neck": "脖圍",
-    "waist": "腰圍",
-    "hip": "臀圍",
+    "neck": "頸圍",
+    "waist": "ウエスト",
+    "hip": "ヒップ",
     "metric_units": "メートル法",
     "imperial_units": "ヤード・ポンド法",
     "height": "身長",

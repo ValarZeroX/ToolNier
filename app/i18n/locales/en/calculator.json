@@ -86,9 +86,9 @@
         "body_fat_23": "Tania has established the following standards based on DEXA gold standard and related research (these standards apply to Asians and Caucasians)",
         "description_text": "Description"
     },
-    "neck": "脖圍",
-    "waist": "腰圍",
-    "hip": "臀圍",
+    "neck": "Neck",
+    "waist": "Waist",
+    "hip": "Hip",
     "metric_units": "Metric",
     "imperial_units": "Imperial",
     "height": "Height",
