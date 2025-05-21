@@ -14,10 +14,12 @@ import {
     Radio,
     Button,
     Table,
-    List
+    List,
+    Divider
 } from '@mantine/core';
 import { useTranslation } from '../../../i18n/client';
 import { IconEqual } from '@tabler/icons-react';
+import CalculatorActionsGrid from '@/components/ActionsGrid/CalculatorActionsGrid';
 
 interface BodyFatCalculatorProps {
     lng: string;
@@ -395,6 +397,9 @@ export default function BodyFatCalculator({ lng }: BodyFatCalculatorProps) {
                     <List.Item><Text size="sm" my="sm">{t('body_fat.body_fat_22')}</Text></List.Item>
                 </List>
             </Stack>
+            <Divider mt="md" />
+            <Title order={3} mt="lg">{t('explore_more_title')}</Title>
+            <CalculatorActionsGrid lng={lng} />
         </Container>
     );
 }

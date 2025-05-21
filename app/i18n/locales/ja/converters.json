@@ -1,6 +1,7 @@
 {
     "title": "単位変換ツール",
     "description": "長さ、重さ、温度など様々な単位の変換機能を提供します。",
+    "explore_more_title": "さらに探索",
     "metadata": {
         "temperature_converter_title": "温度単位変換ツール",
         "temperature_converter_description": "温度値を異なる単位間で変換します。摂氏（°C）、華氏（°F）、ケルビン（K）の相互変換をサポートしています。",

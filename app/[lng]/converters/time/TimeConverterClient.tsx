@@ -7,12 +7,13 @@ import {
     TextInput,
     Select,
     Text,
+    Divider,
 } from '@mantine/core';
 import { useTranslation } from '../../../i18n/client';
 import { formatNumber } from '@/lib/utils/formatNumber';
 import { Paper, Group } from '@mantine/core';
 import { IconEqual } from '@tabler/icons-react';
-
+import ConvertersActionsGrid from '@/components/ActionsGrid/ConvertersActionsGrid';
 
 interface TimeConverterClientProps {
     lng: string;
@@ -51,7 +52,7 @@ const TimeConverterClient: React.FC<TimeConverterClientProps> = ({ lng }) => {
     };
 
     return (
-        <Container size="xs" mt="lg">
+        <Container size="md" mt="lg">
             <Title order={3} ta="center">{t('time_converter.title')}</Title>
             <Text ta="center" size="sm" c="dimmed" mt="xs">{t('time_converter.description')}</Text>
             <Stack gap="md" mt="md">
@@ -86,6 +87,9 @@ const TimeConverterClient: React.FC<TimeConverterClientProps> = ({ lng }) => {
                     </Group>
                 </Paper>
             </Stack>
+            <Divider mt="md" />
+            <Title order={3} mt="lg">{t('explore_more_title')}</Title>
+            <ConvertersActionsGrid lng={lng} />
         </Container>
     );
 };

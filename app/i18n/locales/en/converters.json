@@ -1,6 +1,7 @@
 {
     "title": "Unit Converter",
     "description": "Provides various unit conversion functions including length, weight, temperature, and more.",
+    "explore_more_title": "Explore More",
     "metadata": {
         "temperature_converter_title": "Temperature Unit Converter",
         "temperature_converter_description": "Convert temperature values between different units. Supports conversion between Celsius (°C), Fahrenheit (°F), and Kelvin (K).",

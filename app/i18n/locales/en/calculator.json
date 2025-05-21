@@ -1,6 +1,7 @@
 {
     "title": "Calculator",
     "description": "Provides BMI, TDEE, body fat percentage and other calculation functions.",
+    "explore_more_title": "Explore More",
     "bmi": {
         "bmi_calculator": "BMI Calculator",
         "description": "Calculate Body Mass Index (BMI).",

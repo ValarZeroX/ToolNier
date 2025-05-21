@@ -8,6 +8,7 @@ import {
   Text,
   Button,
   Paper,
+  Divider
 } from '@mantine/core';
 import { DatePickerInput, DateValue } from '@mantine/dates';
 import { useTranslation } from '../../../i18n/client';
@@ -19,6 +20,7 @@ import 'dayjs/locale/ja';
 import duration from 'dayjs/plugin/duration';
 import '@mantine/dates/styles.css';
 dayjs.extend(duration);
+import CalculatorActionsGrid from '@/components/ActionsGrid/CalculatorActionsGrid';
 
 function calculateDateDifference(startDate: Date, endDate: Date) {
   // 確保 startDate 在 endDate 之前
@@ -134,6 +136,9 @@ export default function DaysBetweenDatesCalculator({ lng }: DaysBetweenDatesCalc
           </Paper>
         )}
       </Stack>
+      <Divider mt="md" />
+      <Title order={3} mt="lg">{t('explore_more_title')}</Title>
+      <CalculatorActionsGrid lng={lng} />
     </Container>
   );
 }

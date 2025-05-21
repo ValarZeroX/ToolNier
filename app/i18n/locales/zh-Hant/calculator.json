@@ -1,6 +1,7 @@
 {
     "title": "計算器",
     "description": "提供加BMI、TDEE、體脂率等計算功能。",
+    "explore_more_title": "進一步探索",
     "bmi": {
         "bmi_calculator": "BMI 計算器",
         "description": "計算身體質量指數（BMI）。",

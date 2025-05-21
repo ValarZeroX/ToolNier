@@ -16,10 +16,11 @@ import {
     Radio,
     RadioGroup,
     List,
+    Divider,
 } from '@mantine/core';
 import { useTranslation } from '../../../i18n/client';
 import { IconEqual } from '@tabler/icons-react';
-
+import CalculatorActionsGrid from '@/components/ActionsGrid/CalculatorActionsGrid';
 interface BmrCalculatorProps {
     lng: string;
 }
@@ -234,6 +235,9 @@ export default function BmrCalculator({ lng }: BmrCalculatorProps) {
                     <List.Item><Text size="sm" my="sm">{t('bmr.bmr_16')}</Text></List.Item>
                 </List>
             </Stack>
+            <Divider mt="md" />
+            <Title order={3} mt="lg">{t('explore_more_title')}</Title>
+            <CalculatorActionsGrid lng={lng} />
         </Container>
     );
 }

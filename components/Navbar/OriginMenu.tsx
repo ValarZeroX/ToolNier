@@ -18,7 +18,7 @@ const OriginMenu: FC<OriginMenuProps> = ({ lng }) => {
   // function OriginMenu({ lng }:OriginMenuProps) {
   const router = useRouter();
   const { t } = useTranslation(lng, ['common']);
-//   const { isAuthenticated, user, setAuth, checkAuthStatus } = useAuth();
+  //   const { isAuthenticated, user, setAuth, checkAuthStatus } = useAuth();
   // const { data: session, status } = useSession();
 
   // const { t } = useTranslation(lng, ['common']);
@@ -37,15 +37,6 @@ const OriginMenu: FC<OriginMenuProps> = ({ lng }) => {
           leftSection={<IconHome size="1rem" stroke={1.5} />}
           onClick={() => handleNavigation('/')}
         />
-        <NavLink
-          component="button"
-          label={t('common:symbol_emoji')}
-          leftSection={<IconMoodHappy size="1rem" stroke={1.5} />}
-        //   onClick={() => handleNavigation('/records')}
-        >
-        <NavLink label={t('common:symbol')} onClick={() => handleNavigation('/symbols/symbol')} />
-        <NavLink label={t('common:emoji')} onClick={() => handleNavigation('/symbols/emoji')} />
-        </NavLink>
         <NavLink
           component="button"
           label={t('common:random')}
@@ -93,6 +84,15 @@ const OriginMenu: FC<OriginMenuProps> = ({ lng }) => {
           <NavLink label={t('common:tdee_calculator_title')} onClick={() => handleNavigation('/calculator/tdee')} />
           <NavLink label={t('common:age_calculator_title')} onClick={() => handleNavigation('/calculator/age')} />
           <NavLink label={t('common:days_between_dates_calculator_title')} onClick={() => handleNavigation('/calculator/days-between-dates')} />
+        </NavLink>
+        <NavLink
+          component="button"
+          label={t('common:symbol_emoji')}
+          leftSection={<IconMoodHappy size="1rem" stroke={1.5} />}
+        //   onClick={() => handleNavigation('/records')}
+        >
+          <NavLink label={t('common:symbol')} onClick={() => handleNavigation('/symbols/symbol')} />
+          <NavLink label={t('common:emoji')} onClick={() => handleNavigation('/symbols/emoji')} />
         </NavLink>
       </nav>
       {/* {isAuthenticated && (

@@ -16,9 +16,11 @@ import {
     RadioGroup,
     Table,
     List,
+    Divider
 } from '@mantine/core';
 import { useTranslation } from '../../../i18n/client';
 import { IconEqual } from '@tabler/icons-react';
+import CalculatorActionsGrid from '@/components/ActionsGrid/CalculatorActionsGrid';
 
 interface TdeeCalculatorProps {
     lng: string;
@@ -197,6 +199,9 @@ export default function TdeeCalculator({ lng }: TdeeCalculatorProps) {
                     ))}
                 </List>
             </Stack>
+            <Divider mt="md" />
+            <Title order={3} mt="lg">{t('explore_more_title')}</Title>
+            <CalculatorActionsGrid lng={lng} />
         </Container>
     );
 }

@@ -28,13 +28,6 @@ const ActionsGrid: FC<ActionsGridProps> = ({ lng }) => {
 
     const tools = [
         { 
-            title: t('symbols:title'),
-            icon: IconMoodHappy,
-            color: 'violet',
-            href: `/${lng}/symbols`,
-            description: t('symbols:description')
-        },
-        { 
             title: t('random:title'),
             icon: IconDice5,
             color: 'indigo',
@@ -61,6 +54,13 @@ const ActionsGrid: FC<ActionsGridProps> = ({ lng }) => {
             color: 'blue',
             href: `/${lng}/calculator`,
             description: t('calculator:description')
+        },
+        { 
+            title: t('symbols:title'),
+            icon: IconMoodHappy,
+            color: 'violet',
+            href: `/${lng}/symbols`,
+            description: t('symbols:description')
         },
     ];
 

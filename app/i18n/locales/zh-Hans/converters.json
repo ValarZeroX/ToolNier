@@ -1,6 +1,7 @@
 {
     "title": "单位转换工具",
     "description": "提供长度、重量、温度等多种单位转换功能。",
+    "explore_more_title": "进一步探索",
     "metadata": {
         "temperature_converter_title": "温度单位转换工具",
         "temperature_converter_description": "将温度值从一种单位转换为另一种单位。支持摄氏度 (°C)、华氏度 (°F) 和开尔文 (K) 之间的相互转换。",

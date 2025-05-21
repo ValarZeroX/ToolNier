@@ -10,6 +10,7 @@ import {
     Button,
     Paper,
     Group,
+    Divider
 } from '@mantine/core';
 import { DatePickerInput } from '@mantine/dates';
 import { useTranslation } from '../../../i18n/client';
@@ -21,6 +22,7 @@ import 'dayjs/locale/ja';
 import duration from 'dayjs/plugin/duration';
 import '@mantine/dates/styles.css';
 import { IconCalendar } from '@tabler/icons-react';
+import CalculatorActionsGrid from '@/components/ActionsGrid/CalculatorActionsGrid';
 dayjs.extend(duration);
 
 interface AgeCalculatorProps {
@@ -98,6 +100,9 @@ export default function AgeCalculator({ lng }: AgeCalculatorProps) {
                     </Paper>
                 )}
             </Stack>
+            <Divider mt="md" />
+            <Title order={3} mt="lg">{t('explore_more_title')}</Title>
+            <CalculatorActionsGrid lng={lng} />
         </Container>
     );
 }

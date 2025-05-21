@@ -1,6 +1,7 @@
 {
     "title": "計算機",
     "description": "BMI、TDEE、体脂肪率などの計算機能を提供します。",
+    "explore_more_title": "さらに詳しく",
     "bmi": {
         "bmi_calculator": "BMI計算機",
         "description": "体格指数（BMI）を計算します。",

@@ -12,9 +12,11 @@ import {
     Paper,
     SegmentedControl,
     Table,
+    Divider,
 } from '@mantine/core';
 import { useTranslation } from '../../../i18n/client';
 import { IconEqual } from '@tabler/icons-react';
+import CalculatorActionsGrid from '@/components/ActionsGrid/CalculatorActionsGrid';
 
 interface BmiCalculatorProps {
     lng: string;
@@ -57,7 +59,7 @@ export default function BmiCalculator({ lng }: BmiCalculatorProps) {
     return (
         <Container size="sm">
             <Title ta="center" order={2}>{t('bmi.bmi_calculator')}</Title>
-            <Text  size="sm" my="sm">{t('bmi.bmi_1')}</Text>
+            <Text size="sm" my="sm">{t('bmi.bmi_1')}</Text>
             <SegmentedControl
                 fullWidth
                 value={unit}
@@ -132,7 +134,7 @@ export default function BmiCalculator({ lng }: BmiCalculatorProps) {
                     </Group>
                 </Paper>
                 <Title order={3}>{t('bmi.adult_bmi')}</Title>
-                <Text  size="sm" my="sm">{t('bmi.bmi_2')}</Text>
+                <Text size="sm" my="sm">{t('bmi.bmi_2')}</Text>
 
                 <Table striped withColumnBorders highlightOnHover mt="md">
                     <Table.Thead>
@@ -190,6 +192,9 @@ export default function BmiCalculator({ lng }: BmiCalculatorProps) {
                 <Text size="sm" my="sm">{t('bmi.bmi_3')}</Text>
                 <Text size="sm" my="sm">{t('bmi.bmi_4')}</Text>
             </Stack>
+            <Divider mt="md" />
+            <Title order={3} mt="lg">{t('explore_more_title')}</Title>
+            <CalculatorActionsGrid lng={lng} />
         </Container>
     );
 }

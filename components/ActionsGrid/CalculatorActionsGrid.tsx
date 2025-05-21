@@ -15,11 +15,11 @@ import { FC } from 'react';
 import { useTranslation } from "../../app/i18n/client";
 import { useRouter } from 'next/navigation';
 
-interface ToolsActionsGridProps {
+interface CalculatorActionsGridProps {
     lng: string;
 }
 
-const ToolsActionsGrid: FC<ToolsActionsGridProps> = ({ lng }) => {
+const CalculatorActionsGrid: FC<CalculatorActionsGridProps> = ({ lng }) => {
     const { t } = useTranslation(lng, ['grid', 'calculator']);
     const router = useRouter();
 
@@ -113,4 +113,4 @@ const ToolsActionsGrid: FC<ToolsActionsGridProps> = ({ lng }) => {
     );
 }
 
-export default ToolsActionsGrid;
+export default CalculatorActionsGrid;
