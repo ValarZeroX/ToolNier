@@ -1,6 +1,7 @@
 {
     "title": "开发者工具",
     "description": "提供代码格式化、JSON 验证、UUID生成等多种开发工具。",
+    "explore_more_title": "进一步探索",
     "qr_code": {
         "title": "QR Code 生成器",
         "grid_description": "生成网址、文字等数据的 QR Code。",
@@ -9,7 +10,31 @@
         "preview": "QR Code 预览",
         "clear": "清空",
         "format_label": "选择下载格式",
-        "description": "免费在线 QR Code 生成工具，支持网址、文字、Email 转换成 QR Code，可自定义颜色与大小，并下载 PNG 格式，适用于社交媒体、网站、名片等场合。"
+        "description": "免费在线 QR Code 生成工具，支持网址、文字、Email 转换成 QR Code，可自定义颜色与大小，并下载 PNG 格式，适用于社交媒体、网站、名片等场合。",
+        "how_to_use_title": "如何使用",
+        "how_to_use_steps": [
+            "在输入框中填入你想要编码的内容，例如网址、文字、E-mail 等。",
+            "输入内容即可立即预览。",
+            "可下载为图片文件（PNG、SVG 或 JPG）保存。"
+        ],
+        "example_usage_title": "常见应用场景",
+        "examples": [
+            "将网址生成 QR Code，方便移动设备扫描开启。",
+            "制作含有 Wi-Fi 登录信息的 QR Code，让访客一扫即连。",
+            "在海报上印上活动信息 QR Code，提供快速链接。",
+            "在名片上加入 vCard 格式的联系 QR Code。"
+        ],
+        "faq_title": "常见问题",
+        "faq": [
+            {
+                "q": "QR Code 支持哪些类型的内容？",
+                "a": "除了网址，你也可以输入文字、电话、Email、Wi-Fi 设置、vCard 等格式。"
+            },
+            {
+                "q": "生成出来的 QR Code 有保存期限吗？",
+                "a": "没有。本工具生成的 QR Code 是即时图片文件，不经过服务器存储，可永久使用。"
+            }
+        ]
     },
     "base64": {
         "title": "Base64 工具",
@@ -22,7 +47,25 @@
         "output_label": "输出结果",
         "error": "发生错误，请检查输入内容",
         "description": "免费在线 Base64 编码解码工具，支持文字、JSON 等格式，可快速将文字转换成 Base64 编码，或将 Base64 编码转换回原始文字。",
-        "swap": "交换"
+        "swap": "交换",
+        "how_to_use_title": "如何使用",
+        "how_to_use_steps": [
+            "输入欲转换的原始文字或 Base64 字符串。",
+            "选择编码或解码功能。",
+            "点击「交换」按钮可对调位置。",
+            "点击「清空」按钮可清除输入框。"
+        ],
+        "faq_title": "常见问题",
+        "faq": [
+            {
+                "q": "什么是 Base64？",
+                "a": "Base64 是一种用来将二进制数据转为可读文字格式的编码方式，常见于数据传输或图片嵌入等用途。"
+            },
+            {
+                "q": "这个工具是否支持特殊符号或非英文内容？",
+                "a": "是的，支持所有 UTF-8 编码的文字，包括中文、日文、符号与表情符号等内容。"
+            }
+        ]
     },
     "image_base64": {
         "grid_description": "将图片转换为 Base64 格式或从 Base64 转换为图片。",

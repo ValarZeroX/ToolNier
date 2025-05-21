@@ -2,10 +2,11 @@
 
 'use client';
 import React, { useState, useRef } from 'react';
-import { Container, Title, Textarea, Group, Stack, Paper, Text, Center, Grid, useMantineColorScheme, ActionIcon, Select } from '@mantine/core';
+import { Container, Title, Textarea, Group, Stack, Paper, Text, Center, Grid, useMantineColorScheme, ActionIcon, Select, Divider } from '@mantine/core';
 import { QRCodeSVG } from 'qrcode.react';
 import { useTranslation } from '../../../i18n/client';
 import { IconDownload } from '@tabler/icons-react';
+import ToolsActionsGrid from '@/components/ActionsGrid/ToolsActionsGrid';
 
 
 interface QRCodeGeneratorClientProps {
@@ -122,6 +123,33 @@ const QRCodeGeneratorClient: React.FC<QRCodeGeneratorClientProps> = ({ lng }) =>
                     </Center>
                 </Grid.Col>
             </Grid>
+            <Divider mt="md" />
+            <Title order={3} mt="lg">{t('qr_code.how_to_use_title')}</Title>
+            <Paper withBorder radius="md" p="md" mt="md">
+                <Stack gap="xs">
+                    {[0, 1, 2].map((index) => (
+                        <Group key={index} wrap="nowrap" align="flex-start">
+                            <Text fw={600} c="blue" size="sm" style={{ minWidth: '8px' }}>{index + 1}.</Text>
+                            <Text size="sm" style={{ lineHeight: 1.6 }}>{t(`qr_code.how_to_use_steps.${index}`)}</Text>
+                        </Group>
+                    ))}
+                </Stack>
+            </Paper>
+            <Title order={3} mt="lg">{t('qr_code.faq_title')}</Title>
+            <Stack gap="md" mt="md">
+                {[0, 1].map((index) => (
+                    <Paper key={index} p="md" withBorder radius="md">
+                        <Text fw={600} size="sm" mb="xs" c="blue">
+                            {t(`qr_code.faq.${index}.q`)}
+                        </Text>
+                        <Text size="sm" c="dimmed" style={{ lineHeight: 1.6 }}>
+                            {t(`qr_code.faq.${index}.a`)}
+                        </Text>
+                    </Paper>
+                ))}
+            </Stack>
+            <Title order={3} mt="lg">{t('explore_more_title')}</Title>
+            <ToolsActionsGrid lng={lng} />
         </Container>
     );
 };

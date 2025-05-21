@@ -1,8 +1,9 @@
 'use client';
 import React, { useState } from 'react';
-import { Container, Title, Textarea, Button, Stack, Group, Text } from '@mantine/core';
+import { Container, Title, Textarea, Button, Stack, Group, Text, Divider, Paper } from '@mantine/core';
 import { useTranslation } from '../../../i18n/client';
 import { IconArrowsDownUp } from '@tabler/icons-react';
+import ToolsActionsGrid from '@/components/ActionsGrid/ToolsActionsGrid';
 
 interface Base64ToolClientProps {
     lng: string;
@@ -60,7 +61,7 @@ const Base64ToolClient: React.FC<Base64ToolClientProps> = ({ lng }) => {
     };
 
     return (
-        <Container size="xs" mt="lg">
+        <Container size="md" mt="lg">
             <Title order={3} ta="center">{t('base64.title')}</Title>
             <Text ta="center" size="sm" c="dimmed" mt="xs">
                 {t('base64.description')}
@@ -94,6 +95,33 @@ const Base64ToolClient: React.FC<Base64ToolClientProps> = ({ lng }) => {
                     maxRows={10}
                 />
             </Stack>
+            <Divider mt="md" />
+            <Title order={3} mt="lg">{t('base64.how_to_use_title')}</Title>
+            <Paper withBorder radius="md" p="md" mt="md">
+                <Stack gap="xs">
+                    {[0, 1, 2, 3].map((index) => (
+                        <Group key={index} wrap="nowrap" align="flex-start">
+                            <Text fw={600} c="blue" size="sm" style={{ minWidth: '8px' }}>{index + 1}.</Text>
+                            <Text size="sm" style={{ lineHeight: 1.6 }}>{t(`base64.how_to_use_steps.${index}`)}</Text>
+                        </Group>
+                    ))}
+                </Stack>
+            </Paper>
+            <Title order={3} mt="lg">{t('base64.faq_title')}</Title>
+            <Stack gap="md" mt="md">
+                {[0, 1].map((index) => (
+                    <Paper key={index} p="md" withBorder radius="md">
+                        <Text fw={600} size="sm" mb="xs" c="blue">
+                            {t(`base64.faq.${index}.q`)}
+                        </Text>
+                        <Text size="sm" c="dimmed" style={{ lineHeight: 1.6 }}>
+                            {t(`base64.faq.${index}.a`)}
+                        </Text>
+                    </Paper>
+                ))}
+            </Stack>
+            <Title order={3} mt="lg">{t('explore_more_title')}</Title>
+            <ToolsActionsGrid lng={lng} />
         </Container>
     );
 };
