@@ -1,10 +1,11 @@
 'use client';
 import React, { useState } from 'react';
-import { Container, Paper, Title, Tabs, Grid } from '@mantine/core';
+import { Container, Paper, Title, Tabs, Divider } from '@mantine/core';
 import { useClipboard } from '@mantine/hooks';
 import { VirtuosoGrid } from 'react-virtuoso';
 import { useTranslation } from "../../../i18n/client";
 import { Notifications } from '@mantine/notifications';
+import SymbolsActionsGrid from '@/components/ActionsGrid/SymbolsActionsGrid';
 
 type SymbolClientProps = {
     lng: string;
@@ -283,7 +284,7 @@ const SymbolClient: React.FC<SymbolClientProps> = ({ lng }) => {
                     <Tabs.Panel value={category.category} key={category.category}>
                         <Title order={4} mt="md" mb="sm">{t('symbols.categories.' + category.category)}</Title>
                         <VirtuosoGrid
-                            style={{ height: `${Math.ceil(category.symbols.length / 4) * 70}px` }}
+                            style={{ height: `${Math.ceil(category.symbols.length / 4) * 65}px` }}
                             totalCount={category.symbols.length}
                             listClassName="symbol-grid"
                             itemContent={(index) => {
@@ -317,6 +318,8 @@ const SymbolClient: React.FC<SymbolClientProps> = ({ lng }) => {
                     margin: 0 !important;
                 }
             `}</style>
+            <Divider mt="md" />
+            <SymbolsActionsGrid lng={lng}/>
         </Container>
     );
 };

@@ -1,11 +1,12 @@
 'use client';
 import React, { useState } from 'react';
-import { Container, Paper, Title, Grid, Tabs } from '@mantine/core';
+import { Container, Paper, Title, Grid, Tabs, Divider } from '@mantine/core';
 import { useClipboard } from '@mantine/hooks';
 import { useTranslation } from "../../../i18n/client";
 import emojis from './emojis.json';
 import { IconMoodHappy, IconDog, IconCake, IconBallBasketball, IconCar, IconBulb, IconMathSymbols, IconFlag } from '@tabler/icons-react';
 import { Notifications } from '@mantine/notifications';
+import SymbolsActionsGrid from '@/components/ActionsGrid/SymbolsActionsGrid';
 
 type EmojiClientProps = {
     lng: string;
@@ -110,6 +111,8 @@ const EmojiClient: React.FC<EmojiClientProps> = ({ lng }) => {
                     ) : null
                 )}
             </Tabs>
+            <Divider mt="md" />
+            <SymbolsActionsGrid lng={lng}/>
         </Container>
     );
 };
