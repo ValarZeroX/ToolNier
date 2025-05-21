@@ -18,7 +18,73 @@
         "sort": "Sort",
         "intro": "The random sort tool helps you quickly arrange input items in random order, suitable for teaching, activity grouping, games, and more. Please enter your list below and click 'Start'.",
         "wheel_intro": "The random wheel draw tool helps you quickly select one random option from your inputs, suitable for teaching, lucky draws, activity grouping, and more. Please enter your options below (one per line) and click the wheel to start the draw.",
-        "intro_2": "The random draw tool helps you quickly select one random option from your inputs, suitable for teaching, lucky draws, activity grouping, and more. Please enter your options below (one per line) and click 'Start' to begin the draw."
+        "intro_2": "The random draw tool helps you quickly select one random option from your inputs, suitable for teaching, lucky draws, activity grouping, and more. Please enter your options below (one per line) and click 'Start' to begin the draw.",
+        "draw": {
+            "title": "Random Draw",
+            "description": "Random Draw is a simple and practical online tool that allows you to quickly select random winners or items from a list of names or options. Whether you're organizing a giveaway, dividing students into groups, choosing a dinner location, or any situation requiring a fair decision, this tool helps you save time and ensure fairness.",
+            "how_to_use_title": "How to Use",
+            "how_to_use_steps": {
+                "0": "Enter each participant's name (or option) in the input box, with one item per line.",
+                "1": "Click the 'Start' button, and the system will randomly select one item.",
+                "2": "To start again, simply press the button again or refresh the page."
+            },
+            "usage_scenarios_title": "Usage Scenarios",
+            "usage_scenarios": {
+                "0": "Organizing giveaways (e.g., year-end prizes)",
+                "1": "Deciding where to have lunch",
+                "2": "Student grouping or ordering",
+                "3": "Selecting speakers or game participants"
+            },
+            "faq_title": "Frequently Asked Questions",
+            "faq": [
+                {
+                    "q": "Is this tool fair?",
+                    "a": "Yes, we use JavaScript's built-in random logic, ensuring that each draw result is truly random."
+                },
+                {
+                    "q": "Can I draw multiple people at once?",
+                    "a": "Currently, the tool only supports drawing one person at a time. We may add multiple selection functionality in the future."
+                },
+                {
+                    "q": "Is my input data stored?",
+                    "a": "No, all data is only kept in your local browser memory."
+                }
+            ],
+            "explore_more_title": "Explore More"
+        },
+        "wheel": {
+            "title": "Random Wheel Draw",
+            "description": "The random wheel draw tool helps you quickly select one random option from your inputs, suitable for teaching, lucky draws, activity grouping, and more. Please enter your options below (one per line) and click the wheel to start the draw.",
+            "how_to_use_title": "How to Use",
+            "how_to_use_steps": [
+                "Enter options in the input field, with one item per line.",
+                "Click 'Start' and the wheel will automatically begin spinning.",
+                "Wait for the wheel to stop, and it will display the randomly selected item."
+            ],
+            "usage_scenarios_title": "Usage Scenarios",
+            "usage_scenarios": [
+                "Office or party giveaway events",
+                "Student classroom interaction for selecting respondents",
+                "Lunch or dinner decision making",
+                "Game punishment or challenge options"
+            ],
+            "faq_title": "Frequently Asked Questions",
+            "faq": [
+                {
+                    "q": "How many options can I input?",
+                    "a": "Theoretically, you can input hundreds of items, but we recommend a maximum of 20 items to avoid text becoming too small on the wheel and affecting the user experience."
+                },
+                {
+                    "q": "Is the wheel truly random?",
+                    "a": "Yes, each spin uses a new random angle and animation, ensuring no bias towards any particular item."
+                },
+                {
+                    "q": "Is the data stored?",
+                    "a": "No, we don't store any user input. All data is only temporarily kept in your browser."
+                }
+            ],
+            "explore_more_title": "Explore More"
+        }
     },
     "random_draw_wheel": {
         "title": "Random Wheel",

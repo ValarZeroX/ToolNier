@@ -1,8 +1,10 @@
 'use client';
 import React, { useState } from 'react';
-import { Container, Title, Textarea, Button, Text, Paper, Stack, Grid, Group } from '@mantine/core';
+import { Container, Title, Textarea, Button, Text, Paper, Stack, Grid, Group, Divider } from '@mantine/core';
 import { IconX } from '@tabler/icons-react';
 import { useTranslation } from "../../../i18n/client";
+import { useRouter } from 'next/navigation';
+import RandomActionsGrid from '@/components/ActionsGrid/RandomActionsGrid';
 
 interface RandomDrawClientProps {
   lng: string;
@@ -14,8 +16,9 @@ const RandomDrawClient: React.FC<RandomDrawClientProps> = ({ lng }) => {
   const [result, setResult] = useState<string | null>(null);
   const [history, setHistory] = useState<string[]>([]);
   const { t } = useTranslation(lng, 'random');
+  const router = useRouter();
 
-  
+
   const handleStartDraw = () => {
     const entries = inputValue
       .split('\n')
@@ -54,18 +57,22 @@ const RandomDrawClient: React.FC<RandomDrawClientProps> = ({ lng }) => {
     setResult(null);
   };
 
+  const handleNavigation = (path: string) => {
+    router.push(path);
+  };
+
   return (
-    <Container size="xs" mt="lg">
+    <Container size="md" mt="lg">
       <Title order={3} ta="center">{t('random_draw_page.title')}</Title>
       <Text size="sm" c="dimmed" mt="md">
-        {t('random_draw_page.intro_2')}
-    </Text>
+        {t('random_draw_page.draw.description')}
+      </Text>
       <Grid>
         <Grid.Col span={{ base: 12, sm: 12, md: 8 }}>
           <Stack gap="md" mt="md">
-              <Button fullWidth color="red" variant="outline" leftSection={<IconX size={14} />} onClick={handleReset}>
-                {t('random_draw_page.clear_options')}
-              </Button>
+            <Button fullWidth color="red" variant="outline" leftSection={<IconX size={14} />} onClick={handleReset}>
+              {t('random_draw_page.clear_options')}
+            </Button>
             <Textarea
               label={t('random_draw_page.input_label')}
               value={inputValue}
@@ -92,21 +99,60 @@ const RandomDrawClient: React.FC<RandomDrawClientProps> = ({ lng }) => {
         </Grid.Col>
         <Grid.Col span={{ base: 12, sm: 12, md: 4 }}>
           <Stack gap="md" mt="md">
-              <>
-                <Button color="red" variant="outline" leftSection={<IconX size={14} />} onClick={() => setHistory([])} >
-                  {t('random_draw_page.clear_history')}
-                </Button>
-                {history.length > 0 && (
+            <>
+              <Button color="red" variant="outline" leftSection={<IconX size={14} />} onClick={() => setHistory([])} >
+                {t('random_draw_page.clear_history')}
+              </Button>
+              {history.length > 0 && (
                 <Paper shadow="md" p="md" radius="md" withBorder>
                   {history.map((item, index) => (
                     <Text key={index}>{t('random_draw_page.history_item', { number: index + 1, result: item })}</Text>
                   ))}
                 </Paper>
-                )} 
-              </>
+              )}
+            </>
           </Stack>
         </Grid.Col>
       </Grid>
+      <Divider mt="md" />
+      <Title order={3} mt="lg">{t('random_draw_page.draw.how_to_use_title')}</Title>
+      <Paper withBorder radius="md" p="md" mt="md">
+        <Stack gap="xs">
+          {[0, 1, 2].map((index) => (
+            <Group key={index} wrap="nowrap" align="flex-start">
+              <Text fw={600} c="blue" size="sm" style={{ minWidth: '8px' }}>{index + 1}.</Text>
+              <Text size="sm" style={{ lineHeight: 1.6 }}>{t(`random_draw_page.draw.how_to_use_steps.${index}`)}</Text>
+            </Group>
+          ))}
+        </Stack>
+      </Paper>
+
+      <Title order={3} mt="lg">{t('random_draw_page.draw.usage_scenarios_title')}</Title>
+      <Paper withBorder radius="md" p="md" mt="md">
+        <Stack gap="xs">
+          {[0, 1, 2, 3].map((index) => (
+            <Group key={index} wrap="nowrap" align="flex-start">
+              <Text fw={600} c="blue" size="sm" style={{ minWidth: '8px' }}>{index + 1}.</Text>
+              <Text size="sm" style={{ lineHeight: 1.6 }}>{t(`random_draw_page.draw.usage_scenarios.${index}`)}</Text>
+            </Group>
+          ))}
+        </Stack>
+      </Paper>
+      <Title order={3} mt="lg">{t('random_draw_page.draw.faq_title')}</Title>
+      <Stack gap="md" mt="md">
+        {[0, 1, 2].map((index) => (
+          <Paper key={index} p="md" withBorder radius="md">
+            <Text fw={600} size="sm" mb="xs" c="blue">
+              {t(`random_draw_page.draw.faq.${index}.q`)}
+            </Text>
+            <Text size="sm" c="dimmed" style={{ lineHeight: 1.6 }}>
+              {t(`random_draw_page.draw.faq.${index}.a`)}
+            </Text>
+          </Paper>
+        ))}
+      </Stack>
+      <Title order={3} mt="lg">{t('random_draw_page.draw.explore_more_title')}</Title>
+      <RandomActionsGrid lng={lng} />
     </Container>
   );
 };
