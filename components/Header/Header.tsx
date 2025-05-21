@@ -50,8 +50,8 @@ const Header: FC<HeaderProps> = ({ opened, toggle, desktopOpened, toggleDesktop,
     <div className={classes.inner}>
       <Group h="100%" px="md">
         {/* <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" /> */}
-        <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />
-        <Burger opened={desktopOpened} onClick={toggleDesktop} visibleFrom="sm" size="sm" />
+        <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" aria-label="Toggle navigation" />
+        <Burger opened={desktopOpened} onClick={toggleDesktop} visibleFrom="sm" size="sm" aria-label="Toggle navigation" />
         <IconTools
           style={{ width: rem(36), height: rem(36) }}
           stroke={1.5}

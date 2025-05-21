@@ -68,7 +68,7 @@ export function Welcome({ lng }: WelcomeProps) {
     ];
 
     return (
-        <Container size="lg" py="xl">
+        <Container size="md" py="xl">
             <Title className={classes.title} ta="center" mt={50}>
                 {t('title')}{' '}
                 <Text inherit variant="gradient" component="span" gradient={{ from: 'blue', to: 'cyan' }}>
