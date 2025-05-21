@@ -1,1 +1,0 @@
-"use strict";exports.id=6796,exports.ids=[6796],exports.modules={26796:s=>{s.exports=JSON.parse('{"title":"記号ツール","description":"様々な記号の選択機能を提供します。"}')}};

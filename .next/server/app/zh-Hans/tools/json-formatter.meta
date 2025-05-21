@@ -1,7 +1,0 @@
-{
-  "headers": {
-    "x-nextjs-stale-time": "4294967294",
-    "x-nextjs-prerender": "1",
-    "x-next-cache-tags": "_N_T_/layout,_N_T_/[lng]/layout,_N_T_/[lng]/tools/layout,_N_T_/[lng]/tools/json-formatter/layout,_N_T_/[lng]/tools/json-formatter/page,_N_T_/zh-Hans/tools/json-formatter"
-  }
-}

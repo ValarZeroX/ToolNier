@@ -1,1 +1,0 @@
-"use strict";exports.id=4890,exports.ids=[4890],exports.modules={34890:i=>{i.exports=JSON.parse('{"about":{"title":"About","links":{"disclaimer":"Disclaimer","privacy":"Privacy Policy"}},"description":"Build fully functional accessible web applications faster than ever","copyright":"\xa9 2024 ToolNier. All rights reserved."}')}};

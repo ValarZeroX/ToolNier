@@ -1,1 +1,0 @@
-"use strict";exports.id=5377,exports.ids=[5377],exports.modules={25377:i=>{i.exports=JSON.parse('{"about":{"title":"關於","links":{"disclaimer":"免責聲明","privacy":"隱私權政策"}},"description":"比以往更快地構建功能完整且易於訪問的網頁應用程序","copyright":"\xa9 2024 ToolNier. 保留所有權利。"}')}};
