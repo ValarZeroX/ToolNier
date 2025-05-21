@@ -2,6 +2,8 @@
     "title": "Developer Tools",
     "description": "Provides various development tools including code formatting, JSON validation, UUID generation, and more.",
     "explore_more_title": "Explore More",
+    "copy": "Copy",
+    "copied": "Copied ✅",
     "qr_code": {
         "title": "QR Code Generator",
         "grid_description": "Generate QR codes from URLs, text, and other data.",
@@ -88,7 +90,24 @@
         "copy_output": "Copy Output",
         "clear_all": "Clear All",
         "error_title": "Error",
-        "description_2": "Paste a complete Base64 Data URL (e.g., `data:image/png;base64,...`), and the system will immediately decode and preview the original image. You can easily view the image content corresponding to the Base64 string and download the restored image file."
+        "description_2": "Paste a complete Base64 Data URL (e.g., `data:image/png;base64,...`), and the system will immediately decode and preview the original image. You can easily view the image content corresponding to the Base64 string and download the restored image file.",
+        "how_to_use_title": "How to Use",
+        "how_to_use_steps": [
+            "Upload an image in the 'Encode' tab, and the system will automatically convert it to a Base64 string that you can copy for use in web pages, programs, or databases.",
+            "Switch to the 'Decode' tab, paste a string starting with 'data:image' to preview and download the image.",
+            "The tool automatically detects image formats (such as PNG, JPG, SVG) and provides corresponding download functionality."
+        ],
+        "faq_title": "Frequently Asked Questions",
+        "faq": [
+            {
+                "q": "What is Base64 and why convert images?",
+                "a": "Base64 is an encoding format that converts images into plain text, commonly used for web embedding, API transmission, and offline storage without requiring additional image file management."
+            },
+            {
+                "q": "What scenarios are suitable for using Base64 to represent images?",
+                "a": "Base64 strings are commonly used for embedding images in scenarios such as generating QR Codes, PDFs, Emails, SVG image embedding, and frontend frameworks like React/Vue."
+            }
+        ]
     },
     "uuid": {
         "title": "UUID Generator",
@@ -98,7 +117,28 @@
         "generate": "Generate",
         "clear": "Clear",
         "output_label": "UUID Results",
-        "download_txt": "Download TXT"
+        "download_txt": "Download TXT",
+        "how_to_use_title": "How to Use",
+        "how_to_use_steps": [
+            "Enter the number of UUIDs you want to generate (up to 10,000), default is 1.",
+            "Click the 'Generate' button to create random UUID values.",
+            "You can copy the results, clear them, or download the UUIDs as a TXT file for use."
+        ],
+        "faq_title": "Frequently Asked Questions",
+        "faq": [
+            {
+                "q": "What is a UUID?",
+                "a": "UUID (Universally Unique Identifier) is a 128-bit standard format identifier commonly used to mark data uniqueness, such as database primary keys, user IDs, device identification, etc."
+            },
+            {
+                "q": "What are the characteristics of UUID v4?",
+                "a": "UUID v4 is a randomly generated version created through cryptographically secure random number generation algorithms, making it virtually impossible to duplicate, thus suitable for any scenario requiring global uniqueness."
+            },
+            {
+                "q": "Can I use UUIDs as database primary keys?",
+                "a": "Yes, UUIDs are widely used as primary keys in both NoSQL and SQL databases, though they take up slightly more space compared to auto-incrementing IDs. If you value data synchronization and global uniqueness, UUIDs are an excellent choice."
+            }
+        ]
     },
     "json": {
         "title": "JSON Formatter",
@@ -112,7 +152,28 @@
         "swap": "Swap",
         "compress": "Compress",
         "error": "JSON format error. Please verify the content is correct.",
-        "download": "Download"
+        "download": "Download",
+        "how_to_use_title": "How to Use",
+        "how_to_use_steps": [
+            "Paste your JSON into the input field that you want to format or compress.",
+            "Click 'Format' to automatically beautify the layout, or click 'Compress' to convert it to a single-line format.",
+            "The output result will be displayed below, and you can copy, clear, or download it as a .json file."
+        ],
+        "faq_title": "Frequently Asked Questions",
+        "faq": [
+            {
+                "q": "What is JSON?",
+                "a": "JSON (JavaScript Object Notation) is a lightweight data exchange format widely used in frontend-backend transmission and API data structure definition."
+            },
+            {
+                "q": "Why can't my JSON be formatted?",
+                "a": "Please ensure you have entered valid JSON format. Common errors include missing commas, unquoted keys, or unmatched curly braces."
+            },
+            {
+                "q": "Can I revert after formatting?",
+                "a": "Yes. You can click 'Swap' to move the result back to the input field, then perform compression or format conversion."
+            }
+        ]
     },
     "emoji": {
         "title": "Emoji Tool",

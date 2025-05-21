@@ -1,8 +1,9 @@
 'use client';
 import React, { useState } from 'react';
-import { Container, Title, Textarea, Button, Stack, Group, Text } from '@mantine/core';
+import { Container, Title, Textarea, Button, Stack, Group, Text, Divider, Paper } from '@mantine/core';
 import { IconArrowsDownUp, IconX, IconDownload } from '@tabler/icons-react';
 import { useTranslation } from '../../../i18n/client';
+import ToolsActionsGrid from '@/components/ActionsGrid/ToolsActionsGrid';
 
 interface JsonFormatterClientProps {
   lng: string;
@@ -86,6 +87,33 @@ const JsonFormatterClient: React.FC<JsonFormatterClientProps> = ({ lng }) => {
           maxRows={8}
         />
       </Stack>
+      <Divider mt="md" />
+      <Title order={3} mt="lg">{t('json.how_to_use_title')}</Title>
+      <Paper withBorder radius="md" p="md" mt="md">
+        <Stack gap="xs">
+          {[0, 1, 2].map((index) => (
+            <Group key={index} wrap="nowrap" align="flex-start">
+              <Text fw={600} c="blue" size="sm" style={{ minWidth: '8px' }}>{index + 1}.</Text>
+              <Text size="sm" style={{ lineHeight: 1.6 }}>{t(`json.how_to_use_steps.${index}`)}</Text>
+            </Group>
+          ))}
+        </Stack>
+      </Paper>
+      <Title order={3} mt="lg">{t('json.faq_title')}</Title>
+      <Stack gap="md" mt="md">
+        {[0, 1, 2].map((index) => (
+          <Paper key={index} p="md" withBorder radius="md">
+            <Text fw={600} size="sm" mb="xs" c="blue">
+              {t(`json.faq.${index}.q`)}
+            </Text>
+            <Text size="sm" c="dimmed" style={{ lineHeight: 1.6 }}>
+              {t(`json.faq.${index}.a`)}
+            </Text>
+          </Paper>
+        ))}
+      </Stack>
+      <Title order={3} mt="lg">{t('explore_more_title')}</Title>
+      <ToolsActionsGrid lng={lng} />
     </Container>
   );
 };

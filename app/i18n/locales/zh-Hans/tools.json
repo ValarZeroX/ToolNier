@@ -2,6 +2,8 @@
     "title": "开发者工具",
     "description": "提供代码格式化、JSON 验证、UUID生成等多种开发工具。",
     "explore_more_title": "进一步探索",
+    "copy": "复制",
+    "copied": "已复制 ✅",
     "qr_code": {
         "title": "QR Code 生成器",
         "grid_description": "生成网址、文字等数据的 QR Code。",
@@ -88,7 +90,24 @@
         "copy_output": "复制输出",
         "clear_all": "清除所有",
         "error_title": "错误",
-        "description_2": "粘贴完整的 Base64 Data URL（例如 `data:image/png;base64,...`），系统将立即将其解码并预览原始图片。您可以方便地查看 Base64 字符串对应的图像内容，并支持下载还原后的图片文件。"
+        "description_2": "粘贴完整的 Base64 Data URL（例如 `data:image/png;base64,...`），系统将立即将其解码并预览原始图片。您可以方便地查看 Base64 字符串对应的图像内容，并支持下载还原后的图片文件。",
+        "how_to_use_title": "如何使用",
+        "how_to_use_steps": [
+            "在「編碼」分頁上傳圖片後，系統會自動將其轉為 Base64 字串，並可複製用於網頁、程式或資料庫中。",
+            "切換至「解碼」分頁，貼上以 data:image 開頭的字串，即可預覽與下載圖片。",
+            "工具會自動判斷圖片格式（如 PNG、JPG、SVG），並提供對應格式的下載功能。"
+        ],
+        "faq_title": "常見問題",
+        "faq": [
+            {
+                "q": "Base64 是什麼？為何要轉換圖片？",
+                "a": "Base64 是一種將圖片轉成純文字的編碼格式，常用於網頁嵌入、API 傳輸與離線儲存，不需額外的圖片檔案管理。了網址，你也可以輸入文字、電話、Email、Wi-Fi 設定、vCard 等格式。"
+            },
+            {
+                "q": "有哪些情境適合用 Base64 表示圖片？",
+                "a": "像是生成 QR Code、PDF、Email、SVG 圖片嵌入、React/Vue 等前端框架都常使用 Base64 字串來嵌入圖片。"
+            }
+        ]
     },
     "uuid": {
         "title": "UUID 生成器",
@@ -98,7 +117,28 @@
         "generate": "生成",
         "clear": "清空",
         "output_label": "UUID 结果",
-        "download_txt": "下载 TXT"
+        "download_txt": "下载 TXT",
+        "how_to_use_title": "如何使用",
+        "how_to_use_steps": [
+            "输入您要生成的 UUID 数量（最多支持 10000 个），默认为 1。",
+            "点击「生成」按钮，即可生成随机的 UUID 值。",
+            "您可以复制结果、清空、或将 UUID 保存成 TXT 文件下载使用。"
+        ],
+        "faq_title": "常见问题",
+        "faq": [
+            {
+                "q": "什么是 UUID？",
+                "a": "UUID（Universally Unique Identifier）是一种 128 位的标准格式标识符，常用于标识数据的唯一性，例如数据库主键、用户 ID、设备识别等。"
+            },
+            {
+                "q": "UUID v4 有什么特点？",
+                "a": "UUID v4 是随机生成的版本，通过加密安全的随机数生成算法生成，几乎不可能重复，因此适用于任何需要全局唯一性的场景。"
+            },
+            {
+                "q": "我能否将 UUID 用于数据库主键？",
+                "a": "可以，UUID 广泛用于 NoSQL 和 SQL 数据库中作为主键，但相较自增 ID 会稍占用空间。若您重视数据同步性与全局唯一性，UUID 是不错的选择。"
+            }
+        ]
     },
     "json": {
         "title": "JSON 格式化工具",
@@ -112,7 +152,28 @@
         "swap": "交换",
         "compress": "压缩",
         "error": "JSON 格式错误，请确认内容是否正确",
-        "download": "下载"
+        "download": "下载",
+        "how_to_use_title": "如何使用",
+        "how_to_use_steps": [
+            "将您要格式化或压缩的 JSON 贴到输入栏中。",
+            "点击「格式化」可自动美化排版，或点击「压缩」可缩成单行格式。",
+            "输出结果会显示于下方，您可以复制、清空或下载为 .json 文件。"
+        ],
+        "faq_title": "常见问题",
+        "faq": [
+            {
+                "q": "什么是 JSON？",
+                "a": "JSON（JavaScript Object Notation）是一种轻量级的数据交换格式，广泛应用于前后端传输与 API 数据结构定义。"
+            },
+            {
+                "q": "为什么我的 JSON 无法格式化？",
+                "a": "请确保您输入的是有效的 JSON 格式。常见错误包括逗号遗漏、键未加引号或花括号不成对。"
+            },
+            {
+                "q": "格式化后是否能还原？",
+                "a": "可以。您可以点击「交换」将结果搬回输入栏，再进行压缩或格式转换。"
+            }
+        ]
     },
     "emoji": {
         "title": "Emoji 工具",

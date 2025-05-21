@@ -2,11 +2,12 @@
 
 'use client';
 import React, { useState } from 'react';
-import { Container, Title, Button, Textarea, Stack, NumberInput, Group, Text, Tooltip } from '@mantine/core';
+import { Container, Title, Button, Textarea, Stack, NumberInput, Group, Text, Tooltip, Divider, Paper } from '@mantine/core';
 import { useTranslation } from '../../../i18n/client';
 import { IconCopy, IconX, IconDownload } from '@tabler/icons-react';
 import { v4 as uuidv4 } from 'uuid';
 import { useClipboard } from '@mantine/hooks';
+import ToolsActionsGrid from '@/components/ActionsGrid/ToolsActionsGrid';
 
 interface UUIDGeneratorClientProps {
     lng: string;
@@ -44,7 +45,7 @@ const UUIDGeneratorClient: React.FC<UUIDGeneratorClientProps> = ({ lng }) => {
     };
 
     return (
-        <Container size="xs" mt="lg">
+        <Container size="md" mt="lg">
             <Title order={3} ta="center">{t('uuid.title')}</Title>
             <Text ta="center" size="sm" c="dimmed" mt="xs">
                 {t('uuid.description')}
@@ -56,7 +57,7 @@ const UUIDGeneratorClient: React.FC<UUIDGeneratorClientProps> = ({ lng }) => {
                     value={count}
                     onChange={(value) => setCount(Number(value) || 1)}
                     min={1}
-                    max={100}
+                    max={10000}
                 />
 
                 <Group justify="center">
@@ -91,6 +92,33 @@ const UUIDGeneratorClient: React.FC<UUIDGeneratorClientProps> = ({ lng }) => {
                     />
                 )}
             </Stack>
+            <Divider mt="md" />
+            <Title order={3} mt="lg">{t('uuid.how_to_use_title')}</Title>
+            <Paper withBorder radius="md" p="md" mt="md">
+                <Stack gap="xs">
+                    {[0, 1, 2].map((index) => (
+                        <Group key={index} wrap="nowrap" align="flex-start">
+                            <Text fw={600} c="blue" size="sm" style={{ minWidth: '8px' }}>{index + 1}.</Text>
+                            <Text size="sm" style={{ lineHeight: 1.6 }}>{t(`uuid.how_to_use_steps.${index}`)}</Text>
+                        </Group>
+                    ))}
+                </Stack>
+            </Paper>
+            <Title order={3} mt="lg">{t('uuid.faq_title')}</Title>
+            <Stack gap="md" mt="md">
+                {[0, 1, 2].map((index) => (
+                    <Paper key={index} p="md" withBorder radius="md">
+                        <Text fw={600} size="sm" mb="xs" c="blue">
+                            {t(`uuid.faq.${index}.q`)}
+                        </Text>
+                        <Text size="sm" c="dimmed" style={{ lineHeight: 1.6 }}>
+                            {t(`uuid.faq.${index}.a`)}
+                        </Text>
+                    </Paper>
+                ))}
+            </Stack>
+            <Title order={3} mt="lg">{t('explore_more_title')}</Title>
+            <ToolsActionsGrid lng={lng} />
         </Container>
     );
 };

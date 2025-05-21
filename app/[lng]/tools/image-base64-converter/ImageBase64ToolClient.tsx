@@ -1,10 +1,11 @@
 'use client';
 import React, { useState } from 'react';
-import { Container, Title, Stack, Text, FileInput, Paper, Image, Textarea, Button, Group, Tabs, Tooltip, Alert } from '@mantine/core';
+import { Container, Title, Stack, Text, FileInput, Paper, Image, Textarea, Button, Group, Tabs, Tooltip, Alert, Divider } from '@mantine/core';
 import { useTranslation } from '../../../i18n/client';
 import { IconUpload, IconTrash, IconCopy, IconDownload, IconInfoCircle } from '@tabler/icons-react';
 import { useClipboard } from '@mantine/hooks';
 import { Notifications } from '@mantine/notifications';
+import ToolsActionsGrid from '@/components/ActionsGrid/ToolsActionsGrid';
 
 interface ImageBase64ToolClientProps {
     lng: string;
@@ -77,7 +78,7 @@ const ImageBase64ToolClient: React.FC<ImageBase64ToolClientProps> = ({ lng }) =>
     };
 
     return (
-        <Container size="sm" mt="lg">
+        <Container size="md" mt="lg">
             <Title order={3} ta="center">{t('image_base64.title')}</Title>
             <Tabs value={activeTab} onChange={(value) => setActiveTab(value)} mt="md">
                 <Tabs.List grow>
@@ -194,6 +195,33 @@ const ImageBase64ToolClient: React.FC<ImageBase64ToolClientProps> = ({ lng }) =>
                     </Stack>
                 </Tabs.Panel>
             </Tabs>
+            <Divider mt="md" />
+            <Title order={3} mt="lg">{t('image_base64.how_to_use_title')}</Title>
+            <Paper withBorder radius="md" p="md" mt="md">
+                <Stack gap="xs">
+                    {[0, 1, 2].map((index) => (
+                        <Group key={index} wrap="nowrap" align="flex-start">
+                            <Text fw={600} c="blue" size="sm" style={{ minWidth: '8px' }}>{index + 1}.</Text>
+                            <Text size="sm" style={{ lineHeight: 1.6 }}>{t(`image_base64.how_to_use_steps.${index}`)}</Text>
+                        </Group>
+                    ))}
+                </Stack>
+            </Paper>
+            <Title order={3} mt="lg">{t('image_base64.faq_title')}</Title>
+            <Stack gap="md" mt="md">
+                {[0, 1].map((index) => (
+                    <Paper key={index} p="md" withBorder radius="md">
+                        <Text fw={600} size="sm" mb="xs" c="blue">
+                            {t(`image_base64.faq.${index}.q`)}
+                        </Text>
+                        <Text size="sm" c="dimmed" style={{ lineHeight: 1.6 }}>
+                            {t(`image_base64.faq.${index}.a`)}
+                        </Text>
+                    </Paper>
+                ))}
+            </Stack>
+            <Title order={3} mt="lg">{t('explore_more_title')}</Title>
+            <ToolsActionsGrid lng={lng} />
         </Container>
     );
 };
