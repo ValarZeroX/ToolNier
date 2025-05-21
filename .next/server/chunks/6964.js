@@ -1,0 +1,1 @@
+"use strict";exports.id=6964,exports.ids=[6964],exports.modules={16964:e=>{e.exports=JSON.parse('{"about":{"title":"概要","links":{"disclaimer":"免責事項","privacy":"プライバシーポリシー"}},"description":"これまで以上に迅速に、完全に機能するアクセシブルなウェブアプリケーションを構築","copyright":"\xa9 2024 ToolNier. All rights reserved."}')}};

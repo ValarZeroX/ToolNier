@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[8635],{38635:e=>{e.exports=JSON.parse('{"about":{"title":"About","links":{"disclaimer":"Disclaimer","privacy":"Privacy Policy"}},"description":"Build fully functional accessible web applications faster than ever","copyright":"\xa9 2024 ToolNier. All rights reserved."}')}}]);

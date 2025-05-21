@@ -1,0 +1,7 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "4294967294",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/[lng]/layout,_N_T_/[lng]/calculator/layout,_N_T_/[lng]/calculator/body-fat/layout,_N_T_/[lng]/calculator/body-fat/page,_N_T_/zh-Hant/calculator/body-fat"
+  }
+}

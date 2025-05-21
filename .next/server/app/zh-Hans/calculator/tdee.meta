@@ -1,0 +1,7 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "4294967294",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/[lng]/layout,_N_T_/[lng]/calculator/layout,_N_T_/[lng]/calculator/tdee/layout,_N_T_/[lng]/calculator/tdee/page,_N_T_/zh-Hans/calculator/tdee"
+  }
+}

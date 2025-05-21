@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[4655],{44655:e=>{e.exports=JSON.parse('{"about":{"title":"关于","links":{"disclaimer":"免责声明","privacy":"隐私权政策"}},"description":"比以往更快地构建功能完整且易于访问的网页应用程序","copyright":"\xa9 2024 ToolNier. 保留所有权利。"}')}}]);

@@ -1,0 +1,304 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "dynamicRoutes": [
+    {
+      "page": "/[lng]",
+      "regex": "^/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPlng": "nxtPlng"
+      },
+      "namedRegex": "^/(?<nxtPlng>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/[lng]/all",
+      "regex": "^/([^/]+?)/all(?:/)?$",
+      "routeKeys": {
+        "nxtPlng": "nxtPlng"
+      },
+      "namedRegex": "^/(?<nxtPlng>[^/]+?)/all(?:/)?$"
+    },
+    {
+      "page": "/[lng]/calculator",
+      "regex": "^/([^/]+?)/calculator(?:/)?$",
+      "routeKeys": {
+        "nxtPlng": "nxtPlng"
+      },
+      "namedRegex": "^/(?<nxtPlng>[^/]+?)/calculator(?:/)?$"
+    },
+    {
+      "page": "/[lng]/calculator/age",
+      "regex": "^/([^/]+?)/calculator/age(?:/)?$",
+      "routeKeys": {
+        "nxtPlng": "nxtPlng"
+      },
+      "namedRegex": "^/(?<nxtPlng>[^/]+?)/calculator/age(?:/)?$"
+    },
+    {
+      "page": "/[lng]/calculator/bmi",
+      "regex": "^/([^/]+?)/calculator/bmi(?:/)?$",
+      "routeKeys": {
+        "nxtPlng": "nxtPlng"
+      },
+      "namedRegex": "^/(?<nxtPlng>[^/]+?)/calculator/bmi(?:/)?$"
+    },
+    {
+      "page": "/[lng]/calculator/bmr",
+      "regex": "^/([^/]+?)/calculator/bmr(?:/)?$",
+      "routeKeys": {
+        "nxtPlng": "nxtPlng"
+      },
+      "namedRegex": "^/(?<nxtPlng>[^/]+?)/calculator/bmr(?:/)?$"
+    },
+    {
+      "page": "/[lng]/calculator/body-fat",
+      "regex": "^/([^/]+?)/calculator/body\\-fat(?:/)?$",
+      "routeKeys": {
+        "nxtPlng": "nxtPlng"
+      },
+      "namedRegex": "^/(?<nxtPlng>[^/]+?)/calculator/body\\-fat(?:/)?$"
+    },
+    {
+      "page": "/[lng]/calculator/days-between-dates",
+      "regex": "^/([^/]+?)/calculator/days\\-between\\-dates(?:/)?$",
+      "routeKeys": {
+        "nxtPlng": "nxtPlng"
+      },
+      "namedRegex": "^/(?<nxtPlng>[^/]+?)/calculator/days\\-between\\-dates(?:/)?$"
+    },
+    {
+      "page": "/[lng]/calculator/tdee",
+      "regex": "^/([^/]+?)/calculator/tdee(?:/)?$",
+      "routeKeys": {
+        "nxtPlng": "nxtPlng"
+      },
+      "namedRegex": "^/(?<nxtPlng>[^/]+?)/calculator/tdee(?:/)?$"
+    },
+    {
+      "page": "/[lng]/converters",
+      "regex": "^/([^/]+?)/converters(?:/)?$",
+      "routeKeys": {
+        "nxtPlng": "nxtPlng"
+      },
+      "namedRegex": "^/(?<nxtPlng>[^/]+?)/converters(?:/)?$"
+    },
+    {
+      "page": "/[lng]/converters/length",
+      "regex": "^/([^/]+?)/converters/length(?:/)?$",
+      "routeKeys": {
+        "nxtPlng": "nxtPlng"
+      },
+      "namedRegex": "^/(?<nxtPlng>[^/]+?)/converters/length(?:/)?$"
+    },
+    {
+      "page": "/[lng]/converters/temperature",
+      "regex": "^/([^/]+?)/converters/temperature(?:/)?$",
+      "routeKeys": {
+        "nxtPlng": "nxtPlng"
+      },
+      "namedRegex": "^/(?<nxtPlng>[^/]+?)/converters/temperature(?:/)?$"
+    },
+    {
+      "page": "/[lng]/converters/time",
+      "regex": "^/([^/]+?)/converters/time(?:/)?$",
+      "routeKeys": {
+        "nxtPlng": "nxtPlng"
+      },
+      "namedRegex": "^/(?<nxtPlng>[^/]+?)/converters/time(?:/)?$"
+    },
+    {
+      "page": "/[lng]/converters/weight",
+      "regex": "^/([^/]+?)/converters/weight(?:/)?$",
+      "routeKeys": {
+        "nxtPlng": "nxtPlng"
+      },
+      "namedRegex": "^/(?<nxtPlng>[^/]+?)/converters/weight(?:/)?$"
+    },
+    {
+      "page": "/[lng]/disclaimer",
+      "regex": "^/([^/]+?)/disclaimer(?:/)?$",
+      "routeKeys": {
+        "nxtPlng": "nxtPlng"
+      },
+      "namedRegex": "^/(?<nxtPlng>[^/]+?)/disclaimer(?:/)?$"
+    },
+    {
+      "page": "/[lng]/privacy",
+      "regex": "^/([^/]+?)/privacy(?:/)?$",
+      "routeKeys": {
+        "nxtPlng": "nxtPlng"
+      },
+      "namedRegex": "^/(?<nxtPlng>[^/]+?)/privacy(?:/)?$"
+    },
+    {
+      "page": "/[lng]/random",
+      "regex": "^/([^/]+?)/random(?:/)?$",
+      "routeKeys": {
+        "nxtPlng": "nxtPlng"
+      },
+      "namedRegex": "^/(?<nxtPlng>[^/]+?)/random(?:/)?$"
+    },
+    {
+      "page": "/[lng]/random/draw",
+      "regex": "^/([^/]+?)/random/draw(?:/)?$",
+      "routeKeys": {
+        "nxtPlng": "nxtPlng"
+      },
+      "namedRegex": "^/(?<nxtPlng>[^/]+?)/random/draw(?:/)?$"
+    },
+    {
+      "page": "/[lng]/random/group",
+      "regex": "^/([^/]+?)/random/group(?:/)?$",
+      "routeKeys": {
+        "nxtPlng": "nxtPlng"
+      },
+      "namedRegex": "^/(?<nxtPlng>[^/]+?)/random/group(?:/)?$"
+    },
+    {
+      "page": "/[lng]/random/number",
+      "regex": "^/([^/]+?)/random/number(?:/)?$",
+      "routeKeys": {
+        "nxtPlng": "nxtPlng"
+      },
+      "namedRegex": "^/(?<nxtPlng>[^/]+?)/random/number(?:/)?$"
+    },
+    {
+      "page": "/[lng]/random/sort",
+      "regex": "^/([^/]+?)/random/sort(?:/)?$",
+      "routeKeys": {
+        "nxtPlng": "nxtPlng"
+      },
+      "namedRegex": "^/(?<nxtPlng>[^/]+?)/random/sort(?:/)?$"
+    },
+    {
+      "page": "/[lng]/random/wheel",
+      "regex": "^/([^/]+?)/random/wheel(?:/)?$",
+      "routeKeys": {
+        "nxtPlng": "nxtPlng"
+      },
+      "namedRegex": "^/(?<nxtPlng>[^/]+?)/random/wheel(?:/)?$"
+    },
+    {
+      "page": "/[lng]/symbols",
+      "regex": "^/([^/]+?)/symbols(?:/)?$",
+      "routeKeys": {
+        "nxtPlng": "nxtPlng"
+      },
+      "namedRegex": "^/(?<nxtPlng>[^/]+?)/symbols(?:/)?$"
+    },
+    {
+      "page": "/[lng]/symbols/emoji",
+      "regex": "^/([^/]+?)/symbols/emoji(?:/)?$",
+      "routeKeys": {
+        "nxtPlng": "nxtPlng"
+      },
+      "namedRegex": "^/(?<nxtPlng>[^/]+?)/symbols/emoji(?:/)?$"
+    },
+    {
+      "page": "/[lng]/symbols/symbol",
+      "regex": "^/([^/]+?)/symbols/symbol(?:/)?$",
+      "routeKeys": {
+        "nxtPlng": "nxtPlng"
+      },
+      "namedRegex": "^/(?<nxtPlng>[^/]+?)/symbols/symbol(?:/)?$"
+    },
+    {
+      "page": "/[lng]/tools",
+      "regex": "^/([^/]+?)/tools(?:/)?$",
+      "routeKeys": {
+        "nxtPlng": "nxtPlng"
+      },
+      "namedRegex": "^/(?<nxtPlng>[^/]+?)/tools(?:/)?$"
+    },
+    {
+      "page": "/[lng]/tools/base64-encoder-decoder",
+      "regex": "^/([^/]+?)/tools/base64\\-encoder\\-decoder(?:/)?$",
+      "routeKeys": {
+        "nxtPlng": "nxtPlng"
+      },
+      "namedRegex": "^/(?<nxtPlng>[^/]+?)/tools/base64\\-encoder\\-decoder(?:/)?$"
+    },
+    {
+      "page": "/[lng]/tools/image-base64-converter",
+      "regex": "^/([^/]+?)/tools/image\\-base64\\-converter(?:/)?$",
+      "routeKeys": {
+        "nxtPlng": "nxtPlng"
+      },
+      "namedRegex": "^/(?<nxtPlng>[^/]+?)/tools/image\\-base64\\-converter(?:/)?$"
+    },
+    {
+      "page": "/[lng]/tools/json-formatter",
+      "regex": "^/([^/]+?)/tools/json\\-formatter(?:/)?$",
+      "routeKeys": {
+        "nxtPlng": "nxtPlng"
+      },
+      "namedRegex": "^/(?<nxtPlng>[^/]+?)/tools/json\\-formatter(?:/)?$"
+    },
+    {
+      "page": "/[lng]/tools/qr-code-generator",
+      "regex": "^/([^/]+?)/tools/qr\\-code\\-generator(?:/)?$",
+      "routeKeys": {
+        "nxtPlng": "nxtPlng"
+      },
+      "namedRegex": "^/(?<nxtPlng>[^/]+?)/tools/qr\\-code\\-generator(?:/)?$"
+    },
+    {
+      "page": "/[lng]/tools/uuid-generator",
+      "regex": "^/([^/]+?)/tools/uuid\\-generator(?:/)?$",
+      "routeKeys": {
+        "nxtPlng": "nxtPlng"
+      },
+      "namedRegex": "^/(?<nxtPlng>[^/]+?)/tools/uuid\\-generator(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/robots.txt",
+      "regex": "^/robots\\.txt(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/robots\\.txt(?:/)?$"
+    },
+    {
+      "page": "/sitemap.xml",
+      "regex": "^/sitemap\\.xml(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/sitemap\\.xml(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "RSC",
+    "varyHeader": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+    "prefetchHeader": "Next-Router-Prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "Next-Router-Segment-Prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments"
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  },
+  "rewrites": []
+}
