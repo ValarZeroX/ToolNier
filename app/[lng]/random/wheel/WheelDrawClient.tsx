@@ -161,31 +161,31 @@ const WheelDrawClient: React.FC<WheelDrawClientProps> = ({ lng }) => {
                 </Stack>
             </Paper>
             <Title order={3} mt="lg">{t('random_draw_page.wheel.usage_scenarios_title')}</Title>
-      <Paper withBorder radius="md" p="md" mt="md">
-        <Stack gap="xs">
-          {[0, 1, 2, 3].map((index) => (
-            <Group key={index} wrap="nowrap" align="flex-start">
-              <Text fw={600} c="blue" size="sm" style={{ minWidth: '8px' }}>{index + 1}.</Text>
-              <Text size="sm" style={{ lineHeight: 1.6 }}>{t(`random_draw_page.wheel.usage_scenarios.${index}`)}</Text>
-            </Group>
-          ))}
-        </Stack>
-      </Paper>
-      <Title order={3} mt="lg">{t('random_draw_page.wheel.faq_title')}</Title>
-      <Stack gap="md" mt="md">
-        {[0, 1, 2].map((index) => (
-          <Paper key={index} p="md" withBorder radius="md">
-            <Text fw={600} size="sm" mb="xs" c="blue">
-              {t(`random_draw_page.wheel.faq.${index}.q`)}
-            </Text>
-            <Text size="sm" c="dimmed" style={{ lineHeight: 1.6 }}>
-              {t(`random_draw_page.wheel.faq.${index}.a`)}
-            </Text>
-          </Paper>
-        ))}
-      </Stack>
-      <Title order={3} mt="lg">{t('random_draw_page.wheel.explore_more_title')}</Title>
-      <RandomActionsGrid lng={lng} />
+            <Paper withBorder radius="md" p="md" mt="md">
+                <Stack gap="xs">
+                    {[0, 1, 2, 3].map((index) => (
+                        <Group key={index} wrap="nowrap" align="flex-start">
+                            <Text fw={600} c="blue" size="sm" style={{ minWidth: '8px' }}>{index + 1}.</Text>
+                            <Text size="sm" style={{ lineHeight: 1.6 }}>{t(`random_draw_page.wheel.usage_scenarios.${index}`)}</Text>
+                        </Group>
+                    ))}
+                </Stack>
+            </Paper>
+            <Title order={3} mt="lg">{t('random_draw_page.wheel.faq_title')}</Title>
+            <Stack gap="md" mt="md">
+                {[0, 1, 2].map((index) => (
+                    <Paper key={index} p="md" withBorder radius="md">
+                        <Text fw={600} size="sm" mb="xs" c="blue">
+                            {t(`random_draw_page.wheel.faq.${index}.q`)}
+                        </Text>
+                        <Text size="sm" c="dimmed" style={{ lineHeight: 1.6 }}>
+                            {t(`random_draw_page.wheel.faq.${index}.a`)}
+                        </Text>
+                    </Paper>
+                ))}
+            </Stack>
+            <Title order={3} mt="lg">{t('random_draw_page.wheel.explore_more_title')}</Title>
+            <RandomActionsGrid lng={lng} />
         </Container>
     );
 };

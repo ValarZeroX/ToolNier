@@ -1,9 +1,10 @@
 'use client';
 import React, { useState } from 'react';
-import { Container, Title, NumberInput, Button, Stack, Paper, Text, Checkbox } from '@mantine/core';
+import { Container, Title, NumberInput, Button, Stack, Paper, Text, Checkbox, Divider, Group } from '@mantine/core';
 import { useTranslation } from '../../../i18n/client';
 import { Notifications } from '@mantine/notifications';
 import '@mantine/notifications/styles.css';
+import RandomActionsGrid from '@/components/ActionsGrid/RandomActionsGrid';
 
 interface RandomNumberClientProps {
     lng: string;
@@ -45,7 +46,7 @@ const RandomNumberClient: React.FC<RandomNumberClientProps> = ({ lng }) => {
     };
 
     return (
-        <Container size="xs" mt="lg">
+        <Container size="md" mt="lg">
             <Title order={3} ta="center">{t('random_number.title')}</Title>
             <Text size="sm" c="dimmed" mt="md">
                 {t('random_number.intro')}
@@ -56,16 +57,22 @@ const RandomNumberClient: React.FC<RandomNumberClientProps> = ({ lng }) => {
                     label={t('random_number.min')}
                     value={min}
                     onChange={(value) => setMin(Number(value))}
+                    decimalScale={0}
+                    allowDecimal={false}
                 />
                 <NumberInput
                     label={t('random_number.max')}
                     value={max}
                     onChange={(value) => setMax(Number(value))}
+                    decimalScale={0}
+                    allowDecimal={false}
                 />
                 <NumberInput
                     label={t('random_number.count')}
                     value={count}
                     onChange={(value) => setCount(Number(value))}
+                    decimalScale={0}
+                    allowDecimal={false}
                 />
                 <Checkbox
                     label={t('random_number.no_repeat')}
@@ -83,6 +90,33 @@ const RandomNumberClient: React.FC<RandomNumberClientProps> = ({ lng }) => {
                     </Paper>
                 )}
             </Stack>
+            <Divider mt="md" />
+            <Title order={3} mt="lg">{t('random_number.how_to_use_title')}</Title>
+            <Paper withBorder radius="md" p="md" mt="md">
+                <Stack gap="xs">
+                    {[0, 1, 2].map((index) => (
+                        <Group key={index} wrap="nowrap" align="flex-start">
+                            <Text fw={600} c="blue" size="sm" style={{ minWidth: '8px' }}>{index + 1}.</Text>
+                            <Text size="sm" style={{ lineHeight: 1.6 }}>{t(`random_number.how_to_use_steps.${index}`)}</Text>
+                        </Group>
+                    ))}
+                </Stack>
+            </Paper>
+            <Title order={3} mt="lg">{t('random_number.faq_title')}</Title>
+            <Stack gap="md" mt="md">
+                {[0, 1, 2].map((index) => (
+                    <Paper key={index} p="md" withBorder radius="md">
+                        <Text fw={600} size="sm" mb="xs" c="blue">
+                            {t(`random_number.faq.${index}.q`)}
+                        </Text>
+                        <Text size="sm" c="dimmed" style={{ lineHeight: 1.6 }}>
+                            {t(`random_number.faq.${index}.a`)}
+                        </Text>
+                    </Paper>
+                ))}
+            </Stack>
+            <Title order={3} mt="lg">{t('explore_more_title')}</Title>
+            <RandomActionsGrid lng={lng} />
         </Container>
     );
 };

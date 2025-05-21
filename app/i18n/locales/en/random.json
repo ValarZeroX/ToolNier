@@ -1,6 +1,7 @@
 {
     "title": "Random Tools",
     "description": "Provides various random functions including random draw, random sort, random grouping, and random number generation.",
+    "explore_more_title": "Explore More",
     "random_draw_page": {
         "title": "Random Draw",
         "grid_description": "Randomly select one or more items from a list.",
@@ -92,7 +93,35 @@
     },
     "random_sort": {
         "title": "Random Sort",
-        "description": "Randomly shuffle the order of list items."
+        "description": "Randomly shuffle the order of list items.",
+        "how_to_use_title": "How to Use",
+        "how_to_use_steps": [
+            "Enter multiple items in the input box, with one item per line.",
+            "Click the 'Start' button.",
+            "The tool will automatically shuffle all items and display the results."
+        ],
+        "usage_scenarios_title": "Usage Scenarios",
+        "usage_scenarios": [
+            "Arranging presentation or speaking order",
+            "Organizing student presentation sequence",
+            "Determining game turn or move order",
+            "Drawing lots for priority order"
+        ],
+        "faq_title": "Frequently Asked Questions",
+        "faq": [
+            {
+                "q": "Is the sorting result fair?",
+                "a": "Yes, each time you press sort, a random algorithm is used to ensure fair and unbiased results."
+            },
+            {
+                "q": "How many items can be sorted?",
+                "a": "We recommend a maximum of 100 items to avoid performance issues."
+            },
+            {
+                "q": "Is my input recorded?",
+                "a": "No, all data is only stored in your browser, and we don't save any input content."
+            }
+        ]
     },
     "random_group": {
         "title": "Random Group",
@@ -106,7 +135,39 @@
         "error_title": "Error",
         "error_message": "Please enter a valid number of groups",
         "clear_options": "Clear Options",
-        "description": "The random group tool helps you quickly distribute input items into a specified number of random groups, suitable for teaching, activity grouping, games, and more. Please enter your list below, set the number of groups, and click 'Start Grouping'."
+        "description": "The random group tool helps you quickly distribute input items into a specified number of random groups, suitable for teaching, activity grouping, games, and more. Please enter your list below, set the number of groups, and click 'Start Grouping'.",
+        "how_to_use_title": "How to Use",
+        "how_to_use_steps": [
+            "Enter all member names in the input box, with one person per line.",
+            "Choose how many groups to create, or how many people per group.",
+            "Click the 'Start Grouping' button, and the system will automatically group them for you."
+        ],
+        "usage_scenarios_title": "Usage Scenarios",
+        "usage_scenarios": [
+            "Classroom group discussions",
+            "Company team assignments",
+            "Board game team formation",
+            "Laboratory group arrangements"
+        ],
+        "faq_title": "Frequently Asked Questions",
+        "faq": [
+            {
+                "q": "Is the grouping method fair?",
+                "a": "Yes, the system will distribute people as evenly as possible. If perfect equality isn't possible, some groups may have one extra person."
+            },
+            {
+                "q": "How many groups can be created?",
+                "a": "There's no theoretical limit, but we recommend keeping it under 50 groups to maintain performance and readability."
+            },
+            {
+                "q": "Can I customize the number of people per group?",
+                "a": "Yes, you can choose either 'number of people per group' or 'number of groups', and the tool will automatically calculate the grouping results."
+            },
+            {
+                "q": "Is the data stored?",
+                "a": "No, all operations are processed only in your browser, and we don't store any of your data."
+            }
+        ]
     },
     "random_number": {
         "title": "Random Number",
@@ -119,7 +180,29 @@
         "generate": "Start Generation",
         "result": "Generation Results",
         "error_title": "Error",
-        "error_message": "Please confirm your settings: minimum value should be less than or equal to maximum value, count cannot be 0, and when excluding duplicates, count cannot exceed the total number of possible values in the range."
+        "error_message": "Please confirm your settings: minimum value should be less than or equal to maximum value, count cannot be 0, and when excluding duplicates, count cannot exceed the total number of possible values in the range.",
+        "how_to_use_title": "How to Use",
+        "how_to_use_steps": [
+            "Set the number range (minimum and maximum values).",
+            "Choose how many numbers to generate.",
+            "Optionally choose whether to allow duplicates.",
+            "Click the 'Start Generation' button to see the results."
+        ],
+        "faq_title": "Frequently Asked Questions",
+        "faq": [
+            {
+                "q": "Can the minimum and maximum numbers be negative?",
+                "a": "Yes, the system supports negative number ranges, for example from -100 to 0."
+            },
+            {
+                "q": "Will duplicate numbers be generated?",
+                "a": "By default, duplicates are allowed, but you can choose 'No Duplicates' to prevent this."
+            },
+            {
+                "q": "Is my input data stored?",
+                "a": "No. All generation and operations are performed locally, and we don't store any data."
+            }
+        ]
     },
     "metadata": {
         "random_draw_page_title": "Random Draw Tool | Random Draw Picker & Generator - ToolNier",
