@@ -1,10 +1,10 @@
 'use client';
 import React, { useState } from 'react';
-import { Container, Paper, Title, Tooltip, ScrollArea } from '@mantine/core';
+import { Container, Paper, Title, Tabs, Grid } from '@mantine/core';
 import { useClipboard } from '@mantine/hooks';
 import { VirtuosoGrid } from 'react-virtuoso';
 import { useTranslation } from "../../../i18n/client";
-
+import { Notifications } from '@mantine/notifications';
 
 type SymbolClientProps = {
     lng: string;
@@ -258,31 +258,37 @@ const SymbolClient: React.FC<SymbolClientProps> = ({ lng }) => {
     const clipboard = useClipboard({ timeout: 500 });
     const [copiedSymbol, setCopiedSymbol] = useState<string | null>(null);
     const { t } = useTranslation(lng, 'common');
+    // const [activeTab, setActiveTab] = useState<string | null>('special');
 
     const handleCopy = (symbol: string) => {
         clipboard.copy(symbol);
         setCopiedSymbol(symbol);
+        Notifications.show({
+            title: t('copied'),
+            message: symbol,
+            color: 'green',
+        });
     };
 
     return (
         <Container size="md" mt="lg">
             <Title order={3} ta="center">{t('symbol_page_title')}</Title>
-            {symbolCategories.map((category) => (
-                <div key={category.category}>
-                    <Title order={4} mt="md" mb="sm">{t('symbols.categories.' + category.category)}</Title>
-                    <VirtuosoGrid
-                        style={{ height: '280px' }}
-                        totalCount={category.symbols.length}
-                        listClassName="symbol-grid"
-                        itemContent={(index) => {
-                            const symbol = category.symbols[index];
-                            return (
-                                <Tooltip
-                                    label={copiedSymbol === symbol ? t('copied') : t('copy')}
-                                    withArrow
-                                    position="top"
-                                >
-
+            <Tabs  defaultValue="special">
+                <Tabs.List>
+                    {symbolCategories.map((cat) => (
+                        <Tabs.Tab key={cat.category} value={cat.category}>{t('symbols.categories.' + cat.category)}</Tabs.Tab>
+                    ))}
+                </Tabs.List>
+                {symbolCategories.map((category) => (
+                    <Tabs.Panel value={category.category} key={category.category}>
+                        <Title order={4} mt="md" mb="sm">{t('symbols.categories.' + category.category)}</Title>
+                        <VirtuosoGrid
+                            style={{ height: `${Math.ceil(category.symbols.length / 4) * 70}px` }}
+                            totalCount={category.symbols.length}
+                            listClassName="symbol-grid"
+                            itemContent={(index) => {
+                                const symbol = category.symbols[index];
+                                return (
                                     <Paper
                                         shadow="xs"
                                         p="xs"
@@ -293,24 +299,24 @@ const SymbolClient: React.FC<SymbolClientProps> = ({ lng }) => {
                                     >
                                         {symbol}
                                     </Paper>
-                                </Tooltip>
-                            );
-                        }}
-                    />
-                    <style jsx global>{`
-                        .symbol-grid {
-                            display: grid;
-                            grid-template-columns: repeat(4, 1fr);
-                            gap: 8px;
-                            padding: 8px;
-                        }
-                        .symbol-grid > div {
-                            width: 100% !important;
-                            margin: 0 !important;
-                        }
-                    `}</style>
-                </div>
-            ))}
+                                );
+                            }}
+                        />
+                    </Tabs.Panel>
+                ))}
+            </Tabs>
+            <style jsx global>{`
+                .symbol-grid {
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    gap: 8px;
+                    padding: 8px;
+                }
+                .symbol-grid > div {
+                    width: 100% !important;
+                    margin: 0 !important;
+                }
+            `}</style>
         </Container>
     );
 };

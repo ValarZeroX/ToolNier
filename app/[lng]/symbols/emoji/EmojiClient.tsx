@@ -1,10 +1,11 @@
 'use client';
 import React, { useState } from 'react';
-import { Container, Paper, Title, Grid, Tabs, Tooltip } from '@mantine/core';
+import { Container, Paper, Title, Grid, Tabs } from '@mantine/core';
 import { useClipboard } from '@mantine/hooks';
 import { useTranslation } from "../../../i18n/client";
 import emojis from './emojis.json';
 import { IconMoodHappy, IconDog, IconCake, IconBallBasketball, IconCar, IconBulb, IconMathSymbols, IconFlag } from '@tabler/icons-react';
+import { Notifications } from '@mantine/notifications';
 
 type EmojiClientProps = {
     lng: string;
@@ -34,26 +35,20 @@ const EmojiItem = React.memo(({ emojiChar, copiedEmoji, handleCopy, t }: {
     t: (key: string) => string
 }) => (
     <Grid.Col span={1}>
-        <Tooltip
-            label={copiedEmoji === emojiChar ? t('copied') : t('copy')}
-            withArrow
-            position="top"
+        <Paper
+            shadow="xs"
+            p="xs"
+            radius="sm"
+            ta="center"
+            style={{
+                cursor: 'pointer',
+                fontSize: '24px',
+                fontFamily: `"Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "EmojiOne Color", "Twemoji Mozilla", sans-serif`,
+            }}
+            onClick={() => handleCopy(emojiChar)}
         >
-            <Paper
-                shadow="xs"
-                p="xs"
-                radius="sm"
-                ta="center"
-                style={{
-                    cursor: 'pointer',
-                    fontSize: '24px',
-                    fontFamily: `"Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "EmojiOne Color", "Twemoji Mozilla", sans-serif`,
-                }}
-                onClick={() => handleCopy(emojiChar)}
-            >
-                {emojiChar}
-            </Paper>
-        </Tooltip>
+            {emojiChar}
+        </Paper>
     </Grid.Col>
 ));
 
@@ -61,11 +56,16 @@ const EmojiClient: React.FC<EmojiClientProps> = ({ lng }) => {
     const clipboard = useClipboard({ timeout: 500 });
     const [copiedEmoji, setCopiedEmoji] = useState<string | null>(null);
     const { t } = useTranslation(lng, 'common');
-    const [activeTab, setActiveTab] = useState<string | null>('people');  // ✅ 加 lazy tab
+    const [activeTab, setActiveTab] = useState<string | null>('people');
 
     const handleCopy = (emoji: string) => {
         clipboard.copy(emoji);
         setCopiedEmoji(emoji);
+        Notifications.show({
+            title: t('copied'),
+            message: emoji,
+            color: 'green',
+        });
     };
 
     return (
@@ -85,19 +85,19 @@ const EmojiClient: React.FC<EmojiClientProps> = ({ lng }) => {
                     ))}
                 </Tabs.List>
 
-                {/* ✅ 只渲染 active tab 的 Panel */}
+
                 {emojis.categories.map((category) =>
                     category.id === activeTab ? (
                         <Tabs.Panel key={category.id} value={category.id} mt="md">
-                            <Grid columns={8}>
+                            <Grid columns={5}>
                                 {category.emojis.map((emojiId, index) => {
                                     const emojiData = (emojis.emojis as Record<string, any>)[emojiId];
                                     const emojiChar = unifiedToEmoji(emojiData?.skins[0]?.unified ?? '');
-                                    if (!emojiChar) return null; // ✅ 防止空值 crash
+                                    if (!emojiChar) return null;
 
                                     return (
                                         <EmojiItem
-                                            key={`${emojiChar}-${index}`} // ✅ 防重複 key
+                                            key={`${emojiChar}-${index}`}
                                             emojiChar={emojiChar}
                                             copiedEmoji={copiedEmoji}
                                             handleCopy={handleCopy}
