@@ -14,6 +14,7 @@ import classes from './ActionsGrid.module.css';
 import { FC } from 'react';
 import { useTranslation } from "../../app/i18n/client";
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 interface RandomActionsGridProps {
     lng: string;
@@ -21,7 +22,7 @@ interface RandomActionsGridProps {
 
 const RandomActionsGrid: FC<RandomActionsGridProps> = ({ lng }) => {
     const { t } = useTranslation(lng, ['grid', 'random']);
-    const router = useRouter();
+    // const router = useRouter();
 
     const tools = [
         {
@@ -61,9 +62,9 @@ const RandomActionsGrid: FC<RandomActionsGridProps> = ({ lng }) => {
         },
     ];
 
-    const handleNavigation = (href: string) => {
-        router.push(href);
-    };
+    // const handleNavigation = (href: string) => {
+    //     router.push(href);
+    // };
 
     return (
         <Container size="lg">
@@ -84,7 +85,7 @@ const RandomActionsGrid: FC<RandomActionsGridProps> = ({ lng }) => {
 
                 <SimpleGrid cols={{ base: 1, sm: 2, md: 3 }} mt="md">
                     {tools.map((item) => (
-                        <UnstyledButton key={item.title} className={classes.item} onClick={() => handleNavigation(item.href)}>
+                        <UnstyledButton key={item.title} className={classes.item} component={Link} href={item.href}>
                             <item.icon size={32} color={item.color} />
                             <Text size="xs" mt={7}>
                                 {item.title}

@@ -14,14 +14,14 @@ import classes from './ActionsGrid.module.css';
 import { FC } from 'react';
 import { useTranslation } from "../../app/i18n/client";
 import { useRouter } from 'next/navigation';
-
+import Link from 'next/link';
 interface ToolsActionsGridProps {
     lng: string;
 }
 
 const ToolsActionsGrid: FC<ToolsActionsGridProps> = ({ lng }) => {
     const { t } = useTranslation(lng, ['grid', 'tools']);
-    const router = useRouter();
+    // const router = useRouter();
 
     const tools = [
         {
@@ -66,9 +66,9 @@ const ToolsActionsGrid: FC<ToolsActionsGridProps> = ({ lng }) => {
         },
     ];
 
-    const handleNavigation = (href: string) => {
-        router.push(href);
-    };
+    // const handleNavigation = (href: string) => {
+    //     router.push(href);
+    // };
 
     return (
         <Container size="lg">
@@ -89,7 +89,7 @@ const ToolsActionsGrid: FC<ToolsActionsGridProps> = ({ lng }) => {
 
                 <SimpleGrid cols={{ base: 1, sm: 2, md: 3 }} mt="md">
                     {tools.map((item) => (
-                        <UnstyledButton key={item.id} className={classes.item} onClick={() => handleNavigation(item.href)}>
+                        <UnstyledButton key={item.id} className={classes.item} component={Link} href={item.href}>
                             <item.icon size={32} color={item.color} />
                             <Text size="xs" mt={7}>
                                 {item.title}

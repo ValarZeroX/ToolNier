@@ -14,14 +14,14 @@ import classes from './ActionsGrid.module.css';
 import { FC } from 'react';
 import { useTranslation } from "../../app/i18n/client";
 import { useRouter } from 'next/navigation';
-
+import Link from 'next/link';
 interface SymbolsActionsGridProps {
     lng: string;
 }
 
 const SymbolsActionsGrid: FC<SymbolsActionsGridProps> = ({ lng }) => {
     const { t } = useTranslation(lng, ['grid']);
-    const router = useRouter();
+    // const router = useRouter();
 
     const symbols = [
         {
@@ -58,9 +58,9 @@ const SymbolsActionsGrid: FC<SymbolsActionsGridProps> = ({ lng }) => {
         // }
     ];
 
-    const handleNavigation = (href: string) => {
-        router.push(href);
-    };
+    // const handleNavigation = (href: string) => {
+    //     router.push(href);
+    // };
 
     return (
         <Container size="lg">
@@ -81,7 +81,7 @@ const SymbolsActionsGrid: FC<SymbolsActionsGridProps> = ({ lng }) => {
 
                 <SimpleGrid cols={{ base: 1, sm: 2, md: 3 }} mt="md">
                     {symbols.map((item) => (
-                        <UnstyledButton key={item.id} className={classes.item} onClick={() => handleNavigation(item.href)}>
+                        <UnstyledButton key={item.id} className={classes.item} component={Link} href={item.href}>
                             <item.icon size={32} color={item.color} />
                             <Text size="xs" mt={7}>
                                 {item.title}

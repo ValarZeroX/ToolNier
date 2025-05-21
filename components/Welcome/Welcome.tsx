@@ -5,7 +5,7 @@ import { IconWand, IconTools, IconDeviceLaptop, IconRocket } from '@tabler/icons
 import classes from './Welcome.module.css';
 import { useTranslation } from '@/app/i18n/client';
 import { useRouter } from 'next/navigation';
-
+import Link from 'next/link';
 interface FeatureCardProps {
     icon: React.ReactNode;
     title: string;
@@ -38,11 +38,11 @@ interface WelcomeProps {
 
 export function Welcome({ lng }: WelcomeProps) {
     const { t } = useTranslation(lng, 'welcome');
-    const router = useRouter();
+    // const router = useRouter();
 
-    const handleNavigation = (href: string) => {
-        router.push(href);
-    };
+    // const handleNavigation = (href: string) => {
+    //     router.push(href);
+    // };
 
     const features = [
         {
@@ -88,7 +88,7 @@ export function Welcome({ lng }: WelcomeProps) {
 
             <Text ta="center" mt={50} size="sm" c="dimmed">
                 {t('footer')}{' '}
-                <UnstyledButton onClick={() => handleNavigation(`/${lng}/all`)}>
+                <UnstyledButton component={Link} href={`/${lng}/all`}>
                     <Text size="sm" c="blue" component="span">
                         {t('explore_tools')}
                     </Text>
