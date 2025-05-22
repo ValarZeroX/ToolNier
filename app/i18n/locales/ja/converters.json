@@ -14,7 +14,10 @@
         "length_converter_keywords": "長さ単位, length converter, length converter tool, length converter online, length converter free, length converter app, length converter toolnier",
         "weight_converter_title": "重さ単位変換ツール | Weight Converter Tool - ToolNier",
         "weight_converter_description": "メートル法（ミリグラム、グラム、キログラム、トン）とヤード・ポンド法（オンス、ポンド）の単位間の迅速な変換をサポートする専門的なオンライン重さ単位変換ツールです。小数点以下複数桁の変換をサポートし、正確な計算結果を提供します。食品加工、化学実験、医療計量などの専門分野に適しています。このツールは完全にブラウザでローカルに動作し、データのアップロードは不要で、データの安全性を確保します。インターフェースはシンプルで直感的、操作が簡単で、リアルタイム変換をサポートし、様々な重さ単位の変換ニーズを簡単に完了できます。",
-        "weight_converter_keywords": "重さ単位, weight converter, weight converter tool, weight converter online, weight converter free, weight converter app, weight converter toolnier"
+        "weight_converter_keywords": "重さ単位, weight converter, weight converter tool, weight converter online, weight converter free, weight converter app, weight converter toolnier",
+        "timestamp_converter_title": "タイムスタンプ変換ツール | Timestamp Converter Tool - ToolNier",
+        "timestamp_converter_description": "秒（s）とミリ秒（ms）の間の迅速な変換をサポートする専門的なオンラインタイムスタンプ変換ツールです。小数点以下複数桁の変換をサポートし、正確な計算結果を提供します。コンピュータサイエンス、情報技術、ネットワークセキュリティなどの専門分野に適しています。このツールは完全にブラウザでローカルに動作し、データのアップロードは不要で、データの安全性を確保します。インターフェースはシンプルで直感的、操作が簡単で、リアルタイム変換をサポートし、様々なタイムスタンプの変換ニーズを簡単に完了できます。",
+        "timestamp_converter_keywords": "タイムスタンプ, timestamp converter, timestamp converter tool, timestamp converter online, timestamp converter free, timestamp converter app, timestamp converter toolnier"
     },
     "length_converter": {
         "title": "長さ変換",
@@ -82,5 +85,32 @@
             "day": "日",
             "week": "週"
         }
+    },
+    "timestamp_converter": {
+        "title": "タイムスタンプ変換ツール",
+        "current_timestamp": "現在のタイムスタンプ",
+        "seconds": "秒",
+        "milliseconds": "ミリ秒",
+        "timestamp_to_date": "タイムスタンプ ➜ 日時",
+        "date_to_timestamp": "日時 ➜ タイムスタンプ",
+        "input_timestamp": "タイムスタンプを入力",
+        "input_datetime": "日時を入力",
+        "convert_to_date": "日時に変換",
+        "convert_to_timestamp": "タイムスタンプに変換",
+        "output_seconds": "秒で出力",
+        "output_milliseconds": "ミリ秒で出力",
+        "copy": "コピー",
+        "copied": "コピーしました",
+        "invalid_timestamp": "無効なタイムスタンプ",
+        "invalid_date": "無効な日時",
+        "grid_description": "タイムスタンプと日時形式の変換と表示。",
+        "description": "これは完全な機能を備えたタイムスタンプ変換ツールです。秒単位とミリ秒単位のタイムスタンプを相互に変換でき、プログラミング、APIデバッグ、データ変換などのシナリオで一般的な時間形式の変換を素早く完了できます。",
+        "features_title": "機能特徴",
+        "features": [
+            "現在のタイムスタンプ（秒とミリ秒）をリアルタイムで表示",
+            "タイムスタンプを人間が読める日時に変換",
+            "指定した日時をタイムスタンプに変換",
+            "すべての結果フィールドをワンクリックでコピー"
+        ]
     }
 }

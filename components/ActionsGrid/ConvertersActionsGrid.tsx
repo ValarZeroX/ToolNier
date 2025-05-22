@@ -56,14 +56,14 @@ const ConvertersActionsGrid: FC<ConvertersActionsGridProps> = ({ lng }) => {
             href: `/${lng}/converters/time`,
             description: t('converters:time_converter.grid_description')
         },
-        // {
-        //     id: 'currency',
-        //     title: t('converters.currency.title'),
-        //     icon: IconCurrency,
-        //     color: 'yellow',
-        //     href: `/${lng}/converters/currency`,
-        //     description: t('converters.currency.description')
-        // }
+        {
+            id: 'timestamp',
+            title: t('converters:timestamp_converter.title'),
+            icon: IconClock,
+            color: 'violet',
+            href: `/${lng}/converters/timestamp`,
+            description: t('converters:timestamp_converter.grid_description'),
+        }
     ];
 
     // const handleNavigation = (href: string) => {

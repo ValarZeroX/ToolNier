@@ -14,7 +14,10 @@
         "length_converter_keywords": "长度单位, length converter, length converter tool, length converter online, length converter free, length converter app, length converter toolnier",
         "weight_converter_title": "重量单位转换工具 | Weight Converter Tool - ToolNier",
         "weight_converter_description": "专业的在线重量单位转换工具，支持公制（毫克、克、千克、吨）和英制（盎司、磅）单位之间的快速转换。提供精确的计算结果，支持小数点后多位数的转换，适合食品加工、化学实验、医疗计量等专业领域使用。本工具完全在浏览器本地运算，无需上传数据，确保数据安全。界面简洁直观，操作便捷，支持实时转换，让您轻松完成各种重量单位的换算需求。",
-        "weight_converter_keywords": "重量单位, weight converter, weight converter tool, weight converter online, weight converter free, weight converter app, weight converter toolnier"
+        "weight_converter_keywords": "重量单位, weight converter, weight converter tool, weight converter online, weight converter free, weight converter app, weight converter toolnier",
+        "timestamp_converter_title": "时间戳转换工具 | Timestamp Converter Tool - ToolNier",
+        "timestamp_converter_description": "专业的在线时间戳转换工具，支持秒 (s) 和毫秒 (ms) 之间的快速转换。提供精确的计算结果，支持小数点后多位数的转换，适合计算机科学、信息技术、网络安全等专业领域使用。本工具完全在浏览器本地运算，无需上传数据，确保数据安全。界面简洁直观，操作便捷，支持实时转换，让您轻松完成各种时间戳的换算需求。",
+        "timestamp_converter_keywords": "时间戳, timestamp converter, timestamp converter tool, timestamp converter online, timestamp converter free, timestamp converter app, timestamp converter toolnier"
     },
     "length_converter": {
         "title": "长度转换",
@@ -82,5 +85,32 @@
             "day": "天",
             "week": "周"
         }
+    },
+    "timestamp_converter": {
+        "title": "时间戳转换工具",
+        "current_timestamp": "当前时间戳",
+        "seconds": "秒",
+        "milliseconds": "毫秒",
+        "timestamp_to_date": "时间戳 ➜ 日期时间",
+        "date_to_timestamp": "日期时间 ➜ 时间戳",
+        "input_timestamp": "输入时间戳",
+        "input_datetime": "输入日期时间",
+        "convert_to_date": "转换为日期",
+        "convert_to_timestamp": "转换为时间戳",
+        "output_seconds": "输出秒",
+        "output_milliseconds": "输出毫秒",
+        "copy": "复制",
+        "copied": "已复制",
+        "invalid_timestamp": "无效的时间戳",
+        "invalid_date": "无效的日期",
+        "grid_description": "转换与查看时间戳和日期时间格式。",
+        "description": "这是一款功能完整的时间戳（Timestamp）转换工具，支持秒级与毫秒级时间戳之间的互转，让你能够快速在程序设计、API 调试、数据转换等场景中完成常见的时间格式转换需求。",
+        "features_title": "功能特色",
+        "features": [
+            "实时显示当前时间戳（秒与毫秒）",
+            "将时间戳转换为人类可读的日期时间",
+            "将指定的日期时间转换为时间戳",
+            "一键复制所有结果字段"
+        ]
     }
 }

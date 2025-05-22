@@ -73,6 +73,7 @@ const OriginMenu: FC<OriginMenuProps> = ({ lng }) => {
           <NavLink label={t('common:weight_converter_title')} component={Link} href="/converters/weight" />
           <NavLink label={t('common:temperature_converter_title')} component={Link} href="/converters/temperature" />
           <NavLink label={t('common:time_converter_title')} component={Link} href="/converters/time" />
+          <NavLink label={t('common:timestamp_converter_title')} component={Link} href="/converters/timestamp" />
         </NavLink>
         <NavLink
           component="button"

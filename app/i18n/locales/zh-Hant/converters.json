@@ -3,10 +3,10 @@
     "description": "提供長度、重量、溫度等多種單位轉換功能。",
     "explore_more_title": "進一步探索",
     "metadata": {
-        "temperature_converter_title": "溫度單位轉換工具",
+        "temperature_converter_title": "溫度單位轉換工具 | Temperature Converter Tool - ToolNier",
         "temperature_converter_description": "將溫度值從一種單位轉換為另一種單位。支援攝氏度 (°C)、華氏度 (°F) 和開爾文 (K) 之間的相互轉換。",
         "temperature_converter_keywords": "溫度轉換, 溫度單位轉換, 攝氏度, 華氏度, 開爾文, 溫度轉換工具, 溫度轉換器, 溫度轉換器工具, 溫度轉換器線上, 溫度轉換器免費, 溫度轉換器應用程式, 溫度轉換器工具nier",
-        "time_converter_title": "時間單位轉換工具",
+        "time_converter_title": "時間單位轉換工具 | Time Converter Tool - ToolNier",
         "time_converter_description": "將時間從一種單位轉換為另一種單位。支援毫秒 (ms)、秒 (s)、分鐘 (min)、小時 (h)、天 (d) 和週 (w) 之間的相互轉換。",
         "time_converter_keywords": "時間轉換, 時間單位轉換, 毫秒, 秒, 分鐘, 小時, 天, 週, 時間轉換工具, 時間轉換器, 時間轉換器工具, 時間轉換器線上, 時間轉換器免費, 時間轉換器應用程式, 時間轉換器工具nier",
         "length_converter_title": "長度單位轉換工具 | Length Converter Tool - ToolNier",
@@ -14,7 +14,10 @@
         "length_converter_keywords": "長度單位, length converter, length converter tool, length converter online, length converter free, length converter app, length converter toolnier",
         "weight_converter_title": "重量單位轉換工具 | Weight Converter Tool - ToolNier",
         "weight_converter_description": "專業的線上重量單位轉換工具，支援公制（毫克、公克、公斤、公噸）和英制（盎司、磅）單位之間的快速轉換。提供精確的計算結果，支援小數點後多位數的轉換，適合食品加工、化學實驗、醫療計量等專業領域使用。本工具完全在瀏覽器本地運算，無需上傳數據，確保資料安全。介面簡潔直觀，操作便捷，支援即時轉換，讓您輕鬆完成各種重量單位的換算需求。",
-        "weight_converter_keywords": "重量單位, weight converter, weight converter tool, weight converter online, weight converter free, weight converter app, weight converter toolnier"
+        "weight_converter_keywords": "重量單位, weight converter, weight converter tool, weight converter online, weight converter free, weight converter app, weight converter toolnier",
+        "timestamp_converter_title": "時間戳轉換工具 | Timestamp Converter Tool - ToolNier",
+        "timestamp_converter_description": "專業的線上時間戳轉換工具，支援秒 (s) 和毫秒 (ms) 之間的快速轉換。提供精確的計算結果，支援小數點後多位數的轉換，適合計算機科學、資訊技術、網路安全等專業領域使用。本工具完全在瀏覽器本地運算，無需上傳數據，確保資料安全。介面簡潔直觀，操作便捷，支援即時轉換，讓您輕鬆完成各種時間戳的換算需求。",
+        "timestamp_converter_keywords": "時間戳, timestamp converter, timestamp converter tool, timestamp converter online, timestamp converter free, timestamp converter app, timestamp converter toolnier"
     },
     "length_converter": {
         "title": "長度轉換",
@@ -82,5 +85,32 @@
             "day": "天",
             "week": "週"
         }
+    },
+    "timestamp_converter": {
+        "title": "時間戳轉換工具",
+        "current_timestamp": "當前時間戳",
+        "seconds": "秒",
+        "milliseconds": "毫秒",
+        "timestamp_to_date": "時間戳 ➜ 日期時間",
+        "date_to_timestamp": "日期時間 ➜ 時間戳",
+        "input_timestamp": "輸入時間戳",
+        "input_datetime": "輸入日期時間",
+        "convert_to_date": "轉換為日期",
+        "convert_to_timestamp": "轉換為時間戳",
+        "output_seconds": "輸出秒",
+        "output_milliseconds": "輸出毫秒",
+        "copy": "複製",
+        "copied": "已複製",
+        "invalid_timestamp": "無效的時間戳",
+        "invalid_date": "無效的日期",
+        "grid_description": "轉換與查看時間戳和日期時間格式。",
+        "description": "這是一款功能完整的 時間戳（Timestamp）轉換工具，支援秒級與毫秒級時間戳之間的互轉，讓你能夠快速在程式設計、API 除錯、資料轉換等場景中完成常見的時間格式轉換需求",
+        "features_title": "功能特色",
+        "features": [
+            "即時顯示目前時間戳（秒與毫秒）",
+            "將時間戳轉換為人類可讀的日期時間",
+            "將指定的日期時間轉換為時間戳",
+            "一鍵複製所有結果欄位"
+        ]
     }
 }

@@ -23,7 +23,7 @@ export default function Layout({ children, lng }: LayoutProps) {
   // const [opened, { toggle }] = useDisclosure();
 
   const [mobileOpened, { toggle: toggleMobile }] = useDisclosure();
-  const [desktopOpened, { toggle: toggleDesktop }] = useDisclosure(true);
+  const [desktopOpened, { toggle: toggleDesktop }] = useDisclosure(false);
 
   return (
     <>

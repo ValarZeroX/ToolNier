@@ -14,7 +14,10 @@
         "length_converter_keywords": "length unit, length converter, length converter tool, length converter online, length converter free, length converter app, length converter toolnier",
         "weight_converter_title": "Weight Unit Converter | Weight Converter Tool - ToolNier",
         "weight_converter_description": "Professional online weight unit converter that supports quick conversion between metric (milligrams, grams, kilograms, tons) and imperial (ounces, pounds) units. Provides precise calculation results, supports conversion with multiple decimal places, suitable for food processing, chemical experiments, medical measurement and other professional fields. This tool runs completely locally in the browser, no data upload required, ensuring data security. The interface is simple and intuitive, easy to operate, supports real-time conversion, allowing you to easily complete various weight unit conversion needs.",
-        "weight_converter_keywords": "weight unit, weight converter, weight converter tool, weight converter online, weight converter free, weight converter app, weight converter toolnier"
+        "weight_converter_keywords": "weight unit, weight converter, weight converter tool, weight converter online, weight converter free, weight converter app, weight converter toolnier",
+        "timestamp_converter_title": "Timestamp Converter Tool | Timestamp Converter Tool - ToolNier",
+        "timestamp_converter_description": "Professional online timestamp converter that supports quick conversion between seconds (s) and milliseconds (ms). Provides precise calculation results, supports conversion with multiple decimal places, suitable for computer science, information technology, network security and other professional fields. This tool runs completely locally in the browser, no data upload required, ensuring data security. The interface is simple and intuitive, easy to operate, supports real-time conversion, allowing you to easily complete various timestamp conversion needs.",
+        "timestamp_converter_keywords": "timestamp, timestamp converter, timestamp converter tool, timestamp converter online, timestamp converter free, timestamp converter app, timestamp converter toolnier"
     },
     "length_converter": {
         "title": "Length Converter",
@@ -82,5 +85,32 @@
             "day": "Days",
             "week": "Weeks"
         }
+    },
+    "timestamp_converter": {
+        "title": "Timestamp Converter",
+        "current_timestamp": "Current Timestamp",
+        "seconds": "Seconds",
+        "milliseconds": "Milliseconds",
+        "timestamp_to_date": "Timestamp ➜ Date Time",
+        "date_to_timestamp": "Date Time ➜ Timestamp",
+        "input_timestamp": "Enter Timestamp",
+        "input_datetime": "Enter Date Time",
+        "convert_to_date": "Convert to Date",
+        "convert_to_timestamp": "Convert to Timestamp",
+        "output_seconds": "Output in Seconds",
+        "output_milliseconds": "Output in Milliseconds",
+        "copy": "Copy",
+        "copied": "Copied",
+        "invalid_timestamp": "Invalid Timestamp",
+        "invalid_date": "Invalid Date",
+        "grid_description": "Convert and view timestamp and datetime formats.",
+        "description": "This is a fully-featured Timestamp Converter tool that supports conversion between second-level and millisecond-level timestamps, allowing you to quickly complete common time format conversion needs in programming, API debugging, data conversion, and other scenarios.",
+        "features_title": "Features",
+        "features": [
+            "Display current timestamp (seconds and milliseconds) in real-time",
+            "Convert timestamp to human-readable date and time",
+            "Convert specified date and time to timestamp",
+            "One-click copy for all result fields"
+        ]
     }
 }
