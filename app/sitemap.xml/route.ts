@@ -26,6 +26,7 @@ export async function GET() {
     '/converters/weight',
     '/converters/temperature',
     '/converters/time',
+    '/converters/timestamp',
     '/calculator/bmi',
     '/calculator/bmr',
     '/calculator/body-fat',
