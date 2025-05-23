@@ -175,6 +175,40 @@
             }
         ]
     },
+    "text_stats": {
+        "title": "文字统计工具",
+        "grid_description": "统计文字的长度、字数、字符、单词、句子、段落等。",
+        "description": "免费的在线字数统计工具，快速计算输入文本的字数、词数与行数。无论是文章撰写、简报准备或社群贴文字数限制检查，都能派上用场。支持即时统计、清除与复制功能。",
+        "input_label": "请输入要统计的文本",
+        "output_label": "统计结果",
+        "clear": "清空",
+        "copy": "复制",
+        "copied": "已复制！",
+        "char_count": "字数",
+        "word_count": "单词数",
+        "line_count": "行数",
+        "char_count_no_spaces": "字数（不含空白）",
+        "chinese_char_count": "中文字数",
+        "paragraph_count": "段落数",
+        "totle_word_count": "总词数",
+        "how_to_use_title": "如何使用",
+        "how_to_use_steps": {
+            "0": "在上方输入框中输入或粘贴您的文本内容。",
+            "1": "系统会自动计算字数、词数与行数。",
+            "2": "可点击「清空」按钮进一步操作。"
+        },
+        "faq_title": "常见问题",
+        "faq": {
+            "0": {
+                "q": "这个工具会计算标点符号吗？",
+                "a": "是的，字数计算会包含标点符号；词数则以空白或换行符号作为分隔。"
+            },
+            "1": {
+                "q": "最多可以输入多少字？",
+                "a": "理论上无限制，但过长的文本可能影响性能，建议分段输入。"
+            }
+        }
+    },
     "emoji": {
         "title": "Emoji 工具",
         "description": "生成和选择表情符号。"
@@ -198,6 +232,9 @@
         "uuid_generator_page_keywords": "UUID, UUID generator, UUID generator tool, UUID generator online, UUID generator free, UUID generator app, UUID generator toolnier",
         "json_formatter_tool_page_title": "JSON 格式化工具 | JSON Formatter Tool - ToolNier",
         "json_formatter_tool_page_description": "免费 JSON 格式化工具，支持一键美化、压缩与下载 JSON 数据。无论是开发调试、API 测试或数据传输前的优化，都能迅速完成格式调整。适用于前端后端开发、服务器响应解析、配置文件排版，帮助您快速阅读与检查 JSON 结构。支持大型 JSON 加载，自动排版缩进与无缝复制。",
-        "json_formatter_tool_page_keywords": "JSON, JSON formatter, JSON formatter tool, JSON formatter online, JSON formatter free, JSON formatter app, JSON formatter toolnier"
+        "json_formatter_tool_page_keywords": "JSON, JSON formatter, JSON formatter tool, JSON formatter online, JSON formatter free, JSON formatter app, JSON formatter toolnier",
+        "text_stats_tool_page_title": "文字统计工具 | Text Stats Tool - ToolNier",
+        "text_stats_tool_page_description": "免费的在线字数统计工具，快速计算输入文本的字数、词数与行数。无论是文章撰写、简报准备或社交媒体字数限制检查，都能派上用场。支持实时统计、清除与复制功能。",
+        "text_stats_tool_page_keywords": "文字统计, text stats, text stats tool, text stats online, text stats free, text stats app, text stats toolnier"
     }
 }

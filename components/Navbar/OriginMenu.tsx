@@ -62,6 +62,7 @@ const OriginMenu: FC<OriginMenuProps> = ({ lng }) => {
           <NavLink label={t('common:image_base64_tool')} component={Link} href="/tools/image-base64-converter" />
           <NavLink label={t('common:uuid_generator')} component={Link} href="/tools/uuid-generator" />
           <NavLink label={t('common:json_formatter')} component={Link} href="/tools/json-formatter" />
+          <NavLink label={t('common:text_stats_title')} component={Link} href="/tools/text-stat" />
         </NavLink>
         <NavLink
           component="button"

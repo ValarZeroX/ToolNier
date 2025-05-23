@@ -175,6 +175,40 @@
             }
         ]
     },
+    "text_stats": {
+        "title": "文字カウンター",
+        "grid_description": "テキストの長さ、文字数、単語数、文数、段落数などをカウントします。",
+        "description": "無料のオンラインテキストカウンター。入力テキストの文字数、単語数、行数を素早く計算します。文章作成、プレゼンテーション準備、SNS投稿の文字数制限チェックなど、様々な場面で活用できます。リアルタイムカウント、クリア、コピー機能をサポートしています。",
+        "input_label": "カウントするテキストを入力してください",
+        "output_label": "カウント結果",
+        "clear": "クリア",
+        "copy": "コピー",
+        "copied": "コピーしました！",
+        "char_count": "文字数",
+        "word_count": "単語数",
+        "line_count": "行数",
+        "char_count_no_spaces": "文字数（空白除く）",
+        "chinese_char_count": "日本語文字数",
+        "paragraph_count": "段落数",
+        "totle_word_count": "総単語数",
+        "how_to_use_title": "使い方",
+        "how_to_use_steps": {
+            "0": "上部の入力欄にテキストを入力または貼り付けます。",
+            "1": "システムが自動的に文字数、単語数、行数を計算します。",
+            "2": "「クリア」ボタンをクリックして次の操作を行えます。"
+        },
+        "faq_title": "よくある質問",
+        "faq": {
+            "0": {
+                "q": "このツールは句読点もカウントしますか？",
+                "a": "はい、文字数には句読点も含まれます。単語数は空白または改行で区切られます。"
+            },
+            "1": {
+                "q": "最大で何文字まで入力できますか？",
+                "a": "理論上は制限ありませんが、長すぎるテキストはパフォーマンスに影響する可能性があるため、分割して入力することをお勧めします。"
+            }
+        }
+    },
     "emoji": {
         "title": "絵文字ツール",
         "description": "絵文字の生成と選択を行います。"
@@ -198,6 +232,9 @@
         "uuid_generator_page_keywords": "UUID, UUID生成, UUID生成ツール, オンラインUUID生成, 無料UUID生成, UUID生成アプリ, UUID生成ツールnier",
         "json_formatter_tool_page_title": "JSONフォーマットツール | JSON Formatter Tool - ToolNier",
         "json_formatter_tool_page_description": "無料のJSONフォーマットツール。ワンクリックでJSONデータの整形、圧縮、ダウンロードが可能です。開発デバッグ、APIテスト、データ転送前の最適化など、様々な場面で素早くフォーマット調整ができます。フロントエンド・バックエンド開発、サーバーレスポンス解析、設定ファイルの整形に最適で、JSON構造の迅速な読み取りと確認を支援します。大規模なJSONの読み込み、自動インデント、シームレスなコピーをサポートしています。",
-        "json_formatter_tool_page_keywords": "JSON, JSONフォーマット, JSONフォーマットツール, オンラインJSONフォーマット, 無料JSONフォーマット, JSONフォーマットアプリ, JSONフォーマットツールnier"
+        "json_formatter_tool_page_keywords": "JSON, JSONフォーマット, JSONフォーマットツール, オンラインJSONフォーマット, 無料JSONフォーマット, JSONフォーマットアプリ, JSONフォーマットツールnier",
+        "text_stats_tool_page_title": "文字カウンター | Text Stats Tool - ToolNier",
+        "text_stats_tool_page_description": "無料のオンラインテキストカウンター。入力テキストの文字数、単語数、行数を素早く計算します。記事作成、プレゼンテーション準備、SNS投稿の文字数制限チェックに最適です。リアルタイムカウント、クリア、コピー機能を搭載。",
+        "text_stats_tool_page_keywords": "文字カウンター, テキスト統計, text stats, text stats tool, text stats online, text stats free, text stats app, text stats toolnier"
     }
 }

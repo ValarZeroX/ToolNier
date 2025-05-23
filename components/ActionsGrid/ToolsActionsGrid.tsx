@@ -1,6 +1,6 @@
 'use client';
 
-import { IconQrcode, IconCode, IconFileCode, IconId, IconPhoto } from '@tabler/icons-react';
+import { IconQrcode, IconCode, IconFileCode, IconId, IconPhoto, IconPencil } from '@tabler/icons-react';
 import {
     Title,
     Card,
@@ -13,7 +13,6 @@ import {
 import classes from './ActionsGrid.module.css';
 import { FC } from 'react';
 import { useTranslation } from "../../app/i18n/client";
-import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 interface ToolsActionsGridProps {
     lng: string;
@@ -21,7 +20,6 @@ interface ToolsActionsGridProps {
 
 const ToolsActionsGrid: FC<ToolsActionsGridProps> = ({ lng }) => {
     const { t } = useTranslation(lng, ['grid', 'tools']);
-    // const router = useRouter();
 
     const tools = [
         {
@@ -64,6 +62,14 @@ const ToolsActionsGrid: FC<ToolsActionsGridProps> = ({ lng }) => {
             href: `/${lng}/tools/json-formatter`,
             description: t('tools:json.grid_description')
         },
+        {
+            id: 'text-stats',
+            title: t('tools:text_stats.title'),
+            icon: IconPencil,
+            color: 'red',
+            href: `/${lng}/tools/text-stat`,
+            description: t('tools:text_stats.grid_description')
+        }
     ];
 
     // const handleNavigation = (href: string) => {

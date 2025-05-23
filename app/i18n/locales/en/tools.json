@@ -175,6 +175,40 @@
             }
         ]
     },
+    "text_stats": {
+        "title": "Text Counter",
+        "grid_description": "Count text length, characters, words, sentences, paragraphs, and more.",
+        "description": "Free online text counter that quickly calculates character count, word count, and line count of your input text. Perfect for article writing, presentation preparation, or social media post character limit checking. Features real-time counting, clear, and copy functionality.",
+        "input_label": "Enter text to count",
+        "output_label": "Count Results",
+        "clear": "Clear",
+        "copy": "Copy",
+        "copied": "Copied!",
+        "char_count": "Character Count",
+        "word_count": "Word Count",
+        "line_count": "Line Count",
+        "char_count_no_spaces": "Character Count (No Spaces)",
+        "chinese_char_count": "English Character Count",
+        "paragraph_count": "Paragraph Count",
+        "totle_word_count": "Total Word Count",
+        "how_to_use_title": "How to Use",
+        "how_to_use_steps": {
+            "0": "Enter or paste your text in the input box above.",
+            "1": "The system will automatically calculate character count, word count, and line count.",
+            "2": "Click the 'Clear' button to perform further operations."
+        },
+        "faq_title": "Frequently Asked Questions",
+        "faq": {
+            "0": {
+                "q": "Does this tool count punctuation marks?",
+                "a": "Yes, character count includes punctuation marks; word count is separated by spaces or line breaks."
+            },
+            "1": {
+                "q": "What's the maximum number of characters I can input?",
+                "a": "There's no theoretical limit, but very long texts may affect performance. We recommend breaking it into smaller segments."
+            }
+        }
+    },
     "emoji": {
         "title": "Emoji Tool",
         "description": "Generate and select emojis."
@@ -198,6 +232,9 @@
         "uuid_generator_page_keywords": "UUID, UUID generator, UUID generator tool, UUID generator online, UUID generator free, UUID generator app, UUID generator toolnier",
         "json_formatter_tool_page_title": "JSON Formatter | JSON Formatter Tool - ToolNier",
         "json_formatter_tool_page_description": "Free JSON formatting tool that supports one-click beautification, compression, and downloading of JSON data. Whether for development debugging, API testing, or data transfer optimization, it quickly completes format adjustments. Suitable for frontend/backend development, server response parsing, and configuration file formatting, helping you quickly read and check JSON structure. Supports large JSON loading, automatic indentation, and seamless copying.",
-        "json_formatter_tool_page_keywords": "JSON, JSON formatter, JSON formatter tool, JSON formatter online, JSON formatter free, JSON formatter app, JSON formatter toolnier"
+        "json_formatter_tool_page_keywords": "JSON, JSON formatter, JSON formatter tool, JSON formatter online, JSON formatter free, JSON formatter app, JSON formatter toolnier",
+        "text_stats_tool_page_title": "Text Counter | Text Stats Tool - ToolNier",
+        "text_stats_tool_page_description": "Free online text counter that quickly calculates character count, word count, and line count of your input text. Perfect for article writing, presentation preparation, or social media post character limit checking. Features real-time counting, clear, and copy functionality.",
+        "text_stats_tool_page_keywords": "text counter, text stats, text stats tool, text stats online, text stats free, text stats app, text stats toolnier"
     }
 }
