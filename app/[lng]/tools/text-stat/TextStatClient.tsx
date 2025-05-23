@@ -98,56 +98,56 @@ const TextStatClient: React.FC<TextStatClientProps> = ({ lng }) => {
                     </Button>
                 </Group>
 
-                <Paper withBorder radius="md" p="md">
+                <Paper withBorder shadow="sm" radius="md" p="md">
                     <Stack gap="md">
                         <Group grow>
-                            <Paper withBorder p="xs" radius="sm" bg="var(--mantine-color-blue-0)">
-                                <Stack gap={4}>
-                                    <Text size="xs" c="dimmed">{t('text_stats.char_count')}</Text>
-                                    <Text size="xl" fw={700}>{characterCount}</Text>
+                            <Paper withBorder p="md" radius="md" bg="var(--mantine-color-blue-0)">
+                                <Stack gap={4} align="center">
+                                    <Text size="sm" c="dimmed" fw={500}>{t('text_stats.char_count')}</Text>
+                                    <Text size="2rem" fw={700} c="blue.7">{characterCount}</Text>
                                 </Stack>
                             </Paper>
-                            <Paper withBorder p="xs" radius="sm" bg="var(--mantine-color-green-0)">
-                                <Stack gap={4}>
-                                    <Text size="xs" c="dimmed">{t('text_stats.totle_word_count')}</Text>
-                                    <Text size="xl" fw={700}>{wordCount}</Text>
+                            <Paper withBorder p="md" radius="md" bg="var(--mantine-color-green-0)">
+                                <Stack gap={4} align="center">
+                                    <Text size="sm" c="dimmed" fw={500}>{t('text_stats.totle_word_count')}</Text>
+                                    <Text size="2rem" fw={700} c="green.7">{wordCount}</Text>
                                 </Stack>
                             </Paper>
-                            <Paper withBorder p="xs" radius="sm" bg="var(--mantine-color-violet-0)">
-                                <Stack gap={4}>
-                                    <Text size="xs" c="dimmed">{t('text_stats.line_count')}</Text>
-                                    <Text size="xl" fw={700}>{lineCount}</Text>
+                            <Paper withBorder p="md" radius="md" bg="var(--mantine-color-violet-0)">
+                                <Stack gap={4} align="center">
+                                    <Text size="sm" c="dimmed" fw={500}>{t('text_stats.line_count')}</Text>
+                                    <Text size="2rem" fw={700} c="violet.7">{lineCount}</Text>
                                 </Stack>
                             </Paper>
                         </Group>
 
-                        <Divider />
+                        <Divider my="sm" />
 
                         <SimpleGrid cols={2} spacing="md">
-                            <Paper withBorder p="xs" radius="sm">
-                                <Stack gap={4}>
-                                    <Text size="xs" c="dimmed">{t('text_stats.char_count_no_spaces')}</Text>
-                                    <Text size="lg" fw={600}>{charCountNoSpaces}</Text>
+                            <Paper withBorder p="md" radius="md" bg="var(--mantine-color-gray-0)">
+                                <Stack gap={4} align="center">
+                                    <Text size="sm" c="dimmed" fw={500}>{t('text_stats.char_count_no_spaces')}</Text>
+                                    <Text size="1.5rem" fw={600} c="gray.7">{charCountNoSpaces}</Text>
                                 </Stack>
                             </Paper>
                             {lng !== 'en' && (
-                                <Paper withBorder p="xs" radius="sm">
-                                    <Stack gap={4}>
-                                        <Text size="xs" c="dimmed">{t('text_stats.chinese_char_count')}</Text>
-                                        <Text size="lg" fw={600}>{chineseCharCount}</Text>
+                                <Paper withBorder p="md" radius="md" bg="var(--mantine-color-gray-0)">
+                                    <Stack gap={4} align="center">
+                                        <Text size="sm" c="dimmed" fw={500}>{t('text_stats.chinese_char_count')}</Text>
+                                        <Text size="1.5rem" fw={600} c="gray.7">{chineseCharCount}</Text>
                                     </Stack>
                                 </Paper>
                             )}
-                            <Paper withBorder p="xs" radius="sm">
-                                <Stack gap={4}>
-                                    <Text size="xs" c="dimmed">{t('text_stats.word_count')}</Text>
-                                    <Text size="lg" fw={600}>{wordCount - chineseCharCount}</Text>
+                            <Paper withBorder p="md" radius="md" bg="var(--mantine-color-gray-0)">
+                                <Stack gap={4} align="center">
+                                    <Text size="sm" c="dimmed" fw={500}>{t('text_stats.word_count')}</Text>
+                                    <Text size="1.5rem" fw={600} c="gray.7">{wordCount - chineseCharCount}</Text>
                                 </Stack>
                             </Paper>
-                            <Paper withBorder p="xs" radius="sm">
-                                <Stack gap={4}>
-                                    <Text size="xs" c="dimmed">{t('text_stats.paragraph_count')}</Text>
-                                    <Text size="lg" fw={600}>{paragraphCount}</Text>
+                            <Paper withBorder p="md" radius="md" bg="var(--mantine-color-gray-0)">
+                                <Stack gap={4} align="center">
+                                    <Text size="sm" c="dimmed" fw={500}>{t('text_stats.paragraph_count')}</Text>
+                                    <Text size="1.5rem" fw={600} c="gray.7">{paragraphCount}</Text>
                                 </Stack>
                             </Paper>
                         </SimpleGrid>
