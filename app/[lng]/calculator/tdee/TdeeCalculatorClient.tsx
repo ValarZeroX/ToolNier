@@ -157,17 +157,28 @@ export default function TdeeCalculator({ lng }: TdeeCalculatorProps) {
 
                 <Button fullWidth onClick={calculateTDEE}>{t('calculate')}</Button>
 
-                <Paper withBorder shadow="sm" radius="md" p="md" ta="center" mt="md">
-                    <Group justify="center" mt="xs" gap="xs">
-                        <Text fw={700} size="lg">BMR</Text>
-                        <IconEqual size={18} />
-                        <Text size="xl" fw={700}>{bmr}</Text>
-                    </Group>
-                    <Group justify="center" mt="xs" gap="xs">
-                        <Text fw={700} size="lg">TDEE</Text>
-                        <IconEqual size={18} />
-                        <Text size="xl" fw={700}>{tdee}</Text>
-                    </Group>
+                <Paper withBorder shadow="sm" radius="md" p="md">
+                    <Stack gap="md">
+                        <Paper withBorder p="md" radius="md" bg="var(--mantine-color-blue-0)">
+                            <Stack gap={4} align="center">
+                                <Text size="sm" c="dimmed" fw={500}>BMR (基礎代謝率)</Text>
+                                <Group gap="xs" align="center">
+                                    <Text size="2rem" fw={700} c="blue.7">{bmr}</Text>
+                                    <Text size="sm" c="dimmed">kcal/day</Text>
+                                </Group>
+                            </Stack>
+                        </Paper>
+
+                        <Paper withBorder p="md" radius="md" bg="var(--mantine-color-green-0)">
+                            <Stack gap={4} align="center">
+                                <Text size="sm" c="dimmed" fw={500}>TDEE (每日總能量消耗)</Text>
+                                <Group gap="xs" align="center">
+                                    <Text size="2rem" fw={700} c="green.7">{tdee}</Text>
+                                    <Text size="sm" c="dimmed">kcal/day</Text>
+                                </Group>
+                            </Stack>
+                        </Paper>
+                    </Stack>
                 </Paper>
 
                 <Text size="sm" my="sm">{t('tdee.tdee_1')}</Text>

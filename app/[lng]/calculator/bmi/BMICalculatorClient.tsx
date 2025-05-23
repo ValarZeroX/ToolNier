@@ -117,21 +117,25 @@ export default function BmiCalculator({ lng }: BmiCalculatorProps) {
                 )}
                 <Button fullWidth onClick={calculateBMI}>{t('calculate')}</Button>
 
-                <Paper withBorder shadow="sm" radius="md" p="md" ta="center" mt="md">
-                    <Group justify="center" mt="xs" gap="xs">
-                        <Text size="lg" fw={700}>BMI</Text>
-                        <IconEqual size={18} />
-                        <Text size="lg" fw={700}>
-                            {bmi}
-                        </Text>
-                    </Group>
-                    <Group justify="center" mt="xs" gap="xs">
-                        <Text size="lg" fw={700}>{t('bmi.bmi_prime')}</Text>
-                        <IconEqual size={18} />
-                        <Text size="lg" fw={700}>
-                            {prime}
-                        </Text>
-                    </Group>
+                <Paper withBorder shadow="sm" radius="md" p="md">
+                    <Stack gap="md">
+                        <Paper withBorder p="md" radius="md" bg="var(--mantine-color-blue-0)">
+                            <Stack gap={4} align="center">
+                                <Text size="sm" c="dimmed" fw={500}>BMI (身體質量指數)</Text>
+                                <Group gap="xs" align="center">
+                                    <Text size="2rem" fw={700} c="blue.7">{bmi}</Text>
+                                    <Text size="sm" c="dimmed">kg/m²</Text>
+                                </Group>
+                            </Stack>
+                        </Paper>
+
+                        <Paper withBorder p="md" radius="md" bg="var(--mantine-color-green-0)">
+                            <Stack gap={4} align="center">
+                                <Text size="sm" c="dimmed" fw={500}>{t('bmi.bmi_prime')}</Text>
+                                <Text size="2rem" fw={700} c="green.7">{prime}</Text>
+                            </Stack>
+                        </Paper>
+                    </Stack>
                 </Paper>
                 <Title order={3}>{t('bmi.adult_bmi')}</Title>
                 <Text size="sm" my="sm">{t('bmi.bmi_2')}</Text>

@@ -241,21 +241,25 @@ export default function BodyFatCalculator({ lng }: BodyFatCalculatorProps) {
 
                 <Button fullWidth onClick={calculateBodyFat}>{t('calculate')}</Button>
 
-                <Paper withBorder shadow="sm" radius="md" p="md" ta="center" mt="md">
-                    <Group justify="center" mt="xs" gap="xs">
-                        <Text fw={700} size="xl">{t('body_fat.body_fat')}</Text>
-                        <IconEqual size={18} />
-                        <Text size="xl" fw={700}>
-                            {bodyFat}
-                        </Text>
-                    </Group>
-                    <Group justify="center" mt="xs" gap="xs">
-                        <Text fw={700} size="xl">{t('body_fat.body_fat_category')}</Text>
-                        <IconEqual size={18} />
-                        <Text size="xl" fw={700}>
-                            {bodyFatCategory}
-                        </Text>
-                    </Group>
+                <Paper withBorder shadow="sm" radius="md" p="md">
+                    <Stack gap="md">
+                        <Paper withBorder p="md" radius="md" bg="var(--mantine-color-blue-0)">
+                            <Stack gap={4} align="center">
+                                <Text size="sm" c="dimmed" fw={500}>{t('body_fat.body_fat')}</Text>
+                                <Group gap="xs" align="center">
+                                    <Text size="2rem" fw={700} c="blue.7">{bodyFat}</Text>
+                                    <Text size="sm" c="dimmed">%</Text>
+                                </Group>
+                            </Stack>
+                        </Paper>
+
+                        <Paper withBorder p="md" radius="md" bg="var(--mantine-color-green-0)">
+                            <Stack gap={4} align="center">
+                                <Text size="sm" c="dimmed" fw={500}>{t('body_fat.body_fat_category')}</Text>
+                                <Text size="2rem" fw={700} c="green.7">{bodyFatCategory}</Text>
+                            </Stack>
+                        </Paper>
+                    </Stack>
                 </Paper>
 
                 <Text size="sm" my="sm">{t('body_fat.body_fat_1')}</Text>

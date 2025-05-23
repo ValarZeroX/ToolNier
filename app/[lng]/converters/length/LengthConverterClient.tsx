@@ -12,7 +12,6 @@ import {
 import { useTranslation } from '../../../i18n/client';
 import { formatNumber } from '@/lib/utils/formatNumber';
 import { Paper, Group } from '@mantine/core';
-import { IconEqual } from '@tabler/icons-react';
 import ConvertersActionsGrid from '@/components/ActionsGrid/ConvertersActionsGrid';
 
 interface LengthConverterClientProps {
@@ -81,14 +80,18 @@ const LengthConverterClient: React.FC<LengthConverterClientProps> = ({ lng }) =>
           onChange={(value) => setToUnit(value || 'ft')}
         />
 
-        <Paper withBorder shadow="sm" radius="md" p="md" ta="center" mt="md">
-          <Text size="sm" c="dimmed">{t('length_converter.result')}</Text>
-          <Group justify="center" mt="xs" gap="xs">
-            <IconEqual size={18} />
-            <Text size="xl" fw={700}>
-              {convert()} {toUnit}
-            </Text>
-          </Group>
+        <Paper withBorder shadow="sm" radius="md" p="md">
+          <Stack gap="md">
+            <Paper withBorder p="md" radius="md" bg="var(--mantine-color-blue-0)">
+              <Stack gap={4} align="center">
+                <Text size="sm" c="dimmed" fw={500}>{t('length_converter.result')}</Text>
+                <Group gap="xs" align="center">
+                  <Text size="2rem" fw={700} c="blue.7">{convert()}</Text>
+                  <Text size="sm" c="dimmed">{toUnit}</Text>
+                </Group>
+              </Stack>
+            </Paper>
+          </Stack>
         </Paper>
       </Stack>
       <Divider mt="md" />

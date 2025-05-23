@@ -121,18 +121,41 @@ export default function DaysBetweenDatesCalculator({ lng }: DaysBetweenDatesCalc
 
         {results && (
           <Paper withBorder shadow="sm" radius="md" p="md">
-            <Text fw={700} size="lg">
-              {t('days_between_dates.total_days')}: {results.totalDays} {t('days')}
-            </Text>
-            <Text fw={700} size="lg">
-              {t('days_between_dates.weeks_and_days')}: {results.weeks} {t('weeks')} {results.remainingDaysForWeeks} {t('days')}
-            </Text>
-            <Text fw={700} size="lg">
-              {t('days_between_dates.months_and_days')}: {results.monthsDiff} {t('months')} {results.remainingDaysForMonths} {t('days')}
-            </Text>
-            <Text fw={700} size="lg">
-              {t('days_between_dates.years_months_days')}: {results.years} {t('years')} {results.months} {t('months')} {results.days} {t('days')}
-            </Text>
+            <Stack gap="md">
+              <Paper withBorder p="md" radius="md" bg="var(--mantine-color-blue-0)">
+                <Stack gap={4} align="center">
+                  <Text size="sm" c="dimmed" fw={500}>{t('days_between_dates.total_days')}</Text>
+                  <Text size="2rem" fw={700} c="blue.7">{results.totalDays} {t('days')}</Text>
+                </Stack>
+              </Paper>
+
+              <Paper withBorder p="md" radius="md" bg="var(--mantine-color-green-0)">
+                <Stack gap={4} align="center">
+                  <Text size="sm" c="dimmed" fw={500}>{t('days_between_dates.weeks_and_days')}</Text>
+                  <Text size="2rem" fw={700} c="green.7">
+                    {results.weeks} {t('weeks')} {results.remainingDaysForWeeks} {t('days')}
+                  </Text>
+                </Stack>
+              </Paper>
+
+              <Paper withBorder p="md" radius="md" bg="var(--mantine-color-violet-0)">
+                <Stack gap={4} align="center">
+                  <Text size="sm" c="dimmed" fw={500}>{t('days_between_dates.months_and_days')}</Text>
+                  <Text size="2rem" fw={700} c="violet.7">
+                    {results.monthsDiff} {t('months')} {results.remainingDaysForMonths} {t('days')}
+                  </Text>
+                </Stack>
+              </Paper>
+
+              <Paper withBorder p="md" radius="md" bg="var(--mantine-color-gray-0)">
+                <Stack gap={4} align="center">
+                  <Text size="sm" c="dimmed" fw={500}>{t('days_between_dates.years_months_days')}</Text>
+                  <Text size="2rem" fw={700} c="gray.7">
+                    {results.years} {t('years')} {results.months} {t('months')} {results.days} {t('days')}
+                  </Text>
+                </Stack>
+              </Paper>
+            </Stack>
           </Paper>
         )}
       </Stack>

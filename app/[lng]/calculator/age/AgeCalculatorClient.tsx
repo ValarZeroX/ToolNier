@@ -89,14 +89,71 @@ export default function AgeCalculator({ lng }: AgeCalculatorProps) {
                 <Button fullWidth onClick={calculateAge}>{t('calculate')}</Button>
 
                 {result && (
-                    <Paper shadow="sm" p="md" withBorder>
-                        <Text>{t('age')}: {result.years} {t('age_page.years')} {result.months} {t('age_page.months')} {result.days} {t('age_page.days')}</Text>
-                        <Text>{t('age_page.total_months')}: {result.totalMonths} {t('age_page.months')} {result.days} {t('age_page.days')}</Text>
-                        <Text>{t('age_page.total_weeks')}: {result.totalWeeks} {t('age_page.weeks')} {result.remainingDays} {t('age_page.days')}</Text>
-                        <Text>{t('age_page.total_days')}: {result.totalDays} {t('age_page.days')}</Text>
-                        <Text>{t('age_page.total_hours')}: {result.totalHours} {t('age_page.hours')}</Text>
-                        <Text>{t('age_page.total_minutes')}: {result.totalMinutes} {t('age_page.minutes')}</Text>
-                        <Text>{t('age_page.total_seconds')}: {result.totalSeconds} {t('age_page.seconds')}</Text>
+                    <Paper withBorder shadow="sm" radius="md" p="md">
+                        <Stack gap="md">
+                            <Paper withBorder p="md" radius="md" bg="var(--mantine-color-blue-0)">
+                                <Stack gap={4} align="center">
+                                    <Text size="sm" c="dimmed" fw={500}>{t('age')}</Text>
+                                    <Text size="2rem" fw={700} c="blue.7">
+                                        {result.years} {t('age_page.years')} {result.months} {t('age_page.months')} {result.days} {t('age_page.days')}
+                                    </Text>
+                                </Stack>
+                            </Paper>
+
+                            <Paper withBorder p="md" radius="md" bg="var(--mantine-color-green-0)">
+                                <Stack gap={4} align="center">
+                                    <Text size="sm" c="dimmed" fw={500}>{t('age_page.total_months')}</Text>
+                                    <Text size="2rem" fw={700} c="green.7">
+                                        {result.totalMonths} {t('age_page.months')} {result.days} {t('age_page.days')}
+                                    </Text>
+                                </Stack>
+                            </Paper>
+
+                            <Paper withBorder p="md" radius="md" bg="var(--mantine-color-violet-0)">
+                                <Stack gap={4} align="center">
+                                    <Text size="sm" c="dimmed" fw={500}>{t('age_page.total_weeks')}</Text>
+                                    <Text size="2rem" fw={700} c="violet.7">
+                                        {result.totalWeeks} {t('age_page.weeks')} {result.remainingDays} {t('age_page.days')}
+                                    </Text>
+                                </Stack>
+                            </Paper>
+
+                            <Paper withBorder p="md" radius="md" bg="var(--mantine-color-gray-0)">
+                                <Stack gap={4} align="center">
+                                    <Text size="sm" c="dimmed" fw={500}>{t('age_page.total_days')}</Text>
+                                    <Text size="2rem" fw={700} c="gray.7">
+                                        {result.totalDays} {t('age_page.days')}
+                                    </Text>
+                                </Stack>
+                            </Paper>
+
+                            <Paper withBorder p="md" radius="md" bg="var(--mantine-color-gray-0)">
+                                <Stack gap={4} align="center">
+                                    <Text size="sm" c="dimmed" fw={500}>{t('age_page.total_hours')}</Text>
+                                    <Text size="2rem" fw={700} c="gray.7">
+                                        {result.totalHours} {t('age_page.hours')}
+                                    </Text>
+                                </Stack>
+                            </Paper>
+
+                            <Paper withBorder p="md" radius="md" bg="var(--mantine-color-gray-0)">
+                                <Stack gap={4} align="center">
+                                    <Text size="sm" c="dimmed" fw={500}>{t('age_page.total_minutes')}</Text>
+                                    <Text size="2rem" fw={700} c="gray.7">
+                                        {result.totalMinutes} {t('age_page.minutes')}
+                                    </Text>
+                                </Stack>
+                            </Paper>
+
+                            <Paper withBorder p="md" radius="md" bg="var(--mantine-color-gray-0)">
+                                <Stack gap={4} align="center">
+                                    <Text size="sm" c="dimmed" fw={500}>{t('age_page.total_seconds')}</Text>
+                                    <Text size="2rem" fw={700} c="gray.7">
+                                        {result.totalSeconds} {t('age_page.seconds')}
+                                    </Text>
+                                </Stack>
+                            </Paper>
+                        </Stack>
                     </Paper>
                 )}
             </Stack>

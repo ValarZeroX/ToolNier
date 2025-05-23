@@ -173,14 +173,18 @@ export default function BmrCalculator({ lng }: BmrCalculatorProps) {
 
                 <Button fullWidth onClick={calculateBMR}>{t('calculate')}</Button>
 
-                <Paper withBorder shadow="sm" radius="md" p="md" ta="center" mt="md">
-                    <Group justify="center" mt="xs" gap="xs">
-                        <Text fw={700} size="xl">BMR</Text>
-                        <IconEqual size={18} />
-                        <Text size="xl" fw={700}>
-                            {bmr}
-                        </Text>
-                    </Group>
+                <Paper withBorder shadow="sm" radius="md" p="md">
+                    <Stack gap="md">
+                        <Paper withBorder p="md" radius="md" bg="var(--mantine-color-blue-0)">
+                            <Stack gap={4} align="center">
+                                <Text size="sm" c="dimmed" fw={500}>BMR (基礎代謝率)</Text>
+                                <Group gap="xs" align="center">
+                                    <Text size="2rem" fw={700} c="blue.7">{bmr}</Text>
+                                    <Text size="sm" c="dimmed">kcal/day</Text>
+                                </Group>
+                            </Stack>
+                        </Paper>
+                    </Stack>
                 </Paper>
 
                 <Text size="sm" my="sm">{t('bmr.bmr_1')}</Text>

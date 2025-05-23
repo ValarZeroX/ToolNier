@@ -72,70 +72,90 @@ const TimestampConverterClient: React.FC<TimestampConverterClientProps> = ({ lng
         <Container size="sm" mt="lg">
             <Title order={2} ta="center">{t('timestamp_converter.title')}</Title>
 
-            <Paper p="md" shadow="sm" mt="md">
-                <Title order={4}>{t('timestamp_converter.current_timestamp')}</Title>
-                <Text size="sm">{t('timestamp_converter.seconds')}：{Math.floor(now / 1000)}</Text>
-                <Text size="sm">{t('timestamp_converter.milliseconds')}：{now}</Text>
+            <Paper withBorder shadow="sm" radius="md" p="md">
+                <Stack gap="md">
+                    <Title order={4}>{t('timestamp_converter.current_timestamp')}</Title>
+                    <Paper withBorder p="md" radius="md" bg="var(--mantine-color-blue-0)">
+                        <Stack gap={4}>
+                            <Group gap="xs" align="center">
+                                <Text size="sm" c="dimmed">{t('timestamp_converter.seconds')}</Text>
+                                <Text size="1.5rem" fw={700} c="blue.7">{Math.floor(now / 1000)}</Text>
+                            </Group>
+                            <Group gap="xs" align="center">
+                                <Text size="sm" c="dimmed">{t('timestamp_converter.milliseconds')}</Text>
+                                <Text size="1.5rem" fw={700} c="blue.7">{now}</Text>
+                            </Group>
+                        </Stack>
+                    </Paper>
+                </Stack>
             </Paper>
 
-            <Paper p="md" shadow="sm" mt="md">
-                <Title order={4}>{t('timestamp_converter.timestamp_to_date')}</Title>
-                <SegmentedControl
-                    fullWidth
-                    value={timestampUnit}
-                    onChange={(val) => setTimestampUnit(val as 'seconds' | 'milliseconds')}
-                    data={[
-                        { label: t('timestamp_converter.seconds'), value: 'seconds' },
-                        { label: t('timestamp_converter.milliseconds'), value: 'milliseconds' },
-                    ]}
-                    mt="sm"
-                />
-                <TextInput
-                    label={t('timestamp_converter.input_timestamp')}
-                    value={timestampInput}
-                    onChange={(e) => setTimestampInput(e.currentTarget.value)}
-                    mt="sm"
-                />
-                <Button fullWidth mt="sm" onClick={handleConvertTimestamp}>{t('timestamp_converter.convert_to_date')}</Button>
-                {convertedDate && (
-                    <Group mt="sm">
-                        <Text>{convertedDate}</Text>
-                        <CopyButton value={convertedDate}>{({ copy, copied }) => (
-                            <Button leftSection={<IconCopy size={16} />} onClick={copy} size="xs" variant="outline">{copied ? t('timestamp_converter.copied') : t('timestamp_converter.copy')}</Button>
-                        )}</CopyButton>
-                    </Group>
-                )}
+            <Paper withBorder shadow="sm" radius="md" p="md" mt="md">
+                <Stack gap="md">
+                    <Title order={4}>{t('timestamp_converter.timestamp_to_date')}</Title>
+                    <SegmentedControl
+                        fullWidth
+                        value={timestampUnit}
+                        onChange={(val) => setTimestampUnit(val as 'seconds' | 'milliseconds')}
+                        data={[
+                            { label: t('timestamp_converter.seconds'), value: 'seconds' },
+                            { label: t('timestamp_converter.milliseconds'), value: 'milliseconds' },
+                        ]}
+                    />
+                    <TextInput
+                        label={t('timestamp_converter.input_timestamp')}
+                        value={timestampInput}
+                        onChange={(e) => setTimestampInput(e.currentTarget.value)}
+                    />
+                    <Button fullWidth onClick={handleConvertTimestamp}>{t('timestamp_converter.convert_to_date')}</Button>
+                    {convertedDate && (
+                        <Paper withBorder p="md" radius="md" bg="var(--mantine-color-green-0)">
+                            <Group justify="space-between" align="center">
+                                <Text size="1.5rem" fw={700} c="green.7">{convertedDate}</Text>
+                                <CopyButton value={convertedDate}>{({ copy, copied }) => (
+                                    <Button leftSection={<IconCopy size={16} />} onClick={copy} size="xs" variant="outline" color={copied ? 'green' : 'blue'}>
+                                        {copied ? t('timestamp_converter.copied') : t('timestamp_converter.copy')}
+                                    </Button>
+                                )}</CopyButton>
+                            </Group>
+                        </Paper>
+                    )}
+                </Stack>
             </Paper>
 
-            <Paper p="md" shadow="sm" mt="md">
-                <Title order={4}>{t('timestamp_converter.date_to_timestamp')}</Title>
-                <DateTimePicker
-                    label={t('timestamp_converter.input_datetime')}
-                    value={dateInput ? dayjs(dateInput).toDate() : null}
-                    onChange={(date) => setDateInput(date ? dayjs(date).format('YYYY-MM-DDTHH:mm:ss') : '')}
-                    valueFormat="YYYY-MM-DD HH:mm:ss"
-                    withSeconds
-                    mt="sm"
-                />
-                <SegmentedControl
-                    fullWidth
-                    value={outputUnit}
-                    onChange={(val) => setOutputUnit(val as 'seconds' | 'milliseconds')}
-                    data={[
-                        { label: t('timestamp_converter.output_seconds'), value: 'seconds' },
-                        { label: t('timestamp_converter.output_milliseconds'), value: 'milliseconds' },
-                    ]}
-                    mt="sm"
-                />
-                <Button fullWidth mt="sm" onClick={handleConvertDate}>{t('timestamp_converter.convert_to_timestamp')}</Button>
-                {convertedTimestamp && (
-                    <Group mt="sm">
-                        <Text>{convertedTimestamp}</Text>
-                        <CopyButton value={convertedTimestamp}>{({ copy, copied }) => (
-                            <Button  leftSection={<IconCopy size={16} />} onClick={copy} size="xs" variant="outline">{copied ? t('timestamp_converter.copied') : t('timestamp_converter.copy')}</Button>
-                        )}</CopyButton>
-                    </Group>
-                )}
+            <Paper withBorder shadow="sm" radius="md" p="md" mt="md">
+                <Stack gap="md">
+                    <Title order={4}>{t('timestamp_converter.date_to_timestamp')}</Title>
+                    <DateTimePicker
+                        label={t('timestamp_converter.input_datetime')}
+                        value={dateInput ? dayjs(dateInput).toDate() : null}
+                        onChange={(date) => setDateInput(date ? dayjs(date).format('YYYY-MM-DDTHH:mm:ss') : '')}
+                        valueFormat="YYYY-MM-DD HH:mm:ss"
+                        withSeconds
+                    />
+                    <SegmentedControl
+                        fullWidth
+                        value={outputUnit}
+                        onChange={(val) => setOutputUnit(val as 'seconds' | 'milliseconds')}
+                        data={[
+                            { label: t('timestamp_converter.output_seconds'), value: 'seconds' },
+                            { label: t('timestamp_converter.output_milliseconds'), value: 'milliseconds' },
+                        ]}
+                    />
+                    <Button fullWidth onClick={handleConvertDate}>{t('timestamp_converter.convert_to_timestamp')}</Button>
+                    {convertedTimestamp && (
+                        <Paper withBorder p="md" radius="md" bg="var(--mantine-color-green-0)">
+                            <Group justify="space-between" align="center">
+                                <Text size="1.5rem" fw={700} c="green.7">{convertedTimestamp}</Text>
+                                <CopyButton value={convertedTimestamp}>{({ copy, copied }) => (
+                                    <Button leftSection={<IconCopy size={16} />} onClick={copy} size="xs" variant="outline" color={copied ? 'green' : 'blue'}>
+                                        {copied ? t('timestamp_converter.copied') : t('timestamp_converter.copy')}
+                                    </Button>
+                                )}</CopyButton>
+                            </Group>
+                        </Paper>
+                    )}
+                </Stack>
             </Paper>
             <Divider mt="md" />
             <Title order={3} mt="lg">{t('timestamp_converter.features_title')}</Title>
