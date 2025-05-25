@@ -22,6 +22,7 @@ export async function GET() {
     '/tools/image-base64-converter',
     '/tools/uuid-generator',
     '/tools/json-formatter',
+    '/tools/text-stat',
     '/converters/length',
     '/converters/weight',
     '/converters/temperature',
