@@ -23,6 +23,7 @@ export async function GET() {
     '/tools/uuid-generator',
     '/tools/json-formatter',
     '/tools/text-stat',
+    '/tools/color-picker',
     '/converters/length',
     '/converters/weight',
     '/converters/temperature',
