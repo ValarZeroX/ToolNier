@@ -209,6 +209,36 @@
             }
         }
     },
+    "color_picker": {
+        "title": "カラーピッカー",
+        "grid_description": "色コードを選択してコピー。",
+        "description": "複数の色形式（HEX、HEXA、RGB、RGBA、HSL、HSLA）のリアルタイム変換とコピーをサポートするプロフェッショナルなオンラインカラーピッカーツール。ウェブデザイン、UI/UX開発、グラフィックデザイン、ブランドカラー設定など、必要な色コードを素早く見つけてコピーできます。直感的なカラーホイールピッカーと色コード入力機能を備え、正確な色値を簡単に取得できます。",
+        "pick_color": "色を選択",
+        "input_color": "色コードを入力",
+        "selected_color": "現在選択中の色コード",
+        "hint": "上のカラーホイールをクリックして色を選択すると、色コードが自動的に更新されます。",
+        "how_to_use_title": "カラーピッカーの使い方",
+        "how_to_use_steps": {
+            "0": "カラーホイールで色を選択するか、入力フィールドに直接色コードを入力します。",
+            "1": "システムは自動的にすべての形式（HEX、HEXA、RGB、RGBA、HSL、HSLA）の色値を変換して表示します。",
+            "2": "任意の色値の右側にあるコピーアイコンをクリックすると、その形式の色コードがクリップボードにコピーされます。"
+        },
+        "faq_title": "よくある質問",
+        "faq": {
+            "0": {
+                "q": "どのような色形式がサポートされていますか？",
+                "a": "複数の一般的な形式をサポート：HEX（例：#FF5733）、HEXA（例：#FF5733CC）、RGB（例：rgb(255, 87, 51)）、RGBA（例：rgba(255, 87, 51, 0.8)）、HSL（例：hsl(12, 100%, 60%)）、HSLA（例：hsla(12, 100%, 60%, 0.8)）。"
+            },
+            "1": {
+                "q": "色コードはどのように入力しますか？",
+                "a": "入力フィールドにサポートされている形式の色コードを直接入力できます。システムは自動的に認識して他の形式に変換します。例えば、#FF5733やrgb(255, 87, 51)のどちらでも入力可能です。"
+            },
+            "2": {
+                "q": "なぜ一部の色値が元の値のまま表示されるのですか？",
+                "a": "色の変換プロセスで問題が発生した場合、システムは元の入力色値を表示します。入力された色コードの形式が正しいことを確認してください。"
+            }
+        }
+    },
     "emoji": {
         "title": "絵文字ツール",
         "description": "絵文字の生成と選択を行います。"
@@ -235,6 +265,9 @@
         "json_formatter_tool_page_keywords": "JSON, JSONフォーマット, JSONフォーマットツール, オンラインJSONフォーマット, 無料JSONフォーマット, JSONフォーマットアプリ, JSONフォーマットツールnier",
         "text_stats_tool_page_title": "文字カウンター | Text Stats Tool - ToolNier",
         "text_stats_tool_page_description": "無料のオンラインテキストカウンター。入力テキストの文字数、単語数、行数を素早く計算します。記事作成、プレゼンテーション準備、SNS投稿の文字数制限チェックに最適です。リアルタイムカウント、クリア、コピー機能を搭載。",
-        "text_stats_tool_page_keywords": "文字カウンター, テキスト統計, text stats, text stats tool, text stats online, text stats free, text stats app, text stats toolnier"
+        "text_stats_tool_page_keywords": "文字カウンター, テキスト統計, text stats, text stats tool, text stats online, text stats free, text stats app, text stats toolnier",
+        "color_picker_tool_page_title": "カラーピッカーツール | Color Picker Tool - ToolNier",
+        "color_picker_tool_page_description": "複数の色形式（HEX、HEXA、RGB、RGBA、HSL、HSLA）のリアルタイム変換とコピーをサポートするプロフェッショナルなオンラインカラーピッカーツール。ウェブデザイン、UI/UX開発、グラフィックデザイン、ブランドカラー設定など、必要な色コードを素早く見つけてコピーできます。直感的なカラーホイールピッカーと色コード入力機能を備え、正確な色値を簡単に取得できます。",
+        "color_picker_tool_page_keywords": "カラーピッカー, color picker, color picker tool, color picker online, color picker free, color picker app, color picker toolnier"
     }
 }

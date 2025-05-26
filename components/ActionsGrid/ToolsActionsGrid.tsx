@@ -1,6 +1,6 @@
 'use client';
 
-import { IconQrcode, IconCode, IconFileCode, IconId, IconPhoto, IconPencil } from '@tabler/icons-react';
+import { IconQrcode, IconCode, IconFileCode, IconId, IconPhoto, IconPencil, IconPalette } from '@tabler/icons-react';
 import {
     Title,
     Card,
@@ -69,6 +69,14 @@ const ToolsActionsGrid: FC<ToolsActionsGridProps> = ({ lng }) => {
             color: 'red',
             href: `/${lng}/tools/text-stat`,
             description: t('tools:text_stats.grid_description')
+        },
+        {
+            id: 'color-picker',
+            title: t('tools:color_picker.title'),
+            icon: IconPalette,
+            color: 'pink',
+            href: `/${lng}/tools/color-picker`,
+            description: t('tools:color_picker.grid_description')
         }
     ];
 

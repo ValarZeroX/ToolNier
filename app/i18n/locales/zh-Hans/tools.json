@@ -209,6 +209,36 @@
             }
         }
     },
+    "color_picker": {
+        "title": "颜色选择器",
+        "grid_description": "选择和复制颜色代码。",
+        "description": "专业的在线颜色选择工具，支持多种颜色格式（HEX、HEXA、RGB、RGBA、HSL、HSLA）的实时转换与复制。无论是网页设计、UI/UX开发、平面设计或品牌配色，都能快速找到并复制所需的颜色代码。提供直观的颜色盘选择器与颜色代码输入功能，让您轻松获取精确的颜色值。",
+        "pick_color": "选择颜色",
+        "input_color": "输入颜色代码",
+        "selected_color": "当前选择的颜色代码",
+        "hint": "可点击上方色盘选择颜色，色码将自动更新。",
+        "how_to_use_title": "如何使用颜色选择器？",
+        "how_to_use_steps": {
+            "0": "使用颜色盘选择颜色，或直接在输入框中输入颜色代码。",
+            "1": "系统会自动转换并显示所有格式的颜色值（HEX、HEXA、RGB、RGBA、HSL、HSLA）。",
+            "2": "点击任何颜色值右侧的复制图标，即可将该格式的颜色代码复制到剪贴板。"
+        },
+        "faq_title": "常见问题",
+        "faq": {
+            "0": {
+                "q": "支持哪些颜色格式？",
+                "a": "支持多种常用格式：HEX（如：#FF5733）、HEXA（如：#FF5733CC）、RGB（如：rgb(255, 87, 51)）、RGBA（如：rgba(255, 87, 51, 0.8)）、HSL（如：hsl(12, 100%, 60%)）和 HSLA（如：hsla(12, 100%, 60%, 0.8)）。"
+            },
+            "1": {
+                "q": "如何输入颜色代码？",
+                "a": "您可以直接在输入框中输入任何支持格式的颜色代码，系统会自动识别并转换为其他格式。例如：输入 #FF5733 或 rgb(255, 87, 51) 都可以。"
+            },
+            "2": {
+                "q": "为什么有些颜色值显示为原始值？",
+                "a": "如果颜色转换过程中出现问题，系统会显示原始输入的颜色值。请确保输入的颜色代码格式正确。"
+            }
+        }
+    },
     "emoji": {
         "title": "Emoji 工具",
         "description": "生成和选择表情符号。"
@@ -235,6 +265,9 @@
         "json_formatter_tool_page_keywords": "JSON, JSON formatter, JSON formatter tool, JSON formatter online, JSON formatter free, JSON formatter app, JSON formatter toolnier",
         "text_stats_tool_page_title": "文字统计工具 | Text Stats Tool - ToolNier",
         "text_stats_tool_page_description": "免费的在线字数统计工具，快速计算输入文本的字数、词数与行数。无论是文章撰写、简报准备或社交媒体字数限制检查，都能派上用场。支持实时统计、清除与复制功能。",
-        "text_stats_tool_page_keywords": "文字统计, text stats, text stats tool, text stats online, text stats free, text stats app, text stats toolnier"
+        "text_stats_tool_page_keywords": "文字统计, text stats, text stats tool, text stats online, text stats free, text stats app, text stats toolnier",
+        "color_picker_tool_page_title": "颜色选择器 | Color Picker Tool - ToolNier",
+        "color_picker_tool_page_description": "专业的在线颜色选择工具，支持多种颜色格式（HEX、HEXA、RGB、RGBA、HSL、HSLA）的实时转换与复制。无论是网页设计、UI/UX开发、平面设计或品牌配色，都能快速找到并复制所需的颜色代码。提供直观的颜色盘选择器与颜色代码输入功能，让您轻松获取精确的颜色值。",
+        "color_picker_tool_page_keywords": "颜色选择器, color picker, color picker tool, color picker online, color picker free, color picker app, color picker toolnier"
     }
 }

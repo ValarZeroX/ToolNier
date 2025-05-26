@@ -209,6 +209,36 @@
             }
         }
     },
+    "color_picker": {
+        "title": "Color Picker",
+        "grid_description": "Select and copy color codes.",
+        "description": "Professional online color picker tool that supports real-time conversion and copying of multiple color formats (HEX, HEXA, RGB, RGBA, HSL, HSLA). Whether you're working on web design, UI/UX development, graphic design, or brand color schemes, you can quickly find and copy the color codes you need. Features an intuitive color wheel picker and color code input functionality, allowing you to easily obtain precise color values.",
+        "pick_color": "Pick Color",
+        "input_color": "Input Color Code",
+        "selected_color": "Currently Selected Color Code",
+        "hint": "Click the color wheel above to select a color, the color code will update automatically.",
+        "how_to_use_title": "How to Use the Color Picker?",
+        "how_to_use_steps": {
+            "0": "Use the color wheel to select a color, or directly input a color code in the input field.",
+            "1": "The system will automatically convert and display color values in all formats (HEX, HEXA, RGB, RGBA, HSL, HSLA).",
+            "2": "Click the copy icon next to any color value to copy that format's color code to your clipboard."
+        },
+        "faq_title": "Frequently Asked Questions",
+        "faq": {
+            "0": {
+                "q": "What color formats are supported?",
+                "a": "Supports multiple common formats: HEX (e.g., #FF5733), HEXA (e.g., #FF5733CC), RGB (e.g., rgb(255, 87, 51)), RGBA (e.g., rgba(255, 87, 51, 0.8)), HSL (e.g., hsl(12, 100%, 60%)), and HSLA (e.g., hsla(12, 100%, 60%, 0.8))."
+            },
+            "1": {
+                "q": "How do I input color codes?",
+                "a": "You can directly input any supported format's color code in the input field, and the system will automatically recognize and convert it to other formats. For example, you can input either #FF5733 or rgb(255, 87, 51)."
+            },
+            "2": {
+                "q": "Why do some color values show as original values?",
+                "a": "If there's an issue during the color conversion process, the system will display the original input color value. Please ensure the input color code format is correct."
+            }
+        }
+    },
     "emoji": {
         "title": "Emoji Tool",
         "description": "Generate and select emojis."
@@ -235,6 +265,9 @@
         "json_formatter_tool_page_keywords": "JSON, JSON formatter, JSON formatter tool, JSON formatter online, JSON formatter free, JSON formatter app, JSON formatter toolnier",
         "text_stats_tool_page_title": "Text Counter | Text Stats Tool - ToolNier",
         "text_stats_tool_page_description": "Free online text counter that quickly calculates character count, word count, and line count of your input text. Perfect for article writing, presentation preparation, or social media post character limit checking. Features real-time counting, clear, and copy functionality.",
-        "text_stats_tool_page_keywords": "text counter, text stats, text stats tool, text stats online, text stats free, text stats app, text stats toolnier"
+        "text_stats_tool_page_keywords": "text counter, text stats, text stats tool, text stats online, text stats free, text stats app, text stats toolnier",
+        "color_picker_tool_page_title": "Color Picker | Color Picker Tool - ToolNier",
+        "color_picker_tool_page_description": "Professional online color picker tool that supports real-time conversion and copying of multiple color formats (HEX, HEXA, RGB, RGBA, HSL, HSLA). Whether you're working on web design, UI/UX development, graphic design, or brand color schemes, you can quickly find and copy the color codes you need. Features an intuitive color wheel picker and color code input functionality, allowing you to easily obtain precise color values.",
+        "color_picker_tool_page_keywords": "Color Picker, color picker tool, color picker online, color picker free, color picker app, color picker toolnier"
     }
 }

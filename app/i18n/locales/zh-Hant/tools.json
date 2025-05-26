@@ -211,32 +211,31 @@
     },
     "color_picker": {
         "title": "顏色選擇器",
-        "description": "選擇您喜歡的顏色，並可輕鬆複製 HEX 色碼。",
+        "grid_description": "選擇和複製顏色代碼。",
+        "description": "專業的線上顏色選擇工具，支援多種顏色格式（HEX、HEXA、RGB、RGBA、HSL、HSLA）的即時轉換與複製。無論是網頁設計、UI/UX 開發、平面設計或品牌配色，都能快速找到並複製所需的顏色代碼。提供直覺的顏色盤選擇器與顏色代碼輸入功能，讓您輕鬆獲取精確的顏色值。",
         "pick_color": "選擇顏色",
-        "format": "格式",
-        "selected_color": "目前選取的顏色",
-        "copy": "複製",
-        "copied": "已複製 HEX 色碼！",
-        "hint": "可點擊上方色盤選擇顏色，HEX 色碼將自動更新。",
+        "input_color": "輸入顏色代碼",
+        "selected_color": "目前選取的顏色代碼",
+        "hint": "可點擊上方色盤選擇顏色，色碼將自動更新。",
         "how_to_use_title": "如何使用顏色選擇器？",
         "how_to_use_steps": {
-            "0": "點擊顏色盤選擇您想要的顏色。",
-            "1": "下方會即時顯示您選取的 HEX 色碼。",
-            "2": "點擊「複製」按鈕即可複製該色碼到剪貼簿。"
+            "0": "使用顏色盤選擇顏色，或直接在輸入框中輸入顏色代碼。",
+            "1": "系統會自動轉換並顯示所有格式的顏色值（HEX、HEXA、RGB、RGBA、HSL、HSLA）。",
+            "2": "點擊任何顏色值右側的複製圖標，即可將該格式的顏色代碼複製到剪貼簿。"
         },
         "faq_title": "常見問題",
         "faq": {
             "0": {
-                "q": "這個顏色碼是什麼格式？",
-                "a": "我們使用的是常見的 HEX 十六進位色碼格式，例如：#FF5733。"
+                "q": "支援哪些顏色格式？",
+                "a": "支援多種常用格式：HEX（如：#FF5733）、HEXA（如：#FF5733CC）、RGB（如：rgb(255, 87, 51)）、RGBA（如：rgba(255, 87, 51, 0.8)）、HSL（如：hsl(12, 100%, 60%)）和 HSLA（如：hsla(12, 100%, 60%, 0.8)）。"
             },
             "1": {
-                "q": "可以轉換為 RGB 或 HSL 嗎？",
-                "a": "目前此工具僅支援 HEX，未來我們可能會新增更多格式的轉換功能。"
+                "q": "如何輸入顏色代碼？",
+                "a": "您可以直接在輸入框中輸入任何支援格式的顏色代碼，系統會自動識別並轉換為其他格式。例如：輸入 #FF5733 或 rgb(255, 87, 51) 都可以。"
             },
             "2": {
-                "q": "複製按鈕無反應怎麼辦？",
-                "a": "請確認您的瀏覽器支援剪貼簿操作，或嘗試手動選取並複製。"
+                "q": "為什麼有些顏色值顯示為原始值？",
+                "a": "如果顏色轉換過程中出現問題，系統會顯示原始輸入的顏色值。請確保輸入的顏色代碼格式正確。"
             }
         }
     },
@@ -266,6 +265,9 @@
         "json_formatter_tool_page_keywords": "JSON, JSON formatter, JSON formatter tool, JSON formatter online, JSON formatter free, JSON formatter app, JSON formatter toolnier",
         "text_stats_tool_page_title": "文字統計工具 | Text Stats Tool - ToolNier",
         "text_stats_tool_page_description": "免費的線上字數統計工具，快速計算輸入文本的字數、詞數與行數。無論是文章撰寫、簡報準備或社群貼文字數限制檢查，都能派上用場。支援即時統計、清除與複製功能。",
-        "text_stats_tool_page_keywords": "文字統計, text stats, text stats tool, text stats online, text stats free, text stats app, text stats toolnier"
+        "text_stats_tool_page_keywords": "文字統計, text stats, text stats tool, text stats online, text stats free, text stats app, text stats toolnier",
+        "color_picker_tool_page_title": "顏色選擇器 | Color Picker Tool - ToolNier",
+        "color_picker_tool_page_description": "專業的線上顏色選擇工具，支援多種顏色格式（HEX、HEXA、RGB、RGBA、HSL、HSLA）的即時轉換與複製。無論是網頁設計、UI/UX 開發、平面設計或品牌配色，都能快速找到並複製所需的顏色代碼。提供直覺的顏色盤選擇器與顏色代碼輸入功能，讓您輕鬆獲取精確的顏色值。",
+        "color_picker_tool_page_keywords": "顏色選擇器, color picker, color picker tool, color picker online, color picker free, color picker app, color picker toolnier"
     }
 }
