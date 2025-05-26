@@ -24,6 +24,7 @@ export async function GET() {
     '/tools/json-formatter',
     '/tools/text-stat',
     '/tools/color-picker',
+    '/tools/color-code-chart',
     '/converters/length',
     '/converters/weight',
     '/converters/temperature',

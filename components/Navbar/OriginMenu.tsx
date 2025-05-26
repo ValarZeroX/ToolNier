@@ -64,6 +64,7 @@ const OriginMenu: FC<OriginMenuProps> = ({ lng }) => {
           <NavLink label={t('common:json_formatter')} component={Link} href="/tools/json-formatter" />
           <NavLink label={t('common:text_stats_title')} component={Link} href="/tools/text-stat" />
           <NavLink label={t('common:color_picker_title')} component={Link} href="/tools/color-picker" />
+          <NavLink label={t('common:color_code_chart_title')} component={Link} href="/tools/color-code-chart" />
         </NavLink>
         <NavLink
           component="button"

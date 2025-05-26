@@ -239,6 +239,17 @@
             }
         }
     },
+    "color_code_chart": {
+        "title": "Color Code Chart",
+        "grid_description": "View color codes for common colors.",
+        "description": "Provides color code references for common colors, including basic colors. Each color includes both HEX and RGB format codes for easy copying and use.",
+        "color_name": "Color Name",
+        "hex": "HEX Code",
+        "rgb": "RGB Code",
+        "categories": {
+            "basic": "Basic Colors"
+        }
+    },
     "emoji": {
         "title": "Emoji Tool",
         "description": "Generate and select emojis."
@@ -268,6 +279,9 @@
         "text_stats_tool_page_keywords": "text counter, text stats, text stats tool, text stats online, text stats free, text stats app, text stats toolnier",
         "color_picker_tool_page_title": "Color Picker | Color Picker Tool - ToolNier",
         "color_picker_tool_page_description": "Professional online color picker tool that supports real-time conversion and copying of multiple color formats (HEX, HEXA, RGB, RGBA, HSL, HSLA). Whether you're working on web design, UI/UX development, graphic design, or brand color schemes, you can quickly find and copy the color codes you need. Features an intuitive color wheel picker and color code input functionality, allowing you to easily obtain precise color values.",
-        "color_picker_tool_page_keywords": "Color Picker, color picker tool, color picker online, color picker free, color picker app, color picker toolnier"
+        "color_picker_tool_page_keywords": "Color Picker, color picker tool, color picker online, color picker free, color picker app, color picker toolnier",
+        "color_code_chart_tool_page_title": "Color Code Chart | Color Code Chart Tool - ToolNier",
+        "color_code_chart_tool_page_description": "Provides color code references for common colors, including basic colors. Each color includes both HEX and RGB format codes for easy copying and use.",
+        "color_code_chart_tool_page_keywords": "Color Code Chart, color code chart tool, color code chart online, color code chart free, color code chart app, color code chart toolnier"
     }
 }

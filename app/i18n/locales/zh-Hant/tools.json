@@ -239,6 +239,17 @@
             }
         }
     },
+    "color_code_chart": {
+        "title": "色碼表",
+        "grid_description": "查看常用顏色的色碼。",
+        "description": "提供常用顏色的色碼參考，包括基本顏色。每個顏色都提供 HEX 和 RGB 格式的色碼，方便複製使用。",
+        "color_name": "顏色名稱",
+        "hex": "HEX 色碼",
+        "rgb": "RGB 色碼",
+        "categories": {
+            "basic": "基本顏色"
+        }
+    },
     "emoji": {
         "title": "Emoji 工具",
         "description": "生成和選擇表情符號。"
@@ -268,6 +279,9 @@
         "text_stats_tool_page_keywords": "文字統計, text stats, text stats tool, text stats online, text stats free, text stats app, text stats toolnier",
         "color_picker_tool_page_title": "顏色選擇器 | Color Picker Tool - ToolNier",
         "color_picker_tool_page_description": "專業的線上顏色選擇工具，支援多種顏色格式（HEX、HEXA、RGB、RGBA、HSL、HSLA）的即時轉換與複製。無論是網頁設計、UI/UX 開發、平面設計或品牌配色，都能快速找到並複製所需的顏色代碼。提供直覺的顏色盤選擇器與顏色代碼輸入功能，讓您輕鬆獲取精確的顏色值。",
-        "color_picker_tool_page_keywords": "顏色選擇器, color picker, color picker tool, color picker online, color picker free, color picker app, color picker toolnier"
+        "color_picker_tool_page_keywords": "顏色選擇器, color picker, color picker tool, color picker online, color picker free, color picker app, color picker toolnier",
+        "color_code_chart_tool_page_title": "色碼表 | Color Code Chart Tool - ToolNier",
+        "color_code_chart_tool_page_description": "提供常用顏色的色碼參考，包括基本顏色。每個顏色都提供 HEX 和 RGB 格式的色碼，方便複製使用。",
+        "color_code_chart_tool_page_keywords": "色碼表, color code chart, color code chart tool, color code chart online, color code chart free, color code chart app, color code chart toolnier"
     }
 }

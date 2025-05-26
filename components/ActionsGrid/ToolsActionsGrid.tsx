@@ -77,6 +77,14 @@ const ToolsActionsGrid: FC<ToolsActionsGridProps> = ({ lng }) => {
             color: 'pink',
             href: `/${lng}/tools/color-picker`,
             description: t('tools:color_picker.grid_description')
+        },
+        {
+            id: 'color-code-chart',
+            title: t('tools:color_code_chart.title'),
+            icon: IconPalette,
+            color: 'pink',
+            href: `/${lng}/tools/color-code-chart`,
+            description: t('tools:color_code_chart.grid_description')
         }
     ];
 

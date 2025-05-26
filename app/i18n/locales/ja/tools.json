@@ -239,6 +239,18 @@
             }
         }
     },
+    "color_code_chart": {
+        "title": "カラーコード表",
+        "grid_description": "一般的な色のカラーコードを確認できます。",
+        "description": "基本色を含む一般的な色のカラーコードリファレンスを提供します。各色にはHEXとRGB形式のコードが含まれており、簡単にコピーして使用できます。",
+        "color_name": "色名",
+        "hex": "HEXコード",
+        "rgb": "RGBコード",
+        "categories": {
+            "basic": "基本色",
+            "common": "一般的な色"
+        }
+    },
     "emoji": {
         "title": "絵文字ツール",
         "description": "絵文字の生成と選択を行います。"
@@ -268,6 +280,9 @@
         "text_stats_tool_page_keywords": "文字カウンター, テキスト統計, text stats, text stats tool, text stats online, text stats free, text stats app, text stats toolnier",
         "color_picker_tool_page_title": "カラーピッカーツール | Color Picker Tool - ToolNier",
         "color_picker_tool_page_description": "複数の色形式（HEX、HEXA、RGB、RGBA、HSL、HSLA）のリアルタイム変換とコピーをサポートするプロフェッショナルなオンラインカラーピッカーツール。ウェブデザイン、UI/UX開発、グラフィックデザイン、ブランドカラー設定など、必要な色コードを素早く見つけてコピーできます。直感的なカラーホイールピッカーと色コード入力機能を備え、正確な色値を簡単に取得できます。",
-        "color_picker_tool_page_keywords": "カラーピッカー, color picker, color picker tool, color picker online, color picker free, color picker app, color picker toolnier"
+        "color_picker_tool_page_keywords": "カラーピッカー, color picker, color picker tool, color picker online, color picker free, color picker app, color picker toolnier",
+        "color_code_chart_tool_page_title": "カラーコード表 | Color Code Chart Tool - ToolNier",
+        "color_code_chart_tool_page_description": "基本的な色を含む、よく使われる色のカラ―コードを提供します。各色にはコピーしやすいように HEX および RGB 形式のコードを表示しています。",
+        "color_code_chart_tool_page_keywords": "カラーコード表, color code chart, color code chart tool, color code chart online, color code chart free, color code chart app, color code chart toolnier"
     }
 }
