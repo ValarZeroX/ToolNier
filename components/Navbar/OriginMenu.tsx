@@ -65,6 +65,7 @@ const OriginMenu: FC<OriginMenuProps> = ({ lng }) => {
           <NavLink label={t('common:text_stats_title')} component={Link} href={`/${lng}/tools/text-stat`} />
           <NavLink label={t('common:color_picker_title')} component={Link} href={`/${lng}/tools/color-picker`} />
           <NavLink label={t('common:color_code_chart_title')} component={Link} href={`/${lng}/tools/color-code-chart`} />
+          <NavLink label={t('common:password_generator_title')} component={Link} href={`/${lng}/tools/password-generator`} />
         </NavLink>
         <NavLink
           component="button"

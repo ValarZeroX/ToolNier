@@ -251,6 +251,50 @@
             "common": "常用颜色"
         }
     },
+    "password_generator": {
+        "title": "密码生成器",
+        "grid_description": "生成安全且随机的密码",
+        "description": "生成安全且随机的密码，可选择是否包含数字、符号、大写字母和小写字母。",
+        "include_numbers": "数字",
+        "include_symbols": "符号",
+        "length": "密码长度",
+        "generate": "生成密码",
+        "include_uppercase": "大写字母",
+        "include_lowercase": "小写字母",
+        "copy_success_title": "复制成功",
+        "copy_success_message": "密码已复制到剪贴板",
+        "copy_error_title": "复制失败",
+        "copy_error_message": "无法复制密码，请手动复制",
+        "how_to_use_title": "使用说明",
+        "how_to_use_steps": {
+            "0": "选择是否包含数字和符号",
+            "1": "调整密码长度",
+            "2": "点击生成按钮并复制密码"
+        },
+        "faq_title": "常见问题",
+        "faq": {
+            "0": {
+                "q": "为什么需要强密码？",
+                "a": "强密码可以保护您的账户安全，防止未经授权的访问。使用包含大小写字母、数字和符号的复杂密码，可以大大降低被破解的风险。"
+            },
+            "1": {
+                "q": "密码长度应该设为多少？",
+                "a": "建议密码长度至少为 12 个字符。越长的密码越安全，但也要考虑到使用便利性。一般建议使用 16-24 个字符的密码。"
+            },
+            "2": {
+                "q": "为什么要包含不同类型的字符？",
+                "a": "使用不同类型的字符（大小写字母、数字、符号）可以增加密码的复杂度，使密码更难被破解。例如，只使用小写字母的 8 位密码，可能的组合数远少于使用所有类型字符的 8 位密码。"
+            },
+            "3": {
+                "q": "如何安全地保存密码？",
+                "a": "建议使用密码管理器来保存您的密码。密码管理器可以安全地存储您的所有密码，并且只需要记住一个主密码。切勿将密码明文保存在电脑或手机上。"
+            },
+            "4": {
+                "q": "多久应该更换一次密码？",
+                "a": "建议每 3-6 个月更换一次密码，特别是对于重要的账户（如银行、电子邮件等）。如果发现账户可能被盗用，应立即更换密码。"
+            }
+        }
+    },
     "emoji": {
         "title": "Emoji 工具",
         "description": "生成和选择表情符号。"
@@ -283,6 +327,9 @@
         "color_picker_tool_page_keywords": "颜色选择器, color picker, color picker tool, color picker online, color picker free, color picker app, color picker toolnier",
         "color_code_chart_tool_page_title": "色码表 | Color Code Chart Tool - ToolNier",
         "color_code_chart_tool_page_description": "提供常用颜色的色码参考，包括基本颜色。每个颜色都提供 HEX 和 RGB 格式的色码，方便复制使用。",
-        "color_code_chart_tool_page_keywords": "色码表, color code chart, color code chart tool, color code chart online, color code chart free, color code chart app, color code chart toolnier"
+        "color_code_chart_tool_page_keywords": "色码表, color code chart, color code chart tool, color code chart online, color code chart free, color code chart app, color code chart toolnier",
+        "password_generator_tool_page_title": "密码生成器 | Password Generator Tool - ToolNier",
+        "password_generator_tool_page_description": "生成安全且随机的密码，可选择是否包含数字、符号、大写字母和小写字母。",
+        "password_generator_tool_page_keywords": "密码生成器, password generator, password generator tool, password generator online, password generator free, password generator app, password generator toolnier"
     }
 }

@@ -250,6 +250,50 @@
             "basic": "Basic Colors"
         }
     },
+    "password_generator": {
+        "title": "Password Generator",
+        "grid_description": "Generate secure and random passwords",
+        "description": "Generate secure and random passwords with options for numbers, symbols, uppercase and lowercase letters.",
+        "include_numbers": "Numbers",
+        "include_symbols": "Symbols",
+        "length": "Password Length",
+        "generate": "Generate Password",
+        "include_uppercase": "Uppercase Letters",
+        "include_lowercase": "Lowercase Letters",
+        "copy_success_title": "Copied Successfully",
+        "copy_success_message": "Password has been copied to clipboard",
+        "copy_error_title": "Copy Failed",
+        "copy_error_message": "Unable to copy password, please copy manually",
+        "how_to_use_title": "How to Use",
+        "how_to_use_steps": {
+            "0": "Choose whether to include numbers and symbols",
+            "1": "Adjust the password length",
+            "2": "Click generate button and copy the password"
+        },
+        "faq_title": "Frequently Asked Questions",
+        "faq": {
+            "0": {
+                "q": "Why do we need strong passwords?",
+                "a": "Strong passwords protect your accounts from unauthorized access. Using complex passwords that include uppercase and lowercase letters, numbers, and symbols significantly reduces the risk of being cracked."
+            },
+            "1": {
+                "q": "How long should my password be?",
+                "a": "It's recommended to use passwords that are at least 12 characters long. Longer passwords are more secure, but you should also consider usability. Generally, passwords between 16-24 characters are recommended."
+            },
+            "2": {
+                "q": "Why include different types of characters?",
+                "a": "Using different types of characters (uppercase and lowercase letters, numbers, symbols) increases password complexity, making it harder to crack. For example, an 8-character password using only lowercase letters has far fewer possible combinations than an 8-character password using all character types."
+            },
+            "3": {
+                "q": "How should I securely store my passwords?",
+                "a": "It's recommended to use a password manager to store your passwords. Password managers can securely store all your passwords while only requiring you to remember one master password. Never store passwords in plain text on your computer or phone."
+            },
+            "4": {
+                "q": "How often should I change my passwords?",
+                "a": "It's recommended to change your passwords every 3-6 months, especially for important accounts (such as banking, email, etc.). If you suspect your account has been compromised, change your password immediately."
+            }
+        }
+    },
     "emoji": {
         "title": "Emoji Tool",
         "description": "Generate and select emojis."
@@ -282,6 +326,9 @@
         "color_picker_tool_page_keywords": "Color Picker, color picker tool, color picker online, color picker free, color picker app, color picker toolnier",
         "color_code_chart_tool_page_title": "Color Code Chart | Color Code Chart Tool - ToolNier",
         "color_code_chart_tool_page_description": "Provides color code references for common colors, including basic colors. Each color includes both HEX and RGB format codes for easy copying and use.",
-        "color_code_chart_tool_page_keywords": "Color Code Chart, color code chart tool, color code chart online, color code chart free, color code chart app, color code chart toolnier"
+        "color_code_chart_tool_page_keywords": "Color Code Chart, color code chart tool, color code chart online, color code chart free, color code chart app, color code chart toolnier",
+        "password_generator_tool_page_title": "Password Generator | Password Generator Tool - ToolNier",
+        "password_generator_tool_page_description": "Generate secure and random passwords with options for numbers, symbols, uppercase and lowercase letters.",
+        "password_generator_tool_page_keywords": "Password Generator, password generator tool, password generator online, password generator free, password generator app, password generator toolnier"
     }
 }

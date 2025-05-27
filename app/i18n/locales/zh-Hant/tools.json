@@ -250,6 +250,50 @@
             "basic": "基本顏色"
         }
     },
+    "password_generator": {
+        "title": "密碼產生器",
+        "grid_description": "產生安全且隨機的密碼",
+        "description": "產生安全且隨機的密碼，可選擇是否包含數字、符號、大寫字母和小寫字母。",
+        "include_numbers": "數字",
+        "include_symbols": "符號",
+        "length": "密碼長度",
+        "generate": "產生密碼",
+        "include_uppercase": "大寫字母",
+        "include_lowercase": "小寫字母",
+        "copy_success_title": "複製成功",
+        "copy_success_message": "密碼已複製到剪貼簿",
+        "copy_error_title": "複製失敗",
+        "copy_error_message": "無法複製密碼，請手動複製",
+        "how_to_use_title": "使用說明",
+        "how_to_use_steps": {
+            "0": "選擇是否包含數字和符號",
+            "1": "調整密碼長度",
+            "2": "點擊產生按鈕並複製密碼"
+        },
+        "faq_title": "常見問題",
+        "faq": {
+            "0": {
+                "q": "為什麼需要強密碼？",
+                "a": "強密碼可以保護您的帳戶安全，防止未經授權的訪問。使用包含大小寫字母、數字和符號的複雜密碼，可以大大降低被破解的風險。"
+            },
+            "1": {
+                "q": "密碼長度應該設為多少？",
+                "a": "建議密碼長度至少為 12 個字符。越長的密碼越安全，但也要考慮到使用便利性。一般建議使用 16-24 個字符的密碼。"
+            },
+            "2": {
+                "q": "為什麼要包含不同類型的字符？",
+                "a": "使用不同類型的字符（大小寫字母、數字、符號）可以增加密碼的複雜度，使密碼更難被破解。例如，只使用小寫字母的 8 位密碼，可能的組合數遠少於使用所有類型字符的 8 位密碼。"
+            },
+            "3": {
+                "q": "如何安全地保存密碼？",
+                "a": "建議使用密碼管理器來保存您的密碼。密碼管理器可以安全地存儲您的所有密碼，並且只需要記住一個主密碼。切勿將密碼明文保存在電腦或手機上。"
+            },
+            "4": {
+                "q": "多久應該更換一次密碼？",
+                "a": "建議每 3-6 個月更換一次密碼，特別是對於重要的帳戶（如銀行、電子郵件等）。如果發現帳戶可能被盜用，應立即更換密碼。"
+            }
+        }
+    },
     "emoji": {
         "title": "Emoji 工具",
         "description": "生成和選擇表情符號。"
@@ -282,6 +326,9 @@
         "color_picker_tool_page_keywords": "顏色選擇器, color picker, color picker tool, color picker online, color picker free, color picker app, color picker toolnier",
         "color_code_chart_tool_page_title": "色碼表 | Color Code Chart Tool - ToolNier",
         "color_code_chart_tool_page_description": "提供常用顏色的色碼參考，包括基本顏色。每個顏色都提供 HEX 和 RGB 格式的色碼，方便複製使用。",
-        "color_code_chart_tool_page_keywords": "色碼表, color code chart, color code chart tool, color code chart online, color code chart free, color code chart app, color code chart toolnier"
+        "color_code_chart_tool_page_keywords": "色碼表, color code chart, color code chart tool, color code chart online, color code chart free, color code chart app, color code chart toolnier",
+        "password_generator_tool_page_title": "密碼產生器 | Password Generator Tool - ToolNier",
+        "password_generator_tool_page_description": "產生安全且隨機的密碼，可選擇是否包含數字、符號、大寫字母和小寫字母。",
+        "password_generator_tool_page_keywords": "密碼產生器, password generator, password generator tool, password generator online, password generator free, password generator app, password generator toolnier"
     }
 }

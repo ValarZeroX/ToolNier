@@ -251,6 +251,50 @@
             "common": "一般的な色"
         }
     },
+    "password_generator": {
+        "title": "パスワード生成ツール",
+        "grid_description": "安全でランダムなパスワードを生成",
+        "description": "数字、記号、大文字、小文字を含む安全でランダムなパスワードを生成します。",
+        "include_numbers": "数字",
+        "include_symbols": "記号",
+        "length": "パスワードの長さ",
+        "generate": "パスワードを生成",
+        "include_uppercase": "大文字",
+        "include_lowercase": "小文字",
+        "copy_success_title": "コピー成功",
+        "copy_success_message": "パスワードをクリップボードにコピーしました",
+        "copy_error_title": "コピー失敗",
+        "copy_error_message": "パスワードのコピーに失敗しました。手動でコピーしてください",
+        "how_to_use_title": "使い方",
+        "how_to_use_steps": {
+            "0": "数字と記号を含めるかどうかを選択",
+            "1": "パスワードの長さを調整",
+            "2": "生成ボタンをクリックしてパスワードをコピー"
+        },
+        "faq_title": "よくある質問",
+        "faq": {
+            "0": {
+                "q": "なぜ強力なパスワードが必要なのですか？",
+                "a": "強力なパスワードは、アカウントを不正アクセスから保護します。大文字、小文字、数字、記号を含む複雑なパスワードを使用することで、パスワードが解読されるリスクを大幅に減らすことができます。"
+            },
+            "1": {
+                "q": "パスワードの長さはどのくらいにすべきですか？",
+                "a": "パスワードは最低12文字以上にすることをお勧めします。長いパスワードほど安全ですが、使いやすさも考慮する必要があります。一般的には16〜24文字のパスワードが推奨されています。"
+            },
+            "2": {
+                "q": "なぜ異なる種類の文字を含める必要があるのですか？",
+                "a": "異なる種類の文字（大文字、小文字、数字、記号）を使用することで、パスワードの複雑さが増し、解読が難しくなります。例えば、小文字のみの8文字パスワードは、すべての種類の文字を使用した8文字パスワードよりも、可能な組み合わせの数がはるかに少なくなります。"
+            },
+            "3": {
+                "q": "パスワードはどのように安全に保存すべきですか？",
+                "a": "パスワードマネージャーを使用してパスワードを保存することをお勧めします。パスワードマネージャーはすべてのパスワードを安全に保存し、マスターパスワード1つだけを覚えておけば良いです。パスワードを平文でコンピュータやスマートフォンに保存することは避けてください。"
+            },
+            "4": {
+                "q": "パスワードはどのくらいの頻度で変更すべきですか？",
+                "a": "パスワードは3〜6ヶ月ごとに変更することをお勧めします。特に重要なアカウント（銀行、メールなど）は定期的な変更が重要です。アカウントが侵害された可能性がある場合は、すぐにパスワードを変更してください。"
+            }
+        }
+    },
     "emoji": {
         "title": "絵文字ツール",
         "description": "絵文字の生成と選択を行います。"
@@ -283,6 +327,9 @@
         "color_picker_tool_page_keywords": "カラーピッカー, color picker, color picker tool, color picker online, color picker free, color picker app, color picker toolnier",
         "color_code_chart_tool_page_title": "カラーコード表 | Color Code Chart Tool - ToolNier",
         "color_code_chart_tool_page_description": "基本的な色を含む、よく使われる色のカラ―コードを提供します。各色にはコピーしやすいように HEX および RGB 形式のコードを表示しています。",
-        "color_code_chart_tool_page_keywords": "カラーコード表, color code chart, color code chart tool, color code chart online, color code chart free, color code chart app, color code chart toolnier"
+        "color_code_chart_tool_page_keywords": "カラーコード表, color code chart, color code chart tool, color code chart online, color code chart free, color code chart app, color code chart toolnier",
+        "password_generator_tool_page_title": "パスワード生成ツール | Password Generator Tool - ToolNier",
+        "password_generator_tool_page_description": "数字、記号、大文字、小文字を含む安全でランダムなパスワードを生成します。",
+        "password_generator_tool_page_keywords": "パスワード生成器, password generator, password generator tool, password generator online, password generator free, password generator app, password generator toolnier"
     }
 }

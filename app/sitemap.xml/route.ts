@@ -25,6 +25,7 @@ export async function GET() {
     '/tools/text-stat',
     '/tools/color-picker',
     '/tools/color-code-chart',
+    '/tools/password-generator',
     '/converters/length',
     '/converters/weight',
     '/converters/temperature',
