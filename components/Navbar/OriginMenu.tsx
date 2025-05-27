@@ -45,11 +45,11 @@ const OriginMenu: FC<OriginMenuProps> = ({ lng }) => {
           leftSection={<IconDice5 size="1rem" stroke={1.5} />}
         //   onClick={() => handleNavigation('/records')}
         >
-          <NavLink label={t('common:random_draw')} component={Link} href="/random/draw" />
-          <NavLink label={t('common:random_draw_wheel')} component={Link} href="/random/wheel" />
-          <NavLink label={t('common:random_sort')} component={Link} href="/random/sort" />
-          <NavLink label={t('common:random_group')} component={Link} href="/random/group" />
-          <NavLink label={t('common:random_number')} component={Link} href="/random/number" />
+          <NavLink label={t('common:random_draw')} component={Link} href={`/${lng}/random/draw`} />
+          <NavLink label={t('common:random_draw_wheel')} component={Link} href={`/${lng}/random/wheel`} />
+          <NavLink label={t('common:random_sort')} component={Link} href={`/${lng}/random/sort`} />
+          <NavLink label={t('common:random_group')} component={Link} href={`/${lng}/random/group`} />
+          <NavLink label={t('common:random_number')} component={Link} href={`/${lng}/random/number`} />
         </NavLink>
         <NavLink
           component="button"
@@ -57,14 +57,14 @@ const OriginMenu: FC<OriginMenuProps> = ({ lng }) => {
           leftSection={<IconTool size="1rem" stroke={1.5} />}
         //   onClick={() => handleNavigation('/records')}
         >
-          <NavLink label={t('common:qr_code_generator')} component={Link} href="/tools/qr-code-generator" />
-          <NavLink label={t('common:base64_tool')} component={Link} href="/tools/base64-encoder-decoder" />
-          <NavLink label={t('common:image_base64_tool')} component={Link} href="/tools/image-base64-converter" />
-          <NavLink label={t('common:uuid_generator')} component={Link} href="/tools/uuid-generator" />
-          <NavLink label={t('common:json_formatter')} component={Link} href="/tools/json-formatter" />
-          <NavLink label={t('common:text_stats_title')} component={Link} href="/tools/text-stat" />
-          <NavLink label={t('common:color_picker_title')} component={Link} href="/tools/color-picker" />
-          <NavLink label={t('common:color_code_chart_title')} component={Link} href="/tools/color-code-chart" />
+          <NavLink label={t('common:qr_code_generator')} component={Link} href={`/${lng}/tools/qr-code-generator`} />
+          <NavLink label={t('common:base64_tool')} component={Link} href={`/${lng}/tools/base64-encoder-decoder`} />
+          <NavLink label={t('common:image_base64_tool')} component={Link} href={`/${lng}/tools/image-base64-converter`} />
+          <NavLink label={t('common:uuid_generator')} component={Link} href={`/${lng}/tools/uuid-generator`} />
+          <NavLink label={t('common:json_formatter')} component={Link} href={`/${lng}/tools/json-formatter`} />
+          <NavLink label={t('common:text_stats_title')} component={Link} href={`/${lng}/tools/text-stat`} />
+          <NavLink label={t('common:color_picker_title')} component={Link} href={`/${lng}/tools/color-picker`} />
+          <NavLink label={t('common:color_code_chart_title')} component={Link} href={`/${lng}/tools/color-code-chart`} />
         </NavLink>
         <NavLink
           component="button"
@@ -72,11 +72,11 @@ const OriginMenu: FC<OriginMenuProps> = ({ lng }) => {
           leftSection={<IconRepeat size="1rem" stroke={1.5} />}
         //   onClick={() => handleNavigation('/records')}
         >
-          <NavLink label={t('common:length_converter_title')} component={Link} href="/converters/length" />
-          <NavLink label={t('common:weight_converter_title')} component={Link} href="/converters/weight" />
-          <NavLink label={t('common:temperature_converter_title')} component={Link} href="/converters/temperature" />
-          <NavLink label={t('common:time_converter_title')} component={Link} href="/converters/time" />
-          <NavLink label={t('common:timestamp_converter_title')} component={Link} href="/converters/timestamp" />
+          <NavLink label={t('common:length_converter_title')} component={Link} href={`/${lng}/converters/length`} />
+          <NavLink label={t('common:weight_converter_title')} component={Link} href={`/${lng}/converters/weight`} />
+          <NavLink label={t('common:temperature_converter_title')} component={Link} href={`/${lng}/converters/temperature`} />
+          <NavLink label={t('common:time_converter_title')} component={Link} href={`/${lng}/converters/time`} />
+          <NavLink label={t('common:timestamp_converter_title')} component={Link} href={`/${lng}/converters/timestamp`} />
         </NavLink>
         <NavLink
           component="button"
@@ -84,12 +84,12 @@ const OriginMenu: FC<OriginMenuProps> = ({ lng }) => {
           leftSection={<IconCalculator size="1rem" stroke={1.5} />}
         //   onClick={() => handleNavigation('/records')}
         >
-          <NavLink label={t('common:bmr_calculator_title')} component={Link} href="/calculator/bmr" />
-          <NavLink label={t('common:bmi_calculator_title')} component={Link} href="/calculator/bmi" />
-          <NavLink label={t('common:body_fat_calculator_title')} component={Link} href="/calculator/body-fat" />
-          <NavLink label={t('common:tdee_calculator_title')} component={Link} href="/calculator/tdee" />
-          <NavLink label={t('common:age_calculator_title')} component={Link} href="/calculator/age" />
-          <NavLink label={t('common:days_between_dates_calculator_title')} component={Link} href="/calculator/days-between-dates" />
+          <NavLink label={t('common:bmr_calculator_title')} component={Link} href={`/${lng}/calculator/bmr`} />
+          <NavLink label={t('common:bmi_calculator_title')} component={Link} href={`/${lng}/calculator/bmi`} />
+          <NavLink label={t('common:body_fat_calculator_title')} component={Link} href={`/${lng}/calculator/body-fat`} />
+          <NavLink label={t('common:tdee_calculator_title')} component={Link} href={`/${lng}/calculator/tdee`} />
+          <NavLink label={t('common:age_calculator_title')} component={Link} href={`/${lng}/calculator/age`} />
+          <NavLink label={t('common:days_between_dates_calculator_title')} component={Link} href={`/${lng}/calculator/days-between-dates`} />
         </NavLink>
         <NavLink
           component="button"
@@ -97,8 +97,8 @@ const OriginMenu: FC<OriginMenuProps> = ({ lng }) => {
           leftSection={<IconMoodHappy size="1rem" stroke={1.5} />}
         //   onClick={() => handleNavigation('/records')}
         >
-          <NavLink label={t('common:symbol')} component={Link} href="/symbols/symbol" />
-          <NavLink label={t('common:emoji')} component={Link} href="/symbols/emoji" />
+          <NavLink label={t('common:symbol')} component={Link} href={`/${lng}/symbols/symbol`} />
+          <NavLink label={t('common:emoji')} component={Link} href={`/${lng}/symbols/emoji`} />
         </NavLink>
       </nav>
       {/* {isAuthenticated && (
