@@ -26,6 +26,8 @@ export async function GET() {
     '/tools/color-picker',
     '/tools/color-code-chart',
     '/tools/password-generator',
+    '/tools/ip-lookup',
+    '/tools/url-encoder',
     '/converters/length',
     '/converters/weight',
     '/converters/temperature',
