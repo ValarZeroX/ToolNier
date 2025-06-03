@@ -12,9 +12,9 @@ export async function generateMetadata({ params }: { params: Promise<{ lng: stri
     const { t: translate } = translation;
 
     return {
-        title: translate('metadata.url_encoder_page_title'),
-        description: translate('metadata.url_encoder_page_description'),
-        keywords: translate('metadata.url_encoder_page_keywords'),
+        title: translate('metadata.url_encoder_tool_page_title'),
+        description: translate('metadata.url_encoder_tool_page_description'),
+        keywords: translate('metadata.url_encoder_tool_page_keywords'),
     };
 }
 
