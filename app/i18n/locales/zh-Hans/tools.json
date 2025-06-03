@@ -302,6 +302,25 @@
         "your_ip": "您的 IP 地址",
         "view_details": "在 ipinfo.io 查看详细信息"
     },
+    "url_encoder": {
+        "title": "URL 编码/解码工具",
+        "grid_description": "对 URL 进行编码和解码。",
+        "description": "免费的 URL 编码和解码工具，可以将特殊字符转换为 URL 安全的格式，或将编码后的 URL 转换回原始格式。",
+        "encode": "编码",
+        "decode": "解码",
+        "input_label": "输入内容",
+        "input_placeholder": "请输入要编码或解码的 URL",
+        "output_label": "输出结果",
+        "copy": "复制",
+        "clear": "清空",
+        "error": "处理时发生错误，请检查输入内容",
+        "copy_success_title": "复制成功",
+        "copy_success_message": "已复制到剪贴板",
+        "reference_title": "URL 编码表",
+        "character": "字符",
+        "windows1252": "Windows-1252 编码",
+        "utf8": "UTF-8 编码"
+    },
     "emoji": {
         "title": "Emoji 工具",
         "description": "生成和选择表情符号。"
@@ -340,6 +359,9 @@
         "password_generator_tool_page_keywords": "密码生成器, password generator, password generator tool, password generator online, password generator free, password generator app, password generator toolnier",
         "ip_lookup_tool_page_title": "IP 地址查询工具 | IP Lookup Tool - ToolNier",
         "ip_lookup_tool_page_description": "查询 IP 地址。",
-        "ip_lookup_tool_page_keywords": "IP 地址查询工具, ip lookup, ip lookup tool, ip lookup online, ip lookup free, ip lookup app, ip lookup toolnier"
+        "ip_lookup_tool_page_keywords": "IP 地址查询工具, ip lookup, ip lookup tool, ip lookup online, ip lookup free, ip lookup app, ip lookup toolnier",
+        "url_encoder_tool_page_title": "URL 编码/解码工具 | URL Encoder Decoder Tool - ToolNier",
+        "url_encoder_tool_page_description": "免费的 URL 编码和解码工具，可以将特殊字符转换为 URL 安全的格式，或将编码后的 URL 转换回原始格式。",
+        "url_encoder_tool_page_keywords": "URL 编码, url encoder, url encoder tool, url encoder online, url encoder free, url encoder app, url encoder toolnier"
     }
 }

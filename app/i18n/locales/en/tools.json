@@ -301,6 +301,25 @@
         "your_ip": "Your IP location",
         "view_details": "View details on ipinfo.io"
     },
+    "url_encoder": {
+        "title": "URL Encoder/Decoder Tool",
+        "grid_description": "Encode and decode URLs.",
+        "description": "Free URL encoding and decoding tool that converts special characters to URL-safe format or converts encoded URLs back to their original format.",
+        "encode": "Encode",
+        "decode": "Decode",
+        "input_label": "Input",
+        "input_placeholder": "Enter URL to encode or decode",
+        "output_label": "Output",
+        "copy": "Copy",
+        "clear": "Clear",
+        "error": "An error occurred during processing, please check your input",
+        "copy_success_title": "Copied",
+        "copy_success_message": "Copied to clipboard",
+        "reference_title": "URL Encoding Reference",
+        "character": "Character",
+        "windows1252": "Windows-1252",
+        "utf8": "UTF-8"
+    },
     "emoji": {
         "title": "Emoji Tool",
         "description": "Generate and select emojis."
@@ -339,6 +358,9 @@
         "password_generator_tool_page_keywords": "Password Generator, password generator tool, password generator online, password generator free, password generator app, password generator toolnier",
         "ip_lookup_tool_page_title": "IP Lookup Tool | IP Lookup Tool - ToolNier",
         "ip_lookup_tool_page_description": "Lookup IP address.",
-        "ip_lookup_tool_page_keywords": "IP Lookup, ip lookup tool, ip lookup online, ip lookup free, ip lookup app, ip lookup toolnier"
+        "ip_lookup_tool_page_keywords": "IP Lookup, ip lookup tool, ip lookup online, ip lookup free, ip lookup app, ip lookup toolnier",
+        "url_encoder_tool_page_title": "URL Encoder/Decoder Tool | URL Encoder Decoder Tool - ToolNier",
+        "url_encoder_tool_page_description": "Free URL encoding and decoding tool that converts special characters to URL-safe format or converts encoded URLs back to their original format.",
+        "url_encoder_tool_page_keywords": "URL Encoder, url encoder tool, url encoder online, url encoder free, url encoder app, url encoder toolnier"
     }
 }

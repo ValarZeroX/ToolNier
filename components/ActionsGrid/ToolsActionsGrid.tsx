@@ -1,6 +1,6 @@
 'use client';
 
-import { IconQrcode, IconCode, IconFileCode, IconId, IconPhoto, IconPencil, IconPalette, IconLock, IconMapPin } from '@tabler/icons-react';
+import { IconQrcode, IconCode, IconFileCode, IconId, IconPhoto, IconPencil, IconPalette, IconLock, IconMapPin, IconLink } from '@tabler/icons-react';
 import {
     Title,
     Card,
@@ -101,6 +101,14 @@ const ToolsActionsGrid: FC<ToolsActionsGridProps> = ({ lng }) => {
             color: 'blue',
             href: `/${lng}/tools/ip-lookup`,
             description: t('tools:ip_lookup.grid_description')
+        },
+        {
+            id: 'url-encoder',
+            title: t('tools:url_encoder.title'),
+            icon: IconLink,
+            color: 'green',
+            href: `/${lng}/tools/url-encoder`,
+            description: t('tools:url_encoder.grid_description')
         }
     ];
 

@@ -302,6 +302,25 @@
         "your_ip": "あなたのIPアドレス",
         "view_details": "詳細はipinfo.ioをご覧ください"
     },
+    "url_encoder": {
+        "title": "URL エンコーダー/デコーダーツール",
+        "grid_description": "URL のエンコードとデコードを行います。",
+        "description": "特殊文字を URL セーフな形式に変換したり、エンコードされた URL を元の形式に戻したりする無料の URL エンコード/デコードツールです。",
+        "encode": "エンコード",
+        "decode": "デコード",
+        "input_label": "入力",
+        "input_placeholder": "エンコードまたはデコードする URL を入力",
+        "output_label": "出力",
+        "copy": "コピー",
+        "clear": "クリア",
+        "error": "処理中にエラーが発生しました。入力内容を確認してください",
+        "copy_success_title": "コピー完了",
+        "copy_success_message": "クリップボードにコピーしました",
+        "reference_title": "URL エンコード一覧",
+        "character": "文字",
+        "windows1252": "Windows-1252",
+        "utf8": "UTF-8"
+    },
     "emoji": {
         "title": "絵文字ツール",
         "description": "絵文字の生成と選択を行います。"
@@ -340,6 +359,9 @@
         "password_generator_tool_page_keywords": "パスワード生成器, password generator, password generator tool, password generator online, password generator free, password generator app, password generator toolnier",
         "ip_lookup_tool_page_title": "IPアドレス検索ツール | IP Lookup Tool - ToolNier",
         "ip_lookup_tool_page_description": "IPアドレスを検索します。",
-        "ip_lookup_tool_page_keywords": "IPアドレス検索, ip lookup, ip lookup tool, ip lookup online, ip lookup free, ip lookup app, ip lookup toolnier"
+        "ip_lookup_tool_page_keywords": "IPアドレス検索, ip lookup, ip lookup tool, ip lookup online, ip lookup free, ip lookup app, ip lookup toolnier",
+        "url_encoder_tool_page_title": "URL エンコーダー/デコーダーツール | URL Encoder Decoder Tool - ToolNier",
+        "url_encoder_tool_page_description": "特殊文字を URL セーフな形式に変換したり、エンコードされた URL を元の形式に戻したりする無料の URL エンコード/デコードツールです。",
+        "url_encoder_tool_page_keywords": "URL エンコーダー, url encoder, url encoder tool, url encoder online, url encoder free, url encoder app, url encoder toolnier"
     }
 }
