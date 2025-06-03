@@ -294,6 +294,13 @@
             }
         }
     },
+    "ip_lookup": {
+        "title": "IP Lookup Tool",
+        "grid_description": "Lookup IP address.",
+        "description": "Lookup IP address.",
+        "your_ip": "Your IP location",
+        "view_details": "View details on ipinfo.io"
+    },
     "emoji": {
         "title": "Emoji Tool",
         "description": "Generate and select emojis."
@@ -329,6 +336,9 @@
         "color_code_chart_tool_page_keywords": "Color Code Chart, color code chart tool, color code chart online, color code chart free, color code chart app, color code chart toolnier",
         "password_generator_tool_page_title": "Password Generator | Password Generator Tool - ToolNier",
         "password_generator_tool_page_description": "Generate secure and random passwords with options for numbers, symbols, uppercase and lowercase letters.",
-        "password_generator_tool_page_keywords": "Password Generator, password generator tool, password generator online, password generator free, password generator app, password generator toolnier"
+        "password_generator_tool_page_keywords": "Password Generator, password generator tool, password generator online, password generator free, password generator app, password generator toolnier",
+        "ip_lookup_tool_page_title": "IP Lookup Tool | IP Lookup Tool - ToolNier",
+        "ip_lookup_tool_page_description": "Lookup IP address.",
+        "ip_lookup_tool_page_keywords": "IP Lookup, ip lookup tool, ip lookup online, ip lookup free, ip lookup app, ip lookup toolnier"
     }
 }

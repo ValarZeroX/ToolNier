@@ -295,6 +295,13 @@
             }
         }
     },
+    "ip_lookup": {
+        "title": "IP 地址查询工具",
+        "grid_description": "查询 IP 地址。",
+        "description": "查询 IP 地址。",
+        "your_ip": "您的 IP 地址",
+        "view_details": "在 ipinfo.io 查看详细信息"
+    },
     "emoji": {
         "title": "Emoji 工具",
         "description": "生成和选择表情符号。"
@@ -330,6 +337,9 @@
         "color_code_chart_tool_page_keywords": "色码表, color code chart, color code chart tool, color code chart online, color code chart free, color code chart app, color code chart toolnier",
         "password_generator_tool_page_title": "密码生成器 | Password Generator Tool - ToolNier",
         "password_generator_tool_page_description": "生成安全且随机的密码，可选择是否包含数字、符号、大写字母和小写字母。",
-        "password_generator_tool_page_keywords": "密码生成器, password generator, password generator tool, password generator online, password generator free, password generator app, password generator toolnier"
+        "password_generator_tool_page_keywords": "密码生成器, password generator, password generator tool, password generator online, password generator free, password generator app, password generator toolnier",
+        "ip_lookup_tool_page_title": "IP 地址查询工具 | IP Lookup Tool - ToolNier",
+        "ip_lookup_tool_page_description": "查询 IP 地址。",
+        "ip_lookup_tool_page_keywords": "IP 地址查询工具, ip lookup, ip lookup tool, ip lookup online, ip lookup free, ip lookup app, ip lookup toolnier"
     }
 }

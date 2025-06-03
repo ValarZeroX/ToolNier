@@ -1,6 +1,6 @@
 'use client';
 
-import { IconQrcode, IconCode, IconFileCode, IconId, IconPhoto, IconPencil, IconPalette, IconLock } from '@tabler/icons-react';
+import { IconQrcode, IconCode, IconFileCode, IconId, IconPhoto, IconPencil, IconPalette, IconLock, IconMapPin } from '@tabler/icons-react';
 import {
     Title,
     Card,
@@ -93,6 +93,14 @@ const ToolsActionsGrid: FC<ToolsActionsGridProps> = ({ lng }) => {
             color: 'purple',
             href: `/${lng}/tools/password-generator`,
             description: t('tools:password_generator.grid_description')
+        },
+        {
+            id: 'ip-lookup',
+            title: t('tools:ip_lookup.title'),
+            icon: IconMapPin,
+            color: 'blue',
+            href: `/${lng}/tools/ip-lookup`,
+            description: t('tools:ip_lookup.grid_description')
         }
     ];
 
