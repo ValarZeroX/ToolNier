@@ -145,7 +145,7 @@ export default function TdeeCalculator({ lng }: TdeeCalculatorProps) {
                 />
 
                 {equation === '3' && (
-                    <TextInput label={t('body_fat')} value={bodyFat} onChange={(e) => setBodyFat(e.currentTarget.value)} rightSection={<Text>%</Text>} />
+                    <TextInput label={t('tdee.body_fat')} value={bodyFat} onChange={(e) => setBodyFat(e.currentTarget.value)} rightSection={<Text>%</Text>} />
                 )}
 
                 <Select

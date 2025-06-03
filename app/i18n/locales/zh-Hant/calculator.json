@@ -108,7 +108,8 @@
         "tdee_9": "EAT是指通過計劃性的運動所消耗的能量，例如跑步、舉重、游泳等。運動量和強度會直接影響EAT的數值。",
         "tdee_10": "NEAT包括所有非運動性的體力活動所消耗的能量，例如走路、站立、打掃衛生等。NEAT因個人生活方式和職業的不同而變化很大。",
         "tdee_formula": "TDEE 公式",
-        "activity": "活動"
+        "activity": "活動",
+        "body_fat": "體脂肪"
     },
     "age_page": {
         "age_calculator": "年齡計算器",

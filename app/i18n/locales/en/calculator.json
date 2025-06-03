@@ -108,7 +108,8 @@
         "tdee_9": "EAT refers to the energy consumed through planned exercise, such as running, weightlifting, swimming, etc. The amount and intensity of exercise directly affect the EAT value.",
         "tdee_10": "NEAT includes all energy consumed through non-exercise physical activities, such as walking, standing, cleaning, etc. NEAT varies greatly depending on individual lifestyle and occupation.",
         "tdee_formula": "TDEE Formula",
-        "activity": "Activity"
+        "activity": "Activity",
+        "body_fat": "Body Fat"
     },
     "age_page": {
         "age_calculator": "Age Calculator",
