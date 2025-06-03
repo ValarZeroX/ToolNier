@@ -16,7 +16,7 @@ import {
 } from '@mantine/core';
 import { useTranslation } from '../../../i18n/client';
 import ToolsActionsGrid from '@/components/ActionsGrid/ToolsActionsGrid';
-import { notifications } from '@mantine/notifications';
+import { Notifications } from '@mantine/notifications';
 import { IconCopy } from '@tabler/icons-react';
 
 interface URLEncoderClientProps {
@@ -49,7 +49,7 @@ const URLEncoderClient: React.FC<URLEncoderClientProps> = ({ lng }) => {
 
   const handleCopy = () => {
     navigator.clipboard.writeText(output);
-    notifications.show({
+    Notifications.show({
       title: t('url_encoder.copy_success_title'),
       message: t('url_encoder.copy_success_message'),
       color: 'green',

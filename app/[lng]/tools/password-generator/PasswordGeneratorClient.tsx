@@ -18,7 +18,7 @@ import {
 import { useTranslation } from '../../../i18n/client';
 import { IconCopy, IconRefresh } from '@tabler/icons-react';
 import ToolsActionsGrid from '@/components/ActionsGrid/ToolsActionsGrid';
-import { notifications } from '@mantine/notifications';
+import { Notifications } from '@mantine/notifications';
 
 interface PasswordGeneratorClientProps {
     lng: string;
@@ -80,13 +80,13 @@ const PasswordGeneratorClient: React.FC<PasswordGeneratorClientProps> = ({ lng }
         if (password) {
             try {
                 await navigator.clipboard.writeText(password);
-                notifications.show({
+                Notifications.show({
                     title: t('password_generator.copy_success_title'),
                     message: t('password_generator.copy_success_message'),
                     color: 'green',
                 });
             } catch (error) {
-                notifications.show({
+                Notifications.show({
                     title: t('password_generator.copy_error_title'),
                     message: t('password_generator.copy_error_message'),
                     color: 'red',
