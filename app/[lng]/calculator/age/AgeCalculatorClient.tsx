@@ -31,8 +31,8 @@ interface AgeCalculatorProps {
 
 export default function AgeCalculator({ lng }: AgeCalculatorProps) {
     const { t } = useTranslation(lng, 'calculator');
-    const [birthDate, setBirthDate] = useState<string>('2000-01-01');
-    const [currentDate, setCurrentDate] = useState<string>(new Date().toISOString().split('T')[0]);
+    const [birthDate, setBirthDate] = useState<string | null>('2000-01-01');
+    const [currentDate, setCurrentDate] = useState<string | null>(new Date().toISOString().split('T')[0]);
     const [result, setResult] = useState<any | null>(null);
 
     const calculateAge = () => {

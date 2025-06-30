@@ -84,7 +84,7 @@ interface DaysBetweenDatesCalculatorProps {
 export default function DaysBetweenDatesCalculator({ lng }: DaysBetweenDatesCalculatorProps) {
   const { t } = useTranslation(lng, 'calculator');
   const [startDate, setStartDate] = useState<DateValue>('2000-01-01');
-  const [endDate, setEndDate] = useState<string>(new Date().toISOString().split('T')[0]);
+  const [endDate, setEndDate] = useState<DateValue>(new Date().toISOString().split('T')[0]);
   const [results, setResults] = useState<null | ReturnType<typeof calculateDateDifference>>(null);
 
   const calculate = () => {
