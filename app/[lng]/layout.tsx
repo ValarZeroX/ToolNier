@@ -35,7 +35,8 @@ export async function generateStaticParams() {
 }
 
 // ✅ 型別正確
-export async function generateMetadata({ params }: { params: { lng: string } }): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ lng: string }> }): Promise<Metadata> {
+  const { lng } = await params;
   return {
     title: `ToolNier`,
     description: `ToolNier 多語系工具集合網站`,
@@ -44,7 +45,7 @@ export async function generateMetadata({ params }: { params: { lng: string } }):
 
 type RootLayoutProps  = {
   children: React.ReactNode;
-  params: { lng: string };
+  params: Promise<{ lng: string }>;
 };
 
 export default async function RootLayout({ children, params }: RootLayoutProps) {

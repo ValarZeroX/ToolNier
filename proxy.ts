@@ -11,7 +11,7 @@ export const config = {
   // matcher: ["/(en|zh-hant)/:path*"],
 };
 
-export function middleware(req: NextRequest) {
+export function proxy(req: NextRequest) {
   let lng;
   if (req.cookies.has(cookieName))
     lng = acceptLanguage.get(req.cookies.get(cookieName)!.value);
@@ -40,3 +40,4 @@ export function middleware(req: NextRequest) {
 
   return NextResponse.next();
 }
+
