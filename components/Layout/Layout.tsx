@@ -6,6 +6,7 @@ import { useDisclosure } from '@mantine/hooks';
 import Header from '@/components/Header/Header'; 
 import OriginMenu from '@/components/Navbar/OriginMenu';
 import FooterLinks from '@/components/Footer/FooterLinks';
+import BreadcrumbNav from '@/components/SEO/Breadcrumb';
 import classes from './Layout.module.css';
 
 // import { useTranslation } from "../../i18n/client";
@@ -51,6 +52,7 @@ export default function Layout({ children, lng }: LayoutProps) {
   
         <AppShell.Main>
           <div className={classes.content}>
+            <BreadcrumbNav lng={lng} />
             {children}
           </div>
           <FooterLinks lng={lng}/>

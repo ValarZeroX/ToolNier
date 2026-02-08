@@ -3,16 +3,19 @@ import { Metadata } from 'next';
 import Layout from '@/components/Layout/Layout';
 import { useTranslation } from '../../i18n/index';
 import ConvertersActionsGrid from '@/components/ActionsGrid/ConvertersActionsGrid';
+import { generateSeoMetadata } from '@/lib/seo';
 
 export async function generateMetadata({ params }: { params: Promise<{ lng: string }> }): Promise<Metadata> {
   const { lng } = await params;
   const { t } = await useTranslation(lng, 'grid');
 
-  return {
+  return generateSeoMetadata({
     title: t('metadata.converters_page_title'),
     description: t('metadata.converters_page_description'),
     keywords: t('metadata.converters_page_keywords'),
-  };
+    lng,
+    path: '/converters',
+  });
 }
 
 type ConvertersPageProps = { params: Promise<{ lng: string }> };

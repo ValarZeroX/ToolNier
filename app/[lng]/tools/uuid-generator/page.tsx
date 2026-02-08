@@ -4,6 +4,7 @@ import { Metadata } from 'next';
 import UUIDGeneratorClient from './UUIDGeneratorClient'; // 客戶端組件
 import Layout from '@/components/Layout/Layout';
 import { useTranslation } from '../../../i18n/index';
+import { generateSeoMetadata } from '@/lib/seo';
 
 // interface MetadataParams {
 //     params: Promise<{ lng: string }>;
@@ -14,11 +15,13 @@ export async function generateMetadata({ params }: { params: Promise<{ lng: stri
     const translation = await useTranslation(lng, 'tools');
     const { t: translate } = translation;
 
-    return {
+    return generateSeoMetadata({
         title: translate('metadata.uuid_generator_page_title'),
         description: translate('metadata.uuid_generator_page_description'),
         keywords: translate('metadata.uuid_generator_page_keywords'),
-    };
+        lng,
+        path: '/tools/uuid-generator',
+    });
 }
 
 type UUIDGeneratorPageProps = { params: Promise<{ lng: string }> };

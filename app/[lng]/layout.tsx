@@ -34,12 +34,27 @@ export async function generateStaticParams() {
   return languages.map((lng) => ({ lng }));
 }
 
-// ✅ 型別正確
 export async function generateMetadata({ params }: { params: Promise<{ lng: string }> }): Promise<Metadata> {
   const { lng } = await params;
   return {
-    title: `ToolNier`,
-    description: `ToolNier 多語系工具集合網站`,
+    metadataBase: new URL('https://toolnier.com'),
+    title: {
+      default: 'ToolNier - Free Online Tools',
+      template: '%s | ToolNier',
+    },
+    description: 'ToolNier - Free online tools: calculators, converters, random generators, developer utilities, and more.',
+    openGraph: {
+      siteName: 'ToolNier',
+      locale: lng.replace('-', '_'),
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary',
+    },
+    robots: {
+      index: true,
+      follow: true,
+    },
   };
 }
 

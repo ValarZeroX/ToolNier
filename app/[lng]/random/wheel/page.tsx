@@ -4,6 +4,7 @@ import { Metadata } from 'next';
 import WheelDrawClient from './WheelDrawClient'; // 客戶端組件
 import Layout from '@/components/Layout/Layout';
 import { useTranslation } from '../../../i18n/index';
+import { generateSeoMetadata } from '@/lib/seo';
 
 // interface MetadataParams {
 //     params: Promise<{ lng: string }>;
@@ -14,11 +15,13 @@ export async function generateMetadata({ params }: { params: Promise<{ lng: stri
     const translation = await useTranslation(lng, 'random');
     const { t: translate } = translation;
 
-    return {
+    return generateSeoMetadata({
         title: translate('metadata.random_draw_wheel_page_title'),
         description: translate('metadata.random_draw_wheel_page_description'),
         keywords: translate('metadata.random_draw_wheel_page_keywords'),
-    };
+        lng,
+        path: '/random/wheel',
+    });
 }
 
 type WheelDrawPageProps = { params: Promise<{ lng: string }> };

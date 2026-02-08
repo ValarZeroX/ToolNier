@@ -33,6 +33,12 @@
         "symbols_page_keywords": "symbols tools, emoji symbols, symbol symbols",
         "calculator_page_title": "Calculator",
         "calculator_page_description": "Provides BMI, TDEE, body fat percentage and other calculation functions.",
-        "calculator_page_keywords": "calculator, BMI calculator"
+        "calculator_page_keywords": "calculator, BMI calculator",
+        "home_page_title": "ToolNier - Free Online Tools: Calculator, Converter, Random Generator & Developer Utilities",
+        "home_page_description": "ToolNier provides free online tools including BMI calculator, unit converter, random draw, QR code generator, password generator, and more. No installation required, use on any device.",
+        "home_page_keywords": "free online tools, calculator, unit converter, random generator, QR code generator, password generator, developer tools, toolnier",
+        "all_page_title": "All Tools - Free Online Tools Collection | ToolNier",
+        "all_page_description": "Browse all free online tools at ToolNier: calculators, unit converters, random tools, developer utilities, and symbol generators. Find the perfect tool for your needs.",
+        "all_page_keywords": "all tools, online tools, free tools, calculator, converter, random tools, developer tools, symbol tools, toolnier"
     }
 }

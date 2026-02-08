@@ -4,6 +4,7 @@ import { Metadata } from 'next';
 import ImageBase64ToolClient from './ImageBase64ToolClient'; // 客戶端組件
 import Layout from '@/components/Layout/Layout';
 import { useTranslation } from '../../../i18n/index';
+import { generateSeoMetadata } from '@/lib/seo';
 
 // interface MetadataParams {
 //     params: Promise<{ lng: string }>;
@@ -14,11 +15,13 @@ export async function generateMetadata({ params }: { params: Promise<{ lng: stri
     const translation = await useTranslation(lng, 'tools');
     const { t: translate } = translation;
 
-    return {
+    return generateSeoMetadata({
         title: translate('metadata.image_base64_tool_page_title'),
         description: translate('metadata.image_base64_tool_page_description'),
         keywords: translate('metadata.image_base64_tool_page_keywords'),
-    };
+        lng,
+        path: '/tools/image-base64-converter',
+    });
 }
 
 type ImageBase64ToolPageProps = { params: Promise<{ lng: string }> };

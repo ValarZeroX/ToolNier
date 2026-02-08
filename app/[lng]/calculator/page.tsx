@@ -3,16 +3,19 @@ import { Metadata } from 'next';
 import Layout from '@/components/Layout/Layout';
 import { useTranslation } from '../../i18n/index';
 import CalculatorActionsGrid from '@/components/ActionsGrid/CalculatorActionsGrid';
+import { generateSeoMetadata } from '@/lib/seo';
 
 export async function generateMetadata({ params }: { params: Promise<{ lng: string }> }): Promise<Metadata> {
   const { lng } = await params;
   const { t } = await useTranslation(lng, 'grid');
 
-  return {
+  return generateSeoMetadata({
     title: t('metadata.calculator_page_title'),
     description: t('metadata.calculator_page_description'),
     keywords: t('metadata.calculator_page_keywords'),
-  };
+    lng,
+    path: '/calculator',
+  });
 }
 
 type CalculatorPageProps = { params: Promise<{ lng: string }> };

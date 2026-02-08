@@ -1,24 +1,23 @@
 import React from 'react';
 import { Metadata } from 'next';
 
-import EmojiClient from './EmojiClient'; // 客戶端組件
+import EmojiClient from './EmojiClient';
 import Layout from '@/components/Layout/Layout';
 import { useTranslation } from '../../../i18n/index';
-
-// interface MetadataParams {
-//     params: Promise<{ lng: string }>;
-// }
+import { generateSeoMetadata } from '@/lib/seo';
 
 export async function generateMetadata({ params }: { params: Promise<{ lng: string; }> }): Promise<Metadata> {
     const { lng } = await params;
     const translation = await useTranslation(lng, 'common');
     const { t: translate } = translation;
 
-    return {
+    return generateSeoMetadata({
         title: translate('metadata.emoji_page_title'),
         description: translate('metadata.emoji_page_description'),
         keywords: translate('metadata.emoji_page_keywords'),
-    };
+        lng,
+        path: '/symbols/emoji',
+    });
 }
 
 type EmojiPageProps = { params: Promise<{ lng: string }> };

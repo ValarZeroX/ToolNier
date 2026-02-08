@@ -33,6 +33,12 @@
         "symbols_page_keywords": "記号ツール, 絵文字, 特殊記号",
         "calculator_page_title": "計算機",
         "calculator_page_description": "BMI、TDEE、体脂肪率などの計算機能を提供します。",
-        "calculator_page_keywords": "計算機, BMI計算機"
+        "calculator_page_keywords": "計算機, BMI計算機",
+        "home_page_title": "ToolNier - 無料オンラインツール集：計算機、変換ツール、ランダムツール、開発者ツール",
+        "home_page_description": "ToolNier は BMI 計算機、単位変換、ランダム抽選、QRコード生成、パスワード生成など、無料のオンラインツールを提供します。インストール不要、スマホ・PC 対応。",
+        "home_page_keywords": "無料オンラインツール, 計算機, 単位変換, ランダムツール, QRコード生成器, パスワード生成器, 開発者ツール, toolnier",
+        "all_page_title": "すべてのツール - 無料オンラインツール集 | ToolNier",
+        "all_page_description": "ToolNier のすべての無料オンラインツールを閲覧：計算機、変換ツール、ランダムツール、開発者ツール、記号ツール。最適なツールを見つけましょう。",
+        "all_page_keywords": "すべてのツール, オンラインツール, 無料ツール, 計算機, 変換ツール, ランダムツール, 開発者ツール, 記号ツール, toolnier"
     }
 }

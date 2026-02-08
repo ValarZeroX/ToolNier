@@ -4,16 +4,19 @@ import { Container, Title, Text, Stack } from '@mantine/core';
 
 import Layout from '@/components/Layout/Layout';
 import { useTranslation } from '../../i18n/index';
+import { generateSeoMetadata } from '@/lib/seo';
 
 export async function generateMetadata({ params }: { params: Promise<{ lng: string }> }): Promise<Metadata> {
     const { lng } = await params;
     const { t } = await useTranslation(lng, 'disclaimer');
 
-    return {
+    return generateSeoMetadata({
         title: t('metadata.disclaimer_page_title'),
         description: t('metadata.disclaimer_page_description'),
         keywords: t('metadata.disclaimer_page_keywords'),
-    };
+        lng,
+        path: '/disclaimer',
+    });
 }
 
 type DisclaimerPageProps = { params: Promise<{ lng: string }> };

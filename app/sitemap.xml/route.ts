@@ -1,7 +1,8 @@
 import { languages } from '@/app/i18n/settings';
 
+const BASE_URL = 'https://toolnier.com';
+
 export async function GET() {
-  const baseUrl = 'https://toolnier.com';
   const staticPaths = [
     '',
     '/all',
@@ -10,6 +11,8 @@ export async function GET() {
     '/symbols',
     '/converters',
     '/calculator',
+    '/privacy',
+    '/disclaimer',
     '/symbols/symbol',
     '/symbols/emoji',
     '/random/draw',
@@ -41,10 +44,29 @@ export async function GET() {
     '/calculator/days-between-dates',
   ];
 
-  const urls = languages.flatMap((lng) =>
+  const uniqueLanguages = Array.from(new Set(languages));
+
+  const urls = uniqueLanguages.flatMap((lng) =>
     staticPaths.map((path) => {
-      const fullUrl = `${baseUrl}/${lng}${path}`;
-      return `<url><loc>${fullUrl}</loc><lastmod>${new Date().toISOString()}</lastmod></url>`;
+      const fullUrl = `${BASE_URL}/${lng}${path}`;
+
+      // Generate hreflang alternate links for all languages
+      const hreflangLinks = uniqueLanguages.map(
+        (altLng) =>
+          `    <xhtml:link rel="alternate" hreflang="${altLng}" href="${BASE_URL}/${altLng}${path}" />`
+      );
+      // Add x-default pointing to fallback language
+      hreflangLinks.push(
+        `    <xhtml:link rel="alternate" hreflang="x-default" href="${BASE_URL}/${uniqueLanguages[0]}${path}" />`
+      );
+
+      return `  <url>
+    <loc>${fullUrl}</loc>
+    <lastmod>2025-02-09T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>${path === '' ? '1.0' : path.split('/').length <= 2 ? '0.8' : '0.6'}</priority>
+${hreflangLinks.join('\n')}
+  </url>`;
     })
   );
 
@@ -53,7 +75,7 @@ export async function GET() {
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml"
 >
-  ${urls.join('\n')}
+${urls.join('\n')}
 </urlset>`;
 
   return new Response(body, {

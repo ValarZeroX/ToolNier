@@ -4,6 +4,7 @@ import { Metadata } from 'next';
 import TemperatureConverterClient from './TemperatureConverterClient'; // 客戶端組件
 import Layout from '@/components/Layout/Layout';
 import { useTranslation } from '../../../i18n/index';
+import { generateSeoMetadata } from '@/lib/seo';
 
 
 export async function generateMetadata({ params }: { params: Promise<{ lng: string; }> }): Promise<Metadata> {
@@ -11,11 +12,13 @@ export async function generateMetadata({ params }: { params: Promise<{ lng: stri
     const translation = await useTranslation(lng, 'converters');
     const { t: translate } = translation;
 
-    return {
+    return generateSeoMetadata({
         title: translate('metadata.temperature_converter_title'),
         description: translate('metadata.temperature_converter_description'),
         keywords: translate('metadata.temperature_converter_keywords'),
-    };
+        lng,
+        path: '/converters/temperature',
+    });
 }
 
 type TemperatureConverterPageProps = { params: Promise<{ lng: string }> };

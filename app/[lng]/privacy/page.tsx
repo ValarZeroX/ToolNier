@@ -4,16 +4,19 @@ import { Container, Title, Text, Stack, Anchor } from '@mantine/core';
 
 import Layout from '@/components/Layout/Layout';
 import { useTranslation } from '../../i18n/index';
+import { generateSeoMetadata } from '@/lib/seo';
 
 export async function generateMetadata({ params }: { params: Promise<{ lng: string }> }): Promise<Metadata> {
   const { lng } = await params;
   const { t } = await useTranslation(lng, 'privacy');
 
-  return {
+  return generateSeoMetadata({
     title: t('metadata.privacy_page_title'),
     description: t('metadata.privacy_page_description'),
     keywords: t('metadata.privacy_page_keywords'),
-  };
+    lng,
+    path: '/privacy',
+  });
 }
 
 type PrivacyPageProps = { params: Promise<{ lng: string }> };

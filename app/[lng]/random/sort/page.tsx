@@ -4,6 +4,7 @@ import { Metadata } from 'next';
 import RandomSortClient from './RandomSortClient'; // 客戶端組件
 import Layout from '@/components/Layout/Layout';
 import { useTranslation } from '../../../i18n/index';
+import { generateSeoMetadata } from '@/lib/seo';
 
 // interface MetadataParams {
 //     params: Promise<{ lng: string }>;
@@ -14,11 +15,13 @@ export async function generateMetadata({ params }: { params: Promise<{ lng: stri
     const translation = await useTranslation(lng, 'random');
     const { t: translate } = translation;
 
-    return {
+    return generateSeoMetadata({
         title: translate('metadata.random_sort_page_title'),
         description: translate('metadata.random_sort_page_description'),
         keywords: translate('metadata.random_sort_page_keywords'),
-    };
+        lng,
+        path: '/random/sort',
+    });
 }
 
 type RandomSortPageProps = { params: Promise<{ lng: string }> };

@@ -4,6 +4,7 @@ import { Metadata } from 'next';
 import BmrCalculatorClient from './BmrCalculatorClient'; // 客戶端組件
 import Layout from '@/components/Layout/Layout';
 import { useTranslation } from '../../../i18n/index';
+import { generateSeoMetadata } from '@/lib/seo';
 
 // interface MetadataParams {
 //     params: Promise<{ lng: string }>;
@@ -14,11 +15,13 @@ export async function generateMetadata({ params }: { params: Promise<{ lng: stri
     const translation = await useTranslation(lng, 'calculator');
     const { t: translate } = translation;
 
-    return {
+    return generateSeoMetadata({
         title: translate('metadata.bmr_calculator_title'),
         description: translate('metadata.bmr_calculator_description'),
         keywords: translate('metadata.bmr_calculator_keywords'),
-    };
+        lng,
+        path: '/calculator/bmr',
+    });
 }
 
 type BmrCalculatorPageProps = { params: Promise<{ lng: string }> };

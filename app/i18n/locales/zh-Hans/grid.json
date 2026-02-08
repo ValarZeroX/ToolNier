@@ -33,6 +33,12 @@
         "symbols_page_keywords": "符号工具, Emoji 符号, 特殊符号",
         "calculator_page_title": "计算器",
         "calculator_page_description": "提供 BMI、TDEE、体脂率等计算功能。",
-        "calculator_page_keywords": "计算器, BMI 计算器"
+        "calculator_page_keywords": "计算器, BMI 计算器",
+        "home_page_title": "ToolNier - 免费在线工具集合：计算器、转换器、随机工具、开发者工具",
+        "home_page_description": "ToolNier 提供免费在线工具，包括 BMI 计算器、单位转换、随机抽选、QR Code 生成器、密码生成器等。无需安装，支持手机与电脑。",
+        "home_page_keywords": "免费在线工具, 计算器, 单位转换, 随机工具, QR Code 生成器, 密码生成器, 开发者工具, toolnier",
+        "all_page_title": "所有工具 - 免费在线工具集合 | ToolNier",
+        "all_page_description": "浏览 ToolNier 所有免费在线工具：计算器、转换工具、随机工具、开发者工具和符号工具。找到最适合您的工具。",
+        "all_page_keywords": "所有工具, 在线工具, 免费工具, 计算器, 转换器, 随机工具, 开发者工具, 符号工具, toolnier"
     }
 }

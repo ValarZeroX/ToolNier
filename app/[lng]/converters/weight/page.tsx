@@ -4,6 +4,7 @@ import { Metadata } from 'next';
 import WeightConverterClient from './WeightConverterClient'; // 客戶端組件
 import Layout from '@/components/Layout/Layout';
 import { useTranslation } from '../../../i18n/index';
+import { generateSeoMetadata } from '@/lib/seo';
 
 // interface MetadataParams {
 //     params: Promise<{ lng: string }>;
@@ -14,11 +15,13 @@ export async function generateMetadata({ params }: { params: Promise<{ lng: stri
     const translation = await useTranslation(lng, 'converters');
     const { t: translate } = translation;
 
-    return {
+    return generateSeoMetadata({
         title: translate('metadata.weight_converter_title'),
         description: translate('metadata.weight_converter_description'),
         keywords: translate('metadata.weight_converter_keywords'),
-    };
+        lng,
+        path: '/converters/weight',
+    });
 }
 
 type WeightConverterPageProps = { params: Promise<{ lng: string }> };

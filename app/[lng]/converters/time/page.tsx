@@ -4,6 +4,7 @@ import { Metadata } from 'next';
 import TimeConverterClient from './TimeConverterClient'; // 客戶端組件
 import Layout from '@/components/Layout/Layout';
 import { useTranslation } from '../../../i18n/index';
+import { generateSeoMetadata } from '@/lib/seo';
 
 
 export async function generateMetadata({ params }: { params: Promise<{ lng: string; }> }): Promise<Metadata> {
@@ -11,11 +12,13 @@ export async function generateMetadata({ params }: { params: Promise<{ lng: stri
     const translation = await useTranslation(lng, 'converters');
     const { t: translate } = translation;
 
-    return {
+    return generateSeoMetadata({
         title: translate('metadata.time_converter_title'),
         description: translate('metadata.time_converter_description'),
         keywords: translate('metadata.time_converter_keywords'),
-    };
+        lng,
+        path: '/converters/time',
+    });
 }
 
 type TimeConverterPageProps = { params: Promise<{ lng: string }> };
