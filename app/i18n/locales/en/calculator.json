@@ -4,6 +4,7 @@
     "explore_more_title": "Explore More",
     "bmi": {
         "bmi_calculator": "BMI Calculator",
+        "bmi_label": "BMI (Body Mass Index)",
         "description": "Calculate Body Mass Index (BMI).",
         "bmi_1": "Since BMI does not account for body fat percentage, a person with a high BMI may not necessarily be obese. For example, bodybuilders may have a BMI over 30 due to their higher proportion of muscle mass. If their body fat percentage is low, they may not need to lose weight. This indicates that BMI is only a rough indicator and cannot fully reflect body composition and health status.",
         "severe_thinness": "Underweight (Severe thinness)",

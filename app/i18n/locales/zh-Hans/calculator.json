@@ -4,6 +4,7 @@
     "explore_more_title": "进一步探索",
     "bmi": {
         "bmi_calculator": "BMI 计算器",
+        "bmi_label": "BMI (身体质量指数)",
         "description": "计算身体质量指数（BMI）。",
         "bmi_1": "由于BMI未考虑体脂率，因此一个BMI超重的人未必是肥胖。例如，健身者可能因为肌肉占据较高的体重比例而使其BMI超过30。如果他们的体脂比例较低，则无需减重。这表明BMI仅是一个粗略的指标，无法完全反映身体组成和健康状况。",
         "severe_thinness": "体重过轻（严重消瘦）",

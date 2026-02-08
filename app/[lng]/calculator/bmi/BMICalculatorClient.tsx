@@ -121,7 +121,7 @@ export default function BmiCalculator({ lng }: BmiCalculatorProps) {
                     <Stack gap="md">
                         <Paper withBorder p="md" radius="md" bg="var(--mantine-color-blue-0)">
                             <Stack gap={4} align="center">
-                                <Text size="sm" c="dimmed" fw={500}>BMI (身體質量指數)</Text>
+                                <Text size="sm" c="dimmed" fw={500}>{t('bmi.bmi_label')}</Text>
                                 <Group gap="xs" align="center">
                                     <Text size="2rem" fw={700} c="blue.7">{bmi}</Text>
                                     <Text size="sm" c="dimmed">kg/m²</Text>
