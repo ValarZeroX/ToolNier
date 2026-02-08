@@ -14,6 +14,9 @@ interface SeoMetadataParams {
 export function generateSeoMetadata({ title, description, keywords, lng, path }: SeoMetadataParams): Metadata {
   const url = `${BASE_URL}/${lng}${path}`;
 
+  // Ensure consistent branding without duplication
+  const fullTitle = title.includes('ToolNier') ? title : `${title} | ToolNier`;
+
   const uniqueLanguages = Array.from(new Set(languages));
   const alternateLanguages: Record<string, string> = {};
   uniqueLanguages.forEach((lang) => {
@@ -22,7 +25,7 @@ export function generateSeoMetadata({ title, description, keywords, lng, path }:
   alternateLanguages['x-default'] = `${BASE_URL}/${uniqueLanguages[0]}${path}`;
 
   return {
-    title,
+    title: fullTitle,
     description,
     keywords,
     alternates: {
@@ -30,7 +33,7 @@ export function generateSeoMetadata({ title, description, keywords, lng, path }:
       languages: alternateLanguages,
     },
     openGraph: {
-      title,
+      title: fullTitle,
       description,
       url,
       siteName: 'ToolNier',
@@ -39,7 +42,7 @@ export function generateSeoMetadata({ title, description, keywords, lng, path }:
     },
     twitter: {
       card: 'summary',
-      title,
+      title: fullTitle,
       description,
     },
   };

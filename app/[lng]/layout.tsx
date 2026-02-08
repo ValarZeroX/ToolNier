@@ -38,10 +38,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lng: stri
   const { lng } = await params;
   return {
     metadataBase: new URL('https://toolnier.com'),
-    title: {
-      default: 'ToolNier - Free Online Tools',
-      template: '%s | ToolNier',
-    },
+    title: 'ToolNier - Free Online Tools',
     description: 'ToolNier - Free online tools: calculators, converters, random generators, developer utilities, and more.',
     openGraph: {
       siteName: 'ToolNier',
