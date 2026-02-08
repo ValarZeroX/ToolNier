@@ -177,7 +177,7 @@ export default function BmrCalculator({ lng }: BmrCalculatorProps) {
                     <Stack gap="md">
                         <Paper withBorder p="md" radius="md" bg="var(--mantine-color-blue-0)">
                             <Stack gap={4} align="center">
-                                <Text size="sm" c="dimmed" fw={500}>BMR (基礎代謝率)</Text>
+                                <Text size="sm" c="dimmed" fw={500}>{t('bmr.bmr_label')}</Text>
                                 <Group gap="xs" align="center">
                                     <Text size="2rem" fw={700} c="blue.7">{bmr}</Text>
                                     <Text size="sm" c="dimmed">kcal/day</Text>

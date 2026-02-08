@@ -24,6 +24,7 @@
     },
     "bmr": {
         "bmr_calculator": "BMR Calculator",
+        "bmr_label": "BMR (Basal Metabolic Rate)",
         "description": "Calculate Basal Metabolic Rate (BMR).",
         "bmr_1": "Basal Metabolic Rate (BMR) refers to the rate at which the body consumes energy in a resting state, which is the minimum energy required to maintain basic life functions. BMR is typically expressed in calories, representing the minimum amount of calories the body burns each day.",
         "bmr_2": "BMR calculation is based on many factors, including age, gender, height, weight, and body fat percentage. Generally, men have a higher BMR than women, younger people typically have a higher BMR than older people, and height and weight also affect BMR calculation results.",
@@ -89,6 +90,7 @@
     },
     "tdee": {
         "tdee_calculator": "TDEE Calculator",
+        "tdee_label": "TDEE (Total Daily Energy Expenditure)",
         "grid_description": "Calculate Total Daily Energy Expenditure.",
         "tdee": "TDEE",
         "tdee_level_1": "Little/no exercise (sedentary lifestyle)",

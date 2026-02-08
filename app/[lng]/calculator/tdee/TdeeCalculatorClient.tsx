@@ -161,7 +161,7 @@ export default function TdeeCalculator({ lng }: TdeeCalculatorProps) {
                     <Stack gap="md">
                         <Paper withBorder p="md" radius="md" bg="var(--mantine-color-blue-0)">
                             <Stack gap={4} align="center">
-                                <Text size="sm" c="dimmed" fw={500}>BMR (基礎代謝率)</Text>
+                                <Text size="sm" c="dimmed" fw={500}>{t('bmr.bmr_label')}</Text>
                                 <Group gap="xs" align="center">
                                     <Text size="2rem" fw={700} c="blue.7">{bmr}</Text>
                                     <Text size="sm" c="dimmed">kcal/day</Text>
@@ -171,7 +171,7 @@ export default function TdeeCalculator({ lng }: TdeeCalculatorProps) {
 
                         <Paper withBorder p="md" radius="md" bg="var(--mantine-color-green-0)">
                             <Stack gap={4} align="center">
-                                <Text size="sm" c="dimmed" fw={500}>TDEE (每日總能量消耗)</Text>
+                                <Text size="sm" c="dimmed" fw={500}>{t('tdee.tdee_label')}</Text>
                                 <Group gap="xs" align="center">
                                     <Text size="2rem" fw={700} c="green.7">{tdee}</Text>
                                     <Text size="sm" c="dimmed">kcal/day</Text>

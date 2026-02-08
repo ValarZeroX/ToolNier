@@ -24,6 +24,7 @@
     },
     "bmr": {
         "bmr_calculator": "BMR 计算器",
+        "bmr_label": "BMR (基础代谢率)",
         "description": "计算基础代谢率（BMR）。",
         "bmr_1": "基础代谢率（BMR）是指身体在静止状态下消耗能量的速率，也就是身体在静止状态下维持基本生命功能所需的最低能量。BMR通常以卡路里（calories）的形式表示，这是身体每天消耗的最低热量。",
         "bmr_2": "BMR的计算基于许多因素，包括年龄、性别、身高、体重和体脂肪百分比等。一般来说，男性的BMR比女性高，年轻人的BMR通常比年长者高，身高和体重也会影响BMR的计算结果。",
@@ -89,6 +90,7 @@
     },
     "tdee": {
         "tdee_calculator": "TDEE 计算器",
+        "tdee_label": "TDEE (每日总能量消耗)",
         "grid_description": "计算每日总能量消耗。",
         "tdee": "TDEE",
         "tdee_level_1": "很少/没有运动（久坐的生活方式）",
